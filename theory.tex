@@ -82,7 +82,11 @@ where $\omega_0$ is the frequency difference between the ground and excited stat
 \begin{equation}
 H_{int} = -d\cdot E
 \end{equation}
-
+where the electric field will be treated classically and the dipole approximation is assumed []. This means
+\begin{equation}
+E(t) = \varepsilon E_0 \cos(\omega t) = \varepsilon \frac{E_0}{2} \left(e^{-i\omega t} + e^{i\omega t}\right),
+\end{equation}
+where $\varepsilon$ is a the unit polarization vector.
 
 - 2 level atom scheme\\
 - Model of laser-ion interaction: rabi flops, AC stark shift
@@ -224,5 +228,50 @@ A system focused to this limit is said to be diffraction limited. Indeed, if the
 There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
 - To search whats limiting the diffraction, (lambda/2)
 \subsection{Beam stearing via AOD's}
-- How AODs work, simple Model\\
-- Introduce diffraction efficiency, bandwidth
+Acousto-optical deflectors are a common practical devices to steer a laser beam. Their working principle is based on the Acousto-optical effect. A crystal is strained due to a acoustic wave. A piezo is used to create vibrations that propagate in the crystal, and it is absorbed on the opposite facet of the crystal. Vibrations compress and stretch the medium creating a pattern. Due to the different density of the crystal medium at different position, the refractive index is modified creating a grating that can be used to deflects light.\\
+As a simple model, let us consider a rectangular crystal like in figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavevector $q$, for the refractive index $n(x,t)$
+\begin{equation}
+n(x,t) = n - \Delta n_0 \cos \left(\Omega_s t - qx \right),
+\end{equation}
+where $n$ is the refractive index of the unperturbed medium, $\Delta n_0$ is the amplitude of the perturbation. $\Delta n_0$ is proportional to the square root of the sound intensity.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = .5\textwidth]{aod}
+\caption{AOD.}
+\label{AOD}
+\end{figure}
+The reflected wave can be calculated by dividing the crystal in thin layers, each with his refractive index $n(x)$. The total reflection is given by all the contributions $\frac{dr}{dx}$ of every layer, we can therefore integrate over a length $L$ as follow:
+\begin{equation}
+r = \int_{L/2}^{L/2} e^{i2kx \sin\theta} \frac{dr}{dx} \,dx
+\end{equation}
+The included phase takes into consideration the different phase of the input beam when different layers are met. The integral can be solved with a change of variable
+\begin{equation}
+\frac{dr}{dx} = \frac{dr}{dn}\frac{dn}{dx} = \frac{dr}{dn} q \Delta n_0 \sin \left(\Omega_s t - qx \right),
+\end{equation}
+The sine function can be written as exponential and now the integral contains only exponential functions which are trivial to calculate. At the end we obtain two contributes for the reflected wave $r$:
+\begin{equation}
+\label{mainAOD}
+r = r_+ + r_- \qquad r_\pm = \pm i r_0 \text{sinc} \left[(2k\sin\theta \mp q)\frac{L}{2\pi} \right]e^{\pm i\Omega_s t}
+\end{equation}
+These two terms are the plus and minus first order diffraction, an acousto-optical device can be operated symmetrically entering either with a positive angle or with a negative one. Since the maths and the physics is the same, we will focus only on the positive term, called upshifted Bragg diffraction. The sinc function peaks sharply when its argument is 0, i.e. at $2k\sin\theta = q$, and then quickly decreases as the angle is changed. Hence, the input beam must enter with a particular angle in order to diffract. The condition to be satisfied is usually called Bragg condition, and can be written as a function of the wavelengths as
+\begin{equation}
+\label{braggcondition}
+\sin \theta  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
+\end{equation}
+If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device.
+The ration of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
+From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscilalting at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
+\begin{equation}
+\omega_r  =  \omega + \Omega_s.
+\end{equation}
+This fact already suggests an application for acousto devices: they can be used as tuning device to shift the frequency of a laser. This kind of devices are called acousto-optical modulator (AOM). However, it is not the only application, we can also use the same device to deflect a beam. The idea is to change the deflection angle $\theta$ by changing the frequency $\Omega_s$ applied to the crystal.
+Assume that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
+\begin{equation}
+\theta \simeq \frac{\lambda}{2 v_s}f,
+\end{equation}
+where $v_s$ is the speed of sound and $f$ the frequency of the signal. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remain above a certain thresholds. The bandwidth is defined as the possible scanning angles, if $B$ is the frequency bandwidth in which the diffraction efficiency stay above a certain number (50\% for instance). Then, the range of scannability is
+\begin{equation}
+\Delta\theta = \frac{\lambda B}{2v_s}
+\end{equation}
+there are several way to engineer such device to increase bandwidth and keep the Bragg condition verified, for example the transducer is replaced by a phase array of transducers that tilt the acoustic beam [].
