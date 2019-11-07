@@ -65,8 +65,7 @@ Gates that involve multiple qubits are written as $2^N\times 2^N$ unitary matric
 It can be shown [] that the examples we saw here, H gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximate every other quantum gate.
 
 \subsection{Ion qubits and laser-ion interactions}
-Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states. The choices are multiple: an optical qubit is implemented in an optical transition, an hyperfine qubit is between two hyperfine states, and a Zeeman qubit can be realized with two magnetically separated levels. We will take the choice of an optical qubit, in this case lasers provide an easy way to manipulate the population of the two level and therefore to manipulate the state of the qubit, implementing quantum gates in an almost straightforward way. As long as the chosen levels are well separated, and the light is near resonant to the transition, it is possible to describe the system with the basic 2-level atom scheme interacting with classical light. \\
-In this section, the theoretical model of a 2-level atom is presented together with a model of interactions between the laser and the ion. This represents a physical implementation of the concepts illustrated in the previous section.
+Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states. The choices are multiple: an optical qubit is implemented in an optical transition, an hyperfine qubit is between two hyperfine states, and a Zeeman qubit can be realized with two magnetically separated levels. We will take the choice of an optical qubit, in this case lasers provide an easy way to manipulate the population of the two level and therefore to manipulate the state of the qubit, implementing quantum gates in an almost straightforward way. As long as the chosen levels are well separated, and the light is near resonant to the transition, it is possible to describe the system with the basic 2-level atom scheme interacting with classical light. This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
 \begin{figure}[H]
 \centering
 \includegraphics[width = .4\textwidth]{2levelatom}
@@ -84,9 +83,17 @@ H_{int} = -d\cdot E
 \end{equation}
 where the electric field will be treated classically and the dipole approximation is assumed []. This means
 \begin{equation}
-E(t) = \varepsilon E_0 \cos(\omega t) = \varepsilon \frac{E_0}{2} \left(e^{-i\omega t} + e^{i\omega t}\right),
+E(t) = \hat{\varepsilon} E_0 \cos(\omega t) = \hat{\varepsilon} \frac{E_0}{2} \left(e^{-i\omega t} + e^{i\omega t}\right),
 \end{equation}
-where $\varepsilon$ is a the unit polarization vector.
+where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{g}\bra{g} + \ket{e}\bra{e}$ on $d$. Due to parity arguments [], only the non diagonal terms are non vanishing, giving
+\begin{equation}
+d = \braket{g|d|e}\left(\ket{g}\bra{e} + \ket{e}\bra{g}\right) \equiv \braket{g|d|e}(\sigma + \sigma^\dagger).
+\end{equation}
+Combining the last three equations yields
+\begin{equation}
+H_{int} = -d
+\end{equation}
+
 
 - 2 level atom scheme\\
 - Model of laser-ion interaction: rabi flops, AC stark shift
@@ -109,7 +116,7 @@ A fundamental property of quantum network is the ability of transmitting faithfu
 \subsection{Linear Paul trap}
 In order to trap a charged atom, a three dimensional trapping potential $\phi$ is needed. However it follows directly from Maxwell equation $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two  different dimension. If the switching is timed correctly, the particle will not have the time to escape but will always encounter a potential barrier.
 The shape of the trap can be adapted to load more ions in different geometries. For instance, a linear Paul trap is elongated in one direction where the trapping confinement is weaker, such that loaded ions will align in a single long string. This kind of trap is depicted in figure \ref{trap}.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = .7\textwidth]{trap}
 \caption{A linear paul trap. U is the voltage applied to the electrodes trapping in the $z$ direction, while in the $x-y$ plane trapping is achieved with a radio frequency signal. $r_0$ is the distance from the central axis to the RF electrodes.}
@@ -139,7 +146,7 @@ This kind of equations have stable solutions that can be found in a recursive wa
 \frac{\partial^2 \bar{x}}{\partial \tau^2} + \left(a_x + 2q_x \langle\cos(2\tau)\rangle\right)\bar{x} = 0
 \end{equation}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = .7\textwidth]{stabilitydiagram}
 \caption{Stability diagram for a linear Paul trap, taken from \cite{iondynamic}. The coefficient $\beta_x,\beta_y$ can be calculated numerically from $a_x$ and $q_x$}
@@ -186,7 +193,7 @@ U(r) = A_0 \frac{W_0}{W(z)}\exp\left\{-\frac{x^2+y^2}{W^2(z)}\right\}\exp\left\{
 I(r) = |U(r)|^2 = I_0 \left(\frac{W_0}{W(z)}\right)^2 \exp\left\{\frac{2x^2 + 2y^2}{W^2(z)}\right\}  \qquad I_0 = |A_0|^2.
 \end{equation}
 It is clear from here why the beam is called Gaussian. For a fixed $z$, the beam shape is the one of a two dimensional beam profile, i.e. the sections in the $x-y$ plane of a Gaussian beams are Gaussian shaped distribution. If we further take a cross section in the $x-y$ plane, we end up with a one dimensional Gaussian distribution. This shape is shown in figure \ref{gauss}, along with some important parameters.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = .6\textwidth]{gauss}
 \caption{Normalized Gaussian profile. Different ways of measuring the width of the profile are displayed geometrically.}
@@ -198,7 +205,7 @@ Another common parameter to characterize the width of a Gaussian is the full wid
 W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}}.
 \end{equation}
 This equation is plotted in figure \eqref{gaussprofile}.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = \textwidth]{gaussprofile}
 \caption{Width profile of a Gaussian beam. The beam is focused at the position $z_0$, here it assumes the minimum width $W_0$, also referred to as waist.}
