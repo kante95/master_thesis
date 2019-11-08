@@ -41,6 +41,7 @@ A more practical way of dealing with qubits is via matrices. We can assign to th
 \end{equation}
 In this representation, manipulations of qubits are easily calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Every quantum algorithm can be written as a sequence of quantum gates and it is therefore important to understand them. For a single qubit any gate can be written as combination of two operations \cite{hempel}
 \begin{equation}
+\label{quantumgates}
 U_z(\theta) =  \begin{pmatrix}
  e^{-i\frac{\theta}{2}} & 0 \\
  0 & e^{i\frac{\theta}{2}}
@@ -85,7 +86,7 @@ H_{int} = -d\cdot E
 \end{equation}
 where the electric field will be treated classically and the dipole approximation is assumed []. This means
 \begin{equation}
-E(t) = \hat{\varepsilon} E_0 \cos(\omega t) = \hat{\varepsilon} \frac{E_0}{2} \left(e^{-i\omega t} + e^{i\omega t}\right),
+E(t) = \hat{\varepsilon} E_0 \cos(\omega t+\varphi) = \hat{\varepsilon} \frac{E_0}{2} \left(e^{-i(\omega t+\varphi)} + e^{i(\omega t+\varphi)}\right),
 \end{equation}
 where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{g}\bra{g} + \ket{e}\bra{e}$ on both sides of $d$. Due to parity arguments [], only the non diagonal terms are non vanishing, giving
 \begin{equation}
@@ -93,26 +94,39 @@ d = \braket{g|d|e}\left(\ket{g}\bra{e} + \ket{e}\bra{g}\right) \equiv \braket{g|
 \end{equation}
 Combining the last three equations yields
 \begin{equation}
-H_{int} = - \braket{g|\hat{\varepsilon} d|e}\frac{E_0}{2}(\sigma e^{i\omega t} + \sigma^\dagger e^{-i\omega t} + \sigma e^{-i\omega t} + \sigma^\dagger e^{i\omega t})
+H_{int} = - \braket{g|\hat{\varepsilon} d|e}\frac{E_0}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)} + \sigma e^{-i(\omega t+\varphi)} + \sigma^\dagger e^{i(\omega t+\varphi)})
 \end{equation}
 A rotating wave approximation is used now, essentially $\sigma$ ($\sigma^\dagger$) evolves in time as $\propto e^{-i\omega_0 t}$ ($\propto e^{i\omega_0 t}$), therefore we can drop the fast oscillating terms in the last equation and keeping only those that depends on time as $\propto e^{\pm i(\omega-\omega_0 )t}$. The validity of this approximation is given by the facts that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference, aka detuning.
 With this final approximation we arrive at the final form of the interaction Hamiltonian
 \begin{equation}
-H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i\omega t} + \sigma^\dagger e^{-i\omega t}),
+H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)}),
 \end{equation}
- where we defined the Rabi frequency $\Omega \equiv - \braket{g|\hat{\varepsilon} d|e}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the field $\Omega ^2 \propto I$. It also provides a convenient way to describe the coupling strength between the atom and the electric field.\\
- To summarize, the final system Hamiltonian is
+ where we defined the Rabi frequency $\Omega \equiv - \braket{g|\hat{\varepsilon} d|e}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the field $\Omega ^2 \propto I$. It also provides a convenient way to describe the coupling strength between the atom and the electric field. To summarize, the final system Hamiltonian is
  \begin{equation}
-H = H_a + H_{int} = \hbar\omega_0 \sigma^\dagger \sigma + \frac{\hbar \Omega}{2}(\sigma e^{i\omega t} + \sigma^\dagger e^{-i\omega t})
+ \label{2levelatomhamiltonian}
+H = H_a + H_{int} = \hbar\omega_0 \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)}).
  \end{equation}
- This Hamiltonian is explicitly time-dependent, which is not the ideal case. However it is possible to switch to the interaction picture (also referred to as rotating frame in this case) and hide the time dependence in the state. The Hamiltonian in the new frame is time independent and therefore easier to treat and solve
- \begin{equation}
-\widetilde{H} = -\hbar \Delta \sigma^\dagger \sigma + \frac{\hbar \Omega}{2}(\sigma + \sigma^\dagger)
- \end{equation}
-As we will work only in this picture from now on, the tilde will be omitted.
+This Hamiltonian depends explicitly on time, which could lead to unnecessary complications if we want to solve the dynamics. To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega t \ket{e}\bra{e}}$, the Hamiltonian in this frame is
+\begin{equation}
+\widetilde{H} = -\hbar \Delta \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(e^{i\varphi}\sigma + e^{-i\varphi}\sigma^\dagger)
+\end{equation}
+The time dependence is now gone, and the unitary evolution matrix can be calculated as
+\begin{equation}
+\label{laserpulse}
+U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
+ \begin{pmatrix}
+  \cos\left(\frac{\widetilde{\Omega} t}{2}\right) + i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right) & -ie^{i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right) \\
+  -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
+\end{pmatrix}.
+\end{equation}
+With this matrix we can calculate all the dynamic we need in an easy way. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a laser pulse can implement such qubit rotation, the other rotation can be performed in the same way, but with a different laser
+regime. We will explore this possibility later in the AC Stark shift.\\
+As example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
+\begin{equation}
+\mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
+\end{equation}
+This equation is plotted in figure (). For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse the population is completely transferred to another level $\ket{0}\to \ket{1}$.
 
-
-- 2 level atom scheme\\
 - Model of laser-ion interaction: rabi flops, AC stark shift
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
