@@ -108,6 +108,7 @@ H = H_a + H_{int} = \hbar\omega_0 \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(\sigma
  \end{equation}
 This Hamiltonian depends explicitly on time, which could lead to unnecessary complications if we want to solve the dynamics. To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega t \ket{e}\bra{e}}$, the Hamiltonian in this frame is
 \begin{equation}
+\label{Hamiltonianrotatingframe}
 \widetilde{H} = -\hbar \Delta \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(e^{i\varphi}\sigma + e^{-i\varphi}\sigma^\dagger)
 \end{equation}
 The time dependence is now gone, and the unitary evolution matrix can be calculated as
@@ -119,15 +120,29 @@ U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
   -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
 \end{pmatrix}.
 \end{equation}
-With this matrix we can calculate all the dynamic we need in an easy way. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a laser pulse can implement such qubit rotation, the other rotation can be performed in the same way, but with a different laser
-regime. We will explore this possibility later in the AC Stark shift.\\
+Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. With this matrix we can calculate all the dynamic we need. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a laser pulse can implement such qubit rotation, the other rotation can be performed in the same way, but with a different laser regime. We will explore this possibility later in the AC Stark shift.\\
 As example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
 \begin{equation}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
-This equation is plotted in figure (). For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse the population is completely transferred to another level $\ket{0}\to \ket{1}$.
+This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse ($\Omega t = \pi/2$) the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse (($\Omega t = \pi$)) the population is completely transferred to another level $\ket{0}\to \ket{1}$.
+\begin{figure}[H]
+\centering
+\includegraphics[width = 1\textwidth]{rabiflops}
+\caption{Rabi flops for different detuning $\Delta$}
+\label{rabiflops}
+\end{figure}
 
-- Model of laser-ion interaction: rabi flops, AC stark shift
+Rabi oscillations can be observed with near resonant light, in the off resonant regime, oscillations are suppressed, but the light shifts the energy levels.
+The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltonian \eqref{Hamiltonianrotatingframe}. It can be easily written in matrix form and diagonalized, we find that there are two eigenstates $\ket{+}$ and $\ket{-}$ called dressed states with eigenvalues
+\begin{equation}
+E_{\pm} = -\frac{\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
+\end{equation}
+In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{e},\ket{-}\to \ket{g}$, and the energies becomes
+\begin{equation}
+E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} + \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \frac{\Omega^2}{2\Delta}.
+\end{equation}
+
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
 Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes are realized in a variety of ways: trapped ions [], neutral atoms [], atomic ensembles [].\\
