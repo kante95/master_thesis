@@ -11,8 +11,7 @@ A qubit is formally a normalized wave function that can be written as superposit
 \ket{\psi} = \alpha \ket{0} + \beta\ket{1},
 \end{equation}
 where $\alpha,\beta$ are probability amplitudes, two complex numbers that satisfy the relationship $|\alpha|^2+|\beta|^2 = 1$.
-At first glance, the advantage of qubits seems obvious, while one classical bit can store only one bit of information, a qubit can be in any linear combination, i.e. $\alpha$ and $\beta$ can be chosen freely and any information can be represented. Although, the reality is different, due to rules of quantum mechanics, $\alpha$ and $\beta$ cannot be directly accessed, which means that we can get only a limited amount of information out of a qubit. The outcome of measuring a qubit will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.  [..]
-
+At first glance, the advantage of qubits seems obvious, while one classical bit can store only one bit of information, a qubit can be in any linear combination, i.e. $\alpha$ and $\beta$ can be chosen freely and any information can be represented. Although, the reality is different, due to rules of quantum mechanics, $\alpha$ and $\beta$ cannot be directly accessed, which means that we can get only a limited amount of information out of a qubit. The outcome of measuring a qubit will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.\\
 Qubits also have a geometrical representation that can be useful, equation \eqref{qubit} depends on 4 real numbers, however since $\psi$ is normalized, we can rewrite the expression as
 \begin{equation}
 \ket{\psi} = e^{i\gamma}\left(\cos\frac{\theta}{2}\ket{0} + e^{i\varphi}\sin\frac{\theta}{2}\ket{1}\right).
@@ -50,8 +49,17 @@ U_z(\theta) =  \begin{pmatrix}
 -ie^{i\theta}\sin\frac{\theta}{2} & \cos\frac{\theta}{2}
 \end{pmatrix}.
 \end{equation}
-These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the amount $\theta$, while $U_\varphi$ is a rotation on the $x-y$ plane around an axis tilted by $\varphi$. examples [H gate, phase gate]\\
-\newline
+These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the amount $\theta$, while $U_\varphi$ is a rotation on the $x-y$ plane around an axis tilted by $\varphi$. Important examples are the Hadamard gate $H$, which creates a superposition of one qubit, and the phase shift gate $R_\phi$ that shift the phase of one qubit:
+\begin{equation}
+\label{Hadamard}
+ H = \frac{1}{\sqrt{2}}\begin{pmatrix}
+ 1  & 1\\
+1 & -1
+ \end{pmatrix} \qquad R_\phi = \begin{pmatrix}
+ 1  & 0\\
+0 & e^{i\phi}
+ \end{pmatrix}.
+\end{equation}
 As we have seen, a single qubit has already the advantage of superposition compared to classical case. When considering multiple qubits, we gain even more quantum mechanical features like entanglement. This phenomenon does not have a classical analogy and it is an extremely useful tools in quantum information.\\
 In general a state with $N$ qubits is written as tensor product of the single qubit states $\psi_i$
 \begin{equation}
@@ -63,9 +71,16 @@ Now, let us consider only 2 qubits, a particular case would be
 \ket{\psi} = \frac{1}{\sqrt{2}}\left(\ket{00} + \ket{11}\right).
 \end{equation}
 If a measurement is made on one of the two qubit and, for instance, the outcome is 0, the wave function collapses to the state $\ket{00}$, collapsing also the state of the other qubit, even if no operation has been directly performed on it. Next you measure the the second qubit and the outcome will be 0 with unitary probability. Viceversa, if the outcome if the first measurement was 1, the state collapses to $\ket{11}$ and the outcome of the second measurement is always 1. The two qubits are correlated, but this correlations is stronger than the classical one.\\
-Gates that involve multiple qubits are written as $2^N\times 2^N$ unitary matrices, a famous example is the CNOT gate, [..]
-
-It can be shown [] that the examples we saw here, H gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximate every other quantum gate.
+Gates that involve multiple qubits are written as $2^N\times 2^N$ unitary matrices, a famous example is the controlled not (CNOT) gate
+\begin{equation}
+\text{CNOT} = \begin{pmatrix}
+1  & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0& 0 & 1 \\
+0 & 0 & 1 &0
+\end{pmatrix}.
+\end{equation}
+It can be shown [] that the examples of this section: $H$ gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximates every other quantum gate.
 
 \subsection{Ion qubits and laser-ion interactions}
 Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states. The choices are multiple: an optical qubit is implemented in an optical transition, an hyperfine qubit is between two hyperfine states, and a Zeeman qubit can be realized with two magnetically separated levels. We will take the choice of an optical qubit, in this case lasers provide an easy way to manipulate the population of the two level and therefore to manipulate the state of the qubit, implementing quantum gates in an almost straightforward way. As long as the chosen levels are well separated, and the light is near resonant to the transition, it is possible to describe the system with the basic 2-level atom scheme interacting with classical light. This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
@@ -125,7 +140,7 @@ As example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and 
 \begin{equation}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
-This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse ($\Omega t = \pi/2$) the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse (($\Omega t = \pi$)) the population is completely transferred to another level $\ket{0}\to \ket{1}$.
+This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse ($\Omega t = \pi/2$) the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse (($\Omega t = \pi$)) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement the Hadamard gate of equation \eqref{Hadamard}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = 1\textwidth]{rabiflops}
@@ -133,15 +148,29 @@ This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a c
 \label{rabiflops}
 \end{figure}
 
-Rabi oscillations can be observed with near resonant light, in the off resonant regime, oscillations are suppressed, but the light shifts the energy levels.
+Rabi oscillations can be observed with near resonant light, in the off-resonant regime, oscillations are suppressed, but the light shifts the energy levels.
 The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltonian \eqref{Hamiltonianrotatingframe}. It can be easily written in matrix form and diagonalized, we find that there are two eigenstates $\ket{+}$ and $\ket{-}$ called dressed states with eigenvalues
 \begin{equation}
-E_{\pm} = -\frac{\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
+E_{\pm} = -\frac{\hbar\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
 \end{equation}
 In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{e},\ket{-}\to \ket{g}$, and the energies becomes
 \begin{equation}
-E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} + \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \frac{\Omega^2}{2\Delta}.
+E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \pm\frac{\Omega^2}{4\Delta}.
 \end{equation}
+The effective Hamiltonian for the off-resonant regime can be derived following a Markovian approximation \cite{acstarkhamiltonian}
+\begin{equation}
+H_{eff} = \frac{1}{\hbar \Delta} [\sigma,\sigma^\dagger] = \frac{\hbar \delta}{2}\sigma_z
+\end{equation}
+The corresponding evolution is
+\begin{equation}
+\label{acstarkrotation}
+U(t) = \exp\left\{-\frac{i}{\hbar} H_{eff} t \right\} =
+ \begin{pmatrix}
+   \exp\left\{i\frac{\delta}{2}t\right\} & 0\\
+   0 & \exp\left\{i\frac{\delta}{2}t\right\}
+\end{pmatrix}.
+\end{equation}
+This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac stark shift can also implement the phase gate \eqref{Hadamard}, the trick is to shift the energy of a transition the shares only one level with qubit transition. From the prospective of the qubit, only one level is shifted and the other level remains unaltered, thus one of the two matrix element of equation \eqref{acstarkrotation} is 1.
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
