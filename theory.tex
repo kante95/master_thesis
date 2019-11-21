@@ -174,24 +174,75 @@ This matrix implements the quantum gate from equation \eqref{quantumgates}. Furt
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
-Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes are realized in a variety of ways: trapped ions [], neutral atoms [], atomic ensembles [].\\
-A fundamental property of quantum network is the ability of transmitting faithfully a superposition state between nodes. This is not easily achievable,
+Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes can be realized in a variety of ways: trapped ions [], neutral atoms [], atomic ensembles []. Nodes and links are connected through an interface that converts deterministically a stationary qubit in a node to a flying qubit over the network. In the next section we will explore how an interface can be realized by placing an ion based quantum memory in a optical cavity. Here we will examine some properties needed for a quantum network to work.\\
+In the case of quantum information transmission, a fundamental property of quantum network is the ability of transmitting faithfully any state between nodes. For long distances this requires the use of amplifiers or repeaters that boost the signal as it gets attenuated during the transmission. However, due to the no-cloning theorem \cite{nocloning}, qubits cannot be copied. A workaround of this problem is to send multiple qubits and purify the entanglement along the transmission with extra qubits and quantum nodes between the endpoints \cite{quantumrepeters}.\\
+To create a cluster of quantum nodes, another property of quantum network is necessary: entanglement distribution allows to entangle qubits located in different quantum nodes. A protocol to distributed entanglement can be realized with photon interference on a beam splitter. Consider the case of figure \ref{remoteentanglement}. Two nodes each with a qubit
+\begin{equation}
+\ket{\psi_A} = a\ket{0}_A + b\ket{1}_A \qquad \ket{\psi_B} = c\ket{0}_B + d\ket{1}_B.
+\end{equation}
+With the use of an interface each qubit is entangled to a photon. The photonic qubit can have different implementations, for this protocol however it is not important and we will indicate them as $\ket{H},\ket{V}$.
+The states ready for transmission are
+\begin{equation}
+\ket{\psi_A} = a\ket{0}_A\ket{H}_A + b\ket{1}_A\ket{V}_A \qquad \ket{\psi_B} = c\ket{0}_B\ket{H}_B + d\ket{1}_B\ket{V}_B.
+\end{equation}
+The total system is described as the product state of the two subsystem:
+\begin{equation}
+\ket{\psi_A}\otimes \ket{\psi_B} = (a\ket{0}_A\ket{H}_A + b\ket{1}_A\ket{V}_A)\otimes (c\ket{0}_B\ket{H}_B + d\ket{1}_B\ket{V}_B).
+\end{equation}
+When the photons arrive at the beam splitter there are four possible outcomes and two distinguishable events: either the two detectors click at the same time or only one detector clicks twice. In the second case, one photon was transmitted and the other reflected, the final state is proportional to $\ket{0}_A \ket{1}_B + \ket{1}_A \ket{0}_B$, which in the case of indistinguishable photons  is just a product state. More interesting is the case when a coincidence on both detector occurs. The final state is projected into
+\begin{equation}
+\ket{\psi} = ac\ket{0}_A \ket{0}_B + bd\ket{1}_A \ket{1}_B,
+\end{equation}
+leading to the two qubits to be entangled with each other. This protocol is probabilistic, but the success of entanglement can be heralded after a coincidence measure.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = .5\textwidth]{entaglement}
+  \caption{Remote qubits entanglement protocol.}
+  \label{remoteentanglement}
+\end{figure}
 
 
 
-
-
-
-- Nodes, interface, link, protocols\\
-- logic, memory, interface, Bell pairs, purification, multi-mode
-- Distributed entanglement
 \subsection{Cavity QED}
-- Simple model atom in cavity: g,gamma, k
+Trapped ions can become quantum nodes of a quantum network by placing them in a cavity. Ions emits photon by spontaneous emission, or stimulated emission. The problem with spontaneous emission is that the photonic channel of emission is random and in free space. To realize a quantum interface, photon should be produces almost deterministically in defined mode. The trick is to use a cavity tuned to one particular transition, such that the probability of a photon to be emitted in the cavity mode is greatly enhanced. In this section we describe a simple model of a two-level system in a cavity, the derivation is similar to section (), with the difference that in a cavity the electric field is quantized. Using the mode operator $a,a^\dagger$ the electric field inside a cavity can be written as:
+\begin{equation}
+E = A(f(r)a + f^*(r)a^\dagger)
+\end{equation}
+where $A$ is an amplitude, and $f(r)$ is the spatial mode profile []. The interaction between he field and the cavity is obtained as from $H_{int} = -d\cdot E$, following a rotating wave approximation the result is
+\begin{equation}
+H_{int} = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
+\end{equation}
+where $g = A \braket{g|d|e} f(r)$ is called cavity coupling constant. It is analogous to the Rabi frequency, it gives an idea of the coupling between the cavity field and the 2-level atom. An important dependence of $g$ can be found by considering that $f(r)$ is inversely proportional to the volume of the cavity $V$, i.e.
+\begin{equation}
+g \propto \braket{g|d|e} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
+\end{equation}
+The coupling therefore, increases with decreasing cavity volume and viceversa.\\
+The total system Hamiltonian includes also the atomic part, and a single mode optical field. It takes the name of Jaynes-Cummings Hamiltonian and it is written as
+\begin{equation}
+H = \hbar \omega_0 \ket{e}\bra{e} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
+\end{equation}
+States now are a product state of the atomic part and the photon number $\ket{g,n},\ket{e,n}$. They are however not the eigenstates of the Jaynes-Cumming Hamiltonian. It can be seen that this Hamiltonian is block diagonal, which means that each $2\times 2$ block can be diagonalized, the dressed states found after diagonalization are similar to the semiclassical model. Moreover, also the dynamics is analogue to the semiclassical case, Rabi oscillations are still present with quantized Rabi frequency given by $\Omega_n = \sqrt{4(n+1)g^2 +\Delta^2}$.\\
+The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description, we need to introduce dissipative process that do not follow an Hermitian evolution. This is done heuristically by adding terms in the Heisenberg equation
+\begin{equation}
+\label{masterequation}
+\frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
+\end{equation}
+This equation is usually referred to as master equation in Lindblad form, where $\rho$ is the density matrix of system. The superoperator
+$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. In our case, we are most interested in two process: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma$, while the latter is characterized by the decay rate $\kappa$. The functional dependence of these two terms goes as []
+\begin{equation}
+\mathcal{L}(\rho) = \Gamma\mathcal{D}(\sigma)\rho + \kappa \mathcal{D}(a)\rho.
+\end{equation}
+A good approximation of the model is given in the \emph{strong coupling} regime $g\ll \Gamma,\kappa$, where damping due to dissipative process is slow and dynamics is mainly driven coherently by the coupling atom-cavity $g$. The decay rate $\kappa$ depends exclusively on the cavity parameters as []
+\begin{equation}
+\kappa =\frac{c\pi}{FL},
+\end{equation}
+where $F$ is the cavity finesse, and $L$ the length. In the design of the experiment one must play and compromise with these three parameters in order to reach a good coupling ion-cavity but also being able to send photons out of the cavity.
+
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}
 In order to trap a charged atom, a three dimensional trapping potential $\phi$ is needed. However it follows directly from Maxwell equation $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two  different dimension. If the switching is timed correctly, the particle will not have the time to escape but will always encounter a potential barrier.
 The shape of the trap can be adapted to load more ions in different geometries. For instance, a linear Paul trap is elongated in one direction where the trapping confinement is weaker, such that loaded ions will align in a single long string. This kind of trap is depicted in figure \ref{trap}.
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width = .7\textwidth]{trap}
 \caption{A linear paul trap. U is the voltage applied to the electrodes trapping in the $z$ direction, while in the $x-y$ plane trapping is achieved with a radio frequency signal. $r_0$ is the distance from the central axis to the RF electrodes.}
@@ -202,26 +253,32 @@ The potential inside the trap can be described for the $x-y$ plan independently 
 \begin{equation}
 \phi  = \frac{\Phi_0}{2r_0^2}\left(x^2 - y^2\right),
 \end{equation}
-with the amplitude that consists of a static part $U$ and a dynamical one $\Phi_0 = U + V \cos(\Omega t)$.
+with the amplitude that consists of a static part $U$ and a dynamical one $\Phi_0 = U + V \cos(\Omega_{RF} t)$.
 The study of the particle's motion with mass $m$ and charge $e$ inside the trap can be done with classical physics, Newton's second law in this case is
 \begin{equation}
-m\ddot{x} = -q \frac{\partial \phi}{\partial x} = - \frac{ex}{r_0^2}\left(U + V \cos(\Omega t) \right),
+m\ddot{x} = -q \frac{\partial \phi}{\partial x} = - \frac{ex}{r_0^2}\left(U + V \cos(\Omega_{RF} t) \right),
 \end{equation}
 and similarly for $\ddot{y}$. This equation can be written in the form of Mathieu equation by defining two parameters:
 \begin{equation}
-a_x = \frac{4eU}{\Omega^2r_0^2m}, \quad q_x = \frac{2eV}{\Omega^2r_0^2m} \implies \ddot{x} +\frac{\Omega}{4} \left(a_x + 2q_x \cos(\Omega t )\right)x = 0
+a_x = \frac{4eU}{\Omega_{RF}^2r_0^2m}, \quad q_x = \frac{2eV}{\Omega_{RF}^2r_0^2m} \implies \ddot{x} +\frac{\Omega_{RF}}{4} \left(a_x + 2q_x \cos(\Omega_{RF} t )\right)x = 0
 \end{equation}
-and with a change of variable $\tau = \frac{\Omega t}{2}$ we end up with
+and with a change of variable $\tau = \frac{\Omega_{RF} t}{2}$ we end up with
 \begin{equation}
 \label{mathieu}
 \frac{\partial^2 x}{\partial \tau^2}+\left(a_x + 2q_x \cos(2\tau)\right)x = 0
 \end{equation}
-This kind of equations have stable solutions that can be found in a recursive way with Floquet theorem \cite{iondynamic}. However, the problem is simplified by performing the so called secular approximation, which consists of separating the motion in a slow changing position: $\bar{x}$ called \emph{secular motion}, and in a rapid oscillation: $\xi$, called \emph{micromotion}. The behaviour of micromotion is dictated by the force due to the potential at the position $\bar{x}$, and the secular motion will follow a time average of the potential $\langle \phi(t) \rangle$ eliminating therefore the effect of micromotion. In this case, equation \eqref{mathieu} becomes
+This kind of equations have stable solutions that can be found in a recursive way with Floquet theorem \cite{iondynamic}. However, the problem is simplified by performing the so called secular approximation, which consists of separating the motion in a slow changing position: $\bar{x}$ called \emph{secular motion}, and in a rapid oscillation: $\xi$, called \emph{micromotion}. The behaviour of micromotion is dictated by the force due to the potential at the position $\bar{x}$, and the secular motion will follow a time average of the potential $\langle \phi(t) \rangle$ eliminating therefore the effect of micromotion. In this case, equation \eqref{mathieu} can be solved in the limit $a_x \ll q_x \ll 1$
 \begin{equation}
-\frac{\partial^2 \bar{x}}{\partial \tau^2} + \left(a_x + 2q_x \langle\cos(2\tau)\rangle\right)\bar{x} = 0
+x(t) = x_0 \cos(\omega_x t +\phi_x)\left[1 + \frac{q_x}{2}\cos(\Omega_{RF} t) \right].
 \end{equation}
+Where we recognize a slowly varying oscillation with amplitude modulated by a faster oscillation. The approximation is valid only in the case $\omega_x \ll \Omega_{RF}$. The frequency $\omega_x$ is given in the solution as
+\begin{equation}
+\omega_x = \frac{\Omega_{RF}}{2}\sqrt{a_x + \frac{q_x^2}{2}}.
+\end{equation}
+By imposing real solution, the stability diagram of the trap can be found. It is depicted in figure \ref{stabilitydiagram}. The other spatial dimension can be treated in the same way and the results are the same. Important to notice is that a consequence of the secular approximation is that the potential can be approximated, the ion in the trap sees therefore a pseudo potential which is harmonic. Deviations from harmonicity are possible and they are mainly due to stray fields. Extra electrodes can be added to the trap design to compensate for such deviations.
 
-\begin{figure}
+
+\begin{figure}[H]
 \centering
 \includegraphics[width = .7\textwidth]{stabilitydiagram}
 \caption{Stability diagram for a linear Paul trap, taken from \cite{iondynamic}. The coefficient $\beta_x,\beta_y$ can be calculated numerically from $a_x$ and $q_x$}
@@ -254,6 +311,60 @@ u_{min}(N) \simeq \frac{2.018}{N^{0.559}},
 \end{equation}
 Although, numerical solution are preferred and can be computed fast.
 \subsection{Doppler cooling and detection}
+Ion trapping was treated here classically, because ions, when trapped, are still hot and follow classical mechanics. In order to reach the quantum regime, they must be cooled down. Several techniques are available for cooling, but the most popular and more frequently used is doppler cooling. The idea comes from neutral atoms and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
+The difference with neutral atoms is that an ion is confined inside a trap rotating at frequency $\omega$. Hence, even the simple 2-level system gains new transitions called sidebands. Some consideration must be put into the relative strength of the decay rate $\Gamma$ with respect to the sidebands. For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$. The intuitive picture is that the rate of spontaneous emission in this case is much faster that the time scale over which the trap changes potential. Therefore, the trap can be considered static  and has no effect on the cooling.\\
+In order to describe spontaneous emission, we use the master equation \eqref{masterequation}, in the case of spontaneous emission, the superoperator is given by []
+\begin{equation}
+\mathcal{L}(\rho) = \frac{\Gamma}{2}\left(2\sigma \rho \sigma^\dagger - \left\{\sigma^\dagger \sigma, \rho\right\}\right).
+\end{equation}
+$\Gamma$ is the decay rate from the excited state to the ground state. The actual value is found in perturbation theory with Fermi's golden rule []
+\begin{equation}
+\Gamma = \frac{\omega_0^3}{3\pi \varepsilon_0 \hbar c^3} |\braket{e|d|g}|^2
+\end{equation}
+The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$, in the rotating frame they are called optical equations and they are
+\begin{equation}
+\label{rhoee}
+\frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
+\end{equation}
+\begin{equation}
+\frac{d\rho_{gg}}{dt} = i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) + \Gamma \rho_{ee}
+\end{equation}
+\begin{equation}
+\frac{d\rho_{ge}}{dt} = -\left(\frac{\Gamma}{2}+i\Delta\right)\rho_{ge} -i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
+\end{equation}
+\begin{equation}
+\frac{d\rho_{eg}}{dt} = -\left(\frac{\Gamma}{2}-i\Delta\right)\rho_{eg}+i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
+\end{equation}
+The most interesting solution is the population of the excited level $\rho_{ee}$ in the steady state case, i.e. when the system reached he equilibrium. In this case we look at $\rho_{ee}(t\to \infty) $, the solution of equation \eqref{rhoee} is
+\begin{equation}
+\rho_{ee}(t\to \infty) = \frac{\Omega^2/\Gamma^2}{1 + \left(2\frac{\Delta -\mathbf{k}\cdot \mathbf{v}}{\Gamma}\right)^2 + 2\frac{\Omega^2}{\Gamma^2}}
+\end{equation}
+The force exerted on the ions, due to the radiative pressure, is proportional to this population as
+\begin{equation}
+F = \hbar k \Gamma \rho_{ee} \simeq F_0 + \frac{dF}{dv}v = \hbar k \Gamma\frac{\Omega^2}{\Gamma^2 +4\Delta^2} + F_0 \frac{8k\Delta}{\Gamma^2 + 4\Delta^2}v
+\end{equation}
+where we assumed low velocities $v \simeq 0$ and thus linearized the equation. The effect of the constant term in the force is just to displace the ion from its central position. Instead, the linear term acts as a viscous friction that cools the ions with a rate of $\dot{E}_c = \braket{Fv}$.
+If on one side spontaneous emission allows for Doppler cooling, it also sets the lower limit. The small fluctuations in the Brownian motion leads to diffusion which heats the ion at a rate of
+\begin{equation}
+\dot{E}_h = \frac{1}{m}\frac{d}{dt}\braket{p^2} =  \frac{1}{m}(\hbar k)^2 \Gamma \braket{\rho_{ee}(v)}.
+\end{equation}
+At equilibrium, the heating rate equals the cooling rate giving the lowest temperature achievable
+\begin{equation}
+\dot{E}_h + \dot{E}_c = 0  \implies k_B T = -\frac{\hbar \Gamma}{4}\left(\frac{\Gamma}{2\Delta} +\frac{2\Delta}{\Gamma}\right).
+\end{equation}
+From here it is clear that by choosing the appropriated detuning, it is possible to reach the lowest temperature
+\begin{equation}
+T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}
+\end{equation}
+The achieved temperatures with Doppler cooling are enough to perform standard measurements. To go further down in temperature, sideband cooling is used, here particular sideband transition are excited to reduce the phonon number of the ions inside the trap.\\
+With the same interaction of Doppler cooling, state detection can also be performed by means of laser induced fluorescence. Consider the $\Lambda$ scheme in figure \ref{threelevel}, the qubit is encoded in the level $\ket{g_1}$ and $\ket{g_2}$. To distinguish in which state the electron is, the transition $\ket{g_1}\to \ket{e}$ is excited. In the case the electron is in $\ket{g_1}$, the electron undergoes Rabi flops and scatters photons that can be collected and measured. If the electron is $\ket{g_2}$, no photons will be emitted and therefore no light is collected. The difference between these bright and dark states is clear and detection can be performed efficiently with near perfect efficiency.\\
+In the real case, one must take into consideration also all the other levels. In fact, an electron from the excited state $\ket{e}$ can have multiple decay channels to other states and repumping becomes necessary.
+\begin{figure}
+\centering
+\includegraphics[width = .6\textwidth]{threelevelatom}
+\caption{$\Lambda$ type scheme. Two ground states $\ket{g_1}$ and $\ket{g_2}$ are stable or metastable, while the excited level $\ket{e}$ is short lived. Qubit is encoded in the two ground states while laser fluorescence and laser cooling is done on the $\ket{g_1}\to \ket{e}$ transition.}
+\label{threelevel}
+\end{figure}
 \section{Laser beam}
 \subsection{Gaussian beams}
 Lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
@@ -304,11 +415,11 @@ where the approximation comes from taking $z_0\gg f$. There are three parameters
 \begin{equation}
 W_0 = \frac{2\lambda}{\pi} \frac{f}{D}.
 \end{equation}
-A system focused to this limit is said to be diffraction limited. Indeed, if the size of the collimated beam is yet increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane. The next section will delve a little bit deeper in this kind of effects since it is the main limitation for the best achievable spot size.
+A system focused to this limit is said to be diffraction limited. Indeed, if the size of the collimated beam is yet increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane.% The next section will delve a little bit deeper in this kind of effects since it is the main limitation for the best achievable spot size.
 
-\subsection{Diffraction limit}
-There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
-- To search whats limiting the diffraction, (lambda/2)
+%\subsection{Diffraction limit}
+%There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
+%- To search whats limiting the diffraction, (lambda/2)
 \subsection{Beam stearing via AOD's}
 Acousto-optical deflectors are a common practical devices to steer a laser beam. Their working principle is based on the Acousto-optical effect. A crystal is strained due to a acoustic wave. A piezo is used to create vibrations that propagate in the crystal, and it is absorbed on the opposite facet of the crystal. Vibrations compress and stretch the medium creating a pattern. Due to the different density of the crystal medium at different position, the refractive index is modified creating a grating that can be used to deflects light.\\
 As a simple model, let us consider a rectangular crystal like in figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavevector $q$, for the refractive index $n(x,t)$
