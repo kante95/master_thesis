@@ -65,6 +65,7 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{makecell}
 \usepackage{hhline}
+\usepackage{booktabs}
 
 \usepackage[breaklinks=true,colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=blue]{hyperref}
 % ----- Sources -----
@@ -145,18 +146,14 @@ To overcome this limitation, an optical setup for the 393nm laser had to be buil
  This work is presented in the following way: Chapter 2 is devoted to the theoretical background necessary to understand the rest of the work. Here the foundations of quantum computing and networking are laid down, along with the basic concepts of ion trapping; Chapter 3 presents the existing experimental setup, i.e. the already built and working blocks of the experiment where the setup designed in this thesis has been added; Chapter 4 is the core of the thesis, here the final design made with the software Zemax and simulations of different aspects of the project are introduced and presented;
 Chapter 5 contains all the experimental results obtained. It is divided in two parts: First, the setup was built on a spare optical table, here we had the freedom to test the performance of the system under different aspects and decide whether or not it was satisfactory. After having the certainty that the system will work, the setup was transferred and aligned on the real experiment where limited access did not consent for easy performance testing. Here, different and more complicated experimental methods had to be used to check if the system was working properly. The description and discussion of these results are in the second part of chapter 5.
 
+
+% Theory chapter
 \input{theory}
 
-\chapter{Existing experimental system}
-\section{Ion trap and key techniques}
-\subsection{Calcium Ions}
-- Calcium level scheme basically
-\subsection{Trapping, cooling, and state readout}
-- How this stuff is implemented
-\subsection{Photon generations}
-- Cavity enhanced Raman transition
-\section{393nm laser}
-\section{Experiment control}
+%Existing experimental setup chapter
+\input{expsetup}
+
+%More
 \chapter{Design and simulation of the addressing setup}
 \section{Addressing system overview and requirements}
 \section{Objective and AOD}
