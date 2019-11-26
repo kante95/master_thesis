@@ -80,9 +80,10 @@ Gates that involve multiple qubits are written as $2^N\times 2^N$ unitary matric
 0 & 0 & 1 &0
 \end{pmatrix}.
 \end{equation}
-It can be shown [] that the examples of this section: $H$ gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximates every other quantum gate.
+It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximates every other quantum gate.
 
 \subsection{Ion qubits and laser-ion interactions}
+\label{laserioninteractions}
 Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states. The choices are multiple: an optical qubit is implemented in an optical transition, an hyperfine qubit is between two hyperfine states, and a Zeeman qubit can be realized with two magnetically separated levels. We will take the choice of an optical qubit, in this case lasers provide an easy way to manipulate the population of the two level and therefore to manipulate the state of the qubit, implementing quantum gates in an almost straightforward way. As long as the chosen levels are well separated, and the light is near resonant to the transition, it is possible to describe the system with the basic 2-level atom scheme interacting with classical light. This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
 \begin{figure}[H]
 \centering
@@ -95,15 +96,15 @@ Consider the system in figure \ref{2levelatom}, the Hamiltonian of the atomic pa
 \begin{equation}
 H_a = \hbar\omega_0 \ket{e}\bra{e},
 \end{equation}
-where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. The Hamiltonian of the interaction between light and atom can be written as []
+where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. The Hamiltonian of the interaction between light and atom can be written as \cite{steck}
 \begin{equation}
 H_{int} = -d\cdot E
 \end{equation}
-where the electric field will be treated classically and the dipole approximation is assumed []. This means
+where the electric field will be treated classically and the dipole approximation is assumed. This means
 \begin{equation}
 E(t) = \hat{\varepsilon} E_0 \cos(\omega t+\varphi) = \hat{\varepsilon} \frac{E_0}{2} \left(e^{-i(\omega t+\varphi)} + e^{i(\omega t+\varphi)}\right),
 \end{equation}
-where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{g}\bra{g} + \ket{e}\bra{e}$ on both sides of $d$. Due to parity arguments [], only the non diagonal terms are non vanishing, giving
+where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{g}\bra{g} + \ket{e}\bra{e}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non vanishing, giving
 \begin{equation}
 d = \braket{g|d|e}\left(\ket{g}\bra{e} + \ket{e}\bra{g}\right) \equiv \braket{g|d|e}(\sigma + \sigma^\dagger).
 \end{equation}
@@ -174,7 +175,7 @@ This matrix implements the quantum gate from equation \eqref{quantumgates}. Furt
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
-Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes can be realized in a variety of ways: trapped ions [], neutral atoms [], atomic ensembles []. Nodes and links are connected through an interface that converts deterministically a stationary qubit in a node to a flying qubit over the network. In the next section we will explore how an interface can be realized by placing an ion based quantum memory in a optical cavity. Here we will examine some properties needed for a quantum network to work.\\
+Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes can be realized in a variety of ways: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts deterministically a stationary qubit in a node to a flying qubit over the network. In the next section we will explore how an interface can be realized by placing an ion based quantum memory in a optical cavity. Here we will examine some properties needed for a quantum network to work.\\
 In the case of quantum information transmission, a fundamental property of quantum network is the ability of transmitting faithfully any state between nodes. For long distances this requires the use of amplifiers or repeaters that boost the signal as it gets attenuated during the transmission. However, due to the no-cloning theorem \cite{nocloning}, qubits cannot be copied. A workaround of this problem is to send multiple qubits and purify the entanglement along the transmission with extra qubits and quantum nodes between the endpoints \cite{quantumrepeters}.\\
 To create a cluster of quantum nodes, another property of quantum network is necessary: entanglement distribution allows to entangle qubits located in different quantum nodes. A protocol to distributed entanglement can be realized with photon interference on a beam splitter. Consider the case of figure \ref{remoteentanglement}. Two nodes each with a qubit
 \begin{equation}
@@ -204,11 +205,11 @@ leading to the two qubits to be entangled with each other. This protocol is prob
 
 
 \subsection{Cavity QED}
-Trapped ions can become quantum nodes of a quantum network by placing them in a cavity. Ions emits photon by spontaneous emission, or stimulated emission. The problem with spontaneous emission is that the photonic channel of emission is random and in free space. To realize a quantum interface, photon should be produces almost deterministically in defined mode. The trick is to use a cavity tuned to one particular transition, such that the probability of a photon to be emitted in the cavity mode is greatly enhanced. In this section we describe a simple model of a two-level system in a cavity, the derivation is similar to section (), with the difference that in a cavity the electric field is quantized. Using the mode operator $a,a^\dagger$ the electric field inside a cavity can be written as:
+Trapped ions can become quantum nodes of a quantum network by placing them in a cavity. Ions emits photon by spontaneous emission, or stimulated emission. The problem with spontaneous emission is that the photonic channel of emission is random and in free space. To realize a quantum interface, photon should be produces almost deterministically in defined mode. The trick is to use a cavity tuned to one particular transition, such that the probability of a photon to be emitted in the cavity mode is greatly enhanced. In this section we describe a simple model of a two-level system in a cavity, the derivation is similar to section \ref{laserioninteractions}, with the difference that in a cavity the electric field is quantized. Using the mode operator $a,a^\dagger$ the electric field inside a cavity can be written as:
 \begin{equation}
 E = A(f(r)a + f^*(r)a^\dagger)
 \end{equation}
-where $A$ is an amplitude, and $f(r)$ is the spatial mode profile []. The interaction between he field and the cavity is obtained as from $H_{int} = -d\cdot E$, following a rotating wave approximation the result is
+where $A$ is an amplitude, and $f(r)$ is the spatial mode profile \cite{helene}. The interaction between he field and the cavity is obtained as from $H_{int} = -d\cdot E$, following a rotating wave approximation the result is
 \begin{equation}
 H_{int} = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
 \end{equation}
@@ -217,7 +218,7 @@ where $g = A \braket{g|d|e} f(r)$ is called cavity coupling constant. It is anal
 g \propto \braket{g|d|e} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
 \end{equation}
 The coupling therefore, increases with decreasing cavity volume and viceversa.\\
-The total system Hamiltonian includes also the atomic part, and a single mode optical field. It takes the name of Jaynes-Cummings Hamiltonian and it is written as
+The total system Hamiltonian includes also the atomic part, and a single mode optical field. It takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
 \begin{equation}
 H = \hbar \omega_0 \ket{e}\bra{e} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
 \end{equation}
@@ -228,11 +229,11 @@ The presence of a cavity makes dynamics more interesting, especially when consid
 \frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
 \end{equation}
 This equation is usually referred to as master equation in Lindblad form, where $\rho$ is the density matrix of system. The superoperator
-$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. In our case, we are most interested in two process: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma$, while the latter is characterized by the decay rate $\kappa$. The functional dependence of these two terms goes as []
+$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. In our case, we are most interested in two process: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma$, while the latter is characterized by the decay rate $\kappa$. The functional dependence of these two terms goes as \cite{steck}
 \begin{equation}
 \mathcal{L}(\rho) = \Gamma\mathcal{D}(\sigma)\rho + \kappa \mathcal{D}(a)\rho.
 \end{equation}
-A good approximation of the model is given in the \emph{strong coupling} regime $g\ll \Gamma,\kappa$, where damping due to dissipative process is slow and dynamics is mainly driven coherently by the coupling atom-cavity $g$. The decay rate $\kappa$ depends exclusively on the cavity parameters as []
+A good approximation of the model is given in the \emph{strong coupling} regime $g\ll \Gamma,\kappa$, where damping due to dissipative process is slow and dynamics is mainly driven coherently by the coupling atom-cavity $g$. The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
 \begin{equation}
 \kappa =\frac{c\pi}{FL},
 \end{equation}
@@ -313,7 +314,7 @@ Although, numerical solution are preferred and can be computed fast.
 \subsection{Doppler cooling and detection}
 Ion trapping was treated here classically, because ions, when trapped, are still hot and follow classical mechanics. In order to reach the quantum regime, they must be cooled down. Several techniques are available for cooling, but the most popular and more frequently used is doppler cooling. The idea comes from neutral atoms and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
 The difference with neutral atoms is that an ion is confined inside a trap rotating at frequency $\omega$. Hence, even the simple 2-level system gains new transitions called sidebands. Some consideration must be put into the relative strength of the decay rate $\Gamma$ with respect to the sidebands. For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$. The intuitive picture is that the rate of spontaneous emission in this case is much faster that the time scale over which the trap changes potential. Therefore, the trap can be considered static  and has no effect on the cooling.\\
-In order to describe spontaneous emission, we use the master equation \eqref{masterequation}, in the case of spontaneous emission, the superoperator is given by []
+In order to describe spontaneous emission, we use the master equation \eqref{masterequation}, in the case of spontaneous emission, the superoperator is given by \cite{gabriel}
 \begin{equation}
 \mathcal{L}(\rho) = \frac{\Gamma}{2}\left(2\sigma \rho \sigma^\dagger - \left\{\sigma^\dagger \sigma, \rho\right\}\right).
 \end{equation}
