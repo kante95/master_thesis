@@ -48,31 +48,58 @@ Our trap is a linear 3D RF Paul trap as depicted in figure (), the picture of th
 The trap also includes three pairs of compensations electrodes that can be used to compensate micromotion.
 Loading of ions is done with an atomic oven, calcium is heated a directed towards the trap, in the trap the atoms undergo 2-stage photon ionization. The first laser 375 nm, excite one electron to a very high excited state, the second laser 422 nm, brings the electron to free space ionizing the atom. Such two stage process allows to filter for isotopes and ionize only $^{40}\text{Ca}$. Loading usually takes minutes or tens of minutes depending on the number of ions one wants to load. Storing time can be in the order of days, especially when a single ion is loaded.\\
 Once loaded, ions are laser cooled with 397 nm light on the transition $\text{S}_{1/2} \to \text{P}_{1/2}$ detuned at $-\Gamma/2$. An additional repumper on the transition $\text{P}_{1/2} \to \text{D}_{3/2}$ is also used to avoid for the electron being stuck in the $\text{D}_{3/2}$ state. For typical experiment a stage of doppler cooling is always included, this lasts from 1 millisecond up to tens of milliseconds.\\
-With the same Doppler cooling light, imaging can also be done. The light shines on the ions exciting the transition $\text{S}_{1/2} \to \text{P}_{1/2}$ driving the electron to the excited states which then decay spontaneously emitting a photons. Photon are collected with a custom objective with NA of $\sim 0.3$, which means an efficiency of 2.5 \% over the solid angle $4\pi$. The objective focuses the collected photons 1.5 meters away where a CCD camera (Andor iXon Ultra 897) is placed. The geometrical path of the imaging is displayed in figure (), the same objective is also used for the addressing setup built within this thesis. Therefore, the imaging optical path must be partially shared with the newly built addressing. In depth overview of objective is therefore given in section ().\\
+With the same Doppler cooling light, imaging can also be done. The light shines on the ions exciting the transition $\text{S}_{1/2} \to \text{P}_{1/2}$ driving the electron to the excited states which then decay spontaneously emitting a photons. Photon are collected with a custom objective with NA of $\sim 0.3$, which means an efficiency of 2.5 \% over the solid angle $4\pi$. The objective focuses the collected photons 1.5 meters away where a CCD camera (Andor iXon Ultra 897) is placed. The geometrical path of the imaging is displayed in figure \ref{imgsetup}, this setup has a magnification factor of $\sim$18.6. The same objective is also used for the addressing setup built within this thesis. Therefore, the imaging optical path must be partially shared with the newly built addressing. In depth overview of objective is therefore given in section ().\\
 State read out is possible with this kind of imaging, with the difference of using a photonmultiplier tube (PMT) for counting photons instead of a camera. Consider a qubit encoded in the states $\text{S}_{1/2} \to \text{D}_{5/2}$, if the imaging laser is switched on, the electron will be projected either to the $\text{S}_{1/2}$ level or in the $\text{D}_{5/2} $. In the first case, photons are scattered from the ion and collected on the PMT, in the second case the electron is shelved and will not scatter any photon. Hence, the two cases are distinguishable by counting statistics. An histogram can be constructed  with the number of photon measured, and a properly set threshold differentiates between bright and dark states. Typical detection times are in the order of milliseconds.
 
-\subsection{Photon generations}
 \begin{figure}
 \centering
-\includegraphics[width = .6\textwidth]{ramanprocess}
-\caption{Raman process}
-\label{ramanprocess}
+\includegraphics[width = .6\textwidth]{imgsetup}
+\caption{Top view of the imaging optical path, the objective collimates and focuses the scatter photons onto the CCD camera. The addressing setup must share part of this path, as the same objective is used for focusing.}
+\label{imgsetup}
 \end{figure}
 
+
+\subsection{Photon generations}
 By placing a cavity around the trap, photon generation is enabled. The cavity mediated Raman process is responsible for this phenomenon. It can be explained strating from a three level atom like in figure \ref{ramanprocess}. The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{e}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
 to the $\text{D}_{5/2}$ state emitting a photon inside the cavity. Thus the process can be described as $\ket{0}_i\ket{0}_p \to \ket{1}_i\ket{1}_p$ where the subscript $i$ indicates the ion and $p$ the photon number in the cavity. The detuning is set such as $\Delta \gg \Omega,g$, in this regime the whole process can be described as a single transition with effective Rabi frequency of \cite{helene}
 \begin{equation}
 \Omega_{eff} = \frac{\Omega g}{2\Delta}.
 \end{equation}
 It is equivalent of a classical Raman process driven with two laser pulses on the two different transitions, but in this case the second laser is substituted by the vacuum standing wave of the cavity. In order to avoid decay in other channels, one must be sure that $\Omega_{eff}$ is larger than the effective decay rate of other spontaneous emission $\Omega_{eff}\gg \Gamma_{eff}$. Moreover, the photon should leave the cavity after the transfer is complete, this is ensured by $\Omega_{eff} >\kappa$.\\
-In the real case the electronic states are also shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis. This is done in the optics of achieving ion-photon entanglement, since in that case multiple Zeeman levels should be addressed. The situation is therefore further complicated and the polarization of the laser field should be taken into consideration. In figure (), the Zeeman structure of $^{40}\text{Ca}^+$ is depicted. One can start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$. From here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transition are possible, the most favorable in the case of the magnetic field orthogonal to the cavity axis is \cite{stuteinterface}
+In the real case the electronic states are also shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis and at $45^{\circ}$ with respect to the trap axis. This is done in the optics of achieving ion-photon entanglement, since in that case multiple Zeeman levels should be addressed. The situation is therefore further complicated and the polarization of the laser field should be taken into consideration. In figure (), the Zeeman structure of $^{40}\text{Ca}^+$ is depicted. One can start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$. From here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transition are possible, the most favorable in the case of the magnetic field orthogonal to the cavity axis is \cite{stuteinterface}
 \begin{equation}
 \ket{\text{S}_{1/2},-1/2}\to\ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-5/2}.
 \end{equation}
-In this case the transitions strengths, i.e. the projection on the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized.
- The cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz on the 854 transition.
+In this case the transitions strengths, i.e. the projection on the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized.\\
+The generated photon from this process can be entangled with the ion state by driving this Raman transition with a bichromatic beam. This means that the laser pulse drives two transitions at the same time, for example the one that ends up in $\ket{\text{D}_{5/2},-5/2}$ and $\ket{\text{D}_{5/2},-3/2}$. In this instance, the generated photon will be a superposition of $\sigma^+$ and $\pi$ polarization. With respect to the cavity it means vertical and horizontal polarization. The final state of the bichromatic transition is therefore
+\begin{equation}
+\ket{\psi} = \ket{\text{D}_{5/2},-5/2}\ket{H} + \ket{\text{D}_{5/2},-3/2}\ket{V}.
+\end{equation}
+In the real experiment the designed cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz. The Finesse of the cavity for the TEM$_{00}$ mode is 54000. The other cavity parameters are $\kappa = 2\pi \times 70$ kHz, and $\gamma = 2\pi\times 11.45$ MHz for the $\text{P}_{3/2}$ state. With these numbers the preferred strong regime is not reached, but nonetheless,  it is still possible to produce photons and collect them out of the cavity.
 
+\begin{figure}[H]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{ramanprocess}
+         %\caption{Raman process}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{zeemanstructure}
+         %\caption{Zeeman structure of the relevant levels for the Raman process.}
+         %\label{fig:three sin x}
+     \end{subfigure}
+        \caption{Roba}
+        \label{ramanprocess}
+      %  \label{fig:three graphs}
+\end{figure}
 
-- Cavity enhanced Raman transition
 \section{393nm laser}
+The laser used to drive the Raman transition is 393 nm. This light is obtained from a titanium-sapphire laser from MSquared. The laser is optically pumped with 8 W of light at 532 nm coming from a Lighthouse Photonics Sprout laser.
+
+
+
+
 \section{Experiment control}
