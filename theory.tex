@@ -288,6 +288,7 @@ By imposing real solution, the stability diagram of the trap can be found. It is
 
 
 \subsection{Ion strings}
+\label{ionstrings}
 We have seen that the potential inside the trap can be described as an harmonic potential. What we are interested in, is the ion separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\\
 Let us consider the $z$ direction where the ions are weakly confined and will form a string. The potential can be approximated as harmonic and hence given by
 \begin{equation}
@@ -368,6 +369,7 @@ In the real case, one must take into consideration also all the other levels. In
 \end{figure}
 \section{Laser beam}
 \subsection{Gaussian beams}
+\label{sec_diffraction}
 Lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
 From a theoretical point of view, Gaussian beams are solution of the Helmholtz equation $(\nabla^2 + k^2)U(r) = 0$, with $k$ being the wavevector. Such equation is a time independent variant of the wave equation that follows directly from Maxwell equations. A paraxial approximation is often used, i.e.  we assume that the amplitude $A(r)$ of the wave is slowly varying, this means that the envelope of the wave is approximately constant on a length of $\lambda$ and we can write the complex electric field as $U(r) = A(r)e^{-ikz}$. If we can consider a wave propagating in the $z$ direction, we can find a solution in the form of \cite{saleh}:
 \begin{equation}
@@ -422,6 +424,7 @@ A system focused to this limit is said to be diffraction limited. Indeed, if the
 %There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
 %- To search whats limiting the diffraction, (lambda/2)
 \subsection{Beam stearing via AOD's}
+\label{theory_AOD}
 Acousto-optical deflectors are a common practical devices to steer a laser beam. Their working principle is based on the Acousto-optical effect. A crystal is strained due to a acoustic wave. A piezo is used to create vibrations that propagate in the crystal, and it is absorbed on the opposite facet of the crystal. Vibrations compress and stretch the medium creating a pattern. Due to the different density of the crystal medium at different position, the refractive index is modified creating a grating that can be used to deflects light.\\
 As a simple model, let us consider a rectangular crystal like in figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavevector $q$, for the refractive index $n(x,t)$
 \begin{equation}

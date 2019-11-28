@@ -1,9 +1,8 @@
 % !TEX root = main.tex
-
 \chapter{Design and simulation of the addressing setup}
+The purpose of this thesis work was to design and build the addressing setup for the already existing experiment. In this chapter we discuss the design and the implementation of such setup. The design is a crucial part of the work, there are several requirements that have to be met in order to achieve the proper needed functionality. In the first section, the requirements are presented together with an overview of the design idea. In the setup an objective was already present, ad the choice of an AOD was already made. Hence, we discuss this components as given. The rest of the setup was simulated with the software Zeemax, which was used to find the optimal optical components and their placement.
 \section{Addressing system overview and requirements}
-\section{Objective and AOD}
-\section{Addressing setup}
+The addressing setup should be able to address single ions in a string in order to generate single photons out of single ions via the already discussed Raman process. Ion separations, in the case of $^{40}\text{Ca}^+$, has been derived in section \ref{ionstrings}, for a trap frequency of 1 MHz is 5.6 $\mu$m. The setup must therefore be able to focus tightly a laser beam down to 1-2 $\mu$m. As seen in section \ref{sec_diffraction}, a tighter focus can obtained with a shorter wavelength, a bigger lens, or with shorter focal length. The focusing lens, a.k.a the objective, is shared with the imaging setup, and thus it is given, the focal length is therefore a constant in the problem. The wavelength is also a constant, as the Raman process happens only at 393 nm. This gives only one possibility left to tighten the focus, i.e. by making the beam as broad as possible at the objective input surface. Beam expansion can be achieved with a Galilean telescope, it take two lenses to form such Telescope, a concave Lenses to diverge a collimated beam and a convex lens to collimate the diverging beam. The combinations of these two lenses takes a collimated beam and expands it to another collimated beam. This expansion part is one of the two essential part of the addressing setup. The other part is related to addressing range. Not only, we want to focus the beam to a single ion, but we want to move the beam as well such that it focuses on a different ion. Therefore, there is a requirement also on the range that can be addressed. This depends on the number of ions and their spacing, a good aim it to address tens of ions, this requires the ability to move the focus in one direction by 150-200 $\mu$m. Beam steering is possible with the use of an AOD, the detailed working principle of this device has been discussed in section \ref{theory_AOD}. Basically the angle of the output beam of the AOD changes as the driving frequency changes. 
 
 \begin{figure}[H]
 \centering
@@ -11,7 +10,9 @@
 \caption{Setup scheme}
 \end{figure}
 
-
+\section{Objective and AOD}
+\section{Design simulation}
+\section{Addressing setup}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/Plosses}
@@ -23,5 +24,7 @@
 \caption{Clipping on compensation electrodes}
 \end{figure}
 
-- Scheme of real setup \\
-- Alignment process
+\section{Physical implementation}
+- test setup
+- picture
+- alignment process
