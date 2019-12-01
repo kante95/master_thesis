@@ -391,6 +391,7 @@ It is clear from here why the beam is called Gaussian. For a fixed $z$, the beam
 It is important to understand how to characterize the width of a Gaussian shape, as it provides a quantitative way of measuring a laser beam width and its focus spot. A common way to define the width of a Gaussian distribution is according to the standard deviation $\sigma$, in this case the shape is given by $Ae^{-\frac{x^2}{2\sigma^2}}$, but for the intensity of a Gaussian beam, $W(z)$ is a much more used value. $W(z)$ is defined as the point at which the irradiance $I$ has fallen to $1/e^2 = 13.5\%$ of its maximum value. The relationship between these two quantities is easily found: $W(z) = 2\sigma$.\\
 Another common parameter to characterize the width of a Gaussian is the full width half maximum (FWHM), this can be found to be related to $W$ as: $W = 0.84\cdot \text{FWHM}$. All these methods are equivalent and are different only from a prefactor, so for the rest of the section, we can stick to $W(z)$ and study its behaviour. Always from Helmholtz equation \cite{saleh}, the profile of $W(z)$ is found to be
 \begin{equation}
+\label{waistprofile}
 W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}}.
 \end{equation}
 This equation is plotted in figure \eqref{gaussprofile}.

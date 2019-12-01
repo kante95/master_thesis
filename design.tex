@@ -45,35 +45,72 @@ The AOD is from Gooch \& Housego, model 4120-3. It has a specified central frequ
 \section{Design simulation}
 The setup in figure \ref{addressingsetup} has been simulated with the software Zemax. The simulation had the purpose of assessing the performance of the setup, i.e. checking the viability of the setup and see if it meets all requirements. It was also used to find the best lenses for building the setup and the best placement. Not everything was simulated, bu only the essential parts. This includes the four lenses, the objective, the viewport and the vacuum chamber. As there is no option to simulate an AOD, it was not taken in consideration, instead the simulation started at the output of the AOD as described below. Mirrors and beam splitters also do not alter drastically the optical path and therefore there was no need to simulate them.\\
 The simulations start by specifying the input fields, these represent the physical light beam. To account for the different angled beams at the output of the AOD, three different fields has been simulated. One is along the optical axis, while the other two are angled corresponding to the extrema of the AOD bandwidth, so $\pm0.86^{\circ}$. Therefore the propagation of these beams represents three different situations of beam direction and should also give an idea of the behaviour in between the extrema. Next, the four lenses of the setup were inserted in Zemax, initially with variable radius and thickness. The Zemax file of the objective came from the company which designed it and was simply imported in the project. After the objective the 6mm viewport glass was included and then vaccum for 38.6 mm, which is the distance between the outer facet of the glass and the ion axis. The image plane was therefore set here. The distance between the last lens of the objective and the viewport was unknown, but a good estimation allowed to progress with the simulation.
-They physical simulation in the software was carried out with the tool Physical Optics Propagation (POP). POP works by propagating a wavefront represented by an array of discrete points. The array is propagated through every optical component and free space. This method can be used to simulate coherent Gaussian beam with high precision as well as wave phenomena such as diffraction and aberrations. The initial value given to the propagator was the waist of the collimated beam out of the AOD. Since the beam going to the AOD comes from a fiber collimator, the value specified was taken from the datasheet of the fiber collimator, namely Sc\"after + Kirchhoff 60FC-M8-33. Therefore, the specified waist was 0.72 mm. Example of the POP window is in figure \ref{pop}.\\
-The first stage of the simulation work was to find the appropriate lens to build the setup. The thickness and the radius of the lenses was optimized trying to achieve the best focus spot while maintaining a good addressing range. Once obtained the desired situation, the lenses were found with the Zemax tool \emph{Stock Lens Matching}. Basically the tool compares the simulated lenses with those in a catalogue from different companies and find the closest match. We opted to rely on the provider Thorlabs, so the search was limited to this company. Once the desired lenses were found, their Zemax files provided by the company were imported in the project and further optimization was carried on.\\
-The second stage was to optimize the lenses position always in view of finding the best focus spot while keeping a good addressing range.\\
-
-
-Another aspect that was simulated is the beam profile inside the trap. Optical access to the trap is limited and a tightly focus beam also has a large divergence, which could lead to clipping on the trap's blades or compensation electrodes scattering light all around the trap and thus creating problems. In figure \ref{clippingtop} the top view of the trap is plotted. The blue line represents the radius W(z) of the addressing beam in the case of a waist of 1 $\mu$m. There is no apparent clipping, and the main problem seems to be the compensations electrodes. Since the the beam is Gaussian, there is always a clipping part. To determine the fraction of power lost due to clipping on the compensation electrodes, we can calculated the transmitted power through the electrodes
-
+They physical simulation in the software was carried out with the tool Physical Optics Propagation (POP). POP works by propagating a wavefront represented by an array of discrete points. The array is propagated through every optical component and free space. This method can be used to simulate coherent Gaussian beam with high precision as well as wave phenomena such as diffraction and aberrations. The initial value given to the propagator was the waist of the collimated beam out of the AOD. Since the beam going to the AOD comes from a fiber collimator, the value specified was taken from the datasheet of the fiber collimator, namely Sc\"after + Kirchhoff 60FC-M8-33 \cite{fibercollimator}. Therefore, the specified waist was 0.72 mm.\\
+The first step of the simulation work was to find the appropriate lens to build the setup. The thickness and the radius of the lenses was optimized trying to achieve the best focus spot while maintaining a good addressing range. Once obtained the desired situation, the lenses were found with the Zemax tool \emph{Stock Lens Matching}. Basically the tool compares the simulated lenses with those in a catalogue from different companies and find the closest match. We opted to rely on the provider Thorlabs, so the search was limited to this company. Found lenses were in order from left to right LA-1059, LA-1131, LA-4252, and LA-1725 and can be seen in figure \ref{zemaxview}. Once the desired lenses were found, their Zemax files provided by the company were imported in the project and further optimization was carried on.\\
+The second step was to optimize the lenses position always in view of finding the best focus spot while keeping a good addressing range. This was done using the optimiing tools of Zemax and the merit function. The software can perform multivariate analysis and minimize the focus spot depending on all the assigned variables, which in this case were the distance between the lenses. The final results can be seen in figure (), the addressing range is 168 $\mu$m, while the waist is $1$!.
 
 \begin{figure}
 \centering
-\includegraphics[width = .8\textwidth]{pop}
-\caption{Physical Optics Propagation (POP) tool from Zemax. Showed here is the central field at the image plane.}
-\label{pop}
+\includegraphics[width = \textwidth]{zemax3d}
+\caption{Zemax simulation of the setup. Rays propagate from left to right, only the four lenses are displayed, objective and image plane are far on the right. Different colors indicate different fields at different angle}
+\label{zemaxview}
 \end{figure}
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/Plosses}
-\caption{Losses on the compensation electrodes vs beam waist}
+Another aspect that was simulated is the beam profile inside the trap. Optical access to the trap is limited and a tightly focus beam also has a large divergence, which could lead to clipping on the trap's blades or compensation electrodes scattering light all around the trap and thus creating problems. In figure \ref{clippingtop} the top view of the trap is plotted. The blue line represents the radius $W(z)$ from equation \ref{waistprofile} of the addressing beam in the case of a waist $W_0$ of 1 $\mu$m. There is no apparent clipping, and the main problem seems to be the compensations electrodes. Since the the beam is Gaussian, there is always a clipping part. To determine the fraction of power lost due to clipping on the compensation electrodes, we can calculated the transmitted power through the electrodes:
+\begin{equation}
+P_{t} = \int_{-\infty}^{\infty}\text{d}y \int_{-x_c/2}^{x_c/2}\text{d}x P(z),
+\end{equation}
+where $P(z)$ is the power of the Gaussian beam, and $x_c$ is the horizontal position of the compensation electrode. The integral can be computed numerically at position $z$ of the electrodes. The result is plotted in figure \ref{lossesplot}, where the lost power $1-P_{t}$ is plotted as a function of the waist $W_0$.
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+     \centering
+     \includegraphics[width=\textwidth]{img/zemaxrange}
+     \caption{}
+     \label{zemaxrange}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+      \centering
+        \includegraphics[width=\textwidth]{img/zemaxfocus}
+        \caption{}
+        \label{zemaxfocus}
+     \end{subfigure}
+        \caption{}
+      %  \label{fig:three graphs}
 \end{figure}
+
 \begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/clipping}
-\caption{Clipping on compensation electrodes}
-\label{clippingtop}
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+     \centering
+     \includegraphics[width=\textwidth]{img/clipping}
+     \caption{Top view of the trap and addressing beam. Grey circles are the compensation electrodes, blue is the radius $1/e^2$ of the beam, while the black arches representes the mirrors of the cavity.}
+     \label{clippingtop}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+      \centering
+        \includegraphics[width=\textwidth]{img/Plosses}
+        \caption{Losses on the compensation electrodes vs beam waist}
+        \label{lossesplot}
+     \end{subfigure}
+        \caption{}
+      %  \label{fig:three graphs}
 \end{figure}
+
 
 \section{Physical implementation}
+Once the simulations gave satisfactory results, a test setup was built. The idea of building first a test setup on a different optical table from the main experiment was to check if the system was working as intended, and asses its performance. 
+\begin{figure}[H]
+\centering
+\includegraphics{photosetupnice.png}
+\caption{Photo of the real setup}
+\end{figure}
+
+
 - test setup
 - picture
 - alignment process
