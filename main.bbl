@@ -1,0 +1,185 @@
+\begin{thebibliography}{10}
+
+\bibitem{shor}
+Peter~W. Shor.
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em SIAM J. Comput.}, 26(5):1484--1509, oct 1997.
+
+\bibitem{grover}
+Lov~K. Grover.
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock In {\em Proceedings of the Twenty-eighth Annual ACM Symposium on
+  Theory of Computing}, STOC '96, pages 212--219, New York, NY, USA, 1996. ACM.
+
+\bibitem{divincenzo}
+David~P. DiVincenzo.
+\newblock The physical implementation of quantum computation.
+\newblock {\em Fortschritte der Physik}, 48(9‐11):771--783, 2000.
+
+\bibitem{qkd}
+Peter~W. Shor and John Preskill.
+\newblock Simple proof of security of the bb84 quantum key distribution
+  protocol.
+\newblock {\em Phys. Rev. Lett.}, 85:441--444, Jul 2000.
+
+\bibitem{quantumclocks}
+P.~K{\'{o}}m{\'{a}}r, E.~M. Kessler, M.~Bishof, L.~Jiang, A.~S. S{\o}rensen,
+  J.~Ye, and M.~D. Lukin.
+\newblock A quantum network of clocks.
+\newblock {\em Nature Physics}, 10(8):582--587, jun 2014.
+
+\bibitem{hempel}
+Cornelius Hempel.
+\newblock {\em Digital quantum simulation, Schroedinger cat state spectroscopy
+  and setting up a linear ion trap}.
+\newblock PhD thesis, University of Innsbruck, 2014.
+
+\bibitem{chuang}
+Isaac L.~Chuang Michael A.~Nielsen.
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge Series on Information and the Natural Sciences. Cambridge
+  University Press, 1 edition, 2004.
+
+\bibitem{steck}
+Daniel~Adam Steck.
+\newblock Quantum and atom optics.
+
+\bibitem{acstarkhamiltonian}
+D.F.V. James.
+\newblock Quantum computation with hot and cold ions: An assessment of proposed
+  schemes.
+\newblock {\em Fortschritte der Physik}, 48(9‐11):823--837, 2000.
+
+\bibitem{ion_quantumnetwork}
+L.-M. Duan and C.~Monroe.
+\newblock Colloquium: Quantum networks with trapped ions.
+\newblock {\em Rev. Mod. Phys.}, 82:1209--1224, Apr 2010.
+
+\bibitem{Ritter2012}
+Stephan Ritter, Christian N\"{o}lleke, Carolin Hahn, Andreas Reiserer, Andreas
+  Neuzner, Manuel Uphoff, Martin M\"{u}cke, Eden Figueroa, Joerg Bochmann, and
+  Gerhard Rempe.
+\newblock An elementary quantum network of single atoms in optical cavities.
+\newblock {\em Nature}, 484(7393):195--200, apr 2012.
+
+\bibitem{kimble}
+H.~J. Kimble.
+\newblock The quantum internet.
+\newblock {\em Nature}, 453(7198):1023--1030, jun 2008.
+
+\bibitem{nocloning}
+W.~K. Wootters and W.~H. Zurek.
+\newblock A single quantum cannot be cloned.
+\newblock {\em Nature}, 299(5886):802--803, oct 1982.
+
+\bibitem{quantumrepeters}
+H.-J. Briegel, W.~D\"ur, J.~I. Cirac, and P.~Zoller.
+\newblock Quantum repeaters: The role of imperfect local operations in quantum
+  communication.
+\newblock {\em Phys. Rev. Lett.}, 81:5932--5935, Dec 1998.
+
+\bibitem{helene}
+Helene Hainzer.
+\newblock Laser locking for trapped-ion quantum networks.
+\newblock Master's thesis, University of Innsbruck, 2018.
+
+\bibitem{qedreview}
+Helmut Ritsch, Peter Domokos, Ferdinand Brennecke, and Tilman Esslinger.
+\newblock Cold atoms in cavity-generated dynamical optical potentials.
+\newblock {\em Rev. Mod. Phys.}, 85:553--601, Apr 2013.
+
+\bibitem{traptheory}
+Philip~E. Miller and M.~Bonner Denton.
+\newblock The quadrupole mass filter: Basic operating concepts.
+\newblock {\em Journal of Chemical Education}, 63(7):617, 1986.
+
+\bibitem{iondynamic}
+D.~Leibfried, R.~Blatt, C.~Monroe, and D.~Wineland.
+\newblock Quantum dynamics of single trapped ions.
+\newblock {\em Rev. Mod. Phys.}, 75:281--324, Mar 2003.
+
+\bibitem{ion_spacing}
+D.~F.~V. James.
+\newblock Quantum dynamics of cold trapped ions with application to quantum
+  computation.
+\newblock {\em Applied Physics B: Lasers and Optics}, 66(2):pp. 181–90.
+
+\bibitem{gabriel}
+Gabriel Andres~Areneda Machuca.
+\newblock {\em Experiments with single photons emitted by single atoms}.
+\newblock PhD thesis, University of Innsbruck, 2019.
+
+\bibitem{saleh}
+Bahaa E.~A. Saleh and Malvin~Carl Teich.
+\newblock {\em Fundamentals of photonics}.
+\newblock Wiley Series in Pure and Applied Optics, 2 edition, 2007.
+
+\bibitem{beamparameters}
+C.~S. Williams.
+\newblock Gaussian beam formulas from diffraction theory.
+\newblock {\em Appl. Opt.}, 12(4):872--876, Apr 1973.
+
+\bibitem{beryllium}
+H.~Ball, M.~W. Lee, S.~D. Gensemer, and M.~J. Biercuk.
+\newblock A high-power 626 nm diode laser system for beryllium ion trapping.
+\newblock {\em Review of Scientific Instruments}, 84(6):063107, 2013.
+
+\bibitem{barium}
+M.~R. Dietrich, N.~Kurz, T.~Noel, G.~Shu, and B.~B. Blinov.
+\newblock Hyperfine and optical barium ion qubits.
+\newblock {\em Phys. Rev. A}, 81:052328, May 2010.
+
+\bibitem{strontium}
+D.~J. Berkeland.
+\newblock Linear paul trap for strontium ions.
+\newblock {\em Review of Scientific Instruments}, 73(8):2856--2860, 2002.
+
+\bibitem{calcium}
+H.~C. N\"agerl, Ch. Roos, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
+  F.~Schmidt-Kaler, and R.~Blatt.
+\newblock Investigating a qubit candidate: Spectroscopy on the ${S}_{1/2}$ to
+  ${D}_{5/2}$ transition of a trapped calcium ion in a linear paul trap.
+\newblock {\em Phys. Rev. A}, 61:023405, Jan 2000.
+
+\bibitem{Tanaka2007}
+U.~Tanaka, I.~Morita, and S.~Urabe.
+\newblock Selective loading and laser cooling of rare calcium isotope 43ca+.
+\newblock {\em Applied Physics B}, 89(2):195--200, Nov 2007.
+
+\bibitem{stute}
+Andreas tute.
+\newblock {\em A light-matter quantum interface: ion-photon entanglement and
+  state mapping}.
+\newblock PhD thesis, University of Innsbruck, 2012.
+
+\bibitem{stuteinterface}
+Andreas Stute, Bernardo Casabone, Bernhard Brandst{\"a}tter, Dr.~M. Habicher,
+  H.~G. Barros, Piet~O. Schmidt, Tracy~E. Northup, and Rainer Blatt.
+\newblock Toward an ion–photon quantum interface in an optical cavity.
+\newblock {\em Applied Physics B}, 107:1145--1157, 2012.
+
+\bibitem{addressing}
+H.~C. N\"agerl, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
+  F.~Schmidt-Kaler, and R.~Blatt.
+\newblock Laser addressing of individual ions in a linear ion trap.
+\newblock {\em Phys. Rev. A}, 60:145--148, Jul 1999.
+
+\bibitem{addressing3}
+S.~Crain, E.~Mount, S.~Baek, and J.~Kim.
+\newblock Individual addressing of trapped 171yb+ ion qubits using a
+  microelectromechanical systems-based beam steering system.
+\newblock {\em Applied Physics Letters}, 105(18):181115, 2014.
+
+\bibitem{addressing2}
+M.~Johanning, A.~Braun, N.~Timoney, V.~Elman, W.~Neuhauser, and Chr.
+  Wunderlich.
+\newblock Individual addressing of trapped ions and coupling of motional and
+  spin states using rf radiation.
+\newblock {\em Phys. Rev. Lett.}, 102:073004, Feb 2009.
+
+\bibitem{fibercollimator}
+Fiber~Collimators 60FC.
+\newblock https://www.sukhamburg.com/download/fibercollimators60fc.pdf.
+
+\end{thebibliography}
