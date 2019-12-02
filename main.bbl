@@ -29,6 +29,12 @@ P.~K{\'{o}}m{\'{a}}r, E.~M. Kessler, M.~Bishof, L.~Jiang, A.~S. S{\o}rensen,
 \newblock A quantum network of clocks.
 \newblock {\em Nature Physics}, 10(8):582--587, jun 2014.
 
+\bibitem{stuteinterface}
+Andreas Stute, Bernardo Casabone, Bernhard Brandst{\"a}tter, Dr.~M. Habicher,
+  H.~G. Barros, Piet~O. Schmidt, Tracy~E. Northup, and Rainer Blatt.
+\newblock Toward an ion–photon quantum interface in an optical cavity.
+\newblock {\em Applied Physics B}, 107:1145--1157, 2012.
+
 \bibitem{hempel}
 Cornelius Hempel.
 \newblock {\em Digital quantum simulation, Schroedinger cat state spectroscopy
@@ -152,12 +158,6 @@ Andreas tute.
 \newblock {\em A light-matter quantum interface: ion-photon entanglement and
   state mapping}.
 \newblock PhD thesis, University of Innsbruck, 2012.
-
-\bibitem{stuteinterface}
-Andreas Stute, Bernardo Casabone, Bernhard Brandst{\"a}tter, Dr.~M. Habicher,
-  H.~G. Barros, Piet~O. Schmidt, Tracy~E. Northup, and Rainer Blatt.
-\newblock Toward an ion–photon quantum interface in an optical cavity.
-\newblock {\em Applied Physics B}, 107:1145--1157, 2012.
 
 \bibitem{addressing}
 H.~C. N\"agerl, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,

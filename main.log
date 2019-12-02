@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  1 DEC 2019 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  2 DEC 2019 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,7 +1156,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  [4]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--143
+Underfull \hbox (badness 10000) in paragraph at lines 133--139
 
  []
 
@@ -1164,64 +1164,69 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 
+l.139 
        [1
 
-] (./theory.tex [2]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+(./theory.tex [2]
 Chapter 2.
 [3
 
 ]
-<./img/bloch_sphere.png, id=268, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=270, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [4 <./img/bloch_sphere.png>]
-<./img/2levelatom.png, id=283, 186.4566pt x 127.1952pt>
+<./img/2levelatom.png, id=285, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 90.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
  [5] [6 <./img/2levelatom.png>]
-<./img/rabiflops.png, id=317, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=319, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 147.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [7] [8 <./img/rabiflops.png>]
-<./img/entaglement.png, id=353, 362.43405pt x 382.3083pt>
+<./img/entaglement.png, id=355, 362.43405pt x 382.3083pt>
 File: ./img/entaglement.png Graphic file (type png)
 <use ./img/entaglement.png>
 Package pdftex.def Info: ./img/entaglement.png  used on input line 200.
 (pdftex.def)             Requested size: 226.48413pt x 238.90709pt.
  [9] [10 <./img/entaglement.png>]
-<./img/trap.png, id=383, 494.11751pt x 169.06602pt>
+<./img/trap.png, id=385, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
 Package pdftex.def Info: ./img/trap.png  used on input line 248.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
  [11] [12 <./img/trap.png>]
-<./img/stabilitydiagram.png, id=409, 505.13719pt x 402.75468pt>
+<./img/stabilitydiagram.png, id=411, 505.13719pt x 402.75468pt>
 File: ./img/stabilitydiagram.png Graphic file (type png)
 <use ./img/stabilitydiagram.png>
 Package pdftex.def Info: ./img/stabilitydiagram.png  used on input line 284.
 (pdftex.def)             Requested size: 317.0764pt x 252.81496pt.
 
 [13 <./img/stabilitydiagram.png (PNG copy)>] [14] [15]
-<./img/threelevelatom.png, id=451, 335.69415pt x 193.6836pt>
+<./img/threelevelatom.png, id=453, 335.69415pt x 193.6836pt>
 File: ./img/threelevelatom.png Graphic file (type png)
 <use ./img/threelevelatom.png>
 Package pdftex.def Info: ./img/threelevelatom.png  used on input line 366.
 (pdftex.def)             Requested size: 271.7837pt x 156.8119pt.
  [16 <./img/threelevelatom.png>]
-<./img/gauss.png, id=463, 406.1574pt x 417.7206pt>
+<./img/gauss.png, id=465, 406.1574pt x 417.7206pt>
 File: ./img/gauss.png Graphic file (type png)
 <use ./img/gauss.png>
 Package pdftex.def Info: ./img/gauss.png  used on input line 387.
 (pdftex.def)             Requested size: 271.7837pt x 279.52078pt.
  [17 <./img/gauss.png>]
-<./img/gaussprofile.png, id=475, 393.3897pt x 103.1052pt>
+<./img/gaussprofile.png, id=477, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
 Package pdftex.def Info: ./img/gaussprofile.png  used on input line 400.
@@ -1232,7 +1237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 396--405
  []
 
 [18 <./img/gaussprofile.png>]
-<./img/aod.png, id=488, 494.68816pt x 487.46115pt>
+<./img/aod.png, id=490, 494.68816pt x 487.46115pt>
 File: ./img/aod.png Graphic file (type png)
 <use ./img/aod.png>
 Package pdftex.def Info: ./img/aod.png  used on input line 438.
@@ -1242,47 +1247,47 @@ Package pdftex.def Info: ./img/aod.png  used on input line 438.
 
 ]
 Chapter 3.
-<./img/calciumscheme.png, id=521, 353.03896pt x 283.2984pt>
+<./img/calciumscheme.png, id=523, 353.03896pt x 283.2984pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 11.
 (pdftex.def)             Requested size: 271.7837pt x 218.0972pt.
 [23]
-<./img/phototrap.jpg, id=546, 1284.8pt x 963.6pt>
+<./img/phototrap.jpg, id=548, 1284.8pt x 963.6pt>
 File: ./img/phototrap.jpg Graphic file (type jpg)
 <use ./img/phototrap.jpg>
 Package pdftex.def Info: ./img/phototrap.jpg  used on input line 43.
 (pdftex.def)             Requested size: 317.0764pt x 237.797pt.
  [24 <./img/calciumscheme.png>] [25 <./img/phototrap.jpg>]
-<./img/imgsetup.png, id=563, 247.1634pt x 167.6664pt>
+<./img/imgsetup.png, id=565, 247.1634pt x 167.6664pt>
 File: ./img/imgsetup.png Graphic file (type png)
 <use ./img/imgsetup.png>
 Package pdftex.def Info: ./img/imgsetup.png  used on input line 56.
 (pdftex.def)             Requested size: 271.7837pt x 184.37218pt.
  [26 <./img/imgsetup.png>]
-<./img/ramanprocess.png, id=574, 351.2322pt x 283.2984pt>
+<./img/ramanprocess.png, id=576, 351.2322pt x 283.2984pt>
 File: ./img/ramanprocess.png Graphic file (type png)
 <use ./img/ramanprocess.png>
 Package pdftex.def Info: ./img/ramanprocess.png  used on input line 85.
 (pdftex.def)             Requested size: 221.95692pt x 179.03224pt.
-<./img/zeemanstructure.png, id=575, 336.41685pt x 195.49036pt>
+<./img/zeemanstructure.png, id=577, 336.41685pt x 195.49036pt>
 File: ./img/zeemanstructure.png Graphic file (type png)
 <use ./img/zeemanstructure.png>
 Package pdftex.def Info: ./img/zeemanstructure.png  used on input line 91.
 (pdftex.def)             Requested size: 221.95692pt x 128.97928pt.
-<./img/scheme393.png, id=576, 724.6272pt x 425.4294pt>
+<./img/scheme393.png, id=578, 724.6272pt x 425.4294pt>
 File: ./img/scheme393.png Graphic file (type png)
 <use ./img/scheme393.png>
 Package pdftex.def Info: ./img/scheme393.png  used on input line 104.
 (pdftex.def)             Requested size: 407.66867pt x 239.34239pt.
  [27 <./img/ramanprocess.png> <./img/zeemanstructure.png>] [28 <./img/scheme393
 .png>]
-<./img/expcontrol.png, id=595, 225.12105pt x 233.4321pt>
+<./img/expcontrol.png, id=596, 225.12105pt x 233.4321pt>
 File: ./img/expcontrol.png Graphic file (type png)
 <use ./img/expcontrol.png>
 Package pdftex.def Info: ./img/expcontrol.png  used on input line 120.
 (pdftex.def)             Requested size: 226.48413pt x 234.85626pt.
-<./img/trics.png, id=596, 1445.4pt x 813.0375pt>
+<./img/trics.png, id=597, 1445.4pt x 813.0375pt>
 File: ./img/trics.png Graphic file (type png)
 <use ./img/trics.png>
 Package pdftex.def Info: ./img/trics.png  used on input line 127.
@@ -1294,7 +1299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 |[]\T1/cmr/bx/n/20.74 Addressing sys-tem overview and
  []
 
-<img/setup.png, id=612, 379.98978pt x 175.9333pt>
+<img/setup.png, id=613, 379.98978pt x 175.9333pt>
 File: img/setup.png Graphic file (type png)
 <use img/setup.png>
 Package pdftex.def Info: img/setup.png  used on input line 10.
@@ -1302,52 +1307,52 @@ Package pdftex.def Info: img/setup.png  used on input line 10.
 [31
 
 ] [32 <./img/setup.png>]
-<./img/obj.png, id=632, 368.577pt x 273.54195pt>
+<./img/obj.png, id=633, 368.577pt x 273.54195pt>
 File: ./img/obj.png Graphic file (type png)
 <use ./img/obj.png>
 Package pdftex.def Info: ./img/obj.png  used on input line 24.
 (pdftex.def)             Requested size: 181.18454pt x 134.47081pt.
-<./img/zeemaxobj.png, id=633, 674.52pt x 295.85532pt>
+<./img/zeemaxobj.png, id=634, 674.52pt x 295.85532pt>
 File: ./img/zeemaxobj.png Graphic file (type png)
 <use ./img/zeemaxobj.png>
 Package pdftex.def Info: ./img/zeemaxobj.png  used on input line 31.
 (pdftex.def)             Requested size: 249.13391pt x 109.27063pt.
  [33 <./img/obj.png> <./img/zeemaxobj.png (PNG copy)>]
-<./img/zemax3d.png, id=644, 952.30782pt x 155.07938pt>
+<./img/zemax3d.png, id=645, 952.30782pt x 155.07938pt>
 File: ./img/zemax3d.png Graphic file (type png)
 <use ./img/zemax3d.png>
 Package pdftex.def Info: ./img/zemax3d.png  used on input line 49.
 (pdftex.def)             Requested size: 452.96826pt x 73.76521pt.
-<img/zemaxrange.png, id=646, 952.30782pt x 561.59813pt>
+<img/zemaxrange.png, id=647, 952.30782pt x 561.59813pt>
 File: img/zemaxrange.png Graphic file (type png)
 <use img/zemaxrange.png>
 Package pdftex.def Info: img/zemaxrange.png  used on input line 58.
 (pdftex.def)             Requested size: 362.37598pt x 213.70085pt.
  [34 <./img/zemax3d.png (PNG copy)>]
-<img/zemaxfocus.png, id=652, 761.09344pt x 441.14813pt>
+<img/zemaxfocus.png, id=653, 761.09344pt x 441.14813pt>
 File: img/zemaxfocus.png Graphic file (type png)
 <use img/zemaxfocus.png>
 Package pdftex.def Info: img/zemaxfocus.png  used on input line 65.
 (pdftex.def)             Requested size: 362.37598pt x 210.04565pt.
-<./img/zemaxaddrerror.png, id=655, 987.2082pt x 452.4102pt>
+<./img/zemaxaddrerror.png, id=656, 987.2082pt x 452.4102pt>
 File: ./img/zemaxaddrerror.png Graphic file (type png)
 <use ./img/zemaxaddrerror.png>
 Package pdftex.def Info: ./img/zemaxaddrerror.png  used on input line 74.
 (pdftex.def)             Requested size: 407.66867pt x 186.8217pt.
  [35 <./img/zemaxrange.png (PNG copy)>]
 [36 <./img/zemaxfocus.png (PNG copy)> <./img/zemaxaddrerror.png>]
-<img/clipping2.pdf, id=672, 816.04875pt x 516.93124pt>
+<img/clipping2.pdf, id=673, 816.04875pt x 516.93124pt>
 File: img/clipping2.pdf Graphic file (type pdf)
 <use img/clipping2.pdf>
 Package pdftex.def Info: img/clipping2.pdf  used on input line 85.
 (pdftex.def)             Requested size: 362.37598pt x 229.54858pt.
-<img/clipping.pdf, id=673, 578.16pt x 352.31625pt>
+<img/clipping.pdf, id=674, 578.16pt x 352.31625pt>
 File: img/clipping.pdf Graphic file (type pdf)
 <use img/clipping.pdf>
 Package pdftex.def Info: img/clipping.pdf  used on input line 94.
 (pdftex.def)             Requested size: 362.37598pt x 220.82071pt.
  [37 <./img/clipping2.pdf>]
-<./img/photosetupnice.png, id=697, 160.56366pt x 369.52534pt>
+<./img/photosetupnice.png, id=698, 160.56366pt x 369.52534pt>
 File: ./img/photosetupnice.png Graphic file (type png)
 <use ./img/photosetupnice.png>
 Package pdftex.def Info: ./img/photosetupnice.png  used on input line 107.
@@ -1357,39 +1362,39 @@ Package pdftex.def Info: ./img/photosetupnice.png  used on input line 107.
 
 ]
 Chapter 5.
-<img/prova7.png, id=726, 987.2082pt x 452.4102pt>
+<img/prova7.png, id=727, 987.2082pt x 452.4102pt>
 File: img/prova7.png Graphic file (type png)
 <use img/prova7.png>
-Package pdftex.def Info: img/prova7.png  used on input line 163.
+Package pdftex.def Info: img/prova7.png  used on input line 167.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<img/camera.jpeg, id=727, 633.36626pt x 594.22pt>
+<img/camera.jpeg, id=728, 633.36626pt x 594.22pt>
 File: img/camera.jpeg Graphic file (type jpg)
 <use img/camera.jpeg>
-Package pdftex.def Info: img/camera.jpeg  used on input line 168.
+Package pdftex.def Info: img/camera.jpeg  used on input line 172.
 (pdftex.def)             Requested size: 452.96826pt x 424.98195pt.
 [41 <./img/prova7.png>]
-<img/AODscan.png, id=735, 987.2082pt x 452.4102pt>
+<img/AODscan.png, id=736, 987.2082pt x 452.4102pt>
 File: img/AODscan.png Graphic file (type png)
 <use img/AODscan.png>
-Package pdftex.def Info: img/AODscan.png  used on input line 177.
+Package pdftex.def Info: img/AODscan.png  used on input line 181.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<img/ac_stark.png, id=736, 987.2082pt x 452.4102pt>
+<img/ac_stark.png, id=737, 987.2082pt x 452.4102pt>
 File: img/ac_stark.png Graphic file (type png)
 <use img/ac_stark.png>
-Package pdftex.def Info: img/ac_stark.png  used on input line 182.
+Package pdftex.def Info: img/ac_stark.png  used on input line 186.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [42 <./img/camera.jpeg>]
-<img/photonefficency_witherror.png, id=742, 987.2082pt x 452.4102pt>
+<img/photonefficency_witherror.png, id=743, 987.2082pt x 452.4102pt>
 File: img/photonefficency_witherror.png Graphic file (type png)
 <use img/photonefficency_witherror.png>
 Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
-189.
+193.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [43 <./img/AODscan.png> <./img/ac_stark.png>]
-<img/ramanlength_witherrors.png, id=752, 987.2082pt x 452.4102pt>
+<img/ramanlength_witherrors.png, id=753, 987.2082pt x 452.4102pt>
 File: img/ramanlength_witherrors.png Graphic file (type png)
 <use img/ramanlength_witherrors.png>
-Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 195
+Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 199
 .
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [44 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>]
@@ -1399,7 +1404,7 @@ Chapter 6.
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 208.
+(hyperref)                be the same. Added a new anchor on input line 212.
 
 (./main.bbl [46
 
@@ -1412,23 +1417,19 @@ ownload/fibercollimators60fc.pdf.
 ) [49] [50
 
 ] [51] [52]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
  [53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./main.aux (./frontpage.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 80942FA5008990BE3404F26F6DAAEA98;2784.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  23675 strings out of 492623
  399354 string characters out of 6135669
- 521374 words of memory out of 5000000
+ 520374 words of memory out of 5000000
  26812 multiletter control sequences out of 15000+600000
  554697 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1453,10 +1454,10 @@ dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type
 er/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (59 pages, 5565182 bytes).
+Output written on main.pdf (59 pages, 5564125 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
- 765 compressed objects within 8 object streams
+ 929 PDF objects out of 1000 (max. 8388607)
+ 766 compressed objects within 8 object streams
  240 named destinations out of 1000 (max. 500000)
  18928 words of extra memory for PDF output out of 20736 (max. 10000000)
 
