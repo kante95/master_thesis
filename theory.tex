@@ -1,10 +1,10 @@
 % !TEX root = main.tex
 
 \chapter{Theoretical framework}
-Quantum computing is based on a general framework that does not depend on the physical platform. Here, important concept such as qubit, and quantum operations are described before showing how we can realize them, from a theoretical point of view, with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Furthermore, in this chapter we will take a look into Gaussian beams and their properties. Since that is the shape emitted by laser, it is important to understand their characteristic and how to manipulate them. Lastly Acousto-optical interactions are introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam.
+Quantum computing is based on a general framework that does not depend on the physical platform. Here, important concepts such as qubit, and quantum operations are described from a theoretical point of view, before showing how we can realize them with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Furthermore, in this chapter we will take a look into Gaussian beams and their properties. Since that is the shape emitted by laser, it is important to understand their characteristic and how to manipulate them. Lastly, Acousto-optical interactions are introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam.
 \section{Quantum logic with trapped ions}
 \subsection{Quantum computer and quantum gates}
-The concepts of quantum computing are borrowed and extended from classical computational theory. In the classical case, information is represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations that in some cases are a speed up compared to the classical case.\\
+The concepts of quantum computing are borrowed and extended from classical computational theory. In the classical case, information is mostly represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations.\\
 A qubit is formally a normalized wave function that can be written as superposition of two orthogonal states indicated usually with $\ket{0}$ and $\ket{1}$:
 \begin{equation}
 \label{qubit}
@@ -16,7 +16,7 @@ Qubits also have a geometrical representation that can be useful, equation \eqre
 \begin{equation}
 \ket{\psi} = e^{i\gamma}\left(\cos\frac{\theta}{2}\ket{0} + e^{i\varphi}\sin\frac{\theta}{2}\ket{1}\right).
 \end{equation}
-the global phase factor $e^{i\gamma}$ can be left out, as it does not influence the measurement outcome. This leaves us with only two real number: $\theta$ and $\varphi$. A qubit is therefore representable with only these two numbers that we can chose to represent geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Here qubit manipulation can be visualized as trajectories on the surface, which in some cases is very useful. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
+the global phase factor $e^{i\gamma}$ can be left out, as it does not influence the measurement outcome. This leaves us with only two real number: $\theta$ and $\varphi$. A qubit is therefore representable with only these two numbers that we can chose to represent geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Here qubit manipulation can be visualized as trajectories on the surface. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
 \begin{figure}[H]
 \centering
 \includegraphics[width = .4\textwidth]{bloch_sphere}
@@ -24,7 +24,7 @@ the global phase factor $e^{i\gamma}$ can be left out, as it does not influence 
 \label{blochsphere}
 \end{figure}
 
-A more practical way of dealing with qubits is via matrices. We can assign to the states $\ket{0}$ and $\ket{1}$ the following:
+An alternative way of dealing with qubits is via matrices. We can assign to the states $\ket{0}$ and $\ket{1}$ the following:
 \begin{equation}
 \ket{0} = \begin{pmatrix}
  1 \\
@@ -38,7 +38,7 @@ A more practical way of dealing with qubits is via matrices. We can assign to th
  \beta
 \end{pmatrix}.
 \end{equation}
-In this representation, manipulations of qubits are easily calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Every quantum algorithm can be written as a sequence of quantum gates and it is therefore important to understand them. For a single qubit any gate can be written as combination of two operations \cite{hempel}
+In this representation, rotations of qubits are calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Quantum algorithm can be written as a sequence of quantum gates and it is therefore important to understand them. For a single qubit any gate can be written as combination of two operations \cite{hempel}
 \begin{equation}
 \label{quantumgates}
 U_z(\theta) =  \begin{pmatrix}
@@ -49,7 +49,7 @@ U_z(\theta) =  \begin{pmatrix}
 -ie^{i\theta}\sin\frac{\theta}{2} & \cos\frac{\theta}{2}
 \end{pmatrix}.
 \end{equation}
-These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the amount $\theta$, while $U_\varphi$ is a rotation on the $x-y$ plane around an axis tilted by $\varphi$. Important examples are the Hadamard gate $H$, which creates a superposition of one qubit, and the phase shift gate $R_\phi$ that shift the phase of one qubit:
+These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the amount $\theta$, while $U_\varphi$ is a rotation on the $x-y$ plane around an axis tilted by $\varphi$. Important examples are the Hadamard gate $H$, which creates a superposition of one qubit starting fromt he state $\ket{0}$, or $\ket{1}$, and the phase shift gate $R_\phi$ that shift the phase:
 \begin{equation}
 \label{Hadamard}
  H = \frac{1}{\sqrt{2}}\begin{pmatrix}
@@ -70,7 +70,7 @@ Now, let us consider only 2 qubits, a particular case would be
 \begin{equation}
 \ket{\psi} = \frac{1}{\sqrt{2}}\left(\ket{00} + \ket{11}\right).
 \end{equation}
-If a measurement is made on one of the two qubit and, for instance, the outcome is 0, the wave function collapses to the state $\ket{00}$, collapsing also the state of the other qubit, even if no operation has been directly performed on it. Next you measure the the second qubit and the outcome will be 0 with unitary probability. Viceversa, if the outcome if the first measurement was 1, the state collapses to $\ket{11}$ and the outcome of the second measurement is always 1. The two qubits are correlated, but this correlations is stronger than the classical one.\\
+If a measurement is made on one of the two qubit and, for instance, the outcome is 0, the wave function collapses to the state $\ket{00}$, collapsing also the state of the other qubit, even if no operation has been directly performed on it. Next you measure the the second qubit and the outcome will be 0 with unit probability. Viceversa, if the outcome if the first measurement was 1, the state collapses to $\ket{11}$ and the outcome of the second measurement is always 1. The two qubits are correlated, but this correlations is stronger than the classical one.\\
 Gates that involve multiple qubits are written as $2^N\times 2^N$ unitary matrices, a famous example is the controlled not (CNOT) gate
 \begin{equation}
 \text{CNOT} = \begin{pmatrix}

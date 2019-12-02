@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {2}Theoretical framework}{3}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Quantum logic with trapped ions}{3}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Quantum computer and quantum gates}{3}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Ion qubits and laser-ion interactions}{6}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.2}Ion qubits and laser-ion interactions}{5}{subsection.2.1.2}% 
 \contentsline {section}{\numberline {2.2}Quantum networking with trapped ions}{9}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}General introduction}{9}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Cavity QED}{10}{subsection.2.2.2}% 

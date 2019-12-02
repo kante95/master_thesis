@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  2 DEC 2019 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  2 DEC 2019 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,13 +1183,13 @@ File: ./img/bloch_sphere.png Graphic file (type png)
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [4 <./img/bloch_sphere.png>]
-<./img/2levelatom.png, id=285, 186.4566pt x 127.1952pt>
+<./img/2levelatom.png, id=290, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 90.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
  [5] [6 <./img/2levelatom.png>]
-<./img/rabiflops.png, id=319, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=320, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 147.
@@ -1428,7 +1428,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23675 strings out of 492623
- 399354 string characters out of 6135669
+ 399356 string characters out of 6135669
  520374 words of memory out of 5000000
  26812 multiletter control sequences out of 15000+600000
  554697 words of font info for 143 fonts, out of 8000000 for 9000
@@ -1454,7 +1454,7 @@ dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type
 er/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (59 pages, 5564125 bytes).
+Output written on main.pdf (59 pages, 5564161 bytes).
 PDF statistics:
  929 PDF objects out of 1000 (max. 8388607)
  766 compressed objects within 8 object streams
