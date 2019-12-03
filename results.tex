@@ -30,9 +30,30 @@ The test setup was built on a spare optical table with a spare objective. The la
 This is measured in two different ways: first we scanned the beam with a razor blade; then we also tried to measure it directly with a camera equipped with 1.6 $\mu$m pixel size.\\
 Other than the waist size, we also measure stability of the system and the polarization capabilities.
 
-
 \subsection{Waist: razor blade}
-\begin{figure}[H]
+Measuring a micrometer waist is not easy task, the first approach we tried consists of mounting a razor blade on a translational stage. The stage is then moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. A filter was also inserted in order to not saturate the photodiode.
+The stage had to be moved with sub-micrometer precision, so the screw was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the whole profile of the beam, i.e. $W(z)$, the measurement procedure were as follow
+\begin{itemize}
+\item Position blade at appropriate $z$ coordinate
+\item Scanning beam in $x$ direction with blade
+\item Beam width extrapolation
+\item Shift $z$ direction
+\end{itemize}
+And the procedure is repeated for sufficient values of $z$ to scan at least few Raylegh ranges. The beam width can be calculated from the scans by interpolation the data with []
+\begin{equation}
+P(x,z) = \frac{P_0}{2}\text{erfc}\left[\frac{\sqrt{2}(x-x_0)}{W(z)} \right]
+\end{equation}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=.4\textwidth]{razorsetup}
+\caption{Scheme of the razor scan.}
+\label{razorscan}
+\end{figure}
+
+
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{img/prova7}
 \caption{Example of razor scan}
