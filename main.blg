@@ -5,45 +5,45 @@ A level-1 auxiliary file: frontpage.aux
 The style file: unsrt.bst
 Database file #1: References.bib
 Warning--empty year in ion_spacing
-You've used 33 entries,
+You've used 34 entries,
             1791 wiz_defined-function locations,
-            655 strings with 8487 characters,
-and the built_in function-call counts, 7612 in all, are:
-= -- 673
-> -- 348
+            663 strings with 8665 characters,
+and the built_in function-call counts, 7814 in all, are:
+= -- 690
+> -- 356
 < -- 1
-+ -- 132
-- -- 99
-* -- 599
-:= -- 1249
-add.period$ -- 99
-call.type$ -- 33
-change.case$ -- 30
++ -- 135
+- -- 101
+* -- 616
+:= -- 1282
+add.period$ -- 102
+call.type$ -- 34
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 294
-empty$ -- 729
-format.name$ -- 99
-if$ -- 1635
+cite$ -- 35
+duplicate$ -- 303
+empty$ -- 750
+format.name$ -- 101
+if$ -- 1679
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 29
-newline$ -- 166
-num.names$ -- 33
-pop$ -- 56
+int.to.str$ -- 34
+missing$ -- 30
+newline$ -- 171
+num.names$ -- 34
+pop$ -- 57
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 117
+skip$ -- 121
 stack$ -- 0
-substring$ -- 612
-swap$ -- 41
+substring$ -- 624
+swap$ -- 42
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 73
-width$ -- 35
-write$ -- 360
+while$ -- 75
+width$ -- 36
+write$ -- 371
 (There was 1 warning)
