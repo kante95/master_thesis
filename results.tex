@@ -60,14 +60,35 @@ Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of
 
 \subsection{Waist: Camera}
 Since the Knife-Edge method did not demonstrate particularly effective, if not to give an upper bound to the waist, a more direct approach has been subsequently adopted. We look directly into the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.6 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot better than the razor blade. A $\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
-In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional information about the beam shape and can be exploited to look for aberrations in the system. The setup is almost the same as figure \ref{razorscan}, but the camera now replace the razor blade, and there is no need for scanning in the $x$ direction, as the $z$ is enough to reconstruct the profile $W(z)$.
+In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional information about the beam shape and can be exploited to look for aberrations in the system. The setup is almost the same as figure \ref{razorscan}, but the camera now replaces the razor blade, and there is no need for scanning in the $x$ direction, as the $z$ is enough to reconstruct the profile $W(z)$. An additional gradient filter was used to optimize the light reaching the camera in order to not saturate it and get a visible signal.
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.67\textwidth}
+         \centering
+         \includegraphics[width = \textwidth]{camera}
+          \caption{Fitted data from the camera. In red color, the normalized pixel value is displayed, while the blue curve is a fitted 2D Gaussian. On the axis there is the pixel number}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{cameraoriginal}
+        \vspace{5em}
+         \caption{Original photo from the camera.}
+         %\label{fig:three sin x}
 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/camera}
-\caption{Example of camera picture}
+     \end{subfigure}
+        \caption{}
+       \label{fig:camera}
 \end{figure}
+The measurement procedure is also similar to the Knife-Edge case. For every desired $z$ displacement, a photo with the camera is taken, post processed, and then the camera is displaced to the new $z$ coordinate. Post processing is done by fitting the pixel value with a 2-dimensional Gaussian
+\begin{equation}
+P = A \exp\left\{-\frac{(x-x_0)^2}{2\sigma_x^2}\right\} \exp\left\{-\frac{(y-y_0)^2}{2\sigma_y^2} \right\}
+\end{equation}
+
+In figure \ref{fig:camera}, an example of the measurement taken is displayed
+
+
+
 \subsection{Polarization characterization}
 \subsection{Stability}
 \section{Final installed system}
