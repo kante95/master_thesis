@@ -95,10 +95,28 @@ In figure \ref{fig:camera}, an example of the measurement taken is displayed. Th
 \end{figure}
 
 \subsection{Polarization characterization}
-As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stoke's parameter \cite{stokes}. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
+As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. In order to characterize the polarization, the three Stokes parameters \cite{stokes} has been measured with a polarimeter from Sc\"after + Kirchhoff series SK010PA. Stokes parameters quantify the type of polarization of an electric field. Linear polarized light (vertical and horizontal) has all Stokes parameters set to 0, apart from the first one. Instead, the third parameter, when the others are zero, contains information about circular polarized light which goes from right to left. By rotating a plate and fitting a sine function to the appropriate Stokes parameter, it is possible to gain insights on the appropriate angle to set in order to obtain the desired polarization.\\
+ The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stokes parameter. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
 As the mirror can change the polarization, the same characterization has been done after the mirror finding that the polarization is altered unless it is either horizontal or vertical.
-However the main result was obtained when the $\lambda/4$ was characterized. With every plate inserted, two measurements were made. In the first one the $\lambda/2$ was set to $267^\circ$ to get horizontal polarization, and the angle of the $\lambda/4$ scanned. This result is presented in figure \ref{pol1}. The third Stoke's parameter is fitted with a sine function to get the angles at which the polarization is right and left circular. We obtain right circular at $4\pm 0.1^\circ$, and left circular at $95.4\pm0.1^\circ$. It is also possible to get horizontal polarization at $49.7\pm0.1^\circ$. The semiperiod of the fit is $91.3\pm 0.3^\circ$.\\
-The second measurement also scanned the angle of the $\lambda/4$ plate, but this time the $\lambda/2$ was set to $314^\circ$ such that the polarization before the $\lambda/4$ plate was vertical. In figure \ref{pol2} the data is displayed.
+However the main result was obtained when the $\lambda/4$ was characterized. With every plate inserted, two measurements were made. In the first one the $\lambda/2$ was set to $267^\circ$ to get horizontal polarization, and the angle of the $\lambda/4$ scanned. This result is presented in figure \ref{pol1}. The third Stokes parameter is fitted with a sine function to get the angles at which the polarization is right and left circular. The right circular polarization is obtained at the maximum of the curve, while the left corresponds to the minimum. Moreover, when the third Stokes parameter is zero, the polarization results linear. The results are shown in table \ref{polarizationstable}.
+The second measurement also scanned the angle of the $\lambda/4$ plate, but this time the $\lambda/2$ was set to $312^\circ$ such that the polarization before the $\lambda/4$ plate was vertical. In figure \ref{pol2} the data is displayed. Again, to get the angle for the different polarizations, a sine function was fitted to the third Stokes parameter. The results yielded by the fit are summarized in table \ref{polarizationstable}.
+
+\begin{table}
+\centering
+\begin{tabular}{c c c}
+ \toprule
+    {Polarization} & {$\lambda/2$ ($^\circ$)} & {$\lambda/4$ ($^\circ$)} \\ \midrule\midrule
+   Horizontal & $267.2\pm 0.1$ & $49.7\pm0.1$  \\
+   Vertical   & $312.5\pm0.1$ & $48.1\pm0.1$\\ \midrule
+   Right circular & $267.2\pm 0.1$ & $4\pm 0.1$ \\
+   Right circular & $312.5\pm0.1$ & $93.1\pm0.1$\\\midrule
+  Left circular & $267.2\pm 0.1$ & $95.4\pm0.1$\\
+    Left circular & $312.5\pm0.1$  & $3.1\pm0.1$\\ \bottomrule
+\end{tabular}
+\caption{Angles}
+\label{polarizationstable}
+\end{table}
+
 
 \begin{figure}
 \centering
