@@ -38,7 +38,7 @@ Other than the waist size, we also measured stability of the system and the pola
 \label{razorscan}
 \end{figure}
 Measuring a micrometer waist is not easy task, the first approach we tried consists of mounting a razor blade on a translational stage. The stage is then moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. A filter was also inserted in order to not saturate the photodiode.
-The stage had to be moved with sub-micrometer precision, so the screw was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the whole profile of the beam, i.e. $W(z)$, the measurement procedure was as follow
+In the $z$ direction the stage was controlled with a manual screw with resolution of $1\,\mu$m. While in the $x$ direction, the stage had to be moved with sub-micrometer precision, so the screw was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the whole profile of the beam, i.e. $W(z)$, the measurement procedure was as follow
 \begin{itemize}
 \item Position blade at appropriate $z$ coordinate
 \item Scanning beam in $x$ direction with blade
@@ -80,16 +80,25 @@ In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional in
         \caption{}
        \label{fig:camera}
 \end{figure}
-The measurement procedure is also similar to the Knife-Edge case. For every desired $z$ displacement, a photo with the camera is taken, post processed, and then the camera is displaced to the new $z$ coordinate. Post processing is done by fitting the pixel value with a 2-dimensional Gaussian
+The measurement procedure is also similar to the Knife-Edge case. For every desired $z$ displacement, a photo with the camera is taken, post processed, and then the camera is displaced to the new $z$ coordinate. Post processing is done by fitting the pixel values with a 2-dimensional Gaussian
 \begin{equation}
-P = A \exp\left\{-\frac{(x-x_0)^2}{2\sigma_x^2}\right\} \exp\left\{-\frac{(y-y_0)^2}{2\sigma_y^2} \right\}
+P = A \exp\left\{-\frac{(x-x_0)^2}{2\sigma_x^2}\right\} \exp\left\{-\frac{(y-y_0)^2}{2\sigma_y^2} \right\}.
 \end{equation}
+The fit parameters are $A,x_0,y_0,\sigma_x,$ and $\sigma_y$. From the standard deviation $\sigma_x$ and $\sigma_y$ the width $W(z)$ in the $x$ and $y$ direction can be determined as $W_x = 2\cdot 1.6\cdot \sigma_x$ and respectively $W_y = 2\cdot 1.6\cdot \sigma_y$, where $1.6\,\mu$m is the pixel size.
+In figure \ref{fig:camera}, an example of the measurement taken is displayed. The full profiles $W_x(z)$ and $W_{y}(z)$ can be found in figure \ref{cameraprofile}. Even here anomalies can be noticed. The profile is asymmetric and does not follow equation \ref{waistprofile}, however a width $<2.5\,\mu$m has been measured. There could be some reasons behind this result, in some camera pictures some aberrations were visible. Moreover, some estimation error lead to non ideal placement of the lenses. Nonetheless, the smallest measured waist was satisfactory and enough for proceeding with the installation and doing more advanced experiments. But first few more characteristics of the system had to be tested, namely polarization and stability.
 
-In figure \ref{fig:camera}, an example of the measurement taken is displayed
-
-
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{cameraprofile}
+\caption{Profile of the Gaussian beam}
+\label{cameraprofile}
+\end{figure}
 
 \subsection{Polarization characterization}
+As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular at the ion position. Polarization can be changed with two plate: an half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}.
+
+
+
 \subsection{Stability}
 \section{Final installed system}
 \subsection{Ramsey interferometry}
