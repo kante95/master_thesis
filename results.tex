@@ -95,9 +95,24 @@ In figure \ref{fig:camera}, an example of the measurement taken is displayed. Th
 \end{figure}
 
 \subsection{Polarization characterization}
-As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular at the ion position. Polarization can be changed with two plate: an half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}.
+As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stoke's parameter \cite{stokes}. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
+As the mirror can change the polarization, the same characterization has been done after the mirror finding that the polarization is altered unless it is either horizontal or vertical.
+However the main result was obtained when the $\lambda/4$ was characterized. With every plate inserted, two measurements were made. In the first one the $\lambda/2$ was set to $267^\circ$ to get horizontal polarization, and the angle of the $\lambda/4$ scanned. This result is presented in figure \ref{pol1}. The third Stoke's parameter is fitted with a sine function to get the angles at which the polarization is right and left circular. We obtain right circular at $4\pm 0.1^\circ$, and left circular at $95.4\pm0.1^\circ$. It is also possible to get horizontal polarization at $49.7\pm0.1^\circ$. The semiperiod of the fit is $91.3\pm 0.3^\circ$.\\
+The second measurement also scanned the angle of the $\lambda/4$ plate, but this time the $\lambda/2$ was set to $314^\circ$ such that the polarization before the $\lambda/4$ plate was vertical. In figure \ref{pol2} the data is displayed.
 
+\begin{figure}
+\centering
+\includegraphics[width = \textwidth]{pol1}
+\caption{Polarization after the objective as a function of the $\lambda/4$ angle with $\lambda/2$ set to horizontal ($267^\circ$). Green line is a sine function fit.}
+\label{pol1}
+\end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width = \textwidth]{pol2}
+\caption{Polarization after the objective as a function of the $\lambda/4$ angle with $\lambda/2$ set to vertical ($314^\circ$). Green line is a sine function fit.}
+\label{pol2}
+\end{figure}
 
 \subsection{Stability}
 \section{Final installed system}
