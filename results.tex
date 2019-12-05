@@ -59,6 +59,7 @@ Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of
 
 
 \subsection{Waist: Camera}
+\label{waistcamera}
 Since the Knife-Edge method did not demonstrate particularly effective, if not to give an upper bound to the waist, a more direct approach has been subsequently adopted. We look directly into the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.6 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot better than the razor blade. A $\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
 In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional information about the beam shape and can be exploited to look for aberrations in the system. The setup is almost the same as figure \ref{razorscan}, but the camera now replaces the razor blade, and there is no need for scanning in the $x$ direction, as the $z$ is enough to reconstruct the profile $W(z)$. An additional gradient filter was used to optimize the light reaching the camera in order to not saturate it and get a visible signal.
 \begin{figure}
@@ -94,7 +95,7 @@ In figure \ref{fig:camera}, an example of the measurement taken is displayed. Th
 \label{cameraprofile}
 \end{figure}
 
-\subsection{Polarization characterization}
+\subsection{Polarization}
 As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. In order to characterize the polarization, the three Stokes parameters \cite{stokes} has been measured with a polarimeter from Sc\"after + Kirchhoff series SK010PA. Stokes parameters quantify the type of polarization of an electric field. Linear polarized light (vertical and horizontal) has all Stokes parameters set to 0, apart from the first one. Instead, the third parameter, when the others are zero, contains information about circular polarized light which goes from right to left. By rotating a plate and fitting a sine function to the appropriate Stokes parameter, it is possible to gain insights on the appropriate angle to set in order to obtain the desired polarization.\\
  The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stokes parameter. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
 As the mirror can change the polarization, the same characterization has been done after the mirror finding that the polarization is altered unless it is either horizontal or vertical.
@@ -133,6 +134,26 @@ The second measurement also scanned the angle of the $\lambda/4$ plate, but this
 \end{figure}
 
 \subsection{Stability}
+In the future the addressing system will be used for long experiments, it is therefore imperative to know the stability of the system in terms of polarization and beam pointing.
+This means knowing over the course of hours or days if the setup needs to be calibrated. Let us start with polarization stability, the polarization was measured with a polarimeter from Sc\"after + Kirchhoff series SK010PA after the objective. The polarization was set to be right circular: $\lambda/2$ set to $267^\circ$, and $\lambda/4$ set to $4^\circ$. We recorded the three Stokes parameters for a total of one hour, this data is plotted in figure \ref{polstability}. To the third parameter, 0.998 has been subtracted during the plot such that it would fit with the others. It can be seen that the polarization is stable over a period of one hour.\\
+Beam pointing stability regards the stability of the focus position, which could drift in any direction for any reason. To test the stability, we recorded the position of the focus for a period of one hour with the camera IDS model UI-1490LE-M-GL. The camera was position at the focus with the same setup discussed in section \ref{waistcamera}, and then a video was recorded. The video was later analyzed by tracking the the brightest pixel over time. In figure \ref{beampointing} we can see the horizontal $x$ and vertical $y$ position of such pixel. In the horizontal directions, fluctuations of one single pixel can be noticed, which could be a result of the light hitting between two pixels. In the vertical direction over it looks like the fluctuations are on the order of two pixels, if one consider one pixel a normal fluctuation, then the position might have shifted by one pixel over this period. This means that the focus position is stable within $1.6\,\mu$m/hour.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = \textwidth]{polstability}
+\caption{Right circular polarization stability over a period of one hour.}
+\label{polstability}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = \textwidth]{beampointing}
+\caption{Beam pointing stability over a period of one hour.}
+\label{beampointing}
+\end{figure}
+
+
+\newpage
 \section{Final installed system}
 \subsection{Ramsey interferometry}
 \begin{figure}[H]
