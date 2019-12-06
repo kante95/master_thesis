@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  6 DEC 2019 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  6 DEC 2019 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1426,66 +1426,71 @@ File: ./img/beampointing.png Graphic file (type png)
 Package pdftex.def Info: ./img/beampointing.png  used on input line 150.
 (pdftex.def)             Requested size: 452.96826pt x 236.04927pt.
  [48 <./img/pol2.png> <./img/polstability.png>] [49 <./img/beampointing.png (PN
-G copy)>]
-<img/AODscan.png, id=837, 987.2082pt x 452.4102pt>
+G copy)>] [50]
+<./img/rabiflops4.png, id=846, 987.2082pt x 452.4102pt>
+File: ./img/rabiflops4.png Graphic file (type png)
+<use ./img/rabiflops4.png>
+Package pdftex.def Info: ./img/rabiflops4.png  used on input line 182.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<img/AODscan.png, id=847, 987.2082pt x 452.4102pt>
 File: img/AODscan.png Graphic file (type png)
 <use img/AODscan.png>
-Package pdftex.def Info: img/AODscan.png  used on input line 177.
+Package pdftex.def Info: img/AODscan.png  used on input line 193.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<img/ac_stark.png, id=838, 987.2082pt x 452.4102pt>
+<img/ac_stark.png, id=848, 987.2082pt x 452.4102pt>
 File: img/ac_stark.png Graphic file (type png)
 <use img/ac_stark.png>
-Package pdftex.def Info: img/ac_stark.png  used on input line 182.
+Package pdftex.def Info: img/ac_stark.png  used on input line 198.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [50]
-<img/photonefficency_witherror.png, id=846, 987.2082pt x 452.4102pt>
+ [51 <./img/rabiflops4.png>]
+<img/photonefficency_witherror.png, id=857, 987.2082pt x 452.4102pt>
 File: img/photonefficency_witherror.png Graphic file (type png)
 <use img/photonefficency_witherror.png>
 Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
-189.
+205.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [51 <./img/AODscan.png> <./img/ac_stark.png>]
-<img/ramanlength_witherrors.png, id=855, 987.2082pt x 452.4102pt>
+ [52 <./img/AODscan.png> <./img/ac_stark.png>]
+<img/ramanlength_witherrors.png, id=866, 987.2082pt x 452.4102pt>
 File: img/ramanlength_witherrors.png Graphic file (type png)
 <use img/ramanlength_witherrors.png>
-Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 195
+Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 211
 .
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-) [52 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>]
-
-Chapter 6.
-[53
+) [53 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>]
+ [54
 
 ]
+Chapter 6.
+[55]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 169.
 
-(./main.bbl [54
+(./main.bbl [56
 
-] [55] [56]
+] [57] [58]
 Overfull \hbox (26.74219pt too wide) in paragraph at lines 182--184
 []\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
 ownload/fibercollimators60fc.pdf. 
  []
 
-) [57] [58
+) [59] [60
 
-] [59] [60]
+] [61] [62]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
- [61]
+ [63]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./main.aux (./frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EBC67C8AF2A1AD6A3FD6E8F3F320D087;2829.
+(rerunfilecheck)             Checksum: 0B6FBA43B92EEF35693BFD3795AE29F0;2829.
  ) 
 Here is how much of TeX's memory you used:
- 23837 strings out of 492623
- 401912 string characters out of 6135669
- 521690 words of memory out of 5000000
- 26906 multiletter control sequences out of 15000+600000
+ 23848 strings out of 492623
+ 402096 string characters out of 6135669
+ 521748 words of memory out of 5000000
+ 26911 multiletter control sequences out of 15000+600000
  559703 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,17n,94p,2847b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1512,10 +1517,10 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm144
 0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (67 pages, 5993720 bytes).
+Output written on main.pdf (69 pages, 6124555 bytes).
 PDF statistics:
- 1050 PDF objects out of 1200 (max. 8388607)
- 860 compressed objects within 9 object streams
- 268 named destinations out of 1000 (max. 500000)
- 26661 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1066 PDF objects out of 1200 (max. 8388607)
+ 872 compressed objects within 9 object streams
+ 273 named destinations out of 1000 (max. 500000)
+ 26666 words of extra memory for PDF output out of 29859 (max. 10000000)
 
