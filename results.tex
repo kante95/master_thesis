@@ -172,6 +172,13 @@ where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi f
 P_D = \cos^2\left(2\phi + 2\frac{\delta t}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 t}{4\Delta}\right).
 \end{equation}
 As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done $\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right]$. The phase $\phi$ can be chosen freely and all constants have been dropped as the data will be normalized.\\
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{sequence}
+\caption{Experiment sequence}
+\label{sequence}
+\end{figure}
+The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
 The 393nm pulse has to be off resonance from the transition to avoid spontaneous scattering in the $\text{S}_{1/2}\to \text{P}_{1/2}$ transition. The detuning is therefore chosen such that the ratio of the Stark shift $\delta$ and the spontaneous scattering rate $\Gamma_{eff}$ si at least 100. Using the value from table \ref{transitiontable}
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \implies \Delta \sim 3\,\text{GHz}.
@@ -183,13 +190,18 @@ Once the lasers were all set, four ions were loaded and the parameters of the ex
 \caption{Rabi flops on 4 ions.}
 \label{rabiflops4}
 \end{figure}
-Errorbars on the excitation probability has been assigned according to the error on estimating the probability of a binomial distribution with $N$ number of repetitions.
+Errorbars on the excitation probability have been assigned according to the error on estimating the probability of a binomial distribution with $N$ number of repetitions.
 \begin{equation}
 \sigma = \sqrt{\frac{P_{D}(1-P_{D})}{N}}.
 \end{equation}
-
-
-
+With this value of $\pi/2$ Ramsey fringes were measured, here the $\phi$ between the two pulses is scanned such that we can decide where to sit for the experiment with the 393nm.
+The fringes are in figure \ref{ramseyfringes}, as expected the curve follow a $\cos^2(\phi)$ behaviour. In order to get a better signal, one can decide to sit at the minimum of the curve, i.e. we set for the rest of the experiment $\phi = \pi/2$. The last parameter that has to be decided is the Raman length $\tau$, this value is chosen in a way that the shift caused by the 393nm light does not skip any fringe. This means that if we start from the minimum of figure \ref{ramseyfringes}, the Raman pulse should give an shift that brings the ion at maximum at excitation probability 1, without going further. To get this timing, $\tau$ can be scanned and the appropriate value can be visually chosen, the plot is in figure \ref{ACscan}. We set $\tau$ to be $25\,\mu$s, so we climb only about halfway the fringe.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{ramseyfringes}
+\caption{Ramsey fringes for 4 ions.}
+\label{ramseyfringes}
+\end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/AODscan}
@@ -197,8 +209,9 @@ Errorbars on the excitation probability has been assigned according to the error
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/ac_stark}
+\includegraphics[width=\textwidth]{img/ACscan}
 \caption{393nm AC-Stark flops}
+\label{ACscan}
 \end{figure}
 
 \subsection{Photons production}
