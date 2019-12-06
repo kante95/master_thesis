@@ -183,7 +183,7 @@ The 393nm pulse has to be off resonance from the transition to avoid spontaneous
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \implies \Delta \sim 3\,\text{GHz}.
 \end{equation}
-Once the lasers were all set, four ions were loaded and the parameters of the experiment optimized. What has to be found for the experiment is the length of a $\pi/2$ pulse of 729 light and the length $\tau$ of the 393nm pulse. For the first parameter, Rabi flops were measured and the length of the $\pi/2$ pulse is directly estimated to be 4.2 $\mu$s. These flops are showed in figure \ref{rabiflops4}
+Once the lasers were all set, four ions were loaded with endcap voltages of 714 V and 700V, and the parameters of the experiment optimized. What has to be found for the experiment is the length of a $\pi/2$ pulse of 729 light and the length $\tau$ of the 393nm pulse. For the first parameter, Rabi flops were measured and the length of the $\pi/2$ pulse is directly estimated to be 4.2 $\mu$s. These flops are showed in figure \ref{rabiflops4}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{rabiflops4}
@@ -195,18 +195,27 @@ Errorbars on the excitation probability have been assigned according to the erro
 \sigma = \sqrt{\frac{P_{D}(1-P_{D})}{N}}.
 \end{equation}
 With this value of $\pi/2$ Ramsey fringes were measured, here the $\phi$ between the two pulses is scanned such that we can decide where to sit for the experiment with the 393nm.
-The fringes are in figure \ref{ramseyfringes}, as expected the curve follow a $\cos^2(\phi)$ behaviour. In order to get a better signal, one can decide to sit at the minimum of the curve, i.e. we set for the rest of the experiment $\phi = \pi/2$. The last parameter that has to be decided is the Raman length $\tau$, this value is chosen in a way that the shift caused by the 393nm light does not skip any fringe. This means that if we start from the minimum of figure \ref{ramseyfringes}, the Raman pulse should give an shift that brings the ion at maximum at excitation probability 1, without going further. To get this timing, $\tau$ can be scanned and the appropriate value can be visually chosen, the plot is in figure \ref{ACscan}. We set $\tau$ to be $25\,\mu$s, so we climb only about halfway the fringe.
+The fringes are in figure \ref{ramseyfringes}, as expected the curve follow a $\cos^2(\phi)$ behaviour. In order to get a better signal, one can decide to sit at the minimum of the curve, i.e. we set for the rest of the experiment $\phi = \pi/2$. The last parameter that has to be decided is the Raman length $\tau$, this value is chosen in a way that the shift caused by the 393nm light does not skip any fringe. This means that if we start from the minimum of figure \ref{ramseyfringes}, the Raman pulse should give an shift that brings the ion at maximum at excitation probability 1, without going further. To get this timing, $\tau$ can be scanned and the appropriate value can be visually chosen, the plot is in figure \ref{ACscan}. We set $\tau$ to be $25\,\mu$s, so we climb only about halfway the fringe. Lastly we set the dead time to be $5\,\mu$s.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{ramseyfringes}
 \caption{Ramsey fringes for 4 ions.}
 \label{ramseyfringes}
 \end{figure}
+To get the profile of the addressing beam, the AOD frequency can be now scanned. During this scan the beam is moved from ion to ion and its shape is probed by the ions. The result
+after post analysis can be seen in figure \ref{AODscan}. Here the intensity of the beam has been determined from the probability $P_D$ as discussed, errors are propagated accordingly.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/AODscan}
-\caption{3 ions scanned}
+\includegraphics[width=\textwidth]{img/AODScan}
+\caption{AOD scanning four ions.}
+\label{AODscan}
 \end{figure}
+To calibrate the micrometer scale, the position in MHz of two peaks have been taken, then from the axial frequency the position of the ions in the trap can be estimated (cfr. section \ref{ionstrings}), by comparing the two values the conversion factor is found.\\
+The four peaks have been fitted with a Gaussian function to obtain the waist of the beam when focused on the different ions. The waist yielded by the fits are from right to left are
+$\omega_1 = 1.23\pm 0.20\,\mu$m, $\omega_2 = 1.25\pm 0.19\,\mu$m, $ \omega_3 = 1.35\pm 0.22\,\mu$m, $\omega_4 = 1.39\pm 0.20\,\mu$m.\\
+The addressing error can also be estimated from the Stark flops in figure \ref{ACscan}. In this measurement, the addressing beam was focused on one ion and the Raman length $\tau$ is scanned. This increases the interaction time of the laser with the ions, and if the interaction is long enough even the tail of a Gaussian can induce some excitation on the ions on the side of the one being addressed. In the scan displayed, the pulse reached 300 $\mu$s and there is no excitation on any ion apart from the one flopping. Others scans went up to 500 $\mu$s, and still no visual excitation is present. While this means that no quantitative number can be determined for the addressing error, an upper bound can still be given. For an excitation to appear right after 500 $\mu$s, the addressing error should be at most $\Omega_2^2/\Omega_3^2< 10^{-3}$ (?)
+
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/ACscan}
@@ -214,7 +223,8 @@ The fringes are in figure \ref{ramseyfringes}, as expected the curve follow a $\
 \label{ACscan}
 \end{figure}
 
-\subsection{Photons production}
+\subsection{Photon production}
+The main goal of having an addressed 393nm setup is to generate single photon from individual ion in a chain. In this experiment we tested this feature by loading a string of 3 ions, pointing the 393nm light at the central ion and monitoring the photon production and the ions state as well.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/photonefficency_witherror}
