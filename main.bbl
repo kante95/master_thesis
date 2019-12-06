@@ -198,4 +198,11 @@ William~H. McMaster.
 \newblock Polarization and the stokes parameters.
 \newblock {\em American Journal of Physics}, 22(6):351--362, 1954.
 
+\bibitem{starkshift}
+H.~H\"affner, S.~Gulde, M.~Riebe, G.~Lancaster, C.~Becher, J.~Eschner,
+  F.~Schmidt-Kaler, and R.~Blatt.
+\newblock Precision measurement and compensation of optical stark shifts for an
+  ion-trap quantum processor.
+\newblock {\em Phys. Rev. Lett.}, 90:143602, Apr 2003.
+
 \end{thebibliography}

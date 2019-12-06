@@ -155,9 +155,23 @@ Beam pointing stability regards the stability of the focus position, which could
 
 \newpage
 \section{Final installed system}
-After the tests presented in the previous sections, the setup was installed next to the ion chamber and focused on the ions as described in section \ref{design4}. Here more advanced quantum optics experiment could be carried out. The first one is a Ramsey Spectroscopy experiment, where Ramsey fringes has been measured on four loaded ions. This experiment allowed a direct measure of the focus spot and the addressing error. The second experiment involves three ions and the goal was to generate photons via Raman process from one single ion leaving the state of the other two unaltered.
+After the tests presented in the previous sections, the setup was installed next to the ion chamber and focused on the ions as described in section \ref{design4}. As there is no more physical access to the focus spot, more advanced quantum optics experiment have to be be carried out in order to measure properties of the system as focus spot and addressing error. The first experiment designed aims exactly at measuring these two quantities: Ramsey fringes were measured on four loaded ions, from which the beam shape can be inferred.
+The second experiment that we have done involves three ions and the goal was to generate photons via Raman process from one single ion leaving the state of the other two unaltered, demonstrating therefore the possibility to emit single photons from individual ions in a string.
 
 \subsection{Ramsey interferometry}
+Ions can be used as sensitive tools for beam profiling, unfortunately the 393 nm light excites a dipole transition with a short lived excited state. Therefore, a direct excitation followed by a measurement is not fast enough to gain any information. Ideally, the 729nm qubit transition should be used, as here state readout is available and the transition is metastable. This is possible as the 393nm transition shares the ground state with the qubit transition, so the 393nm laser can be detuned such that the AC stark shift caused changes the phase of the qubit producing measurable effects. Measurements of the Stark shift can be done with a Ramsey interference experiment \cite{starkshift}.
+The idea of the experiment is to send a resonant $\pi/2$ pulse at 729nm, which bring the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729nm pulse will depend on the shift induced by the 393nm laser. By calculating the final probability $P_D$ it is possible to infer the power of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+\begin{equation}
+\begin{split}
+\ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
+&= \frac{1}{2}\left(e^{-i\frac{\delta}{2}t}-e^{-i\phi}\right)\ket{S}-\frac{i}{2}\left(1 + e^{-i\frac{\delta}{2}t} e^{-i\phi}\right)\ket{D}
+\end{split}
+\end{equation}
+where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi frequency of the 393nm light that we want to measure. The final probability is then
+\begin{equation}
+P_D = \cos^2\left(2\phi + 2\frac{\delta t}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 t}{4\Delta}\right).
+\end{equation}
+As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done $\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-\phi \right]$. The phase $\phi$ can be chosen freely and all constants have been dropped as the data will be normalized.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/AODscan}
