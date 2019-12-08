@@ -224,18 +224,23 @@ The addressing error can also be estimated from the Stark flops in figure \ref{A
 \end{figure}
 
 \subsection{Photon production}
-The main goal of having an addressed 393nm setup is to generate single photon from individual ion in a chain. In this experiment we tested this feature by loading a string of 3 ions, pointing the 393nm light at the central ion and monitoring the photon production and the ions state as well.
+The main goal of having an addressed 393nm setup is to generate single photon from individual ion in a chain. In this experiment we tested this feature by loading a string of 3 ions, pointing the 393nm light at the central ion and monitoring the photon generation and the ions state as well. \\
+A single photon is produced by a pulse of 393nm light via Raman process, in the experiment we scanned the length of this pulse to obtain an integrated wavepacket, i.e. the cumulative probability of detecting a photon as a function of the pulse length. The generated photon is emitted into the cavity, transmitted through a mirror and couple into a fiber that goes to a superconducting nanowire single-photon detector (SNSPD) which clicks if a photon is detected. The detectors have two channels corresponding to two different photon polarizations. The experiment includes an initial stage of Doppler cooling and a final stage of state detection. The measurement is repeated $N$ times to get the average photon probability and the excitation probability. These two quantities are plotted in figure \ref{probphoton} and \ref{probion}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/photonefficency_witherror}
 \caption{Generated photon efficency}
+\label{probphoton}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/ramanlength_witherrors}
 \caption{Excitation of ion while emitting photon}
+\label{probion}
 \end{figure}
 
-- g2 plot?
+
 \section{Final properties summary}
+?
