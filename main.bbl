@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{quantumtech}
+Antonio Ac{\'{\i}}n, Immanuel Bloch, Harry Buhrman, Tommaso Calarco,
+  Christopher Eichler, Jens Eisert, Daniel Esteve, Nicolas Gisin, Steffen~J
+  Glaser, Fedor Jelezko, Stefan Kuhr, Maciej Lewenstein, Max~F Riedel, Piet~O
+  Schmidt, Rob Thew, Andreas Wallraff, Ian Walmsley, and Frank~K Wilhelm.
+\newblock The quantum technologies roadmap: a european community view.
+\newblock {\em New Journal of Physics}, 20(8):080201, aug 2018.
+
 \bibitem{shor}
 Peter~W. Shor.
 \newblock Polynomial-time algorithms for prime factorization and discrete
@@ -12,16 +20,27 @@ Lov~K. Grover.
 \newblock In {\em Proceedings of the Twenty-eighth Annual ACM Symposium on
   Theory of Computing}, STOC '96, pages 212--219, New York, NY, USA, 1996. ACM.
 
-\bibitem{divincenzo}
-David~P. DiVincenzo.
-\newblock The physical implementation of quantum computation.
-\newblock {\em Fortschritte der Physik}, 48(9‐11):771--783, 2000.
+\bibitem{Wehnereaam9288}
+Stephanie Wehner, David Elkouss, and Ronald Hanson.
+\newblock Quantum internet: A vision for the road ahead.
+\newblock {\em Science}, 362(6412), 2018.
 
-\bibitem{qkd}
-Peter~W. Shor and John Preskill.
-\newblock Simple proof of security of the bb84 quantum key distribution
-  protocol.
-\newblock {\em Phys. Rev. Lett.}, 85:441--444, Jul 2000.
+\bibitem{qkd2}
+{\em Proceedings of IEEE International Conference on Computers, Systems and
+  Signal Processing}, 1984.
+
+\bibitem{secureident}
+Ivan~B. Damgard, Serge Fehr, Louis Salvail, and Christian Schaffner.
+\newblock Cryptography in the bounded quantum-storage model.
+\newblock In {\em Proceedings of the 46th Annual IEEE Symposium on Foundations
+  of Computer Science}, FOCS '05, pages 449--458, Washington, DC, USA, 2005.
+  IEEE Computer Society.
+
+\bibitem{blindcomputation}
+Joseph~F. Fitzsimons.
+\newblock Private quantum computation: an introduction to blind quantum
+  computing and related protocols.
+\newblock {\em npj Quantum Information}, 3(1), jun 2017.
 
 \bibitem{quantumclocks}
 P.~K{\'{o}}m{\'{a}}r, E.~M. Kessler, M.~Bishof, L.~Jiang, A.~S. S{\o}rensen,
@@ -29,23 +48,49 @@ P.~K{\'{o}}m{\'{a}}r, E.~M. Kessler, M.~Bishof, L.~Jiang, A.~S. S{\o}rensen,
 \newblock A quantum network of clocks.
 \newblock {\em Nature Physics}, 10(8):582--587, jun 2014.
 
+\bibitem{telescope}
+Daniel Gottesman, Thomas Jennewein, and Sarah Croke.
+\newblock Longer-baseline telescopes using quantum repeaters.
+\newblock {\em Phys. Rev. Lett.}, 109:070503, Aug 2012.
+
+\bibitem{distributedcomputing}
+Vasil~S. Denchev and Gopal Pandurangan.
+\newblock Distributed quantum computing: A new frontier in distributed systems
+  or science fiction?
+\newblock {\em SIGACT News}, 39(3):77--95, September 2008.
+
+\bibitem{divincenzo}
+David~P. DiVincenzo.
+\newblock The physical implementation of quantum computation.
+\newblock {\em Fortschritte der Physik}, 48(9‐11):771--783, 2000.
+
+\bibitem{trappedions}
+Colin~D. Bruzewicz, John Chiaverini, Robert McConnell, and Jeremy~M. Sage.
+\newblock Trapped-ion quantum computing: Progress and challenges.
+\newblock {\em Applied Physics Reviews}, 6(2):021314, 2019.
+
+\bibitem{ionquantumcomputer}
+J.~I. Cirac and P.~Zoller.
+\newblock Quantum computations with cold trapped ions.
+\newblock {\em Phys. Rev. Lett.}, 74:4091--4094, May 1995.
+
 \bibitem{stuteinterface}
 Andreas Stute, Bernardo Casabone, Bernhard Brandst{\"a}tter, Dr.~M. Habicher,
   H.~G. Barros, Piet~O. Schmidt, Tracy~E. Northup, and Rainer Blatt.
 \newblock Toward an ion–photon quantum interface in an optical cavity.
 \newblock {\em Applied Physics B}, 107:1145--1157, 2012.
 
-\bibitem{hempel}
-Cornelius Hempel.
-\newblock {\em Digital quantum simulation, Schroedinger cat state spectroscopy
-  and setting up a linear ion trap}.
-\newblock PhD thesis, University of Innsbruck, 2014.
-
 \bibitem{chuang}
 Isaac L.~Chuang Michael A.~Nielsen.
 \newblock {\em Quantum computation and quantum information}.
 \newblock Cambridge Series on Information and the Natural Sciences. Cambridge
   University Press, 1 edition, 2004.
+
+\bibitem{hempel}
+Cornelius Hempel.
+\newblock {\em Digital quantum simulation, Schroedinger cat state spectroscopy
+  and setting up a linear ion trap}.
+\newblock PhD thesis, University of Innsbruck, 2014.
 
 \bibitem{steck}
 Daniel~Adam Steck.
@@ -126,6 +171,13 @@ C.~S. Williams.
 \newblock Gaussian beam formulas from diffraction theory.
 \newblock {\em Appl. Opt.}, 12(4):872--876, Apr 1973.
 
+\bibitem{phasedarray}
+R.~{Pieper}, D.~{Koslover}, and H.~{Ndwata}.
+\newblock Combining phased array and hamming sound apodization techniques to
+  improve the acousto-optic diffraction bandwidth.
+\newblock In {\em 2009 41st Southeastern Symposium on System Theory}, pages
+  311--316, March 2009.
+
 \bibitem{beryllium}
 H.~Ball, M.~W. Lee, S.~D. Gensemer, and M.~J. Biercuk.
 \newblock A high-power 626 nm diode laser system for beryllium ion trapping.
@@ -204,5 +256,11 @@ H.~H\"affner, S.~Gulde, M.~Riebe, G.~Lancaster, C.~Becher, J.~Eschner,
 \newblock Precision measurement and compensation of optical stark shifts for an
   ion-trap quantum processor.
 \newblock {\em Phys. Rev. Lett.}, 90:143602, Apr 2003.
+
+\bibitem{quantumoptics}
+Mark Fox.
+\newblock {\em Quantum optics: an introduction}.
+\newblock Oxford Master Series in Physics, 6. Oxford University Press, USA,
+  2006.
 
 \end{thebibliography}
