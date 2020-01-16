@@ -86,6 +86,13 @@ Isaac L.~Chuang Michael A.~Nielsen.
 \newblock Cambridge Series on Information and the Natural Sciences. Cambridge
   University Press, 1 edition, 2004.
 
+\bibitem{starkshift}
+H.~H\"affner, S.~Gulde, M.~Riebe, G.~Lancaster, C.~Becher, J.~Eschner,
+  F.~Schmidt-Kaler, and R.~Blatt.
+\newblock Precision measurement and compensation of optical stark shifts for an
+  ion-trap quantum processor.
+\newblock {\em Phys. Rev. Lett.}, 90:143602, Apr 2003.
+
 \bibitem{hempel}
 Cornelius Hempel.
 \newblock {\em Digital quantum simulation, Schroedinger cat state spectroscopy
@@ -249,13 +256,6 @@ Bruce Cannon, Timothy~S. Gardner, and Donald~K. Cohen.
 William~H. McMaster.
 \newblock Polarization and the stokes parameters.
 \newblock {\em American Journal of Physics}, 22(6):351--362, 1954.
-
-\bibitem{starkshift}
-H.~H\"affner, S.~Gulde, M.~Riebe, G.~Lancaster, C.~Becher, J.~Eschner,
-  F.~Schmidt-Kaler, and R.~Blatt.
-\newblock Precision measurement and compensation of optical stark shifts for an
-  ion-trap quantum processor.
-\newblock {\em Phys. Rev. Lett.}, 90:143602, Apr 2003.
 
 \bibitem{quantumoptics}
 Mark Fox.
