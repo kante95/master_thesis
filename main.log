@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.11)  17 JAN 2020 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.11)  17 JAN 2020 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,6 +293,14 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen123
 \@vwid@roff=\dimen124
 ))
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen125
+\WF@size=\dimen126
+\c@WF@wrappedlines=\count93
+\WF@box=\box30
+\WF@everypar=\toks19
+Package: wrapfig 2003/01/31  v 3.6
+)
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2019/04/01 v2.17c AMS math features
 \@mathmargin=\skip47
@@ -303,51 +311,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen125
+\@emptytoks=\toks20
+\ex@=\dimen127
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen126
+\pmbraise@=\dimen128
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen127
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip11
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
-\tag@help=\toks20
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
-\andhelp@=\toks21
-\eqnshift@=\dimen128
-\alignsep@=\dimen129
-\tagshift@=\dimen130
-\tagwidth@=\dimen131
-\totwidth@=\dimen132
-\lineht@=\dimen133
-\@envbody=\toks22
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks21
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks22
+\eqnshift@=\dimen130
+\alignsep@=\dimen131
+\tagshift@=\dimen132
+\tagwidth@=\dimen133
+\totwidth@=\dimen134
+\lineht@=\dimen135
+\@envbody=\toks23
 \multlinegap=\skip48
 \multlinetaggap=\skip49
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2855.
 LaTeX Info: Redefining \] on input line 2856.
 )
@@ -364,15 +372,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
 \thm@preskip=\skip50
 \thm@postskip=\skip51
 \thm@headsep=\skip52
-\dth@everypar=\toks29
+\dth@everypar=\toks30
 )
 (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
@@ -398,7 +406,7 @@ Package ifluatex Info: LuaTeX not detected.
 ))))
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count105
+\etb@tempcnta=\count106
 ))
 (/usr/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -417,25 +425,26 @@ Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen134
-\captionmargin@=\dimen135
-\captionwidth=\dimen136
-\caption@tempdima=\dimen137
-\caption@indent=\dimen138
-\caption@parindent=\dimen139
-\caption@hangindent=\dimen140
+\captionmargin=\dimen136
+\captionmargin@=\dimen137
+\captionwidth=\dimen138
+\caption@tempdima=\dimen139
+\caption@indent=\dimen140
+\caption@parindent=\dimen141
+\caption@hangindent=\dimen142
 )
-\c@caption@flags=\count106
-\c@ContinuedFloat=\count107
+\c@caption@flags=\count107
+\c@ContinuedFloat=\count108
+Package caption Info: wrapfig package is loaded.
 )
-\c@subfigure=\count108
-\c@subtable=\count109
+\c@subfigure=\count109
+\c@subtable=\count110
 )
 (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count110
-\c@@ppsavesec=\count111
-\c@@ppsaveapp=\count112
+\c@@pps=\count111
+\c@@ppsavesec=\count112
+\c@@ppsaveapp=\count113
 )
 (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
@@ -448,26 +457,26 @@ Package: expl3 2019-10-28 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2019-10-28 L3 programming layer (code)
-\c_max_int=\count113
-\l_tmpa_int=\count114
-\l_tmpb_int=\count115
-\g_tmpa_int=\count116
-\g_tmpb_int=\count117
-\l__seq_internal_a_int=\count118
-\l__seq_internal_b_int=\count119
-\g__kernel_prg_map_int=\count120
-\c__ior_term_noprompt_ior=\count121
-\c_log_iow=\count122
-\l_iow_line_count_int=\count123
-\l__iow_line_target_int=\count124
-\l__iow_one_indent_int=\count125
-\l__iow_indent_int=\count126
-\c_zero_dim=\dimen141
-\c_max_dim=\dimen142
-\l_tmpa_dim=\dimen143
-\l_tmpb_dim=\dimen144
-\g_tmpa_dim=\dimen145
-\g_tmpb_dim=\dimen146
+\c_max_int=\count114
+\l_tmpa_int=\count115
+\l_tmpb_int=\count116
+\g_tmpa_int=\count117
+\g_tmpb_int=\count118
+\l__seq_internal_a_int=\count119
+\l__seq_internal_b_int=\count120
+\g__kernel_prg_map_int=\count121
+\c__ior_term_noprompt_ior=\count122
+\c_log_iow=\count123
+\l_iow_line_count_int=\count124
+\l__iow_line_target_int=\count125
+\l__iow_one_indent_int=\count126
+\l__iow_indent_int=\count127
+\c_zero_dim=\dimen143
+\c_max_dim=\dimen144
+\l_tmpa_dim=\dimen145
+\l_tmpb_dim=\dimen146
+\g_tmpa_dim=\dimen147
+\g_tmpb_dim=\dimen148
 \c_zero_skip=\skip53
 \c_max_skip=\skip54
 \l_tmpa_skip=\skip55
@@ -480,123 +489,123 @@ Package: expl3 2019-10-28 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count127
-\l__intarray_loop_int=\count128
-\c__intarray_sp_dim=\dimen147
-\g__intarray_font_int=\count129
-\c__fp_leading_shift_int=\count130
-\c__fp_middle_shift_int=\count131
-\c__fp_trailing_shift_int=\count132
-\c__fp_big_leading_shift_int=\count133
-\c__fp_big_middle_shift_int=\count134
-\c__fp_big_trailing_shift_int=\count135
-\c__fp_Bigg_leading_shift_int=\count136
-\c__fp_Bigg_middle_shift_int=\count137
-\c__fp_Bigg_trailing_shift_int=\count138
-\c__kernel_randint_max_int=\count139
-\g__fp_array_int=\count140
-\l__fp_array_loop_int=\count141
-\l__sort_length_int=\count142
-\l__sort_min_int=\count143
-\l__sort_top_int=\count144
-\l__sort_max_int=\count145
-\l__sort_true_max_int=\count146
-\l__sort_block_int=\count147
-\l__sort_begin_int=\count148
-\l__sort_end_int=\count149
-\l__sort_A_int=\count150
-\l__sort_B_int=\count151
-\l__sort_C_int=\count152
-\l__str_internal_int=\count153
-\c__str_replacement_char_int=\count154
-\l__tl_analysis_normal_int=\count155
-\l__tl_analysis_index_int=\count156
-\l__tl_analysis_nesting_int=\count157
-\l__tl_analysis_type_int=\count158
-\l__regex_internal_a_int=\count159
-\l__regex_internal_b_int=\count160
-\l__regex_internal_c_int=\count161
-\l__regex_balance_int=\count162
-\l__regex_group_level_int=\count163
-\l__regex_mode_int=\count164
-\c__regex_cs_in_class_mode_int=\count165
-\c__regex_cs_mode_int=\count166
-\l__regex_catcodes_int=\count167
-\l__regex_default_catcodes_int=\count168
-\c__regex_catcode_D_int=\count169
-\c__regex_catcode_S_int=\count170
-\c__regex_catcode_L_int=\count171
-\c__regex_catcode_O_int=\count172
-\c__regex_catcode_A_int=\count173
-\c__regex_all_catcodes_int=\count174
-\l__regex_show_lines_int=\count175
-\l__regex_min_state_int=\count176
-\l__regex_max_state_int=\count177
-\l__regex_left_state_int=\count178
-\l__regex_right_state_int=\count179
-\l__regex_capturing_group_int=\count180
-\l__regex_min_pos_int=\count181
-\l__regex_max_pos_int=\count182
-\l__regex_curr_pos_int=\count183
-\l__regex_start_pos_int=\count184
-\l__regex_success_pos_int=\count185
-\l__regex_curr_char_int=\count186
-\l__regex_curr_catcode_int=\count187
-\l__regex_last_char_int=\count188
-\l__regex_case_changed_char_int=\count189
-\l__regex_curr_state_int=\count190
-\l__regex_step_int=\count191
-\l__regex_min_active_int=\count192
-\l__regex_max_active_int=\count193
-\l__regex_replacement_csnames_int=\count194
-\l__regex_match_count_int=\count195
-\l__regex_min_submatch_int=\count196
-\l__regex_submatch_int=\count197
-\l__regex_zeroth_submatch_int=\count198
-\g__regex_trace_regex_int=\count199
-\c_empty_box=\box32
-\l_tmpa_box=\box33
-\l_tmpb_box=\box34
-\g_tmpa_box=\box35
-\g_tmpb_box=\box36
-\l__box_top_dim=\dimen148
-\l__box_bottom_dim=\dimen149
-\l__box_left_dim=\dimen150
-\l__box_right_dim=\dimen151
-\l__box_top_new_dim=\dimen152
-\l__box_bottom_new_dim=\dimen153
-\l__box_left_new_dim=\dimen154
-\l__box_right_new_dim=\dimen155
-\l__box_internal_box=\box37
-\l__coffin_internal_box=\box38
-\l__coffin_internal_dim=\dimen156
-\l__coffin_offset_x_dim=\dimen157
-\l__coffin_offset_y_dim=\dimen158
-\l__coffin_x_dim=\dimen159
-\l__coffin_y_dim=\dimen160
-\l__coffin_x_prime_dim=\dimen161
-\l__coffin_y_prime_dim=\dimen162
-\c_empty_coffin=\box39
-\l__coffin_aligned_coffin=\box40
-\l__coffin_aligned_internal_coffin=\box41
-\l_tmpa_coffin=\box42
-\l_tmpb_coffin=\box43
-\g_tmpa_coffin=\box44
-\g_tmpb_coffin=\box45
-\l__coffin_bounding_shift_dim=\dimen163
-\l__coffin_left_corner_dim=\dimen164
-\l__coffin_right_corner_dim=\dimen165
-\l__coffin_bottom_corner_dim=\dimen166
-\l__coffin_top_corner_dim=\dimen167
-\l__coffin_scaled_total_height_dim=\dimen168
-\l__coffin_scaled_width_dim=\dimen169
-\c__coffin_empty_coffin=\box46
-\l__coffin_display_coffin=\box47
-\l__coffin_display_coord_coffin=\box48
-\l__coffin_display_pole_coffin=\box49
-\l__coffin_display_offset_dim=\dimen170
-\l__coffin_display_x_dim=\dimen171
-\l__coffin_display_y_dim=\dimen172
+\l_keys_choice_int=\count128
+\l__intarray_loop_int=\count129
+\c__intarray_sp_dim=\dimen149
+\g__intarray_font_int=\count130
+\c__fp_leading_shift_int=\count131
+\c__fp_middle_shift_int=\count132
+\c__fp_trailing_shift_int=\count133
+\c__fp_big_leading_shift_int=\count134
+\c__fp_big_middle_shift_int=\count135
+\c__fp_big_trailing_shift_int=\count136
+\c__fp_Bigg_leading_shift_int=\count137
+\c__fp_Bigg_middle_shift_int=\count138
+\c__fp_Bigg_trailing_shift_int=\count139
+\c__kernel_randint_max_int=\count140
+\g__fp_array_int=\count141
+\l__fp_array_loop_int=\count142
+\l__sort_length_int=\count143
+\l__sort_min_int=\count144
+\l__sort_top_int=\count145
+\l__sort_max_int=\count146
+\l__sort_true_max_int=\count147
+\l__sort_block_int=\count148
+\l__sort_begin_int=\count149
+\l__sort_end_int=\count150
+\l__sort_A_int=\count151
+\l__sort_B_int=\count152
+\l__sort_C_int=\count153
+\l__str_internal_int=\count154
+\c__str_replacement_char_int=\count155
+\l__tl_analysis_normal_int=\count156
+\l__tl_analysis_index_int=\count157
+\l__tl_analysis_nesting_int=\count158
+\l__tl_analysis_type_int=\count159
+\l__regex_internal_a_int=\count160
+\l__regex_internal_b_int=\count161
+\l__regex_internal_c_int=\count162
+\l__regex_balance_int=\count163
+\l__regex_group_level_int=\count164
+\l__regex_mode_int=\count165
+\c__regex_cs_in_class_mode_int=\count166
+\c__regex_cs_mode_int=\count167
+\l__regex_catcodes_int=\count168
+\l__regex_default_catcodes_int=\count169
+\c__regex_catcode_D_int=\count170
+\c__regex_catcode_S_int=\count171
+\c__regex_catcode_L_int=\count172
+\c__regex_catcode_O_int=\count173
+\c__regex_catcode_A_int=\count174
+\c__regex_all_catcodes_int=\count175
+\l__regex_show_lines_int=\count176
+\l__regex_min_state_int=\count177
+\l__regex_max_state_int=\count178
+\l__regex_left_state_int=\count179
+\l__regex_right_state_int=\count180
+\l__regex_capturing_group_int=\count181
+\l__regex_min_pos_int=\count182
+\l__regex_max_pos_int=\count183
+\l__regex_curr_pos_int=\count184
+\l__regex_start_pos_int=\count185
+\l__regex_success_pos_int=\count186
+\l__regex_curr_char_int=\count187
+\l__regex_curr_catcode_int=\count188
+\l__regex_last_char_int=\count189
+\l__regex_case_changed_char_int=\count190
+\l__regex_curr_state_int=\count191
+\l__regex_step_int=\count192
+\l__regex_min_active_int=\count193
+\l__regex_max_active_int=\count194
+\l__regex_replacement_csnames_int=\count195
+\l__regex_match_count_int=\count196
+\l__regex_min_submatch_int=\count197
+\l__regex_submatch_int=\count198
+\l__regex_zeroth_submatch_int=\count199
+\g__regex_trace_regex_int=\count266
+\c_empty_box=\box33
+\l_tmpa_box=\box34
+\l_tmpb_box=\box35
+\g_tmpa_box=\box36
+\g_tmpb_box=\box37
+\l__box_top_dim=\dimen150
+\l__box_bottom_dim=\dimen151
+\l__box_left_dim=\dimen152
+\l__box_right_dim=\dimen153
+\l__box_top_new_dim=\dimen154
+\l__box_bottom_new_dim=\dimen155
+\l__box_left_new_dim=\dimen156
+\l__box_right_new_dim=\dimen157
+\l__box_internal_box=\box38
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen158
+\l__coffin_offset_x_dim=\dimen159
+\l__coffin_offset_y_dim=\dimen160
+\l__coffin_x_dim=\dimen161
+\l__coffin_y_dim=\dimen162
+\l__coffin_x_prime_dim=\dimen163
+\l__coffin_y_prime_dim=\dimen164
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\g_tmpa_coffin=\box45
+\g_tmpb_coffin=\box46
+\l__coffin_bounding_shift_dim=\dimen165
+\l__coffin_left_corner_dim=\dimen166
+\l__coffin_right_corner_dim=\dimen167
+\l__coffin_bottom_corner_dim=\dimen168
+\l__coffin_top_corner_dim=\dimen169
+\l__coffin_scaled_total_height_dim=\dimen170
+\l__coffin_scaled_width_dim=\dimen171
+\c__coffin_empty_coffin=\box47
+\l__coffin_display_coffin=\box48
+\l__coffin_display_coord_coffin=\box49
+\l__coffin_display_pole_coffin=\box50
+\l__coffin_display_offset_dim=\dimen172
+\l__coffin_display_x_dim=\dimen173
+\l__coffin_display_y_dim=\dimen174
 \g__char_data_ior=\read1
 
 (/usr/share/texmf-dist/tex/latex/l3kernel/l3deprecation.def
@@ -604,14 +613,14 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count266
-\l__pdf_internal_box=\box50
+\l__kernel_color_stack_int=\count267
+\l__pdf_internal_box=\box51
 ))
 Package: xparse 2019-10-11 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count267
-\g__xparse_grabber_int=\count268
-\l__xparse_m_args_int=\count269
-\l__xparse_v_nesting_int=\count270
+\l__xparse_current_arg_int=\count268
+\g__xparse_grabber_int=\count269
+\l__xparse_m_args_int=\count270
+\l__xparse_v_nesting_int=\count271
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -622,15 +631,15 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count271
+\c@section@level=\count272
 LaTeX Info: Redefining \ref on input line 356.
 LaTeX Info: Redefining \pageref on input line 356.
 )
 (/usr/share/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks30
-\footnotemargin=\dimen173
-\c@pp@next@reset=\count272
+\FN@temptoken=\toks31
+\footnotemargin=\dimen175
+\c@pp@next@reset=\count273
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -651,11 +660,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/10/15 3.35 Babel common definitions
-\babel@savecnt=\count273
-\U@D=\dimen174
+\babel@savecnt=\count274
+\U@D=\dimen176
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count274
+\bbl@dirlevel=\count275
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -674,30 +683,30 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
-\Gm@bindingoffset=\dimen175
-\Gm@wd@mp=\dimen176
-\Gm@odd@mp=\dimen177
-\Gm@even@mp=\dimen178
-\Gm@layoutwidth=\dimen179
-\Gm@layoutheight=\dimen180
-\Gm@layouthoffset=\dimen181
-\Gm@layoutvoffset=\dimen182
-\Gm@dimlist=\toks31
+\Gm@cnth=\count276
+\Gm@cntv=\count277
+\c@Gm@tempcnt=\count278
+\Gm@bindingoffset=\dimen177
+\Gm@wd@mp=\dimen178
+\Gm@odd@mp=\dimen179
+\Gm@even@mp=\dimen180
+\Gm@layoutwidth=\dimen181
+\Gm@layoutheight=\dimen182
+\Gm@layouthoffset=\dimen183
+\Gm@layoutvoffset=\dimen184
+\Gm@dimlist=\toks32
 )
 (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/10/10 v2.7c Micro-typographical refinements (RS)
-\MT@toks=\toks32
-\MT@count=\count278
+\MT@toks=\toks33
+\MT@count=\count279
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen183
+\MT@outer@kern=\dimen185
 LaTeX Info: Redefining \textmicrotypecontext on input line 1347.
-\MT@listname@count=\count279
+\MT@listname@count=\count280
 
 (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/10/10 v2.7c Definitions specific to pdftex (RS)
@@ -732,13 +741,13 @@ Package: import 2009/03/23  v 5.1
 ))
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen184
-\ar@mcellbox=\box51
-\extrarowheight=\dimen185
-\NC@list=\toks33
+\col@sep=\dimen186
+\ar@mcellbox=\box52
+\extrarowheight=\dimen187
+\NC@list=\toks34
 \extratabsurround=\skip69
 \backup@length=\skip70
-\ar@cellbox=\box52
+\ar@cellbox=\box53
 )
 (/usr/share/texmf-dist/tex/latex/sidecap/sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
@@ -746,20 +755,12 @@ Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\SC@BOXWD=\dimen186
-\SC@CAPWD=\dimen187
-\SC@tempdima=\dimen188
-\SC@tempdimb=\dimen189
-\c@SC@C=\count280
-\SC@BOX=\box53
-)
-(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen190
-\WF@size=\dimen191
-\c@WF@wrappedlines=\count281
-\WF@box=\box54
-\WF@everypar=\toks34
-Package: wrapfig 2003/01/31  v 3.6
+\SC@BOXWD=\dimen188
+\SC@CAPWD=\dimen189
+\SC@tempdima=\dimen190
+\SC@tempdimb=\dimen191
+\c@SC@C=\count281
+\SC@BOX=\box54
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -929,27 +930,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./frontpage.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-00.
+01.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -986,7 +987,6 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: threeparttable package is loaded.
-Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -1023,14 +1023,14 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 100.
+LaTeX Info: Redefining \microtypecontext on input line 101.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 100.
+LaTeX Info: Redefining \showhyphens on input line 101.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1063,10 +1063,10 @@ LaTeX Info: Redefining \selectfont on input line 126.
 \JustifyingParindent=\skip86
 )
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 100.
-LaTeX Info: Redefining \ref on input line 100.
-LaTeX Info: Redefining \pageref on input line 100.
-LaTeX Info: Redefining \nameref on input line 100.
+Package hyperref Info: Link coloring ON on input line 101.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1162,7 +1162,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  [4]
 Chapter 1.
 
-Underfull \hbox (badness 1308) in paragraph at lines 131--137
+Underfull \hbox (badness 1308) in paragraph at lines 132--138
 \T1/cmr/m/n/12 (+20) Quantum net-works also bring new ad-di-tional fea-tures, a
 nd sev-eral ben-e-fits to
  []
@@ -1171,104 +1171,124 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 
+l.138 
        [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+<./img/photongeneration2.png, id=287, 208.8603pt x 179.2296pt>
+File: ./img/photongeneration2.png Graphic file (type png)
+<use ./img/photongeneration2.png>
+Package pdftex.def Info: ./img/photongeneration2.png  used on input line 144.
+(pdftex.def)             Requested size: 181.18454pt x 155.47997pt.
+
+Underfull \hbox (badness 1132) in paragraph at lines 149--151
+\T1/cmr/m/n/12 (+20) the laser pulse must be cor-rectly de-tuned to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-[2] (./theory.tex [3] [4
+<./img/qubitmanipulation2.png, id=290, 234.8775pt x 187.902pt>
+File: ./img/qubitmanipulation2.png Graphic file (type png)
+<use ./img/qubitmanipulation2.png>
+Package pdftex.def Info: ./img/qubitmanipulation2.png  used on input line 154.
+(pdftex.def)             Requested size: 181.18454pt x 144.94876pt.
+[2 <./img/photongeneration2.png>] (./theory.tex [3 <./img/qubitmanipulation2.pn
+g>] [4
 
 ]
 Chapter 2.
 [5]
-<./img/bloch_sphere.png, id=318, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=325, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [6 <./img/bloch_sphere.png>]
-<./img/calciumscheme.png, id=338, 353.03896pt x 283.2984pt>
+<./img/calciumscheme.png, id=345, 353.03896pt x 283.2984pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 89.
 (pdftex.def)             Requested size: 271.7837pt x 218.0972pt.
-<./img/2levelatom.png, id=343, 186.4566pt x 127.1952pt>
+<./img/2levelatom.png, id=350, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 99.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
  [7] [8 <./img/calciumscheme.png>] [9 <./img/2levelatom.png>]
-<./img/rabiflops.png, id=382, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=388, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 155.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [10 <./img/rabiflops.png>] [11]
-<./img/entaglement.png, id=416, 362.43405pt x 382.3083pt>
+<./img/entaglement.png, id=421, 362.43405pt x 382.3083pt>
 File: ./img/entaglement.png Graphic file (type png)
 <use ./img/entaglement.png>
-Package pdftex.def Info: ./img/entaglement.png  used on input line 212.
+Package pdftex.def Info: ./img/entaglement.png  used on input line 211.
 (pdftex.def)             Requested size: 226.48413pt x 238.90709pt.
  [12 <./img/entaglement.png>]
 [13] [14]
-<./img/ramanprocess.png, id=456, 351.2322pt x 283.2984pt>
+<./img/ramanprocess.png, id=461, 351.2322pt x 283.2984pt>
 File: ./img/ramanprocess.png Graphic file (type png)
 <use ./img/ramanprocess.png>
-Package pdftex.def Info: ./img/ramanprocess.png  used on input line 276.
+Package pdftex.def Info: ./img/ramanprocess.png  used on input line 275.
 (pdftex.def)             Requested size: 221.95692pt x 179.03224pt.
-<./img/zeemanstructure.png, id=457, 336.41685pt x 195.49036pt>
+<./img/zeemanstructure.png, id=462, 336.41685pt x 195.49036pt>
 File: ./img/zeemanstructure.png Graphic file (type png)
 <use ./img/zeemanstructure.png>
-Package pdftex.def Info: ./img/zeemanstructure.png  used on input line 282.
+Package pdftex.def Info: ./img/zeemanstructure.png  used on input line 281.
 (pdftex.def)             Requested size: 221.95692pt x 128.97928pt.
-<./img/trap.png, id=459, 494.11751pt x 169.06602pt>
+<./img/trap.png, id=464, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
-Package pdftex.def Info: ./img/trap.png  used on input line 299.
+Package pdftex.def Info: ./img/trap.png  used on input line 298.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
  [15 <./img/ramanprocess.png> <./img/zeemanstructure.png>] [16 <./img/trap.png>
 ]
-<./img/stabilitydiagram.png, id=485, 505.13719pt x 402.75468pt>
+<./img/stabilitydiagram.png, id=490, 505.13719pt x 402.75468pt>
 File: ./img/stabilitydiagram.png Graphic file (type png)
 <use ./img/stabilitydiagram.png>
-Package pdftex.def Info: ./img/stabilitydiagram.png  used on input line 335.
+Package pdftex.def Info: ./img/stabilitydiagram.png  used on input line 334.
 (pdftex.def)             Requested size: 317.0764pt x 252.81496pt.
  [17] [18 <./img/stabilitydiagram.png (PNG copy)>] [19]
-<./img/threelevelatom.png, id=523, 335.69415pt x 193.6836pt>
+<./img/threelevelatom.png, id=528, 335.69415pt x 193.6836pt>
 File: ./img/threelevelatom.png Graphic file (type png)
 <use ./img/threelevelatom.png>
-Package pdftex.def Info: ./img/threelevelatom.png  used on input line 417.
+Package pdftex.def Info: ./img/threelevelatom.png  used on input line 416.
 (pdftex.def)             Requested size: 271.7837pt x 156.8119pt.
  [20]
-<./img/gauss.png, id=540, 406.1574pt x 417.7206pt>
+<./img/gauss.png, id=545, 406.1574pt x 417.7206pt>
 File: ./img/gauss.png Graphic file (type png)
 <use ./img/gauss.png>
-Package pdftex.def Info: ./img/gauss.png  used on input line 438.
+Package pdftex.def Info: ./img/gauss.png  used on input line 437.
 (pdftex.def)             Requested size: 271.7837pt x 279.52078pt.
  [21 <./img/threelevelatom.png>]
-<./img/gaussprofile.png, id=551, 393.3897pt x 103.1052pt>
+<./img/gaussprofile.png, id=556, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
-Package pdftex.def Info: ./img/gaussprofile.png  used on input line 451.
+Package pdftex.def Info: ./img/gaussprofile.png  used on input line 450.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--456
+Underfull \hbox (badness 10000) in paragraph at lines 446--455
 
  []
 
 [22 <./img/gauss.png>] [23 <./img/gaussprofile.png>]
-<./img/aod.png, id=572, 494.68816pt x 487.46115pt>
+<./img/aod.png, id=577, 494.68816pt x 487.46115pt>
 File: ./img/aod.png Graphic file (type png)
 <use ./img/aod.png>
-Package pdftex.def Info: ./img/aod.png  used on input line 489.
+Package pdftex.def Info: ./img/aod.png  used on input line 488.
 (pdftex.def)             Requested size: 226.48413pt x 223.17865pt.
  [24 <./img/aod.png>]
 [25]) (./expsetup.tex [26]
@@ -1280,29 +1300,29 @@ Package pdftex.def Info: ./img/calciumscheme.png  used on input line 12.
 [27
 
 ]
-<./img/phototrap.jpg, id=626, 1284.8pt x 963.6pt>
+<./img/phototrap.jpg, id=631, 1284.8pt x 963.6pt>
 File: ./img/phototrap.jpg Graphic file (type jpg)
 <use ./img/phototrap.jpg>
 Package pdftex.def Info: ./img/phototrap.jpg  used on input line 44.
 (pdftex.def)             Requested size: 317.0764pt x 237.797pt.
  [28] [29 <./img/phototrap.jpg>]
-<./img/imgsetup.png, id=641, 247.1634pt x 167.6664pt>
+<./img/imgsetup.png, id=646, 247.1634pt x 167.6664pt>
 File: ./img/imgsetup.png Graphic file (type png)
 <use ./img/imgsetup.png>
 Package pdftex.def Info: ./img/imgsetup.png  used on input line 57.
 (pdftex.def)             Requested size: 271.7837pt x 184.37218pt.
-<./img/scheme393.png, id=642, 724.6272pt x 425.4294pt>
+<./img/scheme393.png, id=647, 724.6272pt x 425.4294pt>
 File: ./img/scheme393.png Graphic file (type png)
 <use ./img/scheme393.png>
 Package pdftex.def Info: ./img/scheme393.png  used on input line 65.
 (pdftex.def)             Requested size: 407.66867pt x 239.34239pt.
  [30 <./img/imgsetup.png>] [31 <./img/scheme393.png>]
-<./img/expcontrol.png, id=658, 225.12105pt x 233.4321pt>
+<./img/expcontrol.png, id=663, 225.12105pt x 233.4321pt>
 File: ./img/expcontrol.png Graphic file (type png)
 <use ./img/expcontrol.png>
 Package pdftex.def Info: ./img/expcontrol.png  used on input line 81.
 (pdftex.def)             Requested size: 226.48413pt x 234.85626pt.
-<./img/trics.png, id=659, 1445.4pt x 813.0375pt>
+<./img/trics.png, id=664, 1445.4pt x 813.0375pt>
 File: ./img/trics.png Graphic file (type png)
 <use ./img/trics.png>
 Package pdftex.def Info: ./img/trics.png  used on input line 88.
@@ -1317,58 +1337,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 |[]\T1/cmr/bx/n/20.74 Addressing sys-tem overview and
  []
 
-<img/setup.png, id=678, 378.68172pt x 180.18448pt>
+<img/setup.png, id=683, 378.68172pt x 180.18448pt>
 File: img/setup.png Graphic file (type png)
 <use img/setup.png>
 Package pdftex.def Info: img/setup.png  used on input line 10.
 (pdftex.def)             Requested size: 452.96826pt x 215.54391pt.
 [35] [36 <./img/setup.png>]
-<./img/obj.png, id=697, 368.577pt x 273.54195pt>
+<./img/obj.png, id=702, 368.577pt x 273.54195pt>
 File: ./img/obj.png Graphic file (type png)
 <use ./img/obj.png>
 Package pdftex.def Info: ./img/obj.png  used on input line 24.
 (pdftex.def)             Requested size: 181.18454pt x 134.47081pt.
-<./img/zeemaxobj.png, id=698, 674.52pt x 295.85532pt>
+<./img/zeemaxobj.png, id=703, 674.52pt x 295.85532pt>
 File: ./img/zeemaxobj.png Graphic file (type png)
 <use ./img/zeemaxobj.png>
 Package pdftex.def Info: ./img/zeemaxobj.png  used on input line 31.
 (pdftex.def)             Requested size: 249.13391pt x 109.27063pt.
  [37 <./img/obj.png> <./img/zeemaxobj.png (PNG copy)>]
-<./img/zemax3d.png, id=708, 952.30782pt x 155.07938pt>
+<./img/zemax3d.png, id=713, 952.30782pt x 155.07938pt>
 File: ./img/zemax3d.png Graphic file (type png)
 <use ./img/zemax3d.png>
 Package pdftex.def Info: ./img/zemax3d.png  used on input line 49.
 (pdftex.def)             Requested size: 452.96826pt x 73.76521pt.
-<img/zemaxrange.png, id=711, 952.30782pt x 561.59813pt>
+<img/zemaxrange.png, id=716, 952.30782pt x 561.59813pt>
 File: img/zemaxrange.png Graphic file (type png)
 <use img/zemaxrange.png>
 Package pdftex.def Info: img/zemaxrange.png  used on input line 58.
 (pdftex.def)             Requested size: 362.37598pt x 213.70085pt.
  [38 <./img/zemax3d.png (PNG copy)>]
-<img/pop2.png, id=717, 793.46437pt x 442.65375pt>
+<img/pop2.png, id=722, 793.46437pt x 442.65375pt>
 File: img/pop2.png Graphic file (type png)
 <use img/pop2.png>
 Package pdftex.def Info: img/pop2.png  used on input line 65.
 (pdftex.def)             Requested size: 362.37598pt x 202.16425pt.
-<./img/zemaxaddrerror2.png, id=721, 987.2082pt x 452.4102pt>
+<./img/zemaxaddrerror2.png, id=726, 987.2082pt x 452.4102pt>
 File: ./img/zemaxaddrerror2.png Graphic file (type png)
 <use ./img/zemaxaddrerror2.png>
 Package pdftex.def Info: ./img/zemaxaddrerror2.png  used on input line 74.
 (pdftex.def)             Requested size: 407.66867pt x 186.8217pt.
  [39 <./img/zemaxrange.png (PNG copy)>]
 [40 <./img/pop2.png (PNG copy)> <./img/zemaxaddrerror2.png>]
-<img/clipping2.pdf, id=743, 816.04875pt x 516.93124pt>
+<img/clipping2.pdf, id=748, 816.04875pt x 516.93124pt>
 File: img/clipping2.pdf Graphic file (type pdf)
 <use img/clipping2.pdf>
 Package pdftex.def Info: img/clipping2.pdf  used on input line 85.
 (pdftex.def)             Requested size: 362.37598pt x 229.54858pt.
-<img/clipping.pdf, id=744, 578.16pt x 352.31625pt>
+<img/clipping.pdf, id=749, 578.16pt x 352.31625pt>
 File: img/clipping.pdf Graphic file (type pdf)
 <use img/clipping.pdf>
 Package pdftex.def Info: img/clipping.pdf  used on input line 94.
 (pdftex.def)             Requested size: 362.37598pt x 220.82071pt.
  [41 <./img/clipping2.pdf>]
-<./img/photosetupnice.png, id=767, 160.56366pt x 369.52534pt>
+<./img/photosetupnice.png, id=772, 160.56366pt x 369.52534pt>
 File: ./img/photosetupnice.png Graphic file (type png)
 <use ./img/photosetupnice.png>
 Package pdftex.def Info: ./img/photosetupnice.png  used on input line 109.
@@ -1378,5 +1398,182 @@ Package pdftex.def Info: ./img/photosetupnice.png  used on input line 109.
 ]
 Chapter 5.
 [45]
-<./img/DE.png, id=805, 987.2082pt x 452.4102pt>
-File: ./im
+<./img/DE.png, id=810, 987.2082pt x 452.4102pt>
+File: ./img/DE.png Graphic file (type png)
+<use ./img/DE.png>
+Package pdftex.def Info: ./img/DE.png  used on input line 16.
+(pdftex.def)             Requested size: 430.31847pt x 197.20413pt.
+<./img/response.png, id=811, 987.2082pt x 452.4102pt>
+File: ./img/response.png Graphic file (type png)
+<use ./img/response.png>
+Package pdftex.def Info: ./img/response.png  used on input line 23.
+(pdftex.def)             Requested size: 430.31847pt x 197.20413pt.
+ [46 <./img/DE.png> <./img/response.png>]
+<./img/razorsetup.png, id=820, 152.30902pt x 226.74713pt>
+File: ./img/razorsetup.png Graphic file (type png)
+<use ./img/razorsetup.png>
+Package pdftex.def Info: ./img/razorsetup.png  used on input line 36.
+(pdftex.def)             Requested size: 167.54042pt x 249.42259pt.
+ [47 <./img/razorsetup.png>]
+<img/razorscan.png, id=833, 987.2082pt x 452.4102pt>
+File: img/razorscan.png Graphic file (type png)
+<use img/razorscan.png>
+Package pdftex.def Info: img/razorscan.png  used on input line 55.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<./img/camera.jpeg, id=835, 633.36626pt x 594.22pt>
+File: ./img/camera.jpeg Graphic file (type jpg)
+<use ./img/camera.jpeg>
+Package pdftex.def Info: ./img/camera.jpeg  used on input line 69.
+(pdftex.def)             Requested size: 303.4879pt x 284.73274pt.
+<./img/cameraoriginal.png, id=836, 6.77531pt x 6.0225pt>
+File: ./img/cameraoriginal.png Graphic file (type png)
+<use ./img/cameraoriginal.png>
+Package pdftex.def Info: ./img/cameraoriginal.png  used on input line 75.
+(pdftex.def)             Requested size: 135.89185pt x 120.96515pt.
+
+[48 <./img/razorscan.png>]
+<./img/cameraprofile.png, id=849, 987.2082pt x 452.4102pt>
+File: ./img/cameraprofile.png Graphic file (type png)
+<use ./img/cameraprofile.png>
+Package pdftex.def Info: ./img/cameraprofile.png  used on input line 93.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [49 <./img/camera.jpeg> <./img/cameraoriginal.png>]
+[50 <./img/cameraprofile.png>]
+<./img/pol1.png, id=873, 987.2082pt x 452.4102pt>
+File: ./img/pol1.png Graphic file (type png)
+<use ./img/pol1.png>
+Package pdftex.def Info: ./img/pol1.png  used on input line 124.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<./img/pol2.png, id=874, 987.2082pt x 452.4102pt>
+File: ./img/pol2.png Graphic file (type png)
+<use ./img/pol2.png>
+Package pdftex.def Info: ./img/pol2.png  used on input line 131.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [51 <./img/pol1.png>]
+<./img/polstability.png, id=885, 987.2082pt x 452.4102pt>
+File: ./img/polstability.png Graphic file (type png)
+<use ./img/polstability.png>
+Package pdftex.def Info: ./img/polstability.png  used on input line 143.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<./img/beampointing.png, id=886, 784.43062pt x 408.77719pt>
+File: ./img/beampointing.png Graphic file (type png)
+<use ./img/beampointing.png>
+Package pdftex.def Info: ./img/beampointing.png  used on input line 150.
+(pdftex.def)             Requested size: 452.96826pt x 236.04927pt.
+ [52 <./img/pol2.png> <./img/polstability.png>] [53 <./img/beampointing.png (PN
+G copy)>]
+<./img/sequence.png, id=902, 447.68158pt x 46.43593pt>
+File: ./img/sequence.png Graphic file (type png)
+<use ./img/sequence.png>
+Package pdftex.def Info: ./img/sequence.png  used on input line 177.
+(pdftex.def)             Requested size: 452.96826pt x 46.98634pt.
+ [54]
+<./img/rabiflops4.png, id=913, 987.2082pt x 452.4102pt>
+File: ./img/rabiflops4.png Graphic file (type png)
+<use ./img/rabiflops4.png>
+Package pdftex.def Info: ./img/rabiflops4.png  used on input line 189.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<./img/ramseyfringes.png, id=917, 987.2082pt x 452.4102pt>
+File: ./img/ramseyfringes.png Graphic file (type png)
+<use ./img/ramseyfringes.png>
+Package pdftex.def Info: ./img/ramseyfringes.png  used on input line 201.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [55 <./img/sequence.png> <./img/rabiflops4.png>]
+<img/AODScan.png, id=930, 987.2082pt x 452.4102pt>
+File: img/AODScan.png Graphic file (type png)
+<use img/AODScan.png>
+Package pdftex.def Info: img/AODScan.png  used on input line 209.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [56 <./img/ramseyfringes.png> <./img/AODScan.png>]
+<img/ACscan.png, id=941, 987.2082pt x 452.4102pt>
+File: img/ACscan.png Graphic file (type png)
+<use img/ACscan.png>
+Package pdftex.def Info: img/ACscan.png  used on input line 221.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<img/photonefficency_witherror.png, id=944, 987.2082pt x 452.4102pt>
+File: img/photonefficency_witherror.png Graphic file (type png)
+<use img/photonefficency_witherror.png>
+Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
+231.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [57 <./img/ACscan.png>]
+<img/ramanlength_witherrors.png, id=950, 987.2082pt x 452.4102pt>
+File: img/ramanlength_witherrors.png Graphic file (type png)
+<use img/ramanlength_witherrors.png>
+Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 237
+.
+(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+ [58 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>]
+<./img/recap.png, id=962, 381.62485pt x 192.611pt>
+File: ./img/recap.png Graphic file (type png)
+<use ./img/recap.png>
+Package pdftex.def Info: ./img/recap.png  used on input line 252.
+(pdftex.def)             Requested size: 452.96826pt x 228.63681pt.
+) (./conclusion.tex [59 <./img/recap.png>]
+[60
+
+]
+Chapter 6.
+) [61] [62]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 183.
+
+(./main.bbl [63
+
+] [64]
+Overfull \hbox (26.74219pt too wide) in paragraph at lines 241--243
+[]\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
+ownload/fibercollimators60fc.pdf. 
+ []
+
+[65])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+ [66]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+ (./main.aux (./frontpage.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: FCA7858E9C252F052EAAD0795188C7C4;3009.
+ ) 
+Here is how much of TeX's memory you used:
+ 25071 strings out of 492167
+ 423102 string characters out of 6131557
+ 552073 words of memory out of 5000000
+ 28575 multiletter control sequences out of 15000+600000
+ 562623 words of font info for 182 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,17n,100p,2847b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm120
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfxc1440.pfb>
+Output written on main.pdf (72 pages, 6464501 bytes).
+PDF statistics:
+ 1159 PDF objects out of 1200 (max. 8388607)
+ 947 compressed objects within 10 object streams
+ 295 named destinations out of 1000 (max. 500000)
+ 29267 words of extra memory for PDF output out of 29859 (max. 10000000)
+

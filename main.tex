@@ -12,6 +12,7 @@
 
 \usepackage{adjustbox}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{amsmath, amssymb, amsthm} % Mathematical packages
 \usepackage{parskip} % Removing indenting in new paragraphs
 \urlstyle{sf}
@@ -138,9 +139,22 @@ It is in this context that this thesis arises. Currently there is an ongoing pro
 To overcome this limitation, an optical setup for the 393nm laser had to be built with the purpose of focusing the light to a single ion in a string. Moreover the setup should have the ability to steer the beam on a fast scale $\sim\mu$s and focus it on a different ion. The goal of this thesis was to design and build such a system. The setup is per se not complex, but the design is critical, ions separation is typical in the order of $\mu$m, which means the light should be focused down to $1-2\,\mu$m, at the limits of the optical elements involved. The steering part is achieved with an acousto-optical deflector (AOD), such device deflects the laser light on microsecond timescales proportionally to the applied input frequency allowing to control remotely the beam ponting of the system.\\
 Once completed, the system will allow to manipulate single ions in a string in two different ways differentiated by the laser regime. Hence, the final goal of the thesis is to perform two experiments that demonstrate the functionalities of the system:\vspace{-1em}\newline
 \begin{center}{\large\textbf{\textsc{Single ion photon generation}}}\end{center}
+\begin{wrapfigure}{l}{0.4\textwidth}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{photongeneration2}
+  \end{center}
+  %\caption{Schematic of photon generation}
+\end{wrapfigure}
+
 The first experiment is photon generation, a single laser pulse can trigger the generation of a single photon in a cavity via a Raman process \cite{stuteinterface}. The process requires the addressed ion to be coupled to the cavity electric field,
 both the cavity and the laser pulse must be correctly detuned to suppress spontaneous scattering and maximize the probability of photon production. With the AOD the laser pulse is steered and aimed at different ions in $\mu$s time, thus enabling the creation of photon trains. This enriches the capabilities of the interface between the ion quantum computer and the photonic network channel, as outlined above.\vspace{-1em}\newline
 \begin{center}{\large\textbf{\textsc{Single ion qubit manipulation}}}\end{center}
+\begin{wrapfigure}{R}{0.4\textwidth}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{qubitmanipulation2}
+  \end{center}
+  %\caption{Schematic of photon generation}
+\end{wrapfigure}
 The second experiment is qubit manipulation. A phase gate \cite{chuang} over a single qubit is implemented. In the off resonant regime, the laser induces AC Stark shift on the $\ket{0}$ state of the qubit, shifting the relative phase of the qubit state. In order to measure the AC Stark shift we want to perform Ramsey interferometry \cite{starkshift}, where between the two $\pi/2$ pulses a detuned Stark pulse is introduced. This pulse shift the relative phase of the qubit and therefore the amount of Stark shift can be inferred from the final qubit state. The gate is part of the universal set of quantum gates \cite{chuang}, and it is therefore a building block of a full implementation of a quantum computer.
 
 This work is presented in the following way: Chapter 2 is devoted to the theoretical background necessary to understand the rest of the work. Here the foundations of quantum computing and networking are laid down, along with the basic concepts of ion trapping, and Gaussian beams; Chapter 3 presents the existing experimental setup, i.e. the already built and working blocks of the experiment where the setup designed in this thesis has been added; Chapter 4 is the core of the thesis, here the final design made with the software Zemax and simulations of different aspects of the project are introduced and presented;

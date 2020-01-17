@@ -144,21 +144,20 @@ U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
   -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
 \end{pmatrix}.
 \end{equation}
-Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. With this matrix we can calculate all the dynamic we need. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a laser pulse can implement such qubit rotation, the other rotation can be performed in the same way, but with a different laser regime. We will explore this possibility later in the AC Stark shift.\\
+Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. With this matrix we can calculate all the dynamic we need. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$, the rotation around the z axis is performed with a laser pulse as well, but far detuned from the transition. We will explore this possibility later in the AC Stark shift.\\
 As example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
 \begin{equation}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
-This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. An electron constantly shined will jump between the two levels at a frequency $\Omega$. Detuning dumps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, by sending laser pulses it is possible to prepare the state in any superposition, e.g. with a $\pi/2$ pulse ($\Omega t = \pi/2$) the resulting state will be $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse (($\Omega t = \pi$)) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement the Hadamard gate of equation \eqref{Hadamard}.
+This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement the Hadamard gate of equation \eqref{Hadamard}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = 1\textwidth]{rabiflops}
 \caption{Rabi flops for different detuning $\Delta$}
 \label{rabiflops}
 \end{figure}
-
-Rabi oscillations can be observed with near resonant light, in the off-resonant regime, oscillations are suppressed, but the light shifts the energy levels.
-The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltonian \eqref{Hamiltonianrotatingframe}. It can be easily written in matrix form and diagonalized, we find that there are two eigenstates $\ket{+}$ and $\ket{-}$ called dressed states with eigenvalues
+As the light is detuned from the transition, Rabi oscillations are suppressed: the amplitude is reduced by a factor of 0.5 already with $\Delta = \Omega$, while a factor of 10 in reduction is achieved with a detuning of $\Delta/\Omega = 5$. However, another effect persists in the off-resonant regime: the energy levels are shifted.
+The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltonian \eqref{Hamiltonianrotatingframe}, which can be written in matrix form and diagonalized. We find that there are two eigenstates $\ket{+}$ and $\ket{-}$ called dressed states with eigenvalues
 \begin{equation}
 E_{\pm} = -\frac{\hbar\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
 \end{equation}
@@ -168,19 +167,19 @@ E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} \pm \frac{\hbar \
 \end{equation}
 The effective Hamiltonian for the off-resonant regime can be derived following a Markovian approximation \cite{acstarkhamiltonian}
 \begin{equation}
-H_{eff} = \frac{1}{\hbar \Delta} [\sigma,\sigma^\dagger] = \frac{\hbar \delta}{2}\sigma_z
+H_{AC} = \frac{1}{\hbar \Delta} [\sigma,\sigma^\dagger] = \frac{\hbar \delta}{2}\sigma_z
 \end{equation}
 The corresponding evolution is
 \begin{equation}
 \label{acstarkrotation}
-U(t) = \exp\left\{-\frac{i}{\hbar} H_{eff} t \right\} =
+U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
  \begin{pmatrix}
    \exp\left\{i\frac{\delta}{2}t\right\} & 0\\
    0 & \exp\left\{i\frac{\delta}{2}t\right\}
 \end{pmatrix}.
 \end{equation}
-This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac stark shift can also implement the phase gate \eqref{Hadamard}, the trick is to shift the energy of a transition the shares only one level with qubit transition. From the prospective of the qubit, only one level is shifted and the other level remains unaltered, thus one of the two matrix element of equation \eqref{acstarkrotation} is 1.
-
+This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires the exploitation of a third energy level.\\
+We extend therefore our model to a 3 level atom driven by two different lasers. 
 -- 3 level scheme, Raman process with 2 lasers.
 
 -- Spontaneous emission equation
