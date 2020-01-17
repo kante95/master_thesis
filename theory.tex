@@ -84,19 +84,27 @@ It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase
 
 \subsection{Ion qubits and laser-ion interactions}
 \label{laserioninteractions}
-Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states. The choices are multiple: an optical qubit is implemented in an optical transition, an hyperfine qubit is between two hyperfine states, and a Zeeman qubit can be realized with two magnetically separated levels. We will take the choice of an optical qubit, in this case lasers provide an easy way to manipulate the population of the two level and therefore to manipulate the state of the qubit, implementing quantum gates in an almost straightforward way. As long as the chosen levels are well separated, and the light is near resonant to the transition, it is possible to describe the system with the basic 2-level atom scheme interacting with classical light. This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
-\begin{figure}[H]
+\begin{figure}
 \centering
-\includegraphics[width = .4\textwidth]{2levelatom}
-\caption{2-level atom scheme, the ground and excited states are denoted as $\ket{g}$, and $\ket{e}$. $\omega_l$ is the laser frequency, which is detuned by $\Delta \equiv \omega - \omega_0$ from the transition frequency $\omega_0$.}
-\label{2levelatom}
+\includegraphics[width = .6 \textwidth]{calciumscheme}
+\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729nm.}
+\label{qubitschemereference}
 \end{figure}
 
-Consider the system in figure \ref{2levelatom}, the Hamiltonian of the atomic part can be written as:
+Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states, the qubit is then implement in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operation without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$. As these levels are separated by an optical frequency, this kind of qubit is often referred to as optical qubit. Lasers provide a way to directly manipulate the population of the two levels and therefore to manipulate the state of the qubit.\\
+The interaction between ion and laser can be understood in terms of a simple model: a two-level atom with dipole interaction with laser field. Consider the system in figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. The laser light in this case can be described classicaly in the dipole approximation.
+This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
+\begin{figure}
+\centering
+\includegraphics[width = .4\textwidth]{2levelatom}
+\caption{2-level atom scheme, the ground and excited states are denoted as $\ket{0}$, and $\ket{1}$. $\omega_l$ is the laser frequency, which is detuned by $\Delta \equiv \omega_l - \omega_0$ from the transition frequency $\omega_0$.}
+\label{2levelatom}
+\end{figure}
+The Hamiltonian of the atomic part can be written as:
 \begin{equation}
-H_a = \hbar\omega_0 \ket{e}\bra{e},
+H_a = \hbar\omega_0 \ket{1}\bra{1},
 \end{equation}
-where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. The Hamiltonian of the interaction between light and atom can be written as \cite{steck}
+where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. The Hamiltonian of the interaction between the dipole atomic moment $d$ and the electric field of the laser can be written \cite{steck}
 \begin{equation}
 H_{int} = -d\cdot E
 \end{equation}
@@ -104,28 +112,28 @@ where the electric field will be treated classically and the dipole approximatio
 \begin{equation}
 E(t) = \hat{\varepsilon} E_0 \cos(\omega t+\varphi) = \hat{\varepsilon} \frac{E_0}{2} \left(e^{-i(\omega t+\varphi)} + e^{i(\omega t+\varphi)}\right),
 \end{equation}
-where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{g}\bra{g} + \ket{e}\bra{e}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non vanishing, giving
+where $\varepsilon$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{0}\bra{0} + \ket{1}\bra{1}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non vanishing, giving
 \begin{equation}
-d = \braket{g|d|e}\left(\ket{g}\bra{e} + \ket{e}\bra{g}\right) \equiv \braket{g|d|e}(\sigma + \sigma^\dagger).
+d = \braket{0|d|1}\left(\ket{0}\bra{1} + \ket{1}\bra{0}\right) \equiv \braket{0|d|1}(\sigma + \sigma^\dagger).
 \end{equation}
 Combining the last three equations yields
 \begin{equation}
-H_{int} = - \braket{g|\hat{\varepsilon} d|e}\frac{E_0}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)} + \sigma e^{-i(\omega t+\varphi)} + \sigma^\dagger e^{i(\omega t+\varphi)})
+H_{int} = - \braket{0|\hat{\varepsilon} d|1}\frac{E_0}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)} + \sigma e^{-i(\omega_l t+\varphi)} + \sigma^\dagger e^{i(\omega_l t+\varphi)})
 \end{equation}
-A rotating wave approximation is used now, essentially $\sigma$ ($\sigma^\dagger$) evolves in time as $\propto e^{-i\omega_0 t}$ ($\propto e^{i\omega_0 t}$), therefore we can drop the fast oscillating terms in the last equation and keeping only those that depends on time as $\propto e^{\pm i(\omega-\omega_0 )t}$. The validity of this approximation is given by the facts that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference, aka detuning.
-With this final approximation we arrive at the final form of the interaction Hamiltonian
+A rotating wave approximation is used now, essentially $\sigma$ ($\sigma^\dagger$) evolves in time as $\propto e^{-i\omega_0 t}$ ($\propto e^{i\omega_0 t}$), therefore we can drop the fast oscillating terms in the last equation and keeping only those that depends on time as $\propto e^{\pm i(\omega_l-\omega_0 )t}$. The validity of this approximation is given by the facts that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference, aka detuning.
+With this approximation we arrive at the final form of the interaction Hamiltonian
 \begin{equation}
-H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)}),
+H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)}),
 \end{equation}
- where we defined the Rabi frequency $\Omega \equiv - \braket{g|\hat{\varepsilon} d|e}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the field $\Omega ^2 \propto I$. It also provides a convenient way to describe the coupling strength between the atom and the electric field. To summarize, the final system Hamiltonian is
+ where we defined the Rabi frequency $\Omega \equiv - \braket{0|\hat{\varepsilon} d|1}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the laser $\Omega ^2 \propto I$. To summarize, the final system Hamiltonian is
  \begin{equation}
  \label{2levelatomhamiltonian}
-H = H_a + H_{int} = \hbar\omega_0 \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(\sigma e^{i(\omega t+\varphi)} + \sigma^\dagger e^{-i(\omega t+\varphi)}).
+H = H_a + H_{int} = \hbar\omega_0 \ket{1}\bra{1} + \frac{\hbar \Omega}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)}).
  \end{equation}
-This Hamiltonian depends explicitly on time, which could lead to unnecessary complications if we want to solve the dynamics. To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega t \ket{e}\bra{e}}$, the Hamiltonian in this frame is
+This Hamiltonian depends explicitly on time, which could lead to unnecessary complications if we want to solve the dynamics. To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega_l t \ket{1}\bra{1}}$, the Hamiltonian in this frame is
 \begin{equation}
 \label{Hamiltonianrotatingframe}
-\widetilde{H} = -\hbar \Delta \ket{e}\bra{e} + \frac{\hbar \Omega}{2}(e^{i\varphi}\sigma + e^{-i\varphi}\sigma^\dagger)
+\widetilde{H} = -\hbar \Delta \ket{1}\bra{1} + \frac{\hbar \Omega}{2}(e^{i\varphi}\sigma + e^{-i\varphi}\sigma^\dagger)
 \end{equation}
 The time dependence is now gone, and the unitary evolution matrix can be calculated as
 \begin{equation}
@@ -154,7 +162,7 @@ The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltoni
 \begin{equation}
 E_{\pm} = -\frac{\hbar\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
 \end{equation}
-In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{e},\ket{-}\to \ket{g}$, and the energies becomes
+In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{1},\ket{-}\to \ket{0}$, and the energies becomes
 \begin{equation}
 E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \pm\frac{\Omega^2}{4\Delta}.
 \end{equation}
@@ -172,6 +180,10 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{eff} t \right\} =
 \end{pmatrix}.
 \end{equation}
 This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac stark shift can also implement the phase gate \eqref{Hadamard}, the trick is to shift the energy of a transition the shares only one level with qubit transition. From the prospective of the qubit, only one level is shifted and the other level remains unaltered, thus one of the two matrix element of equation \eqref{acstarkrotation} is 1.
+
+-- 3 level scheme, Raman process with 2 lasers.
+
+-- Spontaneous emission equation
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
@@ -220,7 +232,7 @@ g \propto \braket{g|d|e} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
 The coupling therefore, increases with decreasing cavity volume and viceversa.\\
 The total system Hamiltonian includes also the atomic part, and a single mode optical field. It takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
 \begin{equation}
-H = \hbar \omega_0 \ket{e}\bra{e} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
+H = \hbar \omega_0 \ket{1}\bra{1} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
 \end{equation}
 States now are a product state of the atomic part and the photon number $\ket{g,n},\ket{e,n}$. They are however not the eigenstates of the Jaynes-Cumming Hamiltonian. It can be seen that this Hamiltonian is block diagonal, which means that each $2\times 2$ block can be diagonalized, the dressed states found after diagonalization are similar to the semiclassical model. Moreover, also the dynamics is analogue to the semiclassical case, Rabi oscillations are still present with quantized Rabi frequency given by $\Omega_n = \sqrt{4(n+1)g^2 +\Delta^2}$.\\
 The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description, we need to introduce dissipative process that do not follow an Hermitian evolution. This is done heuristically by adding terms in the Heisenberg equation
@@ -238,6 +250,45 @@ A good approximation of the model is given in the \emph{strong coupling} regime 
 \kappa =\frac{c\pi}{FL},
 \end{equation}
 where $F$ is the cavity finesse, and $L$ the length. In the design of the experiment one must play and compromise with these three parameters in order to reach a good coupling ion-cavity but also being able to send photons out of the cavity.
+
+\subsection{Photon generation}
+\label{sec:ramanprocess}
+By placing a cavity around the trap, photon generation is enabled. The cavity mediated Raman process is responsible for this phenomenon. It can be explained strating from a three level atom like in figure \ref{ramanprocess}. The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{1}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
+to the $\text{D}_{5/2}$ state emitting a photon inside the cavity. Thus the process can be described as $\ket{0}_i\ket{0}_p \to \ket{1}_i\ket{1}_p$ where the subscript $i$ indicates the ion and $p$ the photon number in the cavity. The detuning is set such as $\Delta \gg \Omega,g$, in this regime the whole process can be described as a single transition with effective Rabi frequency of \cite{helene}
+\begin{equation}
+\Omega_{eff} = \frac{\Omega g}{2\Delta}.
+\end{equation}
+It is equivalent of a classical Raman process driven with two laser pulses on the two different transitions, but in this case the second laser is substituted by the vacuum standing wave of the cavity. In order to avoid decay in other channels, one must be sure that $\Omega_{eff}$ is larger than the effective decay rate of other spontaneous emission $\Omega_{eff}\gg \Gamma_{eff}$. Moreover, the photon should leave the cavity after the transfer is complete, this is ensured by $\Omega_{eff} >\kappa$.\\
+In the real case the electronic states are also shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis and at $45^{\circ}$ with respect to the trap axis. This is done in the optics of achieving ion-photon entanglement, since in that case multiple Zeeman levels should be addressed. The situation is therefore further complicated and the polarization of the laser field should be taken into consideration. In figure (), the Zeeman structure of $^{40}\text{Ca}^+$ is depicted. One can start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$. From here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transition are possible, the most favorable in the case of the magnetic field orthogonal to the cavity axis is \cite{stuteinterface}
+\begin{equation}
+\ket{\text{S}_{1/2},-1/2}\to\ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-5/2}.
+\end{equation}
+In this case the transitions strengths, i.e. the projection on the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized.\\
+The generated photon from this process can be entangled with the ion state by driving this Raman transition with a bichromatic beam. This means that the laser pulse drives two transitions at the same time, for example the one that ends up in $\ket{\text{D}_{5/2},-5/2}$ and $\ket{\text{D}_{5/2},-3/2}$. In this instance, the generated photon will be a superposition of $\sigma^+$ and $\pi$ polarization. With respect to the cavity it means vertical and horizontal polarization. The final state of the bichromatic transition is therefore
+\begin{equation}
+\ket{\psi} = \ket{\text{D}_{5/2},-5/2}\ket{H} + \ket{\text{D}_{5/2},-3/2}\ket{V}.
+\end{equation}
+In the real experiment the designed cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
+\begin{figure}[H]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{ramanprocess}
+         \caption{Diagram for the Raman transition. A pulse at 393nm triggers the generation of a 854nm photon inside a the cavity. In the process the ion gets excited to the $\ket{1}$ level.}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{zeemanstructure}
+         \caption{Zeeman structure of the relevant levels for the Raman process.}
+         %\label{fig:three sin x}
+         \vspace{1em}
+     \end{subfigure}
+        \caption{}
+      \label{ramanprocess}
+      %  \label{fig:three graphs}
+\end{figure}
+ The Finesse of the cavity for the TEM$_{00}$ mode is 54000. The other cavity parameters are $\kappa = 2\pi \times 70$ kHz, and $\gamma = 2\pi\times 11.45$ MHz for the $\text{P}_{3/2}$ state. With these numbers the preferred strong regime is not reached, but nonetheless,  it is still possible to produce photons and collect them out of the cavity.
 
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}
@@ -359,12 +410,12 @@ From here it is clear that by choosing the appropriated detuning, it is possible
 T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}
 \end{equation}
 The achieved temperatures with Doppler cooling are enough to perform standard measurements. To go further down in temperature, sideband cooling is used, here particular sideband transition are excited to reduce the phonon number of the ions inside the trap.\\
-With the same interaction of Doppler cooling, state detection can also be performed by means of laser induced fluorescence. Consider the $\Lambda$ scheme in figure \ref{threelevel}, the qubit is encoded in the level $\ket{g_1}$ and $\ket{g_2}$. To distinguish in which state the electron is, the transition $\ket{g_1}\to \ket{e}$ is excited. In the case the electron is in $\ket{g_1}$, the electron undergoes Rabi flops and scatters photons that can be collected and measured. If the electron is $\ket{g_2}$, no photons will be emitted and therefore no light is collected. The difference between these bright and dark states is clear and detection can be performed efficiently with near perfect efficiency.\\
-In the real case, one must take into consideration also all the other levels. In fact, an electron from the excited state $\ket{e}$ can have multiple decay channels to other states and repumping becomes necessary.
+With the same interaction of Doppler cooling, state detection can also be performed by means of laser induced fluorescence. Consider the $\Lambda$ scheme in figure \ref{threelevel}, the qubit is encoded in the level $\ket{g_1}$ and $\ket{g_2}$. To distinguish in which state the electron is, the transition $\ket{g_1}\to \ket{1}$ is excited. In the case the electron is in $\ket{g_1}$, the electron undergoes Rabi flops and scatters photons that can be collected and measured. If the electron is $\ket{g_2}$, no photons will be emitted and therefore no light is collected. The difference between these bright and dark states is clear and detection can be performed efficiently with near perfect efficiency.\\
+In the real case, one must take into consideration also all the other levels. In fact, an electron from the excited state $\ket{1}$ can have multiple decay channels to other states and repumping becomes necessary.
 \begin{figure}
 \centering
 \includegraphics[width = .6\textwidth]{threelevelatom}
-\caption{$\Lambda$ type scheme. Two ground states $\ket{g_1}$ and $\ket{g_2}$ are stable or metastable, while the excited level $\ket{e}$ is short lived. Qubit is encoded in the two ground states while laser fluorescence and laser cooling is done on the $\ket{g_1}\to \ket{e}$ transition.}
+\caption{$\Lambda$ type scheme. Two ground states $\ket{g_1}$ and $\ket{g_2}$ are stable or metastable, while the excited level $\ket{1}$ is short lived. Qubit is encoded in the two ground states while laser fluorescence and laser cooling is done on the $\ket{g_1}\to \ket{1}$ transition.}
 \label{threelevel}
 \end{figure}
 \section{Laser beam}
@@ -473,3 +524,7 @@ where $v_s$ is the speed of sound and $f$ the frequency of the signal. We can al
 \Delta\theta = \frac{\lambda B}{2v_s}
 \end{equation}
 there are several way to engineer such device to increase bandwidth and keep the Bragg condition verified, for example the transducer is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.
+
+\section{Experiments model}
+\subsection{Addressed photon generation}
+\subsection{Addressed qubit manipulation}
