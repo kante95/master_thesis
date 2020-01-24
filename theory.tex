@@ -179,16 +179,18 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
 \end{pmatrix}.
 \end{equation}
 This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires the exploitation of a third energy level.\\
-We extend therefore our model to a 3 level atom driven by two different lasers. 
+We extend therefore our model to a 3 level atom driven by two different lasers.
 -- 3 level scheme, Raman process with 2 lasers.
 
 -- Spontaneous emission equation
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
-Quantum networks can serve different purposes, either transmission of quantum information at long distances, or interconnections of quantum processors for qubits scaling. The topology of these configurations changes, but the constituent elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links are typically realized with optical fibers, photons can carry quantum information over long distance with very high speed. Instead, nodes can be realized in a variety of ways: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts deterministically a stationary qubit in a node to a flying qubit over the network. In the next section we will explore how an interface can be realized by placing an ion based quantum memory in a optical cavity. Here we will examine some properties needed for a quantum network to work.\\
-In the case of quantum information transmission, a fundamental property of quantum network is the ability of transmitting faithfully any state between nodes. For long distances this requires the use of amplifiers or repeaters that boost the signal as it gets attenuated during the transmission. However, due to the no-cloning theorem \cite{nocloning}, qubits cannot be copied. A workaround of this problem is to send multiple qubits and purify the entanglement along the transmission with extra qubits and quantum nodes between the endpoints \cite{quantumrepeters}.\\
-To create a cluster of quantum nodes, another property of quantum network is necessary: entanglement distribution allows to entangle qubits located in different quantum nodes. A protocol to distributed entanglement can be realized with photon interference on a beam splitter. Consider the case of figure \ref{remoteentanglement}. Two nodes each with a qubit
+A quantum network is a collection of quantum processors, called nodes, interconnected with quantum channels. Quantum channels have the unique property to be able to transmit quantum state among the nodes and distribute entanglement over the network \cite{kimble}. There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
+In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links can be realized for instance with optical fibers, photons can carry quantum information over long distance with high speed. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.
+ In the next section we will explore how an interface can be realized by placing an ion based quantum memory in an optical cavity. Here we will examine some properties needed for a quantum network to work.\\
+In the case of quantum information transmission, a fundamental property of a quantum network is the ability of transmitting faithfully any state between nodes. For long distances this requires the use of amplifiers or repeaters that boost the signal as it gets attenuated during the transmission. However, due to the no-cloning theorem \cite{nocloning}, qubits cannot be copied. A workaround of this problem is to send multiple qubits and purify the entanglement along the transmission with extra qubits and quantum nodes between the endpoints \cite{quantumrepeters}.\\
+To create a network of quantum nodes, another property is necessary: entanglement distribution which allows to entangle qubits located in different quantum nodes. A protocol to distributed entanglement can be realized with photon interference on a beam splitter. Consider the case of figure \ref{remoteentanglement}. Two nodes each with a qubit
 \begin{equation}
 \ket{\psi_A} = a\ket{0}_A + b\ket{1}_A \qquad \ket{\psi_B} = c\ket{0}_B + d\ket{1}_B.
 \end{equation}
@@ -527,3 +529,27 @@ there are several way to engineer such device to increase bandwidth and keep the
 \section{Experiments model}
 \subsection{Addressed photon generation}
 \subsection{Addressed qubit manipulation}
+Ions can be used as sensitive tools for beam profiling, unfortunately the 393 nm light excites a dipole transition with a short lived excited state. Therefore, a direct excitation followed by a measurement is not fast enough to gain any information. Ideally, the 729nm qubit transition should be used, as here state readout is available and the transition is metastable. This is possible as the 393nm transition shares the ground state with the qubit transition, so the 393nm laser can be detuned such that the AC stark shift caused changes the phase of the qubit producing measurable effects. Measurements of the Stark shift can be done with a Ramsey interference experiment \cite{starkshift}.
+The idea of the experiment is to send a resonant $\pi/2$ pulse at 729nm, which bring the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729nm pulse will depend on the shift induced by the 393nm laser. By calculating the final probability $P_D$ it is possible to infer the power of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+\begin{equation}
+\begin{split}
+\ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
+&= \frac{1}{2}\left(e^{-i\frac{\delta}{2}t}-e^{-i\phi}\right)\ket{S}-\frac{i}{2}\left(1 + e^{-i\frac{\delta}{2}t} e^{-i\phi}\right)\ket{D}
+\end{split}
+\end{equation}
+where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi frequency of the 393nm light that we want to measure. The final probability is then
+\begin{equation}
+P_D = \cos^2\left(2\phi + 2\frac{\delta t}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 t}{4\Delta}\right).
+\end{equation}
+As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done $\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right]$. The phase $\phi$ can be chosen freely and all constants have been dropped as the data will be normalized.\\
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{sequence}
+\caption{Experiment sequence}
+\label{sequence}
+\end{figure}
+The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
+The 393nm pulse has to be off resonance from the transition to avoid spontaneous scattering in the $\text{S}_{1/2}\to \text{P}_{1/2}$ transition. The detuning is therefore chosen such that the ratio of the Stark shift $\delta$ and the spontaneous scattering rate $\Gamma_{eff}$ si at least 100. Using the value from table \ref{transitiontable}
+\begin{equation}
+\frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \implies \Delta \sim 3\,\text{GHz}.
+\end{equation}
