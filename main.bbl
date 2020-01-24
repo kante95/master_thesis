@@ -109,10 +109,21 @@ D.F.V. James.
   schemes.
 \newblock {\em Fortschritte der Physik}, 48(9‐11):823--837, 2000.
 
+\bibitem{kimble}
+H.~J. Kimble.
+\newblock The quantum internet.
+\newblock {\em Nature}, 453(7198):1023--1030, jun 2008.
+
 \bibitem{ion_quantumnetwork}
 L.-M. Duan and C.~Monroe.
 \newblock Colloquium: Quantum networks with trapped ions.
 \newblock {\em Rev. Mod. Phys.}, 82:1209--1224, Apr 2010.
+
+\bibitem{Hughes2002}
+Richard~J Hughes, Jane~E Nordholt, Derek Derkacs, and Charles~G Peterson.
+\newblock Practical free-space quantum key distribution over 10 km in daylight
+  and at night.
+\newblock {\em New Journal of Physics}, 4:43--43, July 2002.
 
 \bibitem{Ritter2012}
 Stephan Ritter, Christian N\"{o}lleke, Carolin Hahn, Andreas Reiserer, Andreas
@@ -120,11 +131,6 @@ Stephan Ritter, Christian N\"{o}lleke, Carolin Hahn, Andreas Reiserer, Andreas
   Gerhard Rempe.
 \newblock An elementary quantum network of single atoms in optical cavities.
 \newblock {\em Nature}, 484(7393):195--200, apr 2012.
-
-\bibitem{kimble}
-H.~J. Kimble.
-\newblock The quantum internet.
-\newblock {\em Nature}, 453(7198):1023--1030, jun 2008.
 
 \bibitem{nocloning}
 W.~K. Wootters and W.~H. Zurek.
@@ -136,6 +142,24 @@ H.-J. Briegel, W.~D\"ur, J.~I. Cirac, and P.~Zoller.
 \newblock Quantum repeaters: The role of imperfect local operations in quantum
   communication.
 \newblock {\em Phys. Rev. Lett.}, 81:5932--5935, Dec 1998.
+
+\bibitem{Pan2001}
+Jian-Wei Pan, Christoph Simon, {\v{C}}aslav Brukner, and Anton Zeilinger.
+\newblock Entanglement purification for quantum communication.
+\newblock {\em Nature}, 410(6832):1067--1070, April 2001.
+
+\bibitem{Duan2001}
+L.-M. Duan, M.~D. Lukin, J.~I. Cirac, and P.~Zoller.
+\newblock Long-distance quantum communication with atomic ensembles and linear
+  optics.
+\newblock {\em Nature}, 414(6862):413--418, nov 2001.
+
+\bibitem{PhysRevLett.70.1895}
+Charles~H. Bennett, Gilles Brassard, Claude Cr\'epeau, Richard Jozsa, Asher
+  Peres, and William~K. Wootters.
+\newblock Teleporting an unknown quantum state via dual classical and
+  einstein-podolsky-rosen channels.
+\newblock {\em Phys. Rev. Lett.}, 70:1895--1899, Mar 1993.
 
 \bibitem{helene}
 Helene Hainzer.

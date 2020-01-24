@@ -187,34 +187,8 @@ We extend therefore our model to a 3 level atom driven by two different lasers.
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
 A quantum network is a collection of quantum processors, called nodes, interconnected with quantum channels. Quantum channels have the unique property to be able to transmit quantum state among the nodes and distribute entanglement over the network \cite{kimble}. There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
-In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects node and where information is transmitted. Links can be realized for instance with optical fibers, photons can carry quantum information over long distance with high speed. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.
- In the next section we will explore how an interface can be realized by placing an ion based quantum memory in an optical cavity. Here we will examine some properties needed for a quantum network to work.\\
-In the case of quantum information transmission, a fundamental property of a quantum network is the ability of transmitting faithfully any state between nodes. For long distances this requires the use of amplifiers or repeaters that boost the signal as it gets attenuated during the transmission. However, due to the no-cloning theorem \cite{nocloning}, qubits cannot be copied. A workaround of this problem is to send multiple qubits and purify the entanglement along the transmission with extra qubits and quantum nodes between the endpoints \cite{quantumrepeters}.\\
-To create a network of quantum nodes, another property is necessary: entanglement distribution which allows to entangle qubits located in different quantum nodes. A protocol to distributed entanglement can be realized with photon interference on a beam splitter. Consider the case of figure \ref{remoteentanglement}. Two nodes each with a qubit
-\begin{equation}
-\ket{\psi_A} = a\ket{0}_A + b\ket{1}_A \qquad \ket{\psi_B} = c\ket{0}_B + d\ket{1}_B.
-\end{equation}
-With the use of an interface each qubit is entangled to a photon. The photonic qubit can have different implementations, for this protocol however it is not important and we will indicate them as $\ket{H},\ket{V}$.
-The states ready for transmission are
-\begin{equation}
-\ket{\psi_A} = a\ket{0}_A\ket{H}_A + b\ket{1}_A\ket{V}_A \qquad \ket{\psi_B} = c\ket{0}_B\ket{H}_B + d\ket{1}_B\ket{V}_B.
-\end{equation}
-The total system is described as the product state of the two subsystem:
-\begin{equation}
-\ket{\psi_A}\otimes \ket{\psi_B} = (a\ket{0}_A\ket{H}_A + b\ket{1}_A\ket{V}_A)\otimes (c\ket{0}_B\ket{H}_B + d\ket{1}_B\ket{V}_B).
-\end{equation}
-When the photons arrive at the beam splitter there are four possible outcomes and two distinguishable events: either the two detectors click at the same time or only one detector clicks twice. In the second case, one photon was transmitted and the other reflected, the final state is proportional to $\ket{0}_A \ket{1}_B + \ket{1}_A \ket{0}_B$, which in the case of indistinguishable photons  is just a product state. More interesting is the case when a coincidence on both detector occurs. The final state is projected into
-\begin{equation}
-\ket{\psi} = ac\ket{0}_A \ket{0}_B + bd\ket{1}_A \ket{1}_B,
-\end{equation}
-leading to the two qubits to be entangled with each other. This protocol is probabilistic, but the success of entanglement can be heralded after a coincidence measure.
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = .5\textwidth]{entaglement}
-  \caption{Remote qubits entanglement protocol.}
-  \label{remoteentanglement}
-\end{figure}
-
+In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects nodes. Links can be realized in free space \cite{Hughes2002} or with optical fibers, photons can carry quantum information over long distance with high speed. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how an interface can be realized by placing an ion based quantum memory in an optical cavity.\\
+For a fully deployed quantum network, many challenges have to be faced. Faithful transmission of a quantum states over long distances can be a daunting problem as quantum information cannot be cloned \cite{nocloning}, and noisy channels can destroy the delicate nature of qubits. Quantum repeaters have been designed \cite{quantumrepeters} to circumvent these problems through a series of protocols which includes error corrections, or entanglement purification \cite{Pan2001}. More protocols are also available to  entangle qubits located in spatially separated quantum nodes \cite{Duan2001}. Once entanglement has been established between nodes, other network functionalities become available, like for instance teleportation \cite{PhysRevLett.70.1895}. Entanglement generation, and quantum repeaters are just some examples of the fundamental steps necessary for building a quantum network, for a more in depth review look at \cite{Wehnereaam9288}.
 
 
 \subsection{Cavity QED}
