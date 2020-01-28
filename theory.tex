@@ -178,11 +178,30 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
    0 & \exp\left\{i\frac{\delta}{2}t\right\}
 \end{pmatrix}.
 \end{equation}
-This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires the exploitation of a third energy level.\\
-We extend therefore our model to a 3 level atom driven by two different lasers.
--- 3 level scheme, Raman process with 2 lasers.
+This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires a third energy level.
+\subsubsection{Three-level model}
+\begin{figure}
+\centering
+\includegraphics[width = .3\textwidth]{3levelmodel}
+\caption{3 level atom model. Two long lived ground states $\ket{g_1}$, $\ket{g_2}$ couple to an excited level $\ket{e}$ through two laser of frequencies $\omega_1$, $\omega_2$ detuned respectively $\Delta_1,\Delta_2$ from the transition.}
+\label{3levelmodel}
+\end{figure}
+We extend our model to a 3 level $\Lambda$ type atom, which closer resemble the real experimental system, driven by two lasers. The model is more complex but contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$ with detuning $\Delta_1$ and $\Delta_2$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$.
+This is the qubit transition, and it is long lived, such that any spontaneous emission between S and P can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states.\\
+The mathematical description is similar to the one described in section () for the 2 level atom witht the addition of extra terms. The bare atom Hamiltonian is
+\begin{equation}
+H_a = -\hbar \omega_{01}\ket{g_1}\bra{g_1} - \hbar \omega_{02}\ket{g_2}\bra{g_2},
+\end{equation}
+with the convention of setting the excited level energy to 0. The electric field is now the sum of the two lasers light
+\begin{equation}
+E(t) = \hat{\varepsilon_{01}} E_{01} \cos(\omega_{1} t) + \hat{\varepsilon_{02}} E_{02} \cos(\omega_2 t).
+\end{equation}
+In the dipole approximation, following a rotating wave approxximation, and switching to the interacting picture, we obtain the Hamiltonian
+\begin{equation}
 
--- Spontaneous emission equation
+\end{equation}
+
+\subsubsection{Dissipative processes}
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
