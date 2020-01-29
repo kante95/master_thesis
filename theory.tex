@@ -200,13 +200,26 @@ We still apply the dipole and the rotating wave approximation to the interaction
 \begin{equation}
 H = \hbar \Delta_1 \ket{g_1}\bra{g_1} + \hbar\Delta_2 \ket{g_2}\bra{g_2}+ \frac{\hbar \Omega_1}{2}\left(\sigma_1 e^{i\varphi_1} +\sigma_1^\dagger e^{i\varphi_1}\right)+ \frac{\hbar \Omega_2}{2}\left(\sigma_2 e^{i\varphi_2} +\sigma_2^\dagger e^{i\varphi_2}\right),
 \end{equation}
-where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot d|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$.
-
-
-
+where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot d|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$. This Hamiltonian describes a Raman process, state population can be transferred coherently from $g_{1}$ to $g_{2}$, without exciting to the $\ket{e}$ level. This happens at the Raman resonance $\Delta_1 = \Delta_2 \equiv \Delta$ if the detuning is large enough to eliminate adiabatically population in the $\ket{e}$ level, i.e. $\Delta \gg \Omega_1,\Omega_2$. Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\\
+As the excited level is eliminated, it can be showed \cite{russo} that the dynamics can be described from an effective 2 level system equivalent of that described in section \ref{laserioninteractions}. The effective Rabi frequency can be written as
+\begin{equation}
+\Omega_{eff} = \frac{\Omega_1\Omega_2}{2\Delta}.
+\end{equation}
 
 
 \subsubsection{Dissipative processes}
+In the previous treatments we neglected dissipative processes as spontaneous emission to simplify the mathematical description. However, dissipative processes can play a role and it is important to understand them. In this section we will focus exclusively on spontaneous emission, later cavity decay will also be introduced.\\
+Dissipative process do not follow an Hermitian evolution, hence their mathematical description is done heuristically by adding terms in the Heisenberg equation
+\begin{equation}
+\label{masterequation}
+\frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
+\end{equation}
+This equation is usually referred to as master equation in Lindblad form, where $\rho$ is the density matrix of system. The superoperator
+$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. For spontaneous emission, the form of $\mathcal{L}(\rho)$ is
+\begin{equation}
+\mathcal{L}(\rho) = \frac{\Gamma}{2}(2\sigma \rho \sigma^\dagger -\sigma^\dagger\sigma \rho - \rho \sigma^\dagger \sigma),
+\end{equation}
+where $\Gamma$ is the decay rate.
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
@@ -547,7 +560,7 @@ As we can see, the final signal depends on the phase of the second 729nm pulse $
 \label{sequence}
 \end{figure}
 The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
-The 393nm pulse has to be off resonance from the transition to avoid spontaneous scattering in the $\text{S}_{1/2}\to \text{P}_{1/2}$ transition. The detuning is therefore chosen such that the ratio of the Stark shift $\delta$ and the spontaneous scattering rate $\Gamma_{eff}$ si at least 100. Using the value from table \ref{transitiontable}
+The 393nm pulse has to be off resonance from the transition to avoid spontaneous scattering in the $\text{S}_{1/2}\to \text{P}_{1/2}$ transition. The detuning is therefore chosen such that the ratio of the Stark shift $\delta$ and the spontaneous scattering rate $\Gamma_{eff}$ is at least 100. Using the value from table \ref{transitiontable}
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \implies \Delta \sim 3\,\text{GHz}.
 \end{equation}
