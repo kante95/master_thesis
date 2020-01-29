@@ -186,20 +186,25 @@ This matrix implements the quantum gate from equation \eqref{quantumgates}. Furt
 \caption{3 level atom model. Two long lived ground states $\ket{g_1}$, $\ket{g_2}$ couple to an excited level $\ket{e}$ through two laser of frequencies $\omega_1$, $\omega_2$ detuned respectively $\Delta_1,\Delta_2$ from the transition.}
 \label{3levelmodel}
 \end{figure}
-We extend our model to a 3 level $\Lambda$ type atom, which closer resemble the real experimental system, driven by two lasers. The model is more complex but contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$ with detuning $\Delta_1$ and $\Delta_2$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$.
-This is the qubit transition, and it is long lived, such that any spontaneous emission between S and P can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states.\\
-The mathematical description is similar to the one described in section () for the 2 level atom witht the addition of extra terms. The bare atom Hamiltonian is
+We extend our model to a 3 level $\Lambda$ type atom, which closer resemble the real experimental system, driven by two lasers. The model is more complex but contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$ with detuning $\Delta_1$ and $\Delta_2$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived, such that any spontaneous emission between S and P can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states.\\
+In this model we assume that the two ground states are not separated by an optical frequency $\omega_{02} - \omega_{01} \ll \omega_1,\omega_2$, and that the detunings are nearly equal $\Delta_1 \simeq \Delta_2$. As a consequence, each laser light couples only to one transition.\\
+The mathematical description is similar to the one described in section \ref{laserioninteractions} for the 2 level atom with the addition of extra terms. The bare atom Hamiltonian is
 \begin{equation}
 H_a = -\hbar \omega_{01}\ket{g_1}\bra{g_1} - \hbar \omega_{02}\ket{g_2}\bra{g_2},
 \end{equation}
-with the convention of setting the excited level energy to 0. The electric field is now the sum of the two lasers light
+with the convention of setting the excited level energy to 0. The electric field is now the sum of the two lasers lights
 \begin{equation}
-E(t) = \hat{\varepsilon_{01}} E_{01} \cos(\omega_{1} t) + \hat{\varepsilon_{02}} E_{02} \cos(\omega_2 t).
+E(t) = \hat{\varepsilon_{01}} E_{01} \cos(\omega_{1} t \varphi_1) + \hat{\varepsilon_{02}} E_{02} \cos(\omega_2 t + \varphi_2).
 \end{equation}
-In the dipole approximation, following a rotating wave approxximation, and switching to the interacting picture, we obtain the Hamiltonian
+We still apply the dipole and the rotating wave approximation to the interaction between electric field and atom. Finally transforming into the rotating frame gives the full final Hamiltonian as \cite{steck}
 \begin{equation}
+H = \hbar \Delta_1 \ket{g_1}\bra{g_1} + \hbar\Delta_2 \ket{g_2}\bra{g_2}+ \frac{\hbar \Omega_1}{2}\left(\sigma_1 e^{i\varphi_1} +\sigma_1^\dagger e^{i\varphi_1}\right)+ \frac{\hbar \Omega_2}{2}\left(\sigma_2 e^{i\varphi_2} +\sigma_2^\dagger e^{i\varphi_2}\right),
+\end{equation}
+where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot d|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$.
 
-\end{equation}
+
+
+
 
 \subsubsection{Dissipative processes}
 
