@@ -163,6 +163,7 @@ E_{\pm} = -\frac{\hbar\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
 \end{equation}
 In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{1},\ket{-}\to \ket{0}$, and the energies becomes
 \begin{equation}
+\label{eq:starkshift}
 E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \pm\frac{\Omega^2}{4\Delta}.
 \end{equation}
 The effective Hamiltonian for the off-resonant regime can be derived following a Markovian approximation \cite{acstarkhamiltonian}
@@ -215,15 +216,28 @@ Dissipative process do not follow an Hermitian evolution, hence their mathematic
 \frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
 \end{equation}
 This equation is usually referred to as master equation in Lindblad form, where $\rho$ is the density matrix of system. The superoperator
-$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. For spontaneous emission, the form of $\mathcal{L}(\rho)$ is
+$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. For spontaneous emission, the form of $\mathcal{L}(\rho)$ is \cite{quantumnoise}
 \begin{equation}
 \mathcal{L}(\rho) = \frac{\Gamma}{2}(2\sigma \rho \sigma^\dagger -\sigma^\dagger\sigma \rho - \rho \sigma^\dagger \sigma),
 \end{equation}
-where $\Gamma$ is the decay rate.
+where $\Gamma$ is the decay rate. $\Gamma$ represents the coupling between atom and environment, and can be calculated from Fermi's golden rule \cite{doi:10.1142/p941}
+\begin{equation}
+\Gamma = \frac{\omega_0^3 |d|^2}{3\pi\varepsilon_0 \hbar c^3}.
+\end{equation}
+The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$,
+in the rotating frame they are called optical Bloch equations. The solution for the excited population in the case of the 2 level atoms shows that the effect of spontaneous decay is to damp Rabi oscillations. In this case, on long time scale population exchange is suppressed, as it reaches a steady state. This regime is presented is section \ref{sec:doppler_cooling}.\\
+In the case of the three level model, the excited level $\ket{e}$ can decay to both ground states with rates $\Gamma_{g_1}$, and $\Gamma_{g_2}$. We are most interested in the decay rate $\Gamma_{g_1} \def \Gamma$ from $\ket{e}\to\ket{g_1}$ as the other transition in calcium is often repumped. In this case, in the effective 2 level system picture, the spontaneous emission is modified as \cite{russo}
+\begin{equation}
+\Gamma_{eff} = \left(\frac{\Omega_1}{2 \Delta_1}\right)^2 \cdot \Gamma.
+\end{equation}
+The ratio between this result and the Ac Stark shift \eqref{eq:starkshift} $\delta/\Gamma_{eff}\propto \Delta$ dictates which effect is dominant, i.e. spontaneous scattering can be eliminated leaving only Stark shift as effect depending on the detuning.
+
+
+
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
-A quantum network is a collection of quantum processors, called nodes, interconnected with quantum channels. Quantum channels have the unique property to be able to transmit quantum state among the nodes and distribute entanglement over the network \cite{kimble}. There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
+A quantum network is a collection of quantum processors, denominated nodes, interconnected with quantum channels. Quantum channels have the unique property to be able to transmit quantum state among the nodes and distribute entanglement over the network \cite{kimble}. There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
 In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects nodes. Links can be realized in free space \cite{Hughes2002} or with optical fibers, photons can carry quantum information over long distance with high speed. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how an interface can be realized by placing an ion based quantum memory in an optical cavity.\\
 For a fully deployed quantum network, many challenges have to be faced. Faithful transmission of a quantum states over long distances can be a daunting problem as quantum information cannot be cloned \cite{nocloning}, and noisy channels can destroy the delicate nature of qubits. Quantum repeaters have been designed \cite{quantumrepeters} to circumvent these problems through a series of protocols which includes error corrections, or entanglement purification \cite{Pan2001}. More protocols are also available to  entangle qubits located in spatially separated quantum nodes \cite{Duan2001}. Once entanglement has been established between nodes, other network functionalities become available, like for instance teleportation \cite{PhysRevLett.70.1895}. Entanglement generation, and quantum repeaters are just some examples of the fundamental steps necessary for building a quantum network, for a more in depth review look at \cite{Wehnereaam9288}.
 
@@ -376,6 +390,7 @@ u_{min}(N) \simeq \frac{2.018}{N^{0.559}},
 \end{equation}
 Although, numerical solution are preferred and can be computed fast.
 \subsection{Doppler cooling and detection}
+\label{sec:doppler_cooling}
 Ion trapping was treated here classically, because ions, when trapped, are still hot and follow classical mechanics. In order to reach the quantum regime, they must be cooled down. Several techniques are available for cooling, but the most popular and more frequently used is doppler cooling. The idea comes from neutral atoms and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
 The difference with neutral atoms is that an ion is confined inside a trap rotating at frequency $\omega$. Hence, even the simple 2-level system gains new transitions called sidebands. Some consideration must be put into the relative strength of the decay rate $\Gamma$ with respect to the sidebands. For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$. The intuitive picture is that the rate of spontaneous emission in this case is much faster that the time scale over which the trap changes potential. Therefore, the trap can be considered static  and has no effect on the cooling.\\
 In order to describe spontaneous emission, we use the master equation \eqref{masterequation}, in the case of spontaneous emission, the superoperator is given by \cite{gabriel}

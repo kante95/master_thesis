@@ -9,12 +9,12 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}Dissipative processes}{12}{subsubsection.2.1.2.2}% 
 \contentsline {section}{\numberline {2.2}Quantum networking with trapped ions}{13}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}General introduction}{13}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Cavity QED}{13}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.2}Cavity QED}{14}{subsection.2.2.2}% 
 \contentsline {subsection}{\numberline {2.2.3}Photon generation}{15}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Basics of ion trapping}{16}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Linear Paul trap}{16}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Ion strings}{18}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Doppler cooling and detection}{19}{subsection.2.3.3}% 
+\contentsline {section}{\numberline {2.3}Basics of ion trapping}{17}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Linear Paul trap}{17}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Ion strings}{19}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Doppler cooling and detection}{20}{subsection.2.3.3}% 
 \contentsline {section}{\numberline {2.4}Laser beam}{22}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Gaussian beams}{22}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}Beam stearing via AOD's}{25}{subsection.2.4.2}% 
