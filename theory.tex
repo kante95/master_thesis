@@ -209,6 +209,7 @@ As the excited level is eliminated, it can be showed \cite{russo} that the dynam
 
 
 \subsubsection{Dissipative processes}
+\label{sec:dissipation}
 In the previous treatments we neglected dissipative processes as spontaneous emission to simplify the mathematical description. However, dissipative processes can play a role and it is important to understand them. In this section we will focus exclusively on spontaneous emission, later cavity decay will also be introduced.\\
 Dissipative process do not follow an Hermitian evolution, hence their mathematical description is done heuristically by adding terms in the Heisenberg equation
 \begin{equation}
@@ -553,10 +554,16 @@ where $v_s$ is the speed of sound and $f$ the frequency of the signal. We can al
 there are several way to engineer such device to increase bandwidth and keep the Bragg condition verified, for example the transducer is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.
 
 \section{Experiments model}
-\subsection{Addressed photon generation}
+The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In this section, we introduce and discuss these experiments to give an idea of what we are aiming for.
+
 \subsection{Addressed qubit manipulation}
-Ions can be used as sensitive tools for beam profiling, unfortunately the 393 nm light excites a dipole transition with a short lived excited state. Therefore, a direct excitation followed by a measurement is not fast enough to gain any information. Ideally, the 729nm qubit transition should be used, as here state readout is available and the transition is metastable. This is possible as the 393nm transition shares the ground state with the qubit transition, so the 393nm laser can be detuned such that the AC stark shift caused changes the phase of the qubit producing measurable effects. Measurements of the Stark shift can be done with a Ramsey interference experiment \cite{starkshift}.
-The idea of the experiment is to send a resonant $\pi/2$ pulse at 729nm, which bring the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729nm pulse will depend on the shift induced by the 393nm laser. By calculating the final probability $P_D$ it is possible to infer the power of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+A we have seen, ions can be used to encode and process quantum information. As highlighted in figure (), the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
+\begin{equation}
+\frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \sim 100 \implies \Delta \sim 3\,\text{GHz}.
+\end{equation}
+Furthermore, ions can be used as sensitive tools for beam profiling, the addressed manipulation changes only the qubit state of a single ion. Hence, by measuring the state of all ions, and scanning the beam across the ions string, a beam profile can be obtained. In a single experiment we can therefore characterize the beam and demonstrate qubit manipulation.
+The experiments consist of Ramsey interferometry, already performed in the past to measure Ac Stark shift \cite{starkshift}.
+The idea is to send a resonant $\pi/2$ pulse at 729nm, which bring the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729nm pulse will depend on the shift induced by the 393nm laser. By calculating the final probability $P_D$ it is possible to infer the power of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
 \begin{equation}
 \begin{split}
 \ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
@@ -575,7 +582,6 @@ As we can see, the final signal depends on the phase of the second 729nm pulse $
 \label{sequence}
 \end{figure}
 The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
-The 393nm pulse has to be off resonance from the transition to avoid spontaneous scattering in the $\text{S}_{1/2}\to \text{P}_{1/2}$ transition. The detuning is therefore chosen such that the ratio of the Stark shift $\delta$ and the spontaneous scattering rate $\Gamma_{eff}$ is at least 100. Using the value from table \ref{transitiontable}
-\begin{equation}
-\frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \implies \Delta \sim 3\,\text{GHz}.
-\end{equation}
+
+\subsection{Addressed photon generation}
+The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}.

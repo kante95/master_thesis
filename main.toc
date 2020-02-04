@@ -19,29 +19,29 @@
 \contentsline {subsection}{\numberline {2.4.1}Gaussian beams}{22}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}Beam stearing via AOD's}{25}{subsection.2.4.2}% 
 \contentsline {section}{\numberline {2.5}Experiments model}{27}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Addressed photon generation}{27}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Addressed qubit manipulation}{27}{subsection.2.5.2}% 
-\contentsline {chapter}{\numberline {3}Existing experimental system}{29}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Ion trap and key techniques}{29}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Calcium Ions}{29}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Trapping, cooling, and state readout}{30}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}393 nm laser}{32}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Experiment control}{33}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Design and simulation of the addressing setup}{37}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Addressing system overview and requirements}{37}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Objective and AOD}{39}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Design simulation}{40}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Physical implementation}{43}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}Experimental results}{47}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}AOD}{47}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Full test setup characterization}{48}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Waist: Knife-Edge method}{49}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Waist: Camera}{50}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Polarization}{52}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Stability}{53}{subsection.5.2.4}% 
-\contentsline {section}{\numberline {5.3}Final installed system}{56}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Ramsey interferometry}{56}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Photon production}{58}{subsection.5.3.2}% 
-\contentsline {section}{\numberline {5.4}Final properties summary}{60}{section.5.4}% 
-\contentsline {chapter}{\numberline {6}Conclusions and outlook}{61}{chapter.6}% 
-\contentsline {section}{References}{63}{section*.51}% 
+\contentsline {subsection}{\numberline {2.5.1}Addressed qubit manipulation}{27}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Addressed photon generation}{29}{subsection.2.5.2}% 
+\contentsline {chapter}{\numberline {3}Existing experimental system}{31}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Ion trap and key techniques}{31}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Calcium Ions}{31}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Trapping, cooling, and state readout}{32}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}393 nm laser}{34}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Experiment control}{35}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}Design and simulation of the addressing setup}{39}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Addressing system overview and requirements}{39}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Objective and AOD}{41}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Design simulation}{42}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Physical implementation}{45}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}Experimental results}{49}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}AOD}{49}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Full test setup characterization}{50}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Waist: Knife-Edge method}{51}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Waist: Camera}{52}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Polarization}{54}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Stability}{55}{subsection.5.2.4}% 
+\contentsline {section}{\numberline {5.3}Final installed system}{58}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Ramsey interferometry}{58}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Photon production}{60}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Final properties summary}{62}{section.5.4}% 
+\contentsline {chapter}{\numberline {6}Conclusions and outlook}{63}{chapter.6}% 
+\contentsline {section}{References}{65}{section*.51}% 
