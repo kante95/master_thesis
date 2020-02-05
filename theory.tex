@@ -181,6 +181,7 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
 \end{equation}
 This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, Ac Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires a third energy level.
 \subsubsection{Three-level model}
+\label{sec:threelevel}
 \begin{figure}
 \centering
 \includegraphics[width = .3\textwidth]{3levelmodel}
@@ -283,6 +284,7 @@ where $F$ is the cavity finesse, and $L$ the length. In the design of the experi
 By placing a cavity around the trap, photon generation is enabled. The cavity mediated Raman process is responsible for this phenomenon. It can be explained strating from a three level atom like in figure \ref{ramanprocess}. The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{1}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
 to the $\text{D}_{5/2}$ state emitting a photon inside the cavity. Thus the process can be described as $\ket{0}_i\ket{0}_p \to \ket{1}_i\ket{1}_p$ where the subscript $i$ indicates the ion and $p$ the photon number in the cavity. The detuning is set such as $\Delta \gg \Omega,g$, in this regime the whole process can be described as a single transition with effective Rabi frequency of \cite{helene}
 \begin{equation}
+\label{omegaeff}
 \Omega_{eff} = \frac{\Omega g}{2\Delta}.
 \end{equation}
 It is equivalent of a classical Raman process driven with two laser pulses on the two different transitions, but in this case the second laser is substituted by the vacuum standing wave of the cavity. In order to avoid decay in other channels, one must be sure that $\Omega_{eff}$ is larger than the effective decay rate of other spontaneous emission $\Omega_{eff}\gg \Gamma_{eff}$. Moreover, the photon should leave the cavity after the transfer is complete, this is ensured by $\Omega_{eff} >\kappa$.\\
@@ -319,64 +321,61 @@ In the real experiment the designed cavity is near concentric with a length of $
 
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}
-In order to trap a charged atom, a three dimensional trapping potential $\phi$ is needed. However it follows directly from Maxwell equation $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two  different dimension. If the switching is timed correctly, the particle will not have the time to escape but will always encounter a potential barrier.
-The shape of the trap can be adapted to load more ions in different geometries. For instance, a linear Paul trap is elongated in one direction where the trapping confinement is weaker, such that loaded ions will align in a single long string. This kind of trap is depicted in figure \ref{trap}.
+Ions are particles that carry an electric charge, therefore electric fields can be used to control ions and ultimately trap them. In order to achieve confinement in 3 dimensions, a 3D potential $\phi(x,y,z)$ with minima in all directions is needed. However, it follows directly from Maxwell equation $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap \cite{RevModPhys.58.233}. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two different dimension. The particles will therefore experience an effective confinement in all direction if the switching is faster compared to the time it takes the particle to respond.\\
+The shape of the trap can be adapted to load more ions in different geometries. In our work we utilize a linear Paul trap, which is elongated in one direction. The confinement in this direction is weaker and thus loaded ions will align in a single long string. This kind of trap is depicted in figure \ref{trap}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = .7\textwidth]{trap}
 \caption{A linear paul trap. U is the voltage applied to the electrodes trapping in the $z$ direction, while in the $x-y$ plane trapping is achieved with a radio frequency signal. $r_0$ is the distance from the central axis to the RF electrodes.}
 \label{trap}
 \end{figure}
-The confinement in the $x-y$ plane is provided by 4 electrodes, two of which are grounded and the other two are connected to a radio frequency source. This design is similar to a mass filter, with the difference of additional endcaps electrodes in the $z$ direction that plug the trap and confine also in axial direction.\\
+The confinement in the $x-y$ plane is provided by 4 electrodes, two of which are grounded and the other two are connected to a radio frequency source. This design is similar to a mass filter, with the difference of additional endcaps electrodes in the $z$ direction that plug the trap and confine also in the axial direction.\\
 The potential inside the trap can be described for the $x-y$ plan independently from the $z$ direction. In the case of a linear Paul trap the radial potential is \cite{traptheory}:
 \begin{equation}
 \phi  = \frac{\Phi_0}{2r_0^2}\left(x^2 - y^2\right),
 \end{equation}
-with the amplitude that consists of a static part $U$ and a dynamical one $\Phi_0 = U + V \cos(\Omega_{RF} t)$.
+where $r_0$ is the distance from the center of the trap to the electrodes. The amplitude consists of a static part $U_0$ and a dynamical one $\Phi_0 = U_0 + V \cos(\Omega_{RF} t)$.
 The study of the particle's motion with mass $m$ and charge $e$ inside the trap can be done with classical physics, Newton's second law in this case is
 \begin{equation}
-m\ddot{x} = -q \frac{\partial \phi}{\partial x} = - \frac{ex}{r_0^2}\left(U + V \cos(\Omega_{RF} t) \right),
+m\ddot{x} = -q \frac{\partial \phi}{\partial x} = - \frac{ex}{r_0^2}\left(U_0 + V \cos(\Omega_{RF} t) \right),
 \end{equation}
-and similarly for $\ddot{y}$. This equation can be written in the form of Mathieu equation by defining two parameters:
+and similarly for $\ddot{y}$. This equation can be written in the form of Mathieu equation \cite{Richards1983} by defining two parameters:
 \begin{equation}
-a_x = \frac{4eU}{\Omega_{RF}^2r_0^2m}, \quad q_x = \frac{2eV}{\Omega_{RF}^2r_0^2m} \implies \ddot{x} +\frac{\Omega_{RF}}{4} \left(a_x + 2q_x \cos(\Omega_{RF} t )\right)x = 0
+a_x = \frac{4eU_0}{\Omega_{RF}^2r_0^2m}, \quad q_x = \frac{2eV}{\Omega_{RF}^2r_0^2m} \implies \ddot{x} +\frac{\Omega_{RF}}{4} \left(a_x + 2q_x \cos(\Omega_{RF} t )\right)x = 0
 \end{equation}
 and with a change of variable $\tau = \frac{\Omega_{RF} t}{2}$ we end up with
 \begin{equation}
 \label{mathieu}
 \frac{\partial^2 x}{\partial \tau^2}+\left(a_x + 2q_x \cos(2\tau)\right)x = 0
 \end{equation}
-This kind of equations have stable solutions that can be found in a recursive way with Floquet theorem \cite{iondynamic}. However, the problem is simplified by performing the so called secular approximation, which consists of separating the motion in a slow changing position: $\bar{x}$ called \emph{secular motion}, and in a rapid oscillation: $\xi$, called \emph{micromotion}. The behaviour of micromotion is dictated by the force due to the potential at the position $\bar{x}$, and the secular motion will follow a time average of the potential $\langle \phi(t) \rangle$ eliminating therefore the effect of micromotion. In this case, equation \eqref{mathieu} can be solved in the limit $a_x \ll q_x \ll 1$
+This kind of equations have stable solutions that can be found in a recursive way with Floquet theorem \cite{iondynamic}. In the limit $a_x \ll q_x \ll 1$, solutions to \eqref{mathieu} are found to be
 \begin{equation}
 x(t) = x_0 \cos(\omega_x t +\phi_x)\left[1 + \frac{q_x}{2}\cos(\Omega_{RF} t) \right].
 \end{equation}
-Where we recognize a slowly varying oscillation with amplitude modulated by a faster oscillation. The approximation is valid only in the case $\omega_x \ll \Omega_{RF}$. The frequency $\omega_x$ is given in the solution as
+Here, we recognize a slowly varying oscillation $\omega_x$, referred to as \emph{secular motion}, with amplitude modulated by a faster oscillation $\Omega_{RF}$, called \emph{micromotion}. The approximation, named secular, is valid only in the case $\omega_x \ll \Omega_{RF}$. The behaviour of micromotion is dictated by the force due to the potential at the position $\bar{x}$, and the secular motion will follow a time average of the potential $\langle \phi(t) \rangle$. The frequency $\omega_x$ is given in the solution as
 \begin{equation}
+\label{eq:wx}
 \omega_x = \frac{\Omega_{RF}}{2}\sqrt{a_x + \frac{q_x^2}{2}}.
 \end{equation}
-By imposing real solution, the stability diagram of the trap can be found. It is depicted in figure \ref{stabilitydiagram}. The other spatial dimension can be treated in the same way and the results are the same. Important to notice is that a consequence of the secular approximation is that the potential can be approximated, the ion in the trap sees therefore a pseudo potential which is harmonic. Deviations from harmonicity are possible and they are mainly due to stray fields. Extra electrodes can be added to the trap design to compensate for such deviations.
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[width = .7\textwidth]{stabilitydiagram}
-\caption{Stability diagram for a linear Paul trap, taken from \cite{iondynamic}. The coefficient $\beta_x,\beta_y$ can be calculated numerically from $a_x$ and $q_x$}
-\label{stabilitydiagram}
-\end{figure}
-
+By imposing real solutions to \eqref{eq:wx}, the stability diagram of the trap can be found. The other spatial dimension can be treated in the same way and the results are the same.\\
+Confinement in the axial direction $z$ is purposely weaker, and ions will align in this direction. Two electrodes with constant potential $U$ are present, they create a harmonic potential
+\begin{equation}
+V = \frac{1}{2}m\omega_z^2z^2,
+\end{equation}
+where $\omega_z$ is the axial trap frequency. In the case of a string of ions, mutual repulsions must also be included, in the next section we will consider this case.
 
 \subsection{Ion strings}
 \label{ionstrings}
-We have seen that the potential inside the trap can be described as an harmonic potential. What we are interested in, is the ion separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\\
+For the goals of this thesis, we are interested in the separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\\
 Let us consider the $z$ direction where the ions are weakly confined and will form a string. The potential can be approximated as harmonic and hence given by
 \begin{equation}
-V = \sum_{i=0}^N \frac{1}{2}M\omega^2z_i^2 + \sum_{i\neq j}^N\frac{Z^2e^2}{8\pi \epsilon_0}\frac{1}{|z_i-z_j|}
+V = \sum_{i=0}^N \frac{1}{2}m\omega^2z_i^2 + \sum_{i\neq j}^N\frac{Z^2e^2}{8\pi \epsilon_0}\frac{1}{|z_i-z_j|}
 \end{equation}
 The equilibrium position can be found at the minima of the potential, i.e. where the first derivative zeros
 \begin{equation}
 \frac{\partial V}{\partial z_i} = 0 \implies u_i - \sum_{j=1}^{i-1} \frac{1}{(u_i-u_j)^2} + \sum_{j= i+1}^{N} \frac{1}{(u_i-u_j)^2}= 0,
 \end{equation}
-where we defined the dimensionless quantity $u_i = z_i/l$ and $l^3 = \displaystyle\frac{Z^2 e^2 }{4\pi \epsilon_0 M\omega^2}$.
+where we defined the dimensionless quantity $u_i = z_i/l$ and $l^3 = \displaystyle\frac{Z^2 e^2 }{4\pi \epsilon_0 m\omega^2}$.
 The last equations can be solved analytically only for 2 or 3 ions. In fact, for the case $N=2$ we simply get the system
 \begin{equation}
 \begin{cases}
@@ -554,7 +553,7 @@ where $v_s$ is the speed of sound and $f$ the frequency of the signal. We can al
 there are several way to engineer such device to increase bandwidth and keep the Bragg condition verified, for example the transducer is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.
 
 \section{Experiments model}
-The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In this section, we introduce and discuss these experiments to give an idea of what we are aiming for.
+The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as is discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.
 
 \subsection{Addressed qubit manipulation}
 A we have seen, ions can be used to encode and process quantum information. As highlighted in figure (), the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
@@ -584,4 +583,4 @@ As we can see, the final signal depends on the phase of the second 729nm pulse $
 The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
 
 \subsection{Addressed photon generation}
-The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}.
+The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In this case the 393nm laser pulse has to be send at the correct frequency to excite the Raman resonance. Detuning of the cavity and laser pulse must be equal as discussed in section \ref{sec:threelevel}. In order to adiabatically eliminate the $P$ state, we set $\Delta \sim 400$ MHz. The Raman resonance is precisely measure with a double pass AOM, and the frequency is set accordingly. Note that the effective Rabi frequency is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, Ac stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this give the possibility the check if other ions have been unwantedly addressed.

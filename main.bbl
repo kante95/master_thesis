@@ -188,10 +188,21 @@ Helmut Ritsch, Peter Domokos, Ferdinand Brennecke, and Tilman Esslinger.
 \newblock Cold atoms in cavity-generated dynamical optical potentials.
 \newblock {\em Rev. Mod. Phys.}, 85:553--601, Apr 2013.
 
+\bibitem{RevModPhys.58.233}
+Lowell~S. Brown and Gerald Gabrielse.
+\newblock Geonium theory: Physics of a single electron or ion in a penning
+  trap.
+\newblock {\em Rev. Mod. Phys.}, 58:233--311, Jan 1986.
+
 \bibitem{traptheory}
 Philip~E. Miller and M.~Bonner Denton.
 \newblock The quadrupole mass filter: Basic operating concepts.
 \newblock {\em Journal of Chemical Education}, 63(7):617, 1986.
+
+\bibitem{Richards1983}
+J.~A. Richards.
+\newblock {\em The Mathieu Equation}, pages 93--107.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1983.
 
 \bibitem{iondynamic}
 D.~Leibfried, R.~Blatt, C.~Monroe, and D.~Wineland.
