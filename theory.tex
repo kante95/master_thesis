@@ -367,28 +367,32 @@ where $\omega_z$ is the axial trap frequency. In the case of a string of ions, m
 \subsection{Ion strings}
 \label{ionstrings}
 For the goals of this thesis, we are interested in the separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\\
-Let us consider the $z$ direction where the ions are weakly confined and will form a string. The potential can be approximated as harmonic and hence given by
+Let us consider the $z$ direction where the ions are more weakly confined such that they form a string. The potential can be approximated as harmonic and hence given by
 \begin{equation}
-V = \sum_{i=0}^N \frac{1}{2}m\omega^2z_i^2 + \sum_{i\neq j}^N\frac{Z^2e^2}{8\pi \epsilon_0}\frac{1}{|z_i-z_j|}
+V = \sum_{i=0}^N \frac{1}{2}m\omega^2z_i^2 + \sum_{i\neq j}^N\frac{Z^2e^2}{8\pi \epsilon_0}\frac{1}{|z_i-z_j|},
 \end{equation}
-The equilibrium position can be found at the minima of the potential, i.e. where the first derivative zeros
+where $z_i$ is the position of the $i-$th ion, and $Z$ the degree of ionization of the ions. The equilibrium positions can be found at the minima of the potential, i.e. where the first derivative zeros
 \begin{equation}
 \frac{\partial V}{\partial z_i} = 0 \implies u_i - \sum_{j=1}^{i-1} \frac{1}{(u_i-u_j)^2} + \sum_{j= i+1}^{N} \frac{1}{(u_i-u_j)^2}= 0,
 \end{equation}
 where we defined the dimensionless quantity $u_i = z_i/l$ and $l^3 = \displaystyle\frac{Z^2 e^2 }{4\pi \epsilon_0 m\omega^2}$.
-The last equations can be solved analytically only for 2 or 3 ions. In fact, for the case $N=2$ we simply get the system
+The last equations can be solved analytically for 2 or 3 ions \cite{ion_spacing}. For the case $N=2$ we get the system
 \begin{equation}
 \begin{cases}
   u_1 + \frac{1}{(u_1-u_2)^2} = 0\\
   u_2 - \frac{1}{(u_1-u_2)^2} = 0
   \end{cases} \quad \implies \quad u_1 = -u_2,\quad  u_1 = \left(\frac{1}{2}\right)^{2/3} \simeq 0.629
 \end{equation}
-For calcium-40 ions in a Paul trap with axial confinement of $\omega = 1$ MHz, we have $l \simeq 4.45\times 10^{-6}\,$m, which means that 2 ions are separated by $\simeq 5.6\, \mu$m. In the case of more ions the separation is lesser with the same confinement, but it is also possible to lower the axial frequency and increase the separation between the ions such that also in the case of several ions, the distance between them is still in the order of several $\mu$m. This size is accessible with current focusing optics and it is above the diffraction limit.\\
-For more ions, a numerical approach has to be used, \cite{ion_spacing} reports values of $u_i$ up to $N=10$, and gives an empirical formula of the minimum separation
-\begin{equation}
-u_{min}(N) \simeq \frac{2.018}{N^{0.559}},
-\end{equation}
-Although, numerical solution are preferred and can be computed fast.
+For $^{40}\text{Ca}^+$ ions (atomic mass $39.96259098(22)$ u \cite{AUDI2003337}) in a Paul trap with axial confinement of $\omega_z = 2\pi \times 1$ MHz, we have $l \simeq 4.45\times 10^{-6}\,$m, which means that 2 ions are separated by $\simeq 5.6\, \mu$m. This size is accessible since it is above diffraction limit for optical atomic transitions.
+In figure \ref{positions_ions} ions positions are presented for an axial confinement of $\omega_z = 2\pi \times 1$ MHz.
+
+\begin{figure}[H]
+\hspace{-4em}\includegraphics[width = 1.2\textwidth]{positions_ions}
+\caption{Ions position for different number $N$ of ions in the trap. Confinement is $\omega_z = 2\pi\times 1$ MHz.}
+\label{positions_ions}
+\end{figure}
+
+
 \subsection{Doppler cooling and detection}
 \label{sec:doppler_cooling}
 Ion trapping was treated here classically, because ions, when trapped, are still hot and follow classical mechanics. In order to reach the quantum regime, they must be cooled down. Several techniques are available for cooling, but the most popular and more frequently used is doppler cooling. The idea comes from neutral atoms and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
