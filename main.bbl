@@ -222,10 +222,23 @@ G.~Audi, A.H. Wapstra, and C.~Thibault.
 \newblock {\em Nuclear Physics A}, 729(1):337 -- 676, 2003.
 \newblock The 2003 NUBASE and Atomic Mass Evaluations.
 
-\bibitem{gabriel}
-Gabriel Andres~Areneda Machuca.
-\newblock {\em Experiments with single photons emitted by single atoms}.
-\newblock PhD thesis, University of Innsbruck, 2019.
+\bibitem{Wineland1998}
+D.J. Wineland, C.~Monroe, W.M. Itano, D.~Leibfried, B.E. King, and D.M.
+  Meekhof.
+\newblock Experimental issues in coherent quantum-state manipulation of trapped
+  atomic ions.
+\newblock {\em Journal of Research of the National Institute of Standards and
+  Technology}, 103(3):259, May 1998.
+
+\bibitem{1975OptCo..13...68H}
+T.~W. {Hansch} and A.~L. {Schawlow}.
+\newblock {Cooling of gases by laser radiation}.
+\newblock {\em Optics Communications}, 13(1):68--69, Jan 1975.
+
+\bibitem{Eschner:03}
+J\"{u}rgen Eschner, Giovanna Morigi, Ferdinand Schmidt-Kaler, and Rainer Blatt.
+\newblock Laser cooling of trapped ions.
+\newblock {\em J. Opt. Soc. Am. B}, 20(5):1003--1015, May 2003.
 
 \bibitem{saleh}
 Bahaa E.~A. Saleh and Malvin~Carl Teich.

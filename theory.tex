@@ -395,17 +395,9 @@ In figure \ref{positions_ions} ions positions are presented for different number
 
 \subsection{Doppler cooling and detection}
 \label{sec:doppler_cooling}
-Ion trapping was treated here classically, because ions, when trapped, are still hot and follow classical mechanics. In order to reach the quantum regime, they must be cooled down. Several techniques are available for cooling, but the most popular and more frequently used is doppler cooling. The idea comes from neutral atoms and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
-The difference with neutral atoms is that an ion is confined inside a trap rotating at frequency $\omega$. Hence, even the simple 2-level system gains new transitions called sidebands. Some consideration must be put into the relative strength of the decay rate $\Gamma$ with respect to the sidebands. For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$. The intuitive picture is that the rate of spontaneous emission in this case is much faster that the time scale over which the trap changes potential. Therefore, the trap can be considered static  and has no effect on the cooling.\\
-In order to describe spontaneous emission, we use the master equation \eqref{masterequation}, in the case of spontaneous emission, the superoperator is given by \cite{gabriel}
-\begin{equation}
-\mathcal{L}(\rho) = \frac{\Gamma}{2}\left(2\sigma \rho \sigma^\dagger - \left\{\sigma^\dagger \sigma, \rho\right\}\right).
-\end{equation}
-$\Gamma$ is the decay rate from the excited state to the ground state. The actual value is found in perturbation theory with Fermi's golden rule []
-\begin{equation}
-\Gamma = \frac{\omega_0^3}{3\pi \varepsilon_0 \hbar c^3} |\braket{e|d|g}|^2
-\end{equation}
-The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$, in the rotating frame they are called optical equations and they are
+Coherent manipulation of ions require cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extend of the ion wave packets is much small than the optical wavelengths of the lasers. Several techniques are available for cooling, but the most popular and more frequently used is Doppler cooling. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
+For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$.\\
+The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$, in the rotating frame they are called optical Bloch equations and they are
 \begin{equation}
 \label{rhoee}
 \frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
@@ -419,7 +411,7 @@ The master equation \eqref{masterequation} can be explicitly written for every c
 \begin{equation}
 \frac{d\rho_{eg}}{dt} = -\left(\frac{\Gamma}{2}-i\Delta\right)\rho_{eg}+i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
 \end{equation}
-The most interesting solution is the population of the excited level $\rho_{ee}$ in the steady state case, i.e. when the system reached he equilibrium. In this case we look at $\rho_{ee}(t\to \infty) $, the solution of equation \eqref{rhoee} is
+We are interested in the steady state case, i.e. when the system reached he equilibrium. Therefore, we look at $\rho_{ee}(t\to \infty) $, the solution of equation \eqref{rhoee} is
 \begin{equation}
 \rho_{ee}(t\to \infty) = \frac{\Omega^2/\Gamma^2}{1 + \left(2\frac{\Delta -\mathbf{k}\cdot \mathbf{v}}{\Gamma}\right)^2 + 2\frac{\Omega^2}{\Gamma^2}}
 \end{equation}
@@ -438,11 +430,16 @@ At equilibrium, the heating rate equals the cooling rate giving the lowest tempe
 \end{equation}
 From here it is clear that by choosing the appropriated detuning, it is possible to reach the lowest temperature
 \begin{equation}
-T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}
+T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}.
 \end{equation}
-The achieved temperatures with Doppler cooling are enough to perform standard measurements. To go further down in temperature, sideband cooling is used, here particular sideband transition are excited to reduce the phonon number of the ions inside the trap.\\
-With the same interaction of Doppler cooling, state detection can also be performed by means of laser induced fluorescence. Consider the $\Lambda$ scheme in figure \ref{threelevel}, the qubit is encoded in the level $\ket{g_1}$ and $\ket{g_2}$. To distinguish in which state the electron is, the transition $\ket{g_1}\to \ket{1}$ is excited. In the case the electron is in $\ket{g_1}$, the electron undergoes Rabi flops and scatters photons that can be collected and measured. If the electron is $\ket{g_2}$, no photons will be emitted and therefore no light is collected. The difference between these bright and dark states is clear and detection can be performed efficiently with near perfect efficiency.\\
-In the real case, one must take into consideration also all the other levels. In fact, an electron from the excited state $\ket{1}$ can have multiple decay channels to other states and repumping becomes necessary.
+At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}. As an example, calcium ions confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$. The wavefunction extend for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$, creation and annihilation operator algebra gives
+\begin{equation}
+\sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52.5\,\text{nm}.
+\end{equation}
+An ion cooled with Doppler cooling therefore has a spatial dimension still much smaller than the ion separations.\\
+To further decrease $\braket{\hat{n}}$, sideband cooling is used \cite{Eschner:03}, here particular sideband transition are excited to reduce the phonon number of the ions inside the trap. However in the experiments of this thesis, only Doppler cooling has been performed.\\
+
+
 \begin{figure}
 \centering
 \includegraphics[width = .6\textwidth]{threelevelatom}
