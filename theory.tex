@@ -393,7 +393,7 @@ In figure \ref{positions_ions} ions positions are presented for different number
 \end{figure}
 
 
-\subsection{Doppler cooling and detection}
+\subsection{Doppler cooling}
 \label{sec:doppler_cooling}
 Coherent manipulation of ions require cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extend of the ion wave packets is much small than the optical wavelengths of the lasers. Several techniques are available for cooling, but the most popular and more frequently used is Doppler cooling. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
 For describing the Doppler cooling we assume that the ion is weakly confined $\omega \ll \Omega$.\\
@@ -450,55 +450,63 @@ To further decrease $\braket{\hat{n}}$, sideband cooling is used \cite{Eschner:0
 \subsection{Gaussian beams}
 \label{sec_diffraction}
 Lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
-From a theoretical point of view, Gaussian beams are solution of the Helmholtz equation $(\nabla^2 + k^2)U(r) = 0$, with $k$ being the wavevector. Such equation is a time independent variant of the wave equation that follows directly from Maxwell equations. A paraxial approximation is often used, i.e.  we assume that the amplitude $A(r)$ of the wave is slowly varying, this means that the envelope of the wave is approximately constant on a length of $\lambda$ and we can write the complex electric field as $U(r) = A(r)e^{-ikz}$. If we can consider a wave propagating in the $z$ direction, we can find a solution in the form of \cite{saleh}:
+From a theoretical point of view, Gaussian beams are a particular solution of the Helmholtz equation $(\nabla^2 + k^2)U(\mathbf{r}) = 0$, with $k$ being the wavevector, and $U(\mathbf{r})$ the complex electric field. If we can consider a wave propagating in the $z$ direction, we can write it as \cite{saleh}:
 \begin{equation}
 \label{gaussianbeams}
-U(r) = A_0 \frac{W_0}{W(z)}\exp\left\{-\frac{x^2+y^2}{W^2(z)}\right\}\exp\left\{-ikz-ik\frac{x^2+y^2}{2R(z)}+i\arctan(z/z_0)\right\}.
+U(\mathbf{r}) = A_0 \frac{W_0}{W(z)}\exp\left\{-\frac{x^2+y^2}{W^2(z)}\right\}\exp\left\{-ikz-ik\frac{x^2+y^2}{2R(z)}+i\arctan(z/z_0)\right\}.
 \end{equation}
- These solutions are called Gaussian beams, they are characterized by an amplitude $A$, a width $W(z)$, Rayleigh range $z_0$, and a curvature radius $R(z)$. Let us take a look at the features that arise from these beams. The optical power can be calculate by taking the square of the complex amplitude
+This is the form of Gaussian beams, they are characterized by an amplitude $A_0$, a width $W(z)$, Rayleigh range $z_0$, and a curvature radius $R(z)$. Let us take a look at the features that arise from this shape. The intensity can be calculate by taking the square of the complex amplitude
 \begin{equation}
 \label{beamintensity}
 I(r) = |U(r)|^2 = I_0 \left(\frac{W_0}{W(z)}\right)^2 \exp\left\{\frac{2x^2 + 2y^2}{W^2(z)}\right\}  \qquad I_0 = |A_0|^2.
 \end{equation}
-It is clear from here why the beam is called Gaussian. For a fixed $z$, the beam shape is the one of a two dimensional beam profile, i.e. the sections in the $x-y$ plane of a Gaussian beams are Gaussian shaped distribution. If we further take a cross section in the $x-y$ plane, we end up with a one dimensional Gaussian distribution. This shape is shown in figure \ref{gauss}, along with some important parameters.
+It is clear from here why the beam is called Gaussian. For a fixed $z$, i.e. the sections in the $x-y$ plane are shaped as a two dimensional Gaussian distribution.
+Therefore, one dimensional Gaussian can be found as cross section of the 2D profile. For simplicity, let us take the profile for a fixed $z$ and $y=0$, this takes the form
+\begin{equation}
+I(x,y=0,z) = \widetilde{A}(z) \exp\left\{\frac{2x^2}{W^2(z)}\right\} \qquad \widetilde{A}(z) = I_0 \left(\frac{W_0}{W(z)}\right)^2  .
+\end{equation}
+In figure \ref{gauss}, the $x$ cross section is depicted for this intensity profile normalized in amplitude, and with $\sigma = 1$, $z=0$. Parameters used to measure the width are also displayed and defined in the caption. All of those quantities are equivalent and differ only by a prefactor, so for the rest of the section, we stick to $W(z)$ and study its behaviour.
 \begin{figure}
 \centering
-\includegraphics[width = .6\textwidth]{gauss}
-\caption{Normalized Gaussian profile. Different ways of measuring the width of the profile are displayed geometrically.}
+\includegraphics[width = .6\textwidth]{gauss2}
+\caption{Intensity of a Gaussian beam, $x$ cross section. The beam is normalized and $\sigma=1$. Graphical representations of used widths are displayed: $W(z)$ is defined as the point at which the intensity $I$ has fallen to $1/e^2 = 13.5\%$ of its maximum value; $\sigma$ is the standard deviation of a Gaussian in the form $Ae^{-\frac{x^2}{2\sigma^2}}$; FWHM is the full width half maximum. Relationships among these quantities are: $W(z) = 2\sigma$, and $W = 0.84\cdot \text{FWHM}$.}
 \label{gauss}
 \end{figure}
-It is important to understand how to characterize the width of a Gaussian shape, as it provides a quantitative way of measuring a laser beam width and its focus spot. A common way to define the width of a Gaussian distribution is according to the standard deviation $\sigma$, in this case the shape is given by $Ae^{-\frac{x^2}{2\sigma^2}}$, but for the intensity of a Gaussian beam, $W(z)$ is a much more used value. $W(z)$ is defined as the point at which the irradiance $I$ has fallen to $1/e^2 = 13.5\%$ of its maximum value. The relationship between these two quantities is easily found: $W(z) = 2\sigma$.\\
-Another common parameter to characterize the width of a Gaussian is the full width half maximum (FWHM), this can be found to be related to $W$ as: $W = 0.84\cdot \text{FWHM}$. All these methods are equivalent and are different only from a prefactor, so for the rest of the section, we can stick to $W(z)$ and study its behaviour. Always from Helmholtz equation \cite{saleh}, the profile of $W(z)$ is found to be
+From Helmholtz equation \cite{saleh}, the profile of $W(z)$ as a function of $z$ is found to be
 \begin{equation}
 \label{waistprofile}
-W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}}.
+W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}} \qquad z_0 = \frac{\pi W_0^2}{\lambda}.
 \end{equation}
-This equation is plotted in figure \eqref{gaussprofile}.
+$\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below.\\
+There are important features to be noticed with reference to figure \eqref{gaussprofile}:
+The width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this spot is called focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically $z_0$ is the distance between the focus and the point where the width $W(z)$ is exactly $\sqrt{2}W_0$.
+For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\\
+This property will become important later in the work, because it provides one limit on the focus spot. In fact, the optical aperture of the trap is limited by the electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the whole trap.\\
+A Gaussian beam can be shaped using optical elements.
 \begin{figure}
 \centering
 \includegraphics[width = \textwidth]{gaussprofile}
-\caption{Width profile of a Gaussian beam. The beam is focused at the position $z_0$, here it assumes the minimum width $W_0$, also referred to as waist.}
+\caption{Width profile of a Gaussian beam, equation \eqref{waistprofile}. The beam is focused at the position $z_0$, here it assumes the minimum width $W_0$, also referred to as waist.}
 \label{gaussprofile}
 \end{figure}
-There are several important features that can be seen. First of all, the width reaches a minimum in $z=0$ at a value of $W_0$, this is called focus of the beam and its width is the waist of the beam. Before and after the focus, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges. This property will become important later in the work, because it provides one limit on the focus spot. In fact, the optical aperture of the trap is limited by the electrodes, and a too diverging beam can potentially clip on one electrode causing aberrations and scattered light in the whole trap.  The Rayleigh range $z_0$ also has a geometrical interpretation, it represents the point where the beam width is exactly $\sqrt{2}W_0$, along with $\theta$ this is a useful way to characterize how fast a beam diverges.\\
-
-In real experiments, all of these beam quantities can be manipulated with a lens. A Gaussian beam can therefore be shaped at will using optical elements. In order to study such reshaping, let us consider a thin spherical lens with focal length $f$, and radius of curvature $R_l$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor to equation \eqref{gaussianbeams} equals to $k(x^2 + y^2)/2f$ \cite{beamparameters}. We can match the phase of the incoming and emerging waves
+In order to study such reshaping, let us consider a thin spherical lens with focal length $f$, and radius of curvature $R_l$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor $k(x^2 + y^2)/2f$ to equation \eqref{gaussianbeams} \cite{beamparameters}. We can match the phase of the incoming and emerging waves, which have respectively radius of curvature $R$, and $R'$, this results in
 \begin{equation}
-kz +k \frac{x^2+y^2}{2R} - \zeta  - k\frac{x^2 + y^2}{2f} = kz + k \frac{x^2+y^2}{2R'} - \zeta \implies \frac{1}{R'} = \frac{1}{R} - \frac{1}{f}.
+\frac{1}{R'} = \frac{1}{R} - \frac{1}{f}.
 \end{equation}
-The effect of the lens is now clear, it changes the radius of curvature to $R'$ according to the previous equation. Moreover, the width of the beam at the lens is not altered $W=W'$. Using these last two facts, we can determine all the parameters of the outgoing wave. The most important for us is the new waist $W_0'$
+The effect of the lens is to change the radius of curvature to $R'$. Moreover, the width of the beam at the lens is not altered $W=W'$. Using these last two facts, we can determine all the parameters of the outgoing wave. The most important for us is the new waist $W_0'$
 \begin{equation}
 W_0' = MW_0 \qquad M = \frac{M_r}{\sqrt{q+r^2}} \qquad M_r = \left|\frac{f}{z-f}\right| \qquad r = \frac{z_0}{z-f}.
 \end{equation}
-$M$ is the magnification factor which provides an easy way to describe the change of the beam. For a better understanding of this last result, let us consider an less general example. We can place the lens at the focus $z=0$, and have a collimated beam $z_0 \to +\infty $. In this case the new waist is
+$M$ is the magnification factor which provides an easy way to describe the change of the beam. For a better understanding of this last result, let us consider an less general example. We place the lens at the focus $z=0$, and have a collimated beam $z_0 \to +\infty $. In this case the new waist is
 \begin{equation}
 W_0' = \frac{W_0}{\sqrt{1 + (z_0/f)^2}} \simeq W_0\frac{f}{z_0} = \frac{\lambda f}{\pi W_0}
 \end{equation}
-where the approximation comes from taking $z_0\gg f$. There are three parameters we can act on to achieve the smallest focus spot. The wavelength $\lambda$, the shorter the better. The focal length of the lens $f$ must be as small as possible, and the waist of the incoming beam $W_0$ as big as possible. Usually the wavelength is fixed in an optical system, so the best way to achieve a small focus is to collimate the beam as large as possible, the limit is given by the diameter $D$ of the lens. Hence, in the best case we have $D = 2W_0$ which means the waist is
+where the approximation comes from taking $z_0\gg f$. There are three parameters we can act on to achieve the smallest focus spot: (a) the wavelength $\lambda$, the shorter the better; (b) the focal length of the lens $f$, smaller focus with shorter focal length; (c) the waist of the incoming beam $W_0$, larger waist corresponds to narrower focus.\\
+Usually the wavelength is fixed in an optical system, so the best way to achieve a small focus is to collimate the beam as large as possible, the limit is given by the diameter $D$ of the lens. Hence, in the best case we have $D = 2W_0$ which means the waist is
 \begin{equation}
 W_0 = \frac{2\lambda}{\pi} \frac{f}{D}.
 \end{equation}
-A system focused to this limit is said to be diffraction limited. Indeed, if the size of the collimated beam is yet increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane.% The next section will delve a little bit deeper in this kind of effects since it is the main limitation for the best achievable spot size.
+A system focused to this limit is said to be diffraction limited. Indeed, if the size of the collimated beam is further increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane.% The next section will delve a little bit deeper in this kind of effects since it is the main limitation for the best achievable spot size.
 
 %\subsection{Diffraction limit}
 %There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
