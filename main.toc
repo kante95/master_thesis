@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {2.3.3}Doppler cooling}{20}{subsection.2.3.3}% 
 \contentsline {section}{\numberline {2.4}Laser beam}{22}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Gaussian beams}{22}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Beam stearing via AOD's}{25}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}Beam stearing via Acousto-optical Deflectors}{25}{subsection.2.4.2}% 
 \contentsline {section}{\numberline {2.5}Experiments model}{27}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Addressed qubit manipulation}{27}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}Addressed photon generation}{28}{subsection.2.5.2}% 

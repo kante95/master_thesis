@@ -250,6 +250,13 @@ C.~S. Williams.
 \newblock Gaussian beam formulas from diffraction theory.
 \newblock {\em Appl. Opt.}, 12(4):872--876, Apr 1973.
 
+\bibitem{handbookoptics}
+Michael {Bass}, Eric W.~Van {Stryland}, David~R. {Williams}, and Williams~L.
+  {Wolfe}.
+\newblock {\em {Handbook of Optics Volume II Devices, Measurements, and
+  Properties 2nd edition}}.
+\newblock 1995.
+
 \bibitem{phasedarray}
 R.~{Pieper}, D.~{Koslover}, and H.~{Ndwata}.
 \newblock Combining phased array and hamming sound apodization techniques to

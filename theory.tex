@@ -499,34 +499,32 @@ W_0' = MW_0 \qquad M = \frac{M_r}{\sqrt{q+r^2}} \qquad M_r = \left|\frac{f}{z-f}
 \end{equation}
 $M$ is the magnification factor which provides an easy way to describe the change of the beam. For a better understanding of this last result, let us consider an less general example. We place the lens at the focus $z=0$, and have a collimated beam $z_0 \to +\infty $. In this case the new waist is
 \begin{equation}
+\label{eq:newwaist}
 W_0' = \frac{W_0}{\sqrt{1 + (z_0/f)^2}} \simeq W_0\frac{f}{z_0} = \frac{\lambda f}{\pi W_0}
 \end{equation}
 where the approximation comes from taking $z_0\gg f$. There are three parameters we can act on to achieve the smallest focus spot: (a) the wavelength $\lambda$, the shorter the better; (b) the focal length of the lens $f$, smaller focus with shorter focal length; (c) the waist of the incoming beam $W_0$, larger waist corresponds to narrower focus.\\
-Usually the wavelength is fixed in an optical system, so the best way to achieve a small focus is to collimate the beam as large as possible, the limit is given by the diameter $D$ of the lens. Hence, in the best case we have $D = 2W_0$ which means the waist is
+An optical system performing to the theoretical limit is said to be diffraction limited. In the instance of a focusing system, it corresponds to the case where the collimated beam diameter $2W_0$ is equal to the diameter $D$ of the focusing lens. Equation \ref{eq:newwaist} becomes
 \begin{equation}
 W_0 = \frac{2\lambda}{\pi} \frac{f}{D}.
 \end{equation}
-A system focused to this limit is said to be diffraction limited. Indeed, if the size of the collimated beam is further increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane.% The next section will delve a little bit deeper in this kind of effects since it is the main limitation for the best achievable spot size.
+If the size of the collimated beam is further increased, the lens becomes a finite size aperture and diffraction effects will appear at the image plane.
+%An a numerical example, the objective used in this thesis setup has an aperture of 40 mm, focal length of 54 mm, therefore for a wavelength of $\lambda = 393$ nm the best achievable waist is $1.02\,\mu$m.
 
-%\subsection{Diffraction limit}
-%There are some fundamental limits on how narrow a Gaussian beam can be focused, in this section we will take a look at what is the best achievable focus spot in the theoretical case with the best optics possible.
-%- To search whats limiting the diffraction, (lambda/2)
-\subsection{Beam stearing via AOD's}
+\subsection{Beam stearing via Acousto-optical Deflectors}
 \label{theory_AOD}
-Acousto-optical deflectors are a common practical devices to steer a laser beam. Their working principle is based on the Acousto-optical effect. A crystal is strained due to a acoustic wave. A piezo is used to create vibrations that propagate in the crystal, and it is absorbed on the opposite facet of the crystal. Vibrations compress and stretch the medium creating a pattern. Due to the different density of the crystal medium at different position, the refractive index is modified creating a grating that can be used to deflects light.\\
-As a simple model, let us consider a rectangular crystal like in figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavevector $q$, for the refractive index $n(x,t)$
+An acousto-optical deflector (AOD) is a common device that can change the propagation direction of a laser beam, typically on the few microsecond timescale. In this work we use an AOD to change which ion is illuminated by a single-ion focused laser. The working principle of an AOD is based on the Acousto-optical effect. A piezo is used to create acoustic waves that propagate through a crystal. The waves modify the crystal refractive index, creating a periodic optical grating that can deflect light travelling through it.  \\
+Following the approach of \cite{saleh} to model the device, let us consider a rectangular crystal like in figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavevector $q$, for the refractive index $n(x,t)$
 \begin{equation}
 n(x,t) = n - \Delta n_0 \cos \left(\Omega_s t - qx \right),
 \end{equation}
 where $n$ is the refractive index of the unperturbed medium, $\Delta n_0$ is the amplitude of the perturbation. $\Delta n_0$ is proportional to the square root of the sound intensity.
-
 \begin{figure}[H]
 \centering
-\includegraphics[width = .5\textwidth]{aod}
-\caption{AOD.}
+\includegraphics[width = .5\textwidth]{aod2}
+\caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected due to the interaction with the effective optical grating created by the acoustic waves.}
 \label{AOD}
 \end{figure}
-The reflected wave can be calculated by dividing the crystal in thin layers, each with his refractive index $n(x)$. The total reflection is given by all the contributions $\frac{dr}{dx}$ of every layer, we can therefore integrate over a length $L$ as follow:
+The complex amplitude of the refracted wave $r$ can be calculated by dividing the crystal in thin layers, each with his refractive index $n(x)$. The total refraction is given by all the contributions $\frac{dr}{dx}$ of every layer, we can therefore integrate in the $x$ direction over the length $L$ as follow:
 \begin{equation}
 r = \int_{L/2}^{L/2} e^{i2kx \sin\theta} \frac{dr}{dx} \,dx
 \end{equation}
@@ -534,32 +532,31 @@ The included phase takes into consideration the different phase of the input bea
 \begin{equation}
 \frac{dr}{dx} = \frac{dr}{dn}\frac{dn}{dx} = \frac{dr}{dn} q \Delta n_0 \sin \left(\Omega_s t - qx \right),
 \end{equation}
-The sine function can be written as exponential and now the integral contains only exponential functions which are trivial to calculate. At the end we obtain two contributes for the reflected wave $r$:
+The sine function can be written as exponential and now the integral contains only exponential functions which are trivial to calculate. At the end we obtain two contributions for the refracted wave $r$:
 \begin{equation}
 \label{mainAOD}
 r = r_+ + r_- \qquad r_\pm = \pm i r_0 \text{sinc} \left[(2k\sin\theta \mp q)\frac{L}{2\pi} \right]e^{\pm i\Omega_s t}
 \end{equation}
-These two terms are the plus and minus first order diffraction, an acousto-optical device can be operated symmetrically entering either with a positive angle or with a negative one. Since the maths and the physics is the same, we will focus only on the positive term, called upshifted Bragg diffraction. The sinc function peaks sharply when its argument is 0, i.e. at $2k\sin\theta = q$, and then quickly decreases as the angle is changed. Hence, the input beam must enter with a particular angle in order to diffract. The condition to be satisfied is usually called Bragg condition, and can be written as a function of the wavelengths as
+These two terms are the plus and minus first order diffraction, an acousto-optical device can be operated symmetrically entering either with a positive angle or with a negative one. Since the maths and the physics is the same, we will focus only on the positive term, called upshifted Bragg diffraction. The sinc function peaks sharply when its argument is 0, i.e. at $2k\sin\theta = q$, and then quickly decreases as the angle is changed. Hence, the input beam must enter with a particular angle in order to diffract with maximum efficiency. The condition to be satisfied is usually called Bragg condition, and can be written as a function of the optical $\lambda$ and acoustic $\Lambda_s$ wavelengths as
 \begin{equation}
 \label{braggcondition}
 \sin \theta  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
 \end{equation}
 If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device.
-The ration of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
-From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscilalting at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
+The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
+From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscillating at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
 \begin{equation}
+\label{eq:aodshift}
 \omega_r  =  \omega + \Omega_s.
 \end{equation}
-This fact already suggests an application for acousto devices: they can be used as tuning device to shift the frequency of a laser. This kind of devices are called acousto-optical modulator (AOM). However, it is not the only application, we can also use the same device to deflect a beam. The idea is to change the deflection angle $\theta$ by changing the frequency $\Omega_s$ applied to the crystal.
-Assume that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
+The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead exploit the fact that the deflection angle $\theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
 \begin{equation}
 \theta \simeq \frac{\lambda}{2 v_s}f,
 \end{equation}
-where $v_s$ is the speed of sound and $f$ the frequency of the signal. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remain above a certain thresholds. The bandwidth is defined as the possible scanning angles, if $B$ is the frequency bandwidth in which the diffraction efficiency stay above a certain number (50\% for instance). Then, the range of scannability is
-\begin{equation}
-\Delta\theta = \frac{\lambda B}{2v_s}
-\end{equation}
-there are several way to engineer such device to increase bandwidth and keep the Bragg condition verified, for example the transducer is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.
+where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remain above a certain thresholds. The bandwidth $B$ specifies the range of frequencies over which deflectors work.\\
+AOMs and AODs differ by the relative divergence of the optical and acoustic beam \cite{handbookoptics}, moreover for AODs, speed and the number of resolvable spots are more important, while for AOM's the optimization focus is on modulation bandwidth. These different priorities in building the devices influence
+the choice of the crystal and acoustic mode, for instance, a slow acoustic velocity and shear mode are preferred in AODs \cite{handbookoptics}. More advanced techniques to engineer an AOD are available, for example the piezo is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.\\
+As already stated, in the experiment setup of this work, an AOD is used to steer a single-ion focused laser and aim at different ions in the $\mu$s scale. AOMs instead are extensively used to tune and scan the laser frequency.
 
 \section{Experiments model}
 The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as is discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.
@@ -582,14 +579,14 @@ where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi f
 \begin{equation}
 P_D = \cos^2\left(2\phi + 2\frac{\delta t}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 t}{4\Delta}\right).
 \end{equation}
-As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done $\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right]$. The phase $\phi$ can be chosen freely and all constants have been dropped as the data will be normalized.\\
+As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done $\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right]$. The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized.\\
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{sequence}
 \caption{Experiment sequence}
 \label{sequence}
 \end{figure}
-The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses PMT readout is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
+The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses state readout with single-ion resolving camera is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
 
 \subsection{Addressed photon generation}
 The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In this case the 393nm laser pulse has to be send at the correct frequency to excite the Raman resonance. Detuning of the cavity and laser pulse must be equal as discussed in section \ref{sec:threelevel}. In order to adiabatically eliminate the $P$ state, we set $\Delta \sim 400$ MHz. The Raman resonance is precisely measure with a double pass AOM, and the frequency is set accordingly. Note that the effective Rabi frequency is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, Ac stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this give the possibility the check if other ions have been unwantedly addressed.

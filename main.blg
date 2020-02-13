@@ -5,45 +5,46 @@ A level-1 auxiliary file: frontpage.aux
 The style file: unsrt.bst
 Database file #1: References.bib
 Warning--empty year in ion_spacing
-You've used 59 entries,
+Warning--empty publisher in handbookoptics
+You've used 60 entries,
             1791 wiz_defined-function locations,
-            826 strings with 13317 characters,
-and the built_in function-call counts, 14038 in all, are:
-= -- 1225
-> -- 670
+            829 strings with 13504 characters,
+and the built_in function-call counts, 14229 in all, are:
+= -- 1237
+> -- 684
 < -- 4
-+ -- 250
-- -- 191
-* -- 1113
-:= -- 2270
-add.period$ -- 178
-call.type$ -- 59
++ -- 255
+- -- 195
+* -- 1125
+:= -- 2301
+add.period$ -- 181
+call.type$ -- 60
 change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 562
-empty$ -- 1339
-format.name$ -- 191
-if$ -- 3049
+cite$ -- 62
+duplicate$ -- 572
+empty$ -- 1358
+format.name$ -- 195
+if$ -- 3091
 int.to.chr$ -- 0
-int.to.str$ -- 59
-missing$ -- 58
-newline$ -- 295
-num.names$ -- 58
-pop$ -- 114
+int.to.str$ -- 60
+missing$ -- 60
+newline$ -- 300
+num.names$ -- 59
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 233
+skip$ -- 235
 stack$ -- 0
 substring$ -- 1073
-swap$ -- 93
+swap$ -- 94
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 131
-width$ -- 61
-write$ -- 645
-(There was 1 warning)
+warning$ -- 2
+while$ -- 132
+width$ -- 62
+write$ -- 654
+(There were 2 warnings)
