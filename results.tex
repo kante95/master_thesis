@@ -38,19 +38,19 @@ The test setup was built on a spare optical table with a spare objective. The la
 \caption{Scheme of the razor scan. A translation stage allows for moving the blade in two directions: $x$ perpendicular to the beam, and $z$ along the beam optical axis.}
 \label{razorscan}
 \end{figure}
-Measuring a micrometer scale waist is not easy task, the first method applied consisted of mounting a razor blade on a translational stage. The stage is then moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. A filter was inserted in order to not saturate the photodiode.
-In the $z$ direction the stage was controlled with a manual screw with resolution of $1\,\mu$m. While in the $x$ direction, the stage had to be moved with sub-micrometer precision, so the screw was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the whole profile of the beam, i.e. $W(z)$, the measurement procedure was as follow
+Measuring a micrometer scale waist is not easy task, the first method applied consisted of mounting a razor blade on a translational stage. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. The stage is moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. A filter was inserted in order to not saturate the photodiode.
+In the $z$ direction the stage was controlled with a manual screw with resolution of $1\,\mu$m. While in the $x$ direction, the stage had to be moved with sub-micrometer precision, so instead there was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the profile $W(z)$ (equation \eqref{waistprofile}) of the beam, the measurement procedure was as follow
 \begin{itemize}
 \item Position blade at appropriate $z$ coordinate
 \item Scanning beam in $x$ direction with blade
-\item Beam width extrapolation
-\item Shift $z$ direction
+\item Calculating beam width from scan
+\item Shifting $z$ direction
 \end{itemize}
 And the procedure is repeated for sufficient values of $z$ to scan at least few Raylegh ranges. The beam width can be calculated from the scans by fitting the data with \cite{knifeedge}
 \begin{equation}
 P(x,z) = \frac{P_0}{2}\text{erfc}\left[\frac{\sqrt{2}(x-x_0)}{W(z)} \right].
 \end{equation}
-Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of scan is in figure \ref{examplerazorscan}. The errorbars comes from statistical average, every data point is a mean over 5 measurement, and the error is the standard deviation. The fit in this case gave a width of $3.47\pm 0.06\,\mu$m, the smallest width obtained with this method. Unfortunately, it is broader that the initial expectations. Furthermore, the profile $W(z)$ did not look symmetric and could not be fitted with equation \eqref{waistprofile}. A possible explanation is that this method is not suitable for measuring micrometer waists with a razor blade, the roughness of the surface could limit the result. In comparison, authors of \cite{Cannon:86} have used, instead of a common razor blade, a glass substrate etched with an effective knife-edge feature.
+Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of scan is in figure \ref{examplerazorscan}. The errorbars comes from statistical average, every data point is a mean over 5 measurement, and the error is the standard deviation. The fit in this case gave a width of $3.47\pm 0.06\,\mu$m, the smallest width obtained with this method. It is broader that the simulations. Furthermore, the profile $W(z)$ was not symmetric and could not be fitted with equation \eqref{waistprofile}. A possible explanation is that this method is not suitable for measuring micrometer waists with a razor blade, the roughness of the surface could limit the result. In comparison, authors of \cite{Cannon:86} have used, instead of a common razor blade, a glass substrate etched with an effective knife-edge feature.
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{img/razorscan}
@@ -61,7 +61,7 @@ Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of
 
 \subsection{Waist: Camera}
 \label{waistcamera}
-Since the Knife-Edge method did not demonstrate particularly effective, if not to give an upper bound to the waist, a more direct approach has been subsequently adopted. We look directly into the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.6 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot better than the razor blade. A $\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
+Since the Knife-Edge method did not demonstrate particularly effective, if not to give an upper bound to the waist, a more direct approach has been subsequently adopted. We look directly into the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.67 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot better than the razor blade. A $\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
 In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional information about the beam shape and can be exploited to look for aberrations in the system. The setup is almost the same as figure \ref{razorscan}, but the camera now replaces the razor blade, and there is no need for scanning in the $x$ direction, as the $z$ is enough to reconstruct the profile $W(z)$. An additional gradient filter was used to optimize the light reaching the camera in order to not saturate it and get a visible signal.
 \begin{figure}
      \centering
