@@ -35,13 +35,13 @@ The test setup was built on a spare optical table with a spare objective. The la
 \begin{figure}[H]
 \centering
 \includegraphics[scale = 1.1]{razorsetup}
-\caption{Scheme of the razor scan. A translation stage allows for moving the blade in two directions: $x$ perpendicular to the beam, and $z$ along the beam optical axis.}
+\caption{Scheme of the razor scan. A translation stage allows for moving the blade in two directions: $x$ perpendicular to the beam, and $z$ along the beam optical axis. AOD scans in the $y$ direction.}
 \label{razorscan}
 \end{figure}
 Measuring a micrometer scale waist is not easy task, the first method applied consisted of mounting a razor blade on a translational stage. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. The stage is moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. A filter was inserted in order to not saturate the photodiode.
 In the $z$ direction the stage was controlled with a manual screw with resolution of $1\,\mu$m. While in the $x$ direction, the stage had to be moved with sub-micrometer precision, so instead there was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the profile $W(z)$ (equation \eqref{waistprofile}) of the beam, the measurement procedure was as follow
 \begin{itemize}
-\item Position blade at appropriate $z$ coordinate
+\item Positioning blade at appropriate $z$ coordinate
 \item Scanning beam in $x$ direction with blade
 \item Calculating beam width from scan
 \item Shifting $z$ direction
@@ -50,18 +50,18 @@ And the procedure is repeated for sufficient values of $z$ to scan at least few 
 \begin{equation}
 P(x,z) = \frac{P_0}{2}\text{erfc}\left[\frac{\sqrt{2}(x-x_0)}{W(z)} \right].
 \end{equation}
-Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of scan is in figure \ref{examplerazorscan}. The errorbars comes from statistical average, every data point is a mean over 5 measurement, and the error is the standard deviation. The fit in this case gave a width of $3.47\pm 0.06\,\mu$m, the smallest width obtained with this method. It is broader that the simulations. Furthermore, the profile $W(z)$ was not symmetric and could not be fitted with equation \eqref{waistprofile}. A possible explanation is that this method is not suitable for measuring micrometer waists with a razor blade, the roughness of the surface could limit the result. In comparison, authors of \cite{Cannon:86} have used, instead of a common razor blade, a glass substrate etched with an effective knife-edge feature.
+Where the fitting parameters are $P_0, x_0,$ and the width $W(z)$. An example of scan is in figure \ref{examplerazorscan}. The errorbars comes from statistical average, every data point is a mean over 5 measurement, and the error is the standard deviation. The fit in this case gave a width $W$ of $3.47\pm 0.06\,\mu$m, the smallest width obtained with this method. It is broader that the simulations. Furthermore, the profile $W(z)$ was not symmetric and could not be fitted with equation \eqref{waistprofile}. However, the accuracy of this method is limited by the positioner and the blade roughness. The latter was not known at the few micrometer scale of the beam waist. In comparison, authors of \cite{Cannon:86} have used, instead of a common razor blade, a glass substrate etched with an effective knife-edge feature.
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{img/razorscan}
-\caption{Example of razor scan}
+\caption{Example of razor scan at a fixed $z$ position.}
 \label{examplerazorscan}
 \end{figure}
 
 
 \subsection{Waist: Camera}
 \label{waistcamera}
-Since the Knife-Edge method did not demonstrate particularly effective, if not to give an upper bound to the waist, a more direct approach has been subsequently adopted. We look directly into the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.67 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot better than the razor blade. A $\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
+Due to the unknown precision of the razor blade, we verified the results with another method. We measure directly the beam with a camera from IDS model UI-1490LE-M-GL. This particular camera has a pixel size of 1.67 $\mu$m, with no pixel-pixel distance. It should therefore be suitable to measure a focus spot with a $\mu$m precision. A 1$\mu$m focus should hit one single pixel, and if aligned between two pixels, a Gaussian profile could also be fitted.
 In addition, unlike the Knife-Edge technique, a camera provides 2-dimensional information about the beam shape and can be exploited to look for aberrations in the system. The setup is almost the same as figure \ref{razorscan}, but the camera now replaces the razor blade, and there is no need for scanning in the $x$ direction, as the $z$ is enough to reconstruct the profile $W(z)$. An additional gradient filter was used to optimize the light reaching the camera in order to not saturate it and get a visible signal.
 \begin{figure}
      \centering
@@ -86,21 +86,23 @@ The measurement procedure is also similar to the Knife-Edge case. For every desi
 \begin{equation}
 P = A \exp\left\{-\frac{(x-x_0)^2}{2\sigma_x^2}\right\} \exp\left\{-\frac{(y-y_0)^2}{2\sigma_y^2} \right\}.
 \end{equation}
-The fit parameters are $A,x_0,y_0,\sigma_x,$ and $\sigma_y$. From the standard deviation $\sigma_x$ and $\sigma_y$ the width $W(z)$ in the $x$ and $y$ direction can be determined as $W_x = 2\cdot 1.6\cdot \sigma_x$ and respectively $W_y = 2\cdot 1.6\cdot \sigma_y$, where $1.6\,\mu$m is the pixel size.
-In figure \ref{fig:camera}, an example of the measurement taken is displayed. The full profiles $W_x(z)$ and $W_{y}(z)$ can be found in figure \ref{cameraprofile}. Even here anomalies can be noticed. The profile is asymmetric and does not follow equation \ref{waistprofile}, however a width $<2.5\,\mu$m has been measured. There could be some reasons behind this result, in some camera pictures some aberrations were visible. Moreover, some estimation error lead to non ideal placement of the lenses. Nonetheless, the smallest measured waist was satisfactory and enough for proceeding with the installation and doing more advanced experiments. But first few more characteristics of the system had to be tested, namely polarization and stability.
+The fit parameters are $A,x_0,y_0,\sigma_x,$ and $\sigma_y$. From the standard deviation $\sigma_x$ and $\sigma_y$ the width $W(z)$ in the $x$ and $y$ direction can be determined as $W_x = 2\cdot 1.67\cdot \sigma_x$ and respectively $W_y = 2\cdot 1.67\cdot \sigma_y$, where $1.67\,\mu$m is the pixel size.
+In figure \ref{fig:camera}, an example of the measurement taken is displayed. The full profiles $W_x(z)$ and $W_{y}(z)$ can be found in figure \ref{cameraprofile}. Here anomalies can be noticed. The profile is asymmetric and does not follow equation \ref{waistprofile}, nonetheless a width $<2.5\,\mu$m has been measured.
+The main problem and limitations in this case are aberrations present in the system. Indeed, according to Zemax simulation, by displacing a single lens by 1 mm, it is enough to broaden the focus by ..(to check...)!!!\\
+Moreover, some estimation error lead to non ideal placement of the lenses. Nonetheless, the smallest measured waist was satisfactory and enough for proceeding with the installation and doing more advanced experiments. But first few more characteristics of the system had to be tested, namely polarization and stability.
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{cameraprofile}
-\caption{Profile of the Gaussian beam along $z$ measured with the camera.}
+\caption{Profile of the Gaussian beam along $z$ measured with the camera. Errorbars are estimated from fit.}
 \label{cameraprofile}
 \end{figure}
 
 \subsection{Polarization}
-As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. In order to characterize the polarization, the three Stokes parameters \cite{stokes} has been measured with a polarimeter from Sc\"after + Kirchhoff series SK010PA. Stokes parameters quantify the type of polarization of an electric field. Linear polarized light (vertical and horizontal) has all Stokes parameters set to 0, apart from the first one. Instead, the third parameter, when the others are zero, contains information about circular polarized light which goes from right to left. By rotating a plate and fitting a sine function to the appropriate Stokes parameter, it is possible to gain insights on the appropriate angle to set in order to obtain the desired polarization.\\
- The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stokes parameter. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
-As the mirror can change the polarization, the same characterization has been done after the mirror finding that the polarization is altered unless it is either horizontal or vertical.
-However the main result was obtained when the $\lambda/4$ was characterized. With every plate inserted, two measurements were made. In the first one the $\lambda/2$ was set to $267^\circ$ to get horizontal polarization, and the angle of the $\lambda/4$ scanned. This result is presented in figure \ref{pol1}. The third Stokes parameter is fitted with a sine function to get the angles at which the polarization is right and left circular. The right circular polarization is obtained at the maximum of the curve, while the left corresponds to the minimum. Moreover, when the third Stokes parameter is zero, the polarization results linear. The results are shown in table \ref{polarizationstable}.
+As discussed in the design section, polarization is an important component of the Raman process, thus the polarization capabilities of the system had to be tested. The goal is to achieve vertical, horizontal, left circular, and right circular polarization at the ion position. Polarization can be changed with two plates: a half wave plate after the AOD, and a quarter wave plate right before the objective, see figure \ref{addressingsetup}. In order to characterize the polarization, the three Stokes parameters \cite{stokes} has been measured with a polarimeter from Sc\"after + Kirchhoff series SK010PA.\\
+% Stokes parameters quantify the type of polarization of an electric field. Linear polarized light (vertical and horizontal) has all Stokes parameters set to 0, apart from the first one. Instead, the third parameter, when the others are zero, contains information about circular polarized light which goes from right to left.\\
+By rotating a plate and fitting a sine function to the appropriate Stokes parameter, it is possible to calibrate the plates to obtain the desired polarization. The first step was to characterize the $\lambda/2$ plate alone, the main result from this characterization is that horizontal polarization can be achieved with an angle of $267.2\pm 0.1 ^{\circ}$, and vertical is achieved with an angle of $312.5\pm0.1^{\circ}$ obtained from fitting a sine on the first Stokes parameter. From the same fit, the semiperiod of the polarization is $45.3\pm 0.6^\circ$.\\
+As the mirror can change the polarization, the same characterization has been done after the mirror finding that the polarization is altered unless it is either horizontal or vertical. Afterwards, the $\lambda/4$ was characterized. With every plate inserted, two measurements were made. In the first one the $\lambda/2$ was set to $267^\circ$ to get horizontal polarization, and the angle of the $\lambda/4$ scanned. This result is presented in figure \ref{pol1}. The third Stokes parameter is fitted with a sine function to get the angles at which the polarization is right and left circular. The right circular polarization is obtained at the maximum of the curve, while the left corresponds to the minimum. Moreover, when the third Stokes parameter is zero, the polarization results linear. The results are shown in table \ref{polarizationstable}.
 The second measurement also scanned the angle of the $\lambda/4$ plate, but this time the $\lambda/2$ was set to $312^\circ$ such that the polarization before the $\lambda/4$ plate was vertical. In figure \ref{pol2} the data is displayed. Again, to get the angle for the different polarizations, a sine function was fitted to the third Stokes parameter. The results yielded by the fit are summarized in table \ref{polarizationstable}.
 
 \begin{table}
