@@ -245,43 +245,37 @@ For a fully deployed quantum network, many challenges have to be faced. Faithful
 
 
 \subsection{Cavity QED}
-Trapped ions can become quantum nodes of a quantum network by placing them in a cavity. Ions emits photon by spontaneous emission, or stimulated emission. The problem with spontaneous emission is that the photonic channel of emission is random and in free space. To realize a quantum interface, photon should be produces almost deterministically in defined mode. The trick is to use a cavity tuned to one particular transition, such that the probability of a photon to be emitted in the cavity mode is greatly enhanced. In this section we describe a simple model of a two-level system in a cavity, the derivation is similar to section \ref{laserioninteractions}, with the difference that in a cavity the electric field is quantized. Using the mode operator $a,a^\dagger$ the electric field inside a cavity can be written as:
+Trapped ion can generate photons and therefore be used as quantum nodes in a quantum network. The process of photon generation is based on cavity QED (cQED) and therefore we give here a small introduction. A cavity placed around ions has the purpose to improve the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is greatly enhanced with respect to emitting in free space \cite{Kimble_1998}. Additionally, it allows for a better control of the photon waveform \cite{Keller2004}.\\
+In this section we describe a simple model of a two-level system in a cavity following the approach of \cite{steck}. We described the cavity electric field as quantized, with $a,a^\dagger$ the creation and annihilation operator of a single photon n the cavity mode.
+The quantized electric field assume the form of
 \begin{equation}
 E = A(f(r)a + f^*(r)a^\dagger)
 \end{equation}
-where $A$ is an amplitude, and $f(r)$ is the spatial mode profile \cite{helene}. The interaction between he field and the cavity is obtained as from $H_{int} = -d\cdot E$, following a rotating wave approximation the result is
+where $A$ is an amplitude, and $f(r)$ is the spatial mode profile. The interaction between the field and the cavity is
 \begin{equation}
-H_{int} = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
+H_{int}  = -d\cdot E = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
 \end{equation}
-where $g = A \braket{g|d|e} f(r)$ is called cavity coupling constant. It is analogous to the Rabi frequency, it gives an idea of the coupling between the cavity field and the 2-level atom. An important dependence of $g$ can be found by considering that $f(r)$ is inversely proportional to the volume of the cavity $V$, i.e.
+where $g = A \braket{0|d|1} f(r)$ is called cavity coupling constant. It is analogous to the Rabi frequency, it gives an idea of the coupling between the cavity field and the 2-level atom. An important dependence of $g$ can be found by considering that $f(r)$ is inversely proportional to the volume of the cavity $V$, i.e.
 \begin{equation}
-g \propto \braket{g|d|e} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
+g \propto \braket{0|d|1} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
 \end{equation}
 The coupling therefore, increases with decreasing cavity volume and viceversa.\\
-The total system Hamiltonian includes also the atomic part, and a single mode optical field. It takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
+The total system Hamiltonian includes also the atomic part, and a single mode optical field, it takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
 \begin{equation}
 H = \hbar \omega_0 \ket{1}\bra{1} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
 \end{equation}
-States now are a product state of the atomic part and the photon number $\ket{g,n},\ket{e,n}$. They are however not the eigenstates of the Jaynes-Cumming Hamiltonian. It can be seen that this Hamiltonian is block diagonal, which means that each $2\times 2$ block can be diagonalized, the dressed states found after diagonalization are similar to the semiclassical model. Moreover, also the dynamics is analogue to the semiclassical case, Rabi oscillations are still present with quantized Rabi frequency given by $\Omega_n = \sqrt{4(n+1)g^2 +\Delta^2}$.\\
-The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description, we need to introduce dissipative process that do not follow an Hermitian evolution. This is done heuristically by adding terms in the Heisenberg equation
-\begin{equation}
-\label{masterequation}
-\frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
-\end{equation}
-This equation is usually referred to as master equation in Lindblad form, where $\rho$ is the density matrix of system. The superoperator
-$\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. In our case, we are most interested in two process: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma$, while the latter is characterized by the decay rate $\kappa$. The functional dependence of these two terms goes as \cite{steck}
-\begin{equation}
-\mathcal{L}(\rho) = \Gamma\mathcal{D}(\sigma)\rho + \kappa \mathcal{D}(a)\rho.
-\end{equation}
-A good approximation of the model is given in the \emph{strong coupling} regime $g\ll \Gamma,\kappa$, where damping due to dissipative process is slow and dynamics is mainly driven coherently by the coupling atom-cavity $g$. The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
+The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description the master equation \eqref{masterequation} is used. In our case, we are most interested in two processes: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma = 2\gamma$, while the latter is characterized by the decay rate $\kappa$. The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
 \begin{equation}
 \kappa =\frac{c\pi}{FL},
 \end{equation}
-where $F$ is the cavity finesse, and $L$ the length. In the design of the experiment one must play and compromise with these three parameters in order to reach a good coupling ion-cavity but also being able to send photons out of the cavity.
+where $F$ is the cavity finesse, and $L$ the length. $g,\kappa,\gamma$ are the most relevant experiment parameters in cQED and they are summarized in the single atom cooperativity
+\begin{equation}
+C = \frac{g^2}{2k\gamma}
+\end{equation}
 
 \subsection{Photon generation}
 \label{sec:ramanprocess}
-By placing a cavity around the trap, photon generation is enabled. The cavity mediated Raman process is responsible for this phenomenon. It can be explained strating from a three level atom like in figure \ref{ramanprocess}. The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{1}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
+The cavity mediated Raman process is responsible for photon generation, it can be explained starting from a three level atom like in figure \ref{ramanprocess}. The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{1}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
 to the $\text{D}_{5/2}$ state emitting a photon inside the cavity. Thus the process can be described as $\ket{0}_i\ket{0}_p \to \ket{1}_i\ket{1}_p$ where the subscript $i$ indicates the ion and $p$ the photon number in the cavity. The detuning is set such as $\Delta \gg \Omega,g$, in this regime the whole process can be described as a single transition with effective Rabi frequency of \cite{helene}
 \begin{equation}
 \label{omegaeff}
@@ -556,7 +550,7 @@ The acousto-optical effect described above is common to different devices optimi
 where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remain above a certain thresholds. The bandwidth $B$ specifies the range of frequencies over which deflectors work.\\
 AOMs and AODs differ by the relative divergence of the optical and acoustic beam \cite{handbookoptics}, moreover for AODs, speed and the number of resolvable spots are more important, while for AOM's the optimization focus is on modulation bandwidth. These different priorities in building the devices influence
 the choice of the crystal and acoustic mode, for instance, a slow acoustic velocity and shear mode are preferred in AODs \cite{handbookoptics}. More advanced techniques to engineer an AOD are available, for example the piezo is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.\\
-As already stated, in the experiment setup of this work, an AOD is used to steer a single-ion focused laser and aim at different ions in the $\mu$s scale. AOMs instead are extensively used to tune and scan the laser frequency.
+As already stated, in the experiment setup of this work, an AOD is used to steer a single-ion focused laser and aim at different ions in the $\mu$s timescale. AOMs instead are extensively used to tune and scan the laser frequency.
 
 \section{Experiments model}
 The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as is discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.

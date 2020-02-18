@@ -178,15 +178,27 @@ Charles~H. Bennett, Gilles Brassard, Claude Cr\'epeau, Richard Jozsa, Asher
   einstein-podolsky-rosen channels.
 \newblock {\em Phys. Rev. Lett.}, 70:1895--1899, Mar 1993.
 
-\bibitem{helene}
-Helene Hainzer.
-\newblock Laser locking for trapped-ion quantum networks.
-\newblock Master's thesis, University of Innsbruck, 2018.
+\bibitem{Kimble_1998}
+H.~J. Kimble.
+\newblock Strong interactions of single atoms and photons in cavity {QED}.
+\newblock {\em Physica Scripta}, T76(1):127, 1998.
+
+\bibitem{Keller2004}
+Matthias Keller, Birgit Lange, Kazuhiro Hayasaka, Wolfgang Lange, and Herbert
+  Walther.
+\newblock Continuous generation of single photons with controlled waveform in
+  an ion-trap cavity system.
+\newblock {\em Nature}, 431(7012):1075--1078, October 2004.
 
 \bibitem{qedreview}
 Helmut Ritsch, Peter Domokos, Ferdinand Brennecke, and Tilman Esslinger.
 \newblock Cold atoms in cavity-generated dynamical optical potentials.
 \newblock {\em Rev. Mod. Phys.}, 85:553--601, Apr 2013.
+
+\bibitem{helene}
+Helene Hainzer.
+\newblock Laser locking for trapped-ion quantum networks.
+\newblock Master's thesis, University of Innsbruck, 2018.
 
 \bibitem{RevModPhys.58.233}
 Lowell~S. Brown and Gerald Gabrielse.
