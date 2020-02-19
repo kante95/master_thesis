@@ -298,10 +298,17 @@ H.~C. N\"agerl, Ch. Roos, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
   ${D}_{5/2}$ transition of a trapped calcium ion in a linear paul trap.
 \newblock {\em Phys. Rev. A}, 61:023405, Jan 2000.
 
-\bibitem{Tanaka2007}
-U.~Tanaka, I.~Morita, and S.~Urabe.
-\newblock Selective loading and laser cooling of rare calcium isotope 43ca+.
-\newblock {\em Applied Physics B}, 89(2):195--200, Nov 2007.
+\bibitem{PhysRevA.44.R20}
+A.~S. Bell, P.~Gill, H.~A. Klein, A.~P. Levick, Chr. Tamm, and D.~Schnier.
+\newblock Laser cooling of trapped ytterbium ions using a four-level
+  optical-excitation scheme.
+\newblock {\em Phys. Rev. A}, 44:R20--R23, Jul 1991.
+
+\bibitem{magnesium}
+R.C. Thompson, G.P. Barwood, and P.~Gill.
+\newblock Laser cooling of magnesium ions confined in a penning trap.
+\newblock {\em Optica Acta: International Journal of Optics}, 33(4):535--543,
+  1986.
 
 \bibitem{stute}
 Andreas tute.
