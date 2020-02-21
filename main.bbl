@@ -200,6 +200,11 @@ Helene Hainzer.
 \newblock Laser locking for trapped-ion quantum networks.
 \newblock Master's thesis, University of Innsbruck, 2018.
 
+\bibitem{Barros2009}
+H.~G. Barros, A.~Stute, T.~E. Northup, C.~Russo, P.~O. Schmidt, and R.~Blatt.
+\newblock Deterministic single-photon source from a single ion.
+\newblock {\em New Journal of Physics}, 11(10):103004, October 2009.
+
 \bibitem{RevModPhys.58.233}
 Lowell~S. Brown and Gerald Gabrielse.
 \newblock Geonium theory: Physics of a single electron or ion in a penning
@@ -310,11 +315,28 @@ R.C. Thompson, G.P. Barwood, and P.~Gill.
 \newblock {\em Optica Acta: International Journal of Optics}, 33(4):535--543,
   1986.
 
+\bibitem{calciumqubit}
+R.~Blatt, H.~Haeffner, C.~F. Roos, C.~Becher, and F.~Schmidt-Kaler.
+\newblock Ion trap quantum computing with ca+ ions.
+\newblock {\em Quantum Information Processing}, 3(1-5):61--73, October 2004.
+
+\bibitem{Ruster2016}
+T.~Ruster, C.~T. Schmiegelow, H.~Kaufmann, C.~Warschburger, F.~Schmidt-Kaler,
+  and U.~G. Poschinger.
+\newblock A long-lived zeeman trapped-ion qubit.
+\newblock {\em Applied Physics B}, 122(10), September 2016.
+
 \bibitem{stute}
 Andreas tute.
 \newblock {\em A light-matter quantum interface: ion-photon entanglement and
   state mapping}.
 \newblock PhD thesis, University of Innsbruck, 2012.
+
+\bibitem{Gulde2001}
+S.~Gulde, D.~Rotter, P.~Barton, F.~Schmidt-Kaler, R.~Blatt, and W.~Hogervorst.
+\newblock Simple and efficient photo-ionization loading of ions for precision
+  ion-trapping experiments.
+\newblock {\em Applied Physics B}, 73(8):861--863, December 2001.
 
 \bibitem{addressing}
 H.~C. N\"agerl, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
