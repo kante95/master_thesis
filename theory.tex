@@ -230,9 +230,10 @@ The master equation \eqref{masterequation} can be explicitly written for every c
 in the rotating frame they are called optical Bloch equations. The solution for the excited population in the case of the 2 level atoms shows that the effect of spontaneous decay is to damp Rabi oscillations. In this case, on long time scale population exchange is suppressed, as it reaches a steady state. This regime is presented is section \ref{sec:doppler_cooling}.\\
 In the case of the three level model, the excited level $\ket{e}$ can decay to both ground states with rates $\Gamma_{g_1}$, and $\Gamma_{g_2}$. We are most interested in the decay rate $\Gamma_{g_1} \def \Gamma$ from $\ket{e}\to\ket{g_1}$ as the other transition in calcium is often repumped. In this case, in the effective 2 level system picture, the spontaneous emission is modified as \cite{russo}
 \begin{equation}
+\label{eq:gammaeff}
 \Gamma_{eff} = \left(\frac{\Omega_1}{2 \Delta_1}\right)^2 \cdot \Gamma.
 \end{equation}
-The ratio between this result and the Ac Stark shift \eqref{eq:starkshift} $\delta/\Gamma_{eff}\propto \Delta$ dictates which effect is dominant, i.e. spontaneous scattering can be eliminated leaving only Stark shift as effect.
+The ratio between this result and the AC Stark shift \eqref{eq:starkshift} $\delta/\Gamma_{eff}\propto \Delta$ dictates which effect is dominant, i.e. by detuning properly, spontaneous scattering can be eliminated leaving only Stark shift as effect. This regime can be used to implement a phase gate where the qubit is encoded in the $\ket{g_1}\to\ket{g_2}$ transition and the phase of $\ket{g_1}$ is manipulated by Stark shifting the transition $\ket{g_1}\to \ket{e}$. In the experiment of section \ref{sec:singlequbitmanipulation}, we implement this gate on a single ion in a string.
 
 
 \section{Quantum networking with trapped ions}
@@ -243,6 +244,7 @@ For a fully deployed quantum network, many challenges have to be faced. Faithful
 
 
 \subsection{Cavity QED}
+\label{sec:cavityqed}
 Trapped ion can generate photons and therefore be used as quantum nodes in a quantum network. The process of photon generation is based on cavity QED (cQED) and therefore we give here a small introduction. A cavity placed around ions has the purpose to improve the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is greatly enhanced with respect to emitting in free space \cite{Kimble_1998}. Additionally, it allows for a better control of the photon waveform \cite{Keller2004}.\\
 In this section we describe a simple model of a two-level system in a cavity following the approach of \cite{steck}. We described the cavity electric field as quantized, with $a,a^\dagger$ the creation and annihilation operator of a single photon n the cavity mode.
 The quantized electric field assume the form of
@@ -270,41 +272,37 @@ where $F$ is the cavity finesse, and $L$ the length. $g,\kappa,\gamma$ are the m
 \begin{equation}
 C = \frac{g^2}{2k\gamma}
 \end{equation}
-
+In our experiment the designed cavity is near concentric with a length of $L = 19.9$ mm. The maximum $g$ factor achievable with this geometry is $g_{max} = 2\pi \times 1.53$ MHz, while the decay rate is $\kappa = 2\pi\times 70$ kHz. More information on the cavity can be found in section \ref{sec:expparameters}.% The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
 \subsection{Photon generation}
 \label{sec:ramanprocess}
-Photons are generated from the ion via cavity-mediated Raman transition (CMRT). The CMRT can be explained using the three-level atom scheme, in figure \ref{ramanprocess} the relevant calcium levels for the Raman process are displayed. We choose the ground state to be $|\text{S}_{1/2},-\frac{1}{2}\rangle$ which is connected to the excited level $|\text{P}_{3/2},-\frac{3}{2}\rangle$ with a $\sigma^-$ polarized transition. Other possible choices in the $\text{P}_{3/2}$ manifold are also possible. As qubit transition we chose $|\text{S}_{1/2},-\frac{1}{2}\rangle \to |\text{D}_{1/2},-\frac{5}{2}\rangle$.
-
-
-CMRT is a coherent precess similar to the Raman process described in section \ref{sec:threelevel}, with the difference that instead of two lasers, the transition is driven by one laser and the cavity standing electric field. As such, in equation \eqref{eq:effectiverabi} the Rabi frequency of the second laser $\Omega_2$ is replaced by the atom cavity coupling $g$ described in the previous section \cite{Barros2009}.
-\begin{equation}
-\label{omegaeff}
-\Omega_{eff} = \frac{\Omega g}{\Delta}.
-\end{equation}
-The electron is initially in the ground state $\ket{0}$, a laser pulse excite the transition $\text{S}_{1/2} \to \text{D}_{3/2}$ detuned properly to eliminate the population in the $\ket{1}$ level. Among the decay channels of the electron, the decay $\text{P}_{3/2} \to \text{D}_{5/2}$ is enhanced due to the presence of the cavity and therefore the coupling $g$ between the ion and the cavity mode. The electron will more likely decay
-to the $\text{D}_{5/2}$ state emitting a photon inside the cavity. Thus the process can be described as $\ket{0}_i\ket{0}_p \to \ket{1}_i\ket{1}_p$ where the subscript $i$ indicates the ion and $p$ the photon number in the cavity. The detuning is set such as $\Delta \gg \Omega,g$, in this regime the whole process can be described as a single transition with effective Rabi frequency of \cite{helene}
-\begin{equation}
-\label{omegaeff}
-\Omega_{eff} = \frac{\Omega g}{2\Delta}.
-\end{equation}
-It is equivalent of a classical Raman process driven with two laser pulses on the two different transitions, but in this case the second laser is substituted by the vacuum standing wave of the cavity. In order to avoid decay in other channels, one must be sure that $\Omega_{eff}$ is larger than the effective decay rate of other spontaneous emission $\Omega_{eff}\gg \Gamma_{eff}$. Moreover, the photon should leave the cavity after the transfer is complete, this is ensured by $\Omega_{eff} >\kappa$.\\
-In the real case the electronic states are also shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis and at $45^{\circ}$ with respect to the trap axis. This is done in the optics of achieving ion-photon entanglement, since in that case multiple Zeeman levels should be addressed. The situation is therefore further complicated and the polarization of the laser field should be taken into consideration. In figure (), the Zeeman structure of $^{40}\text{Ca}^+$ is depicted. One can start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$. From here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transition are possible, the most favorable in the case of the magnetic field orthogonal to the cavity axis is \cite{stuteinterface}
+Photons are generated from the ion via cavity-mediated Raman transition (CMRT). The CMRT can be explained using the three-level atom scheme, in figure \ref{ramanprocess} the relevant calcium levels for the Raman process are displayed. The electronic states are shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis and at $45^{\circ}$ with respect to the trap axis. In the experiments we start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$, from here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transitions are possible. We can choose for instance
 \begin{equation}
 \ket{\text{S}_{1/2},-1/2}\to\ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-5/2}.
 \end{equation}
-In this case the transitions strengths, i.e. the projection on the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized.\\
-The generated photon from this process can be entangled with the ion state by driving this Raman transition with a bichromatic beam. This means that the laser pulse drives two transitions at the same time, for example the one that ends up in $\ket{\text{D}_{5/2},-5/2}$ and $\ket{\text{D}_{5/2},-3/2}$. In this instance, the generated photon will be a superposition of $\sigma^+$ and $\pi$ polarization. With respect to the cavity it means vertical and horizontal polarization. The final state of the bichromatic transition is therefore
+In this case the transitions strengths, i.e. the projection of the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized \cite{stuteinterface}. The qubit is encoded in the $|\text{S}_{1/2},-\frac{1}{2}\rangle \to |\text{D}_{5/2},-\frac{5}{2}\rangle$ transition.\\
+CMRT is a coherent process similar to the Raman one described in section \ref{sec:threelevel}. A single laser pulse with strength $\Omega$ couples the $\text{S}_{1/2}$ level to the $\text{P}_{3/2}$ level, which is coupled to the $\text{D}_{5/2}$ via the cavity. Therefore, the electron state is  transferred from the state $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$  by absorbing a laser photon and emitting a cavity photon. The final state is therefore $\ket{\text{D}_{5/2}}\ket{1}$, where $\ket{1}$ indicates one photon in the cavity. Afterwards the photon leaves the cavity leaving the system in the $\ket{\text{D}_{5/2}}\ket{0}$ state.
+The difference with the Raman process is that instead of two lasers, the CMRT is driven by one laser and by the cavity standing electric field. As such, the effective Rabi frequency \eqref{eq:effectiverabi} of the population transfer is modified as \cite{Barros2009}
 \begin{equation}
-\ket{\psi} = \ket{\text{D}_{5/2},-5/2}\ket{H} + \ket{\text{D}_{5/2},-3/2}\ket{V}.
+\label{omegaeff}
+\Omega_{eff} = \frac{\Omega g}{\Delta},
 \end{equation}
-In the real experiment the designed cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
-\begin{figure}[H]
+where the Rabi frequency of the second laser is now replaced by the atom cavity coupling $g$. Furthermore, in the CMRT a photon is emitted in the cavity mode.
+The Raman resonance appears when the detuning $\Delta$ of the laser and the cavity are the same, moreover the detuning is chosen such that spontaneous emission from the $\text{P}_{3/2}$ state is eliminated, as outlined below. The effective spontaneous decay rate from this level is from equation \eqref{eq:gammaeff}
+\begin{equation}
+\Gamma_{eff} = \left(\frac{\Omega}{2\Delta}\right)^2\Gamma
+\end{equation}
+The effective Rabi frequency $\Omega_{eff}$ and the effective spontaneous decay $\Gamma_{eff}$ are competitive effects and the ratio of the two depends on the detuning $\Omega_{eff}/\Gamma_{eff} \propto \Delta/\Omega$. It is therefore possible to eliminate spontaneous emission effects if the detuning is large enough.\\
+In our experiment, CMRT is used to produce photons from ions in the trap. The experiment in section \ref{exp:photons} makes use of it by generating photons from a single ion in a string. Typical numbers are $\Omega =  2\pi\times 40$ MHz, detuning $\Delta = 2\pi\times 400$ MHz, $g = 2\pi\times 1$ MHz, and from table \ref{transitiontable}, $\Gamma = 2\pi \times 21.4$ MHz. With these conditions we have $\Omega_{eff} \sim 628$ kHz $>$ $\Gamma_{eff} \sim 336$ kHz. The regime we work in is thus $2\kappa>\Omega_{eff}>\Gamma_{eff}$.
+% The generated photon can then be used for quantum networking purposes, this requires also the possibility to entangle the ion with the generated photon, which can be done by driving the CMRT with a bichromatic beam \cite{ionphotonentanglement}.
+
+%In the real experiment the designed cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
+\begin{figure}
      \centering
      \includegraphics[width=.7\textwidth]{photongenerationscheme}
-    \caption{Diagram for the Raman transition. A pulse at 393nm triggers the generation of a 854nm photon inside a the cavity. In the process the ion gets excited to the $\ket{1}$ level.}
+    \caption{Displayed is the Zeeman structure of the relevant manifolds of calcium for the cavity-mediated Raman process. Here only one choice for the Zeeman level is depicted, but other are also possible. If the cavity and the Raman laser have the same detuning $\Delta$, an electron in the ground state $\ket{\text{S}_{1/2}}$ absorbs a 393 nm photon and ends in the $\ket{\text{D}_{5/2}}$ state after emitting a 854 nm photon in the cavity.}
       \label{ramanprocess}
 \end{figure}
- The Finesse of the cavity for the TEM$_{00}$ mode is 54000. The other cavity parameters are $\kappa = 2\pi \times 70$ kHz, and $\gamma = 2\pi\times 11.45$ MHz for the $\text{P}_{3/2}$ state. With these numbers the preferred strong regime is not reached, but nonetheless,  it is still possible to produce photons and collect them out of the cavity.
+% The Finesse of the cavity for the TEM$_{00}$ mode is 54000. The other cavity parameters are $\kappa = 2\pi \times 70$ kHz, and $\gamma = 2\pi\times 11.45$ MHz for the $\text{P}_{3/2}$ state. With these numbers the preferred strong regime is not reached, but nonetheless,  it is still possible to produce photons and collect them out of the cavity.
 
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}

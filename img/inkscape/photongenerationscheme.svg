@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:ns1="http://www.iki.fi/pav/software/textext/"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -469,7 +469,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="279.98146"
+     inkscape:cx="300.3162"
      inkscape:cy="741.22136"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -487,7 +487,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1053,14 +1053,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.2455554px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="74.207451"
-       y="115.49061"
+       x="85.761559"
+       y="111.52186"
        id="text1301"><tspan
          sodipodi:role="line"
-         id="tspan1299"
-         x="74.207451"
-         y="115.49061"
-         style="font-size:4.23333311px;fill:#0000ff;stroke-width:0.26458332">Raman laser</tspan></text>
+         x="85.761559"
+         y="111.52186"
+         style="font-size:4.23333311px;text-align:center;text-anchor:middle;fill:#0000ff;stroke-width:0.26458332"
+         id="tspan4798">Raman laser</tspan><tspan
+         sodipodi:role="line"
+         x="86.434387"
+         y="116.81352"
+         style="font-size:4.23333311px;text-align:center;text-anchor:middle;fill:#0000ff;stroke-width:0.26458332"
+         id="tspan4802">393 nm </tspan></text>
     <path
        transform="translate(-0.6878202,43.691325)"
        style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.05999995, 0.26499999;stroke-dashoffset:0;stroke-opacity:0.5205479"
@@ -1081,7 +1086,7 @@
        ns1:pdfconverter="pdf2svg"
        ns1:texconverter="pdflatex"
        ns1:version="0.11.0"
-       transform="matrix(0.55110901,0,0,0.55110901,3.2513837,47.158083)"
+       transform="matrix(0.55110901,0,0,0.55110901,-14.32451,15.597071)"
        style="fill:#0000ff">
       <g
          id="g4797"
@@ -1142,14 +1147,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffb800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="33.235924"
-       y="78.896904"
+       x="38.381542"
+       y="80.786781"
        id="text1305"><tspan
          sodipodi:role="line"
          id="tspan1303"
-         x="33.235924"
-         y="78.896904"
-         style="font-size:4.93888903px;fill:#ffb800;fill-opacity:1;stroke-width:0.26458332">Cavity</tspan></text>
+         x="38.381542"
+         y="80.786781"
+         style="font-size:4.93888903px;text-align:center;text-anchor:middle;fill:#ffb800;fill-opacity:1;stroke-width:0.26458332">Cavity</tspan><tspan
+         sodipodi:role="line"
+         x="38.381542"
+         y="86.960396"
+         style="font-size:4.93888903px;text-align:center;text-anchor:middle;fill:#ffb800;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan4804">854 nm</tspan></text>
     <g
        id="g5050"
        ns1:jacobian_sqrt="0.551109"
@@ -1161,7 +1171,7 @@
        ns1:pdfconverter="pdf2svg"
        ns1:texconverter="pdflatex"
        ns1:version="0.11.0"
-       transform="matrix(0.55110901,0,0,0.55110901,-42.520042,9.3340096)"
+       transform="matrix(0.55110901,0,0,0.55110901,-27.967958,8.956033)"
        style="fill:#ffb800;fill-opacity:1;stroke:#ffb800;stroke-opacity:1">
       <g
          id="g5048"
