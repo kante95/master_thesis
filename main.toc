@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Calcium Ions}{29}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}Trapping, cooling, and state readout}{30}{subsection.3.1.2}% 
 \contentsline {section}{\numberline {3.2}393 nm laser}{32}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Experiment control}{34}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Experiment control}{33}{section.3.3}% 
 \contentsline {chapter}{\numberline {4}Design and simulation of the addressing setup}{37}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Addressing system overview and requirements}{37}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Objective and AOD}{39}{section.4.2}% 
