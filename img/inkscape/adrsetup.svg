@@ -362,8 +362,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="347.14448"
-     inkscape:cy="629.43444"
+     inkscape:cx="190.35877"
+     inkscape:cy="630.14873"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -639,19 +639,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.2455554px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="73.692978"
-       y="129.18553"
+       x="73.50399"
+       y="135.42213"
        id="text1491"><tspan
          sodipodi:role="line"
          id="tspan1489"
-         x="74.208809"
-         y="129.18553"
+         x="74.019821"
+         y="135.42213"
          style="text-align:center;text-anchor:middle;stroke-width:0.26458332">Vacuum </tspan><tspan
          sodipodi:role="line"
-         x="73.692978"
-         y="133.24248"
+         x="73.50399"
+         y="139.47908"
          style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
-         id="tspan2883">chamber</tspan></text>
+         id="tspan2883" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker1497)"
        d="M 41.472694,151.52408 30.389911,151.38804 30.59224,139.67252"

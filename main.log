@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  3 MAR 2020 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  4 MAR 2020 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -720,18 +720,55 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2019/10/10 v2.7c microtype main configuration file (RS)
 ))
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2019/09/21 v0.5n Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen186
+\calc@Bdimen=\dimen187
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count283
+\calc@Cskip=\skip62
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+))
+\AM@pagewidth=\dimen188
+\AM@pageheight=\dimen189
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2019/09/21 v0.5n Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box52
+\AM@global@opts=\toks34
+\AM@toc@title=\toks35
+\c@AM@survey=\count284
+\AM@templatesizebox=\box53
+)
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip60
-\f@nch@O@elh=\skip61
-\f@nch@O@erh=\skip62
-\f@nch@O@olh=\skip63
-\f@nch@O@orh=\skip64
-\f@nch@O@elf=\skip65
-\f@nch@O@erf=\skip66
-\f@nch@O@olf=\skip67
-\f@nch@O@orf=\skip68
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
 )
 (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2019/10/25 v1.4 Multi-file projects (package)
@@ -741,38 +778,34 @@ Package: import 2009/03/23  v 5.1
 ))
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen186
-\ar@mcellbox=\box52
-\extrarowheight=\dimen187
-\NC@list=\toks34
-\extratabsurround=\skip69
-\backup@length=\skip70
-\ar@cellbox=\box53
+\col@sep=\dimen190
+\ar@mcellbox=\box54
+\extrarowheight=\dimen191
+\NC@list=\toks36
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box55
 )
 (/usr/share/texmf-dist/tex/latex/sidecap/sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
-
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\SC@BOXWD=\dimen188
-\SC@CAPWD=\dimen189
-\SC@tempdima=\dimen190
-\SC@tempdimb=\dimen191
-\c@SC@C=\count281
-\SC@BOX=\box54
+\SC@BOXWD=\dimen192
+\SC@CAPWD=\dimen193
+\SC@tempdima=\dimen194
+\SC@tempdimb=\dimen195
+\c@SC@C=\count285
+\SC@BOX=\box56
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
-\float@exts=\toks35
-\float@box=\box55
-\@float@everytoks=\toks36
-\@floatcapt=\box56
+\c@float@type=\count286
+\float@exts=\toks37
+\float@box=\box57
+\@float@everytoks=\toks38
+\@floatcapt=\box58
 )
 (/usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box57
+\@tempboxb=\box59
 )
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -784,11 +817,11 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-\everycr=\toks37
-\minrowclearance=\skip71
+\everycr=\toks39
+\minrowclearance=\skip74
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count283
+\rownum=\count287
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -801,32 +834,32 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen192
-\c@nlinenum=\count284
-\TeXr@lab=\toks38
+\rotheadsize=\dimen196
+\c@nlinenum=\count288
+\TeXr@lab=\toks40
 )
 (/usr/share/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2019/10/08 v1.6180339 publication quality tables
-\heavyrulewidth=\dimen193
-\lightrulewidth=\dimen194
-\cmidrulewidth=\dimen195
-\belowrulesep=\dimen196
-\belowbottomsep=\dimen197
-\aboverulesep=\dimen198
-\abovetopsep=\dimen199
-\cmidrulesep=\dimen256
-\cmidrulekern=\dimen257
-\defaultaddspace=\dimen258
-\@cmidla=\count285
-\@cmidlb=\count286
-\@aboverulesep=\dimen259
-\@belowrulesep=\dimen260
-\@thisruleclass=\count287
-\@lastruleclass=\count288
-\@thisrulewidth=\dimen261
+\heavyrulewidth=\dimen197
+\lightrulewidth=\dimen198
+\cmidrulewidth=\dimen199
+\belowrulesep=\dimen256
+\belowbottomsep=\dimen257
+\aboverulesep=\dimen258
+\abovetopsep=\dimen259
+\cmidrulesep=\dimen260
+\cmidrulekern=\dimen261
+\defaultaddspace=\dimen262
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen263
+\@belowrulesep=\dimen264
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen265
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
@@ -864,23 +897,23 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package hobsub Info: Skipping package `refcount' (already loaded).
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen262
-\Hy@linkcounter=\count289
-\Hy@pagecounter=\count290
+\@linkdim=\dimen266
+\Hy@linkcounter=\count293
+\Hy@pagecounter=\count294
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count291
+\Hy@SavedSpaceFactor=\count295
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -894,12 +927,12 @@ Package hyperref Info: Plain pages OFF on input line 4555.
 Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4793.
-\c@Hy@tempcnt=\count292
+\c@Hy@tempcnt=\count296
 LaTeX Info: Redefining \url on input line 5152.
-\XeTeXLinkMargin=\dimen263
-\Fld@menulength=\count293
-\Field@Width=\dimen264
-\Fld@charsize=\dimen265
+\XeTeXLinkMargin=\dimen267
+\Fld@menulength=\count297
+\Field@Width=\dimen268
+\Fld@charsize=\dimen269
 Package hyperref Info: Hyper figures OFF on input line 6423.
 Package hyperref Info: Link nesting OFF on input line 6428.
 Package hyperref Info: Hyper index ON on input line 6431.
@@ -909,62 +942,62 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6448.
 Package hyperref Info: PDF/A mode OFF on input line 6453.
 LaTeX Info: Redefining \ref on input line 6493.
 LaTeX Info: Redefining \pageref on input line 6497.
-\Hy@abspage=\count294
-\c@Item=\count295
-\c@Hfootnote=\count296
+\Hy@abspage=\count298
+\c@Item=\count299
+\c@Hfootnote=\count300
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
+\Fld@listcount=\count301
+\c@bookmark@seq@number=\count302
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip72
+\Hy@SectionHShift=\skip75
 ) (./main.aux
 (./frontpage.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-01.
+00.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen266
-\scratchbox=\box58
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen267
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count303
+\scratchdimen=\dimen270
+\scratchbox=\box60
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen271
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1023,20 +1056,30 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 101.
+LaTeX Info: Redefining \microtypecontext on input line 100.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 101.
+LaTeX Info: Redefining \showhyphens on input line 100.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
+)
+\AtBeginShipoutBox=\box61
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
@@ -1047,26 +1090,25 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 126.
 )
-\CenteringLeftskip=\skip73
-\RaggedLeftLeftskip=\skip74
-\RaggedRightLeftskip=\skip75
-\CenteringRightskip=\skip76
-\RaggedLeftRightskip=\skip77
-\RaggedRightRightskip=\skip78
-\CenteringParfillskip=\skip79
-\RaggedLeftParfillskip=\skip80
-\RaggedRightParfillskip=\skip81
-\JustifyingParfillskip=\skip82
-\CenteringParindent=\skip83
-\RaggedLeftParindent=\skip84
-\RaggedRightParindent=\skip85
-\JustifyingParindent=\skip86
+\CenteringLeftskip=\skip76
+\RaggedLeftLeftskip=\skip77
+\RaggedRightLeftskip=\skip78
+\CenteringRightskip=\skip79
+\RaggedLeftRightskip=\skip80
+\RaggedRightRightskip=\skip81
+\CenteringParfillskip=\skip82
+\RaggedLeftParfillskip=\skip83
+\RaggedRightParfillskip=\skip84
+\JustifyingParfillskip=\skip85
+\CenteringParindent=\skip86
+\RaggedLeftParindent=\skip87
+\RaggedRightParindent=\skip88
+\JustifyingParindent=\skip89
 )
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 101.
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+Package hyperref Info: Link coloring ON on input line 100.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1107,7 +1149,7 @@ LaTeX Info: Redefining \nameref on input line 101.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<img/logo.jpg, id=184, 2372.865pt x 936.49875pt>
+<img/logo.jpg, id=192, 2372.865pt x 936.49875pt>
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
 Package pdftex.def Info: img/logo.jpg  used on input line 33.
@@ -1130,7 +1172,7 @@ This may cause the page layout to be inconsistent, however.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 120
+LaTeX Font Info:    Trying to load font information for U+msa on input line 119
 .
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1138,7 +1180,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 120
+LaTeX Font Info:    Trying to load font information for U+msb on input line 119
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1164,7 +1206,7 @@ This may cause the page layout to be inconsistent, however.
  [4]
 Chapter 1.
 
-Underfull \hbox (badness 1308) in paragraph at lines 134--140
+Underfull \hbox (badness 1308) in paragraph at lines 133--139
 \T1/cmr/m/n/12 (+20) Quantum net-works also bring new ad-di-tional fea-tures, a
 nd sev-eral ben-e-fits to
  []
@@ -1173,37 +1215,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 
+l.139 
        [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
 
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
-put line 144.
+put line 143.
 
-<./img/photongeneration2.png, id=301, 208.8603pt x 179.2296pt>
+<./img/photongeneration2.png, id=311, 208.8603pt x 179.2296pt>
 File: ./img/photongeneration2.png Graphic file (type png)
 <use ./img/photongeneration2.png>
-Package pdftex.def Info: ./img/photongeneration2.png  used on input line 146.
+Package pdftex.def Info: ./img/photongeneration2.png  used on input line 145.
 (pdftex.def)             Requested size: 181.18454pt x 155.47997pt.
 
-Underfull \hbox (badness 1132) in paragraph at lines 151--153
+Underfull \hbox (badness 1132) in paragraph at lines 150--152
 \T1/cmr/m/n/12 (+20) the laser pulse must be cor-rectly de-tuned to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
-<./img/qubitmanipulation2.png, id=304, 234.8775pt x 187.902pt>
+<./img/qubitmanipulation2.png, id=314, 234.8775pt x 187.902pt>
 File: ./img/qubitmanipulation2.png Graphic file (type png)
 <use ./img/qubitmanipulation2.png>
-Package pdftex.def Info: ./img/qubitmanipulation2.png  used on input line 156.
+Package pdftex.def Info: ./img/qubitmanipulation2.png  used on input line 155.
 (pdftex.def)             Requested size: 181.18454pt x 144.94876pt.
 [2 <./img/photongeneration2.png>] (./theory.tex [3 <./img/qubitmanipulation2.pn
 g>] [4
@@ -1211,50 +1253,50 @@ g>] [4
 ]
 Chapter 2.
 [5]
-<./img/bloch_sphere.png, id=336, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=347, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [6 <./img/bloch_sphere.png>]
-<./img/calciumscheme.png, id=355, 365.949pt x 309.447pt>
+<./img/calciumscheme.png, id=365, 365.949pt x 309.447pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 89.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
-<./img/2levelatom.png, id=360, 186.4566pt x 127.1952pt>
+<./img/2levelatom.png, id=370, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 99.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
  [7] [8 <./img/calciumscheme.png>] [9 <./img/2levelatom.png>]
-<./img/rabiflops.png, id=398, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=408, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 155.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [10 <./img/rabiflops.png>]
-<./img/3levelmodel.png, id=412, 370.38374pt x 424.2249pt>
+<./img/3levelmodel.png, id=422, 370.38374pt x 424.2249pt>
 File: ./img/3levelmodel.png Graphic file (type png)
 <use ./img/3levelmodel.png>
 Package pdftex.def Info: ./img/3levelmodel.png  used on input line 187.
 (pdftex.def)             Requested size: 135.89185pt x 155.6467pt.
  [11 <./img/3levelmodel.png>] [12]
 [13] [14] [15]
-<./img/photongenerationscheme.png, id=516, 368.39633pt x 285.82785pt>
+<./img/photongenerationscheme.png, id=526, 368.39633pt x 285.82785pt>
 File: ./img/photongenerationscheme.png Graphic file (type png)
 <use ./img/photongenerationscheme.png>
 Package pdftex.def Info: ./img/photongenerationscheme.png  used on input line 3
 01.
 (pdftex.def)             Requested size: 317.0764pt x 246.02086pt.
-<./img/trap.png, id=519, 494.11751pt x 169.06602pt>
+<./img/trap.png, id=529, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
 Package pdftex.def Info: ./img/trap.png  used on input line 313.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
  [16 <./img/photongenerationscheme.png>] [17 <./img/trap.png>]
 [18]
-<./img/positions_ions.png, id=559, 1028.4021pt x 483.4863pt>
+<./img/positions_ions.png, id=569, 1028.4021pt x 483.4863pt>
 File: ./img/positions_ions.png Graphic file (type png)
 <use ./img/positions_ions.png>
 Package pdftex.def Info: ./img/positions_ions.png  used on input line 375.
@@ -1270,30 +1312,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--426
  []
 
 [20]
-<./img/threelevelatom.png, id=594, 335.69415pt x 193.6836pt>
+<./img/threelevelatom.png, id=604, 335.69415pt x 193.6836pt>
 File: ./img/threelevelatom.png Graphic file (type png)
 <use ./img/threelevelatom.png>
 Package pdftex.def Info: ./img/threelevelatom.png  used on input line 430.
 (pdftex.def)             Requested size: 271.7837pt x 156.8119pt.
  [21 <./img/threelevelatom.png>]
-<./img/gauss2.png, id=607, 421.69545pt x 451.6875pt>
+<./img/gauss2.png, id=617, 421.69545pt x 451.6875pt>
 File: ./img/gauss2.png Graphic file (type png)
 <use ./img/gauss2.png>
 Package pdftex.def Info: ./img/gauss2.png  used on input line 456.
 (pdftex.def)             Requested size: 271.7837pt x 291.1122pt.
-<./img/gaussprofile.png, id=610, 393.3897pt x 103.1052pt>
+<./img/gaussprofile.png, id=620, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
 Package pdftex.def Info: ./img/gaussprofile.png  used on input line 473.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
  [22 <./img/gauss2.png>] [23 <./img/gaussprofile.png>]
-<./img/aod2.png, id=636, 389.17395pt x 311.12234pt>
+<./img/aod2.png, id=646, 389.17395pt x 311.12234pt>
 File: ./img/aod2.png Graphic file (type png)
 <use ./img/aod2.png>
 Package pdftex.def Info: ./img/aod2.png  used on input line 508.
 (pdftex.def)             Requested size: 226.48413pt x 181.05875pt.
  [24 <./img/aod2.png>] [25] [26]
-<./img/sequence.png, id=673, 447.68158pt x 46.43593pt>
+<./img/sequence.png, id=683, 447.68158pt x 46.43593pt>
 File: ./img/sequence.png Graphic file (type png)
 <use ./img/sequence.png>
 Package pdftex.def Info: ./img/sequence.png  used on input line 576.
@@ -1312,30 +1354,30 @@ File: ./img/calciumscheme.png Graphic file (type png)
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 11.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
 [29]
-<./img/phototrap_withletters_andarrows.png, id=726, 1284.9606pt x 963.3591pt>
+<./img/phototrap_withletters_andarrows.png, id=736, 1284.9606pt x 963.3591pt>
 File: ./img/phototrap_withletters_andarrows.png Graphic file (type png)
 <use ./img/phototrap_withletters_andarrows.png>
 Package pdftex.def Info: ./img/phototrap_withletters_andarrows.png  used on inp
 ut line 40.
 (pdftex.def)             Requested size: 317.0764pt x 237.70816pt.
  [30] [31 <./img/phototrap_withletters_andarrows.png>]
-<./img/imgsetup.png, id=753, 492.8814pt x 294.50024pt>
+<./img/imgsetup.png, id=763, 492.8814pt x 294.50024pt>
 File: ./img/imgsetup.png Graphic file (type png)
 <use ./img/imgsetup.png>
 Package pdftex.def Info: ./img/imgsetup.png  used on input line 53.
 (pdftex.def)             Requested size: 362.37598pt x 216.52022pt.
-<./img/scheme_393.pdf, id=758, 963.6095pt x 542.025pt>
+<./img/scheme_393.pdf, id=768, 963.6095pt x 542.025pt>
 File: ./img/scheme_393.pdf Graphic file (type pdf)
 <use ./img/scheme_393.pdf>
 Package pdftex.def Info: ./img/scheme_393.pdf  used on input line 63.
 (pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
  [32 <./img/imgsetup.png>] [33 <./img/scheme_393.pdf>]
-<./img/expcontrol.png, id=805, 232.7094pt x 233.4321pt>
+<./img/expcontrol.png, id=815, 232.7094pt x 233.4321pt>
 File: ./img/expcontrol.png Graphic file (type png)
 <use ./img/expcontrol.png>
 Package pdftex.def Info: ./img/expcontrol.png  used on input line 85.
 (pdftex.def)             Requested size: 226.48413pt x 227.19109pt.
-<./img/tricsmodified.png, id=806, 1445.4pt x 813.0375pt>
+<./img/tricsmodified.png, id=816, 1445.4pt x 813.0375pt>
 File: ./img/tricsmodified.png Graphic file (type png)
 <use ./img/tricsmodified.png>
 Package pdftex.def Info: ./img/tricsmodified.png  used on input line 92.
@@ -1349,169 +1391,164 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 |[]\T1/cmr/bx/n/20.74 Addressing sys-tem overview and
  []
 
-<img/setup.png, id=830, 420.86647pt x 214.84792pt>
+<img/setup.png, id=840, 420.86647pt x 214.84792pt>
 File: img/setup.png Graphic file (type png)
 <use img/setup.png>
 Package pdftex.def Info: img/setup.png  used on input line 10.
 (pdftex.def)             Requested size: 452.96826pt x 231.24548pt.
 [37] [38 <./img/setup.png>]
-<./img/obj.png, id=850, 368.577pt x 273.54195pt>
-File: ./img/obj.png Graphic file (type png)
-<use ./img/obj.png>
-Package pdftex.def Info: ./img/obj.png  used on input line 24.
-(pdftex.def)             Requested size: 181.18454pt x 134.47081pt.
-<./img/zeemaxobj.png, id=851, 674.52pt x 295.85532pt>
-File: ./img/zeemaxobj.png Graphic file (type png)
-<use ./img/zeemaxobj.png>
-Package pdftex.def Info: ./img/zeemaxobj.png  used on input line 31.
-(pdftex.def)             Requested size: 249.13391pt x 109.27063pt.
+<./img/obj+zemaxpng.png, id=865, 1122.96461pt x 295.94728pt>
+File: ./img/obj+zemaxpng.png Graphic file (type png)
+<use ./img/obj+zemaxpng.png>
+Package pdftex.def Info: ./img/obj+zemaxpng.png  used on input line 44.
+(pdftex.def)             Requested size: 452.96826pt x 119.3748pt.
  [39]
-<./img/zemax3d.png, id=858, 952.30782pt x 155.07938pt>
+<./img/zemax3d.png, id=872, 952.30782pt x 155.07938pt>
 File: ./img/zemax3d.png Graphic file (type png)
 <use ./img/zemax3d.png>
-Package pdftex.def Info: ./img/zemax3d.png  used on input line 49.
+Package pdftex.def Info: ./img/zemax3d.png  used on input line 57.
 (pdftex.def)             Requested size: 452.96826pt x 73.76521pt.
- [40 <./img/obj.png> <./img/zeemaxobj.png (PNG copy)>]
-<img/zemaxrange.png, id=869, 952.30782pt x 561.59813pt>
+ [40 <./img/obj+zemaxpng.png>]
+<img/zemaxrange.png, id=882, 952.30782pt x 561.59813pt>
 File: img/zemaxrange.png Graphic file (type png)
 <use img/zemaxrange.png>
-Package pdftex.def Info: img/zemaxrange.png  used on input line 58.
+Package pdftex.def Info: img/zemaxrange.png  used on input line 66.
 (pdftex.def)             Requested size: 362.37598pt x 213.70085pt.
-<img/pop2.png, id=870, 793.46437pt x 442.65375pt>
+<img/pop2.png, id=883, 793.46437pt x 442.65375pt>
 File: img/pop2.png Graphic file (type png)
 <use img/pop2.png>
-Package pdftex.def Info: img/pop2.png  used on input line 65.
+Package pdftex.def Info: img/pop2.png  used on input line 73.
 (pdftex.def)             Requested size: 362.37598pt x 202.16425pt.
-<./img/zemaxaddrerror2.png, id=874, 987.2082pt x 452.4102pt>
+<./img/zemaxaddrerror2.png, id=887, 987.2082pt x 452.4102pt>
 File: ./img/zemaxaddrerror2.png Graphic file (type png)
 <use ./img/zemaxaddrerror2.png>
-Package pdftex.def Info: ./img/zemaxaddrerror2.png  used on input line 74.
+Package pdftex.def Info: ./img/zemaxaddrerror2.png  used on input line 82.
 (pdftex.def)             Requested size: 407.66867pt x 186.8217pt.
  [41 <./img/zemax3d.png (PNG copy)>] [42 <./img/zemaxrange.png (PNG copy)> <./i
 mg/pop2.png (PNG copy)>]
-<img/clipping2.pdf, id=892, 816.04875pt x 516.93124pt>
+<img/clipping2.pdf, id=904, 816.04875pt x 516.93124pt>
 File: img/clipping2.pdf Graphic file (type pdf)
 <use img/clipping2.pdf>
-Package pdftex.def Info: img/clipping2.pdf  used on input line 85.
+Package pdftex.def Info: img/clipping2.pdf  used on input line 93.
 (pdftex.def)             Requested size: 362.37598pt x 229.54858pt.
  [43 <./img/zemaxaddrerror2.png>]
-<img/clipping.pdf, id=901, 578.16pt x 352.31625pt>
+<img/clipping.pdf, id=913, 578.16pt x 352.31625pt>
 File: img/clipping.pdf Graphic file (type pdf)
 <use img/clipping.pdf>
-Package pdftex.def Info: img/clipping.pdf  used on input line 94.
+Package pdftex.def Info: img/clipping.pdf  used on input line 102.
 (pdftex.def)             Requested size: 362.37598pt x 220.82071pt.
  [44 <./img/clipping2.pdf>]
-<./img/photosetupnice.png, id=923, 160.56366pt x 369.52534pt>
+<./img/photosetupnice.png, id=935, 160.56366pt x 369.52534pt>
 File: ./img/photosetupnice.png Graphic file (type png)
 <use ./img/photosetupnice.png>
-Package pdftex.def Info: ./img/photosetupnice.png  used on input line 109.
+Package pdftex.def Info: ./img/photosetupnice.png  used on input line 117.
 (pdftex.def)             Requested size: 208.73271pt x 480.3829pt.
 ) [45 <./img/clipping.pdf>] (./results.tex [46 <./img/photosetupnice.png>]
 Chapter 5.
 [47
 
 ]
-<./img/DE.png, id=955, 987.2082pt x 452.4102pt>
+<./img/DE.png, id=967, 987.2082pt x 452.4102pt>
 File: ./img/DE.png Graphic file (type png)
 <use ./img/DE.png>
 Package pdftex.def Info: ./img/DE.png  used on input line 19.
 (pdftex.def)             Requested size: 430.31847pt x 197.20413pt.
-<./img/response.png, id=956, 987.2082pt x 452.4102pt>
+<./img/response.png, id=968, 987.2082pt x 452.4102pt>
 File: ./img/response.png Graphic file (type png)
 <use ./img/response.png>
 Package pdftex.def Info: ./img/response.png  used on input line 26.
 (pdftex.def)             Requested size: 430.31847pt x 197.20413pt.
  [48 <./img/DE.png> <./img/response.png>]
-<./img/razorsetup.png, id=965, 152.30902pt x 226.74713pt>
+<./img/razorsetup.png, id=977, 152.30902pt x 226.74713pt>
 File: ./img/razorsetup.png Graphic file (type png)
 <use ./img/razorsetup.png>
 Package pdftex.def Info: ./img/razorsetup.png  used on input line 37.
 (pdftex.def)             Requested size: 167.54042pt x 249.42259pt.
  [49 <./img/razorsetup.png>]
-<img/razorscan.png, id=979, 987.2082pt x 452.4102pt>
+<img/razorscan.png, id=991, 987.2082pt x 452.4102pt>
 File: img/razorscan.png Graphic file (type png)
 <use img/razorscan.png>
 Package pdftex.def Info: img/razorscan.png  used on input line 56.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/camera.jpeg, id=981, 633.36626pt x 594.22pt>
+<./img/camera.jpeg, id=993, 633.36626pt x 594.22pt>
 File: ./img/camera.jpeg Graphic file (type jpg)
 <use ./img/camera.jpeg>
 Package pdftex.def Info: ./img/camera.jpeg  used on input line 70.
 (pdftex.def)             Requested size: 303.4879pt x 284.73274pt.
-<./img/cameraoriginal.png, id=982, 6.77531pt x 6.0225pt>
+<./img/cameraoriginal.png, id=994, 6.77531pt x 6.0225pt>
 File: ./img/cameraoriginal.png Graphic file (type png)
 <use ./img/cameraoriginal.png>
 Package pdftex.def Info: ./img/cameraoriginal.png  used on input line 76.
 (pdftex.def)             Requested size: 135.89185pt x 120.96515pt.
 
 [50 <./img/razorscan.png>] [51 <./img/camera.jpeg> <./img/cameraoriginal.png>]
-<./img/cameraprofile.png, id=1000, 987.2082pt x 452.4102pt>
+<./img/cameraprofile.png, id=1014, 987.2082pt x 452.4102pt>
 File: ./img/cameraprofile.png Graphic file (type png)
 <use ./img/cameraprofile.png>
 Package pdftex.def Info: ./img/cameraprofile.png  used on input line 96.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
 
 [52 <./img/cameraprofile.png>]
-<./img/pol1.png, id=1015, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1030, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 127.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=1016, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1031, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 134.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [53] [54 <./img/pol1.png> <./img/pol2.png>]
-<./img/polstability.png, id=1036, 987.2082pt x 452.4102pt>
+<./img/polstability.png, id=1050, 987.2082pt x 452.4102pt>
 File: ./img/polstability.png Graphic file (type png)
 <use ./img/polstability.png>
 Package pdftex.def Info: ./img/polstability.png  used on input line 146.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/beampointing.png, id=1037, 784.43062pt x 408.77719pt>
+<./img/beampointing.png, id=1051, 784.43062pt x 408.77719pt>
 File: ./img/beampointing.png Graphic file (type png)
 <use ./img/beampointing.png>
 Package pdftex.def Info: ./img/beampointing.png  used on input line 153.
 (pdftex.def)             Requested size: 452.96826pt x 236.04927pt.
 
 [55 <./img/polstability.png> <./img/beampointing.png (PNG copy)>]
-<./img/rabiflops2.png, id=1046, 987.2082pt x 459.6372pt>
+<./img/rabiflops2.png, id=1060, 987.2082pt x 459.6372pt>
 File: ./img/rabiflops2.png Graphic file (type png)
 <use ./img/rabiflops2.png>
 Package pdftex.def Info: ./img/rabiflops2.png  used on input line 169.
 (pdftex.def)             Requested size: 452.96826pt x 210.90265pt.
-<./img/ramseyfringes.png, id=1050, 987.2082pt x 452.4102pt>
+<./img/ramseyfringes.png, id=1064, 987.2082pt x 452.4102pt>
 File: ./img/ramseyfringes.png Graphic file (type png)
 <use ./img/ramseyfringes.png>
 Package pdftex.def Info: ./img/ramseyfringes.png  used on input line 181.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [56 <./img/rabiflops2.png>]
-<img/AODScan.png, id=1060, 987.2082pt x 452.4102pt>
+<img/AODScan.png, id=1074, 987.2082pt x 452.4102pt>
 File: img/AODScan.png Graphic file (type png)
 <use img/AODScan.png>
 Package pdftex.def Info: img/AODScan.png  used on input line 188.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [57 <./img/ramseyfringes.png>]
-<img/ACscan.png, id=1072, 987.2082pt x 452.4102pt>
+<img/ACscan.png, id=1086, 987.2082pt x 452.4102pt>
 File: img/ACscan.png Graphic file (type png)
 <use img/ACscan.png>
 Package pdftex.def Info: img/ACscan.png  used on input line 199.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [58 <./img/AODScan.png>]
-<img/photonefficency_witherror.png, id=1080, 987.2082pt x 459.6372pt>
+<img/photonefficency_witherror.png, id=1094, 987.2082pt x 459.6372pt>
 File: img/photonefficency_witherror.png Graphic file (type png)
 <use img/photonefficency_witherror.png>
 Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
 209.
 (pdftex.def)             Requested size: 452.96826pt x 210.90265pt.
-<img/ramanlength_witherrors.png, id=1081, 987.2082pt x 452.4102pt>
+<img/ramanlength_witherrors.png, id=1095, 987.2082pt x 452.4102pt>
 File: img/ramanlength_witherrors.png Graphic file (type png)
 <use img/ramanlength_witherrors.png>
 Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 215
 .
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [59 <./img/ACscan.png>]
-<./img/recap.png, id=1090, 385.87602pt x 201.44037pt>
+<./img/recap.png, id=1104, 385.87602pt x 201.44037pt>
 File: ./img/recap.png Graphic file (type png)
 <use ./img/recap.png>
 Package pdftex.def Info: ./img/recap.png  used on input line 230.
@@ -1524,7 +1561,7 @@ Chapter 6.
 ) [63] [64]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 185.
+(hyperref)                be the same. Added a new anchor on input line 184.
 
 (./main.bbl [65
 
@@ -1534,28 +1571,93 @@ Overfull \hbox (26.74219pt too wide) in paragraph at lines 367--369
 ownload/fibercollimators60fc.pdf. 
  []
 
-)
+) [69] [70
+
+]
+Appendix A.
+<SKM_C36819012815280.pdf, id=1161, 597.23125pt x 844.15375pt>
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf>
+Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 197.
+(pdftex.def)             Requested size: 418.05902pt x 590.9036pt.
+
+Package pdfpages Warning: Option `page' is unknow to \includepdf.
+(pdfpages)                Did you mean `pages'? (Note the `s'!)
+(pdfpages)                OK, I'll proceed as if it were `pages'.
+
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf>
+Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 198.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf>
+Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 198.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+<SKM_C36819012815280.pdf, id=1164, page=2, 597.23125pt x 844.15375pt>
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 2>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 198
+.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 2>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+[71]
+Overfull \vbox (95.14636pt too high) has occurred while \output is active []
+
+
+[72 <./SKM_C36819012815280.pdf>]
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 2>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 2>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 2>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+ [73 <./SKM_C36819012815280.pdf>]
+<SKM_C36819012815280.pdf, id=1384, page=3, 597.23125pt x 844.15375pt>
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 3>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 3>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+File: SKM_C36819012815280.pdf Graphic file (type pdf)
+<use SKM_C36819012815280.pdf, page 3>
+Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 198
+.
+(pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
+ [74 <./SKM_C36819012815280.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
- [69]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./main.aux (./frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E2B33ADC8F5099D8A9C7DCAC5B8F2EC6;3186.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: FFC227C8F73CA5F2DE3222613312E853;3284.
  ) 
 Here is how much of TeX's memory you used:
- 25135 strings out of 492167
- 424212 string characters out of 6131558
- 557665 words of memory out of 5000000
- 28597 multiletter control sequences out of 15000+600000
- 561466 words of font info for 180 fonts, out of 8000000 for 9000
+ 25853 strings out of 492167
+ 435849 string characters out of 6131558
+ 570866 words of memory out of 5000000
+ 29286 multiletter control sequences out of 15000+600000
+ 561403 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,100p,2847b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,100p,2344b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1580,10 +1682,10 @@ exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts
 m-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm144
 0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on main.pdf (75 pages, 12941935 bytes).
+Output written on main.pdf (80 pages, 13787245 bytes).
 PDF statistics:
- 1305 PDF objects out of 1440 (max. 8388607)
- 1077 compressed objects within 11 object streams
- 329 named destinations out of 1000 (max. 500000)
- 27230 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1599 PDF objects out of 1728 (max. 8388607)
+ 1235 compressed objects within 13 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 27266 words of extra memory for PDF output out of 29859 (max. 10000000)
 
