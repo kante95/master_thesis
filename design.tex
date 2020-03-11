@@ -53,54 +53,69 @@ The AOD is from Gooch \& Housego, model 4120-3, the datasheet is in Appendix \re
 The setup in figure \ref{addressingsetup} has been simulated with the software Zemax\footnote{Zemax OpticStudio is a commercial software based on ray tracing used for designing optical system.}. The simulation had the purpose of assessing the performance of the setup, i.e. checking the viability of the setup and see if it meets all requirements. It was also used to find suitable lenses for building the setup and their optimal locations. The simulation included: the four lenses, the objective, and the viewport. As there is no option to simulate an AOD, it was not taken in consideration, instead the simulation started at the output of the AOD as described below. Mirrors and beam splitters were not included in the simulation as their imperfections are not currently known.
 \begin{figure}[H]
 \centering
-\includegraphics[width = \textwidth]{zemax3d}
-\caption{Zemax simulation of the setup. Rays propagate from left to right, only the four lenses are displayed, objective and image plane are far on the right. Different colors indicate different vectors emerging from the AOD at different angles.}
+\includegraphics[width = \textwidth]{2levelszemax}
+\caption{Zemax simulation of the setup. Rays propagate from left to right starting from top right. Simulation layout has been separated in two for displaying purposes. In the top part, the four lenses are depicted, the rays continue in the bottom part where the objective and image plane are located. Different colors indicate different beams emerging from the AOD at different angles, rays with the same color belong to the same beam. The blue one is the central beam emerging from the AOD with a 0$^\circ$ angle, the red and the green beams emerge respectively with $\pm0.86^\circ$.}
 \label{zemaxview}
 \end{figure}
 The simulations start by specifying the input fields, these represent the physical light beam. To account for the ability to change the output angle from the AOD, three different fields has been simulated. One is along the optical axis, while the other two are angled corresponding to the extrema of the AOD bandwidth, so $\pm0.86^{\circ}$. Therefore the propagation of these beams represents three different situations of beam direction and should also give an idea of the behavior in between the extrema. Next, the four lenses of the setup were inserted in Zemax, initially with variable radius, thickness and separations. Initial positions and lens focuses were set according to geometrical boundaries given by physical constraints on the optical table where the setup had to be built. The Zemax file of the objective came from the company which designed it and was simply imported in the project. After the objective the 6mm viewport glass was included and then vacuum for 38.6 mm, which is the distance between the outer facet of the glass and the ion axis. The image plane was therefore set here. The distance between the objective and the viewport was unknown, as it could not be measured. However, this distance was inferred from a Zemax simulation of the imaging path, knowing that the ions focus on the camera 1.5 m away, we determined a space between the viewport and the objective of 14.22 mm.\\
-They simulation was carried out with the tool Physical Optics Propagation (POP). POP works by propagating a wavefront represented by an array of discrete points. The array is propagated through every optical component and free space. This method can be used to simulate coherent Gaussian beam with high precision as well as wave phenomena such as diffraction and aberrations. The initial value given to the propagator was the waist of the collimated beam out of the AOD. Since the beam going to the AOD comes from a fiber collimator, the value specified was taken from the datasheet of the fiber collimator, namely Sc\"after + Kirchhoff 60FC-M12-33 \cite{fibercollimator}. Therefore, the specified waist was 1.08 mm.
+They simulation was carried out with the tool Physical Optics Propagation (POP). POP works by propagating a wavefront represented by an array of discrete points. The array is propagated through every optical component and free space. This method can be used to simulate coherent Gaussian beam with high precision as well as wave phenomena such as diffraction and aberrations. The initial value given to the propagator was the waist of the collimated beam out of the AOD. Since the beam going to the AOD comes from a fiber collimator, the value specified was taken from the datasheet of the fiber collimator, namely Sc\"after + Kirchhoff 60FC-M12-33 \cite{fibercollimator}. Therefore, the specified waist was 1.07 mm.
 \begin{figure}
      \centering
      \centering
-     \includegraphics[width=.8\textwidth]{img/zemaxrange}
-     \caption{Zemax simulation at the image plane, where the ions are. The three colors are three different fields with different angles that are focuses at different position along the ion string. The full addressing range here displayed is about 168 $\mu$m.}
+     \includegraphics[width=1\textwidth]{img/range_plus_3beams}
+     \caption{Zemax simulation at the image plane, where the ions are. a) Addressing range from Zemax simulation, the three beams emerge from the AOD at different angles. The full addressing range here displayed is 168 $\mu$m. b) Physical Optics Propagation of the three Gaussian beams with angles of $0,\pm0.86^\circ$, and waist at AOD of 1.07 mm. Displayed is the $x$ cross section at the ion axis. Beam diameters (13.5\%) are also displayed, the central beam at 2.04 $\mu$m is slightly narrower with respect to the outer ones $2.1$ $\mu$m.}
      \label{zemaxrange}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=.8\textwidth]{img/pop2}
-\caption{POP of the central field at the ion position, $x$ cross section is displayed.}
-\label{zemaxfocus}
-\end{figure}
 The first step of the simulation work was to find the appropriate lenses to build the setup. The thickness and the radius was optimized trying to achieve the smallest focus spot while maintaining the desired addressing range. the desired performance was obtained, the lenses were found with the Zemax tool \emph{Stock Lens Matching}. Basically, the tool compares the simulated lenses with those in a catalogue from different companies and finds the closest match. We opted to rely on the provider Thorlabs, so the search was limited to this company. Found lenses were in order from left to right LA-1059, LA-1131, LA-4252, and LA-1725 and can be seen in figure \ref{zemaxview}. Once the desired lenses were found, their Zemax files provided by the company were imported in the project and further optimization was carried on.\\
-The second step was to optimize the lenses position always trying to keep the focus spot as small as possible, and the desired addressing rage of 150-200 $\mu$m. This was done using the optimizing tools of Zemax and the merit function. The software can perform multivariate analysis and minimize the focus spot depending on all the assigned variables, which in this case were the distance between the lenses. The final results can be seen in figure \ref{zemaxfocus}, the addressing range is 168 $\mu$m set by the bandwidth of the AOD from the specification sheet, while the waist is $1.02\,\mu$m.\\
+The second step was to optimize the lenses position always trying to keep the focus spot as small as possible, and the desired addressing rage of 150-200 $\mu$m. This was done using the optimizing tools of Zemax and the merit function. The software can perform multivariate analysis and minimize the focus spot depending on all the assigned variables, which in this case were the distance between the lenses. The final results can be seen in figure \ref{zemaxrange}, the addressing range is 168 $\mu$m set by the bandwidth of the AOD from the specification sheet, while the waist of the central beam is $1.02\,\mu$m, beams at the border of the addressing range are $3\%$ broader, with a waist of $1.05$ $\mu$m.\\
 Another important parameter for the performance of the setup is the addressing error. Qualitatively speaking, in the case of the beam focused on one ion, the addressing error is the leaking light on the neighbours ions. It can be a problem in the case of aberrations that produce bumps on the side of the main Gaussian peak. Especially in the case of diffraction limited system, the profile of the beam is a sinc function that can have more local maxima around the central peak. To estimate the addressing error in a simulation, two ions are placed next to each other at 5.6 $\mu$m, and the respective addressing beams have been simulated. The addressing error is different for different physical process, in the case of AC Stark shift, as the experiment discussed in \ref{sec:expqubit}, the shift is proportional to the intensity, so the addressing error is calculated as $I_1(x_2)/I_1(x_1) \simeq 10^{-4}$, where $I_{1}$ is the intensity profile of the beam focused on ion 1, and $x_1,x_2$ are respectively the position of ion 1 and ion 2. In the case of the cavity mediated Raman process, as in the experiment discussed in section \ref{sec:expphoton}, the strength of the process is proportional to the Rabi frequency, i.e. the electric field. Therefore, the addressing error is given as $\sqrt{I_1(x_2)/I_1(x_1)} \simeq 10^{-2}$.
  \begin{figure}
  \centering
- \includegraphics[width = .9\textwidth]{zemaxaddrerror2}
- \caption{Beam focused at two different positions, where ions have their equilibrium position. From estimation of the addressing error can be made.}
+ \includegraphics[width = .9\textwidth]{addressingerror}
+ \caption{Beam focused in two different places separated by 5.6 $\mu$m corresponding to the theoretical equilibrium positions of two ions with axial center of mass frequency of 1 MHz. Addressing error for AC Stark shift is calculated as the ratio of intensities at ion positions: $I_1(x_2)/I_1(x_1) \simeq 10^{-4}$. For Raman transition, the ratio of electric fields is taken: $\sqrt{I_1(x_2)/I_1(x_1)} \simeq 10^{-2}$.}
  \label{zemaxaddrerror.png}
  \end{figure}
-Another aspect that was simulated is the beam profile inside the trap. Optical access to the trap is limited and a tightly focused beam also has a large divergence, which could lead to clipping on the trap's blades or compensation electrodes, scattering light all around the trap. In figure \ref{clippingtop} the top view of the trap is plotted, here we included the three pairs of compensation electrodes, the RF blades, and the cavity mirrors. The blue line represents the radius $W(z)$ from equation \ref{waistprofile} of the addressing beam in the case of a waist $W_0$ of 1 $\mu$m. To determine the fraction of power lost due to clipping on the compensation electrodes, we can calculated the transmitted power through the top electrodes:
+Another aspect that was simulated is the beam profile inside the trap. Optical access to the trap is limited and a tightly focused beam also has a large divergence, which could lead to clipping on the trap's blades or compensation electrodes, scattering light all around the trap. In figure \ref{lossesplot} the top view of the trap is plotted, here we included the three pairs of compensation electrodes, the RF blades, and the cavity mirrors. The blue line represents the radius $W(z)$ from equation \ref{waistprofile} of the addressing beam in the case of a waist $W_0$ of 1 $\mu$m. To determine the fraction of power lost due to clipping on the compensation electrodes, we can calculated the transmitted power through the top electrodes:
 \begin{equation}
 P_{t} = \int_{-\infty}^{\infty}\text{d}y \int_{-x_c/2}^{x_c/2}\text{d}x P(z),
 \end{equation}
-where $P(z)$ is the power of the Gaussian beam, and $x_c$ is the horizontal position of the compensation electrode. The integral can be computed numerically at position $z$ of the electrodes. The result is plotted in figure \ref{lossesplot}, where the lost power $1-P_{t}$ is plotted as a function of the waist $W_0$. At the expected waist of $1.02\,\mu m$, the lost power is (), (is it good enough?). Moreover to prevent further power losses due to clipping, it is also important that the beam is perpendicular to the $x$ direction as a simple deviation of ? degrees, is enough to lose ? of power.
+where $P(z)$ is the power of the Gaussian beam, and $x_c$ is the horizontal position of the compensation electrode. The integral can be computed numerically at position $z$ of the electrodes. The result is plotted in figure \ref{lossesplot}, where the lost power $1-P_{t}$ is plotted as a function of the waist $W_0$. At the expected waist of $1.02\,\mu$m, the power lost is less then 1\%, i.e. for 2 $\mu$W AOD input power, after considering all the losses in the setup, it means losing less than a nW. The previous calculation holds only if the beam is perpendicular to the $x$ direction as a simple deviation of ? degrees, is enough to lose ? of power.
+% \begin{figure}
+%      \begin{subfigure}[b]{0.4\textwidth}
+%           \centering
+% \includegraphics[width=.7\textwidth]{img/clipping}
+%      \caption{Top view of the trap and addressing beam. Grey circles are the compensation electrodes, blue is the radius $1/e^2$ of the beam focused on the ions with waist of 1 $\mu$m, while the black arches represent the mirrors of the cavity. All units are in meters.}
+%       \label{clippingtop}
+%     \end{subfigure}\hfill
+%     \begin{subfigure}[b]{0.49\textwidth}
+%          \centering
+%          \includegraphics[width=1\textwidth]{img/powerlost}
+%          \caption{Fraction of power lost due to clipping on the compensation electrodes as a function of the beam waist when focused on ion. Red point represents the waist $1.02\,\mu$m, obtained from the simulation.}
+%          \label{lossesplot}
+%    \end{subfigure}
+% \end{figure}
 \begin{figure}
-     \centering
+       \centering
+         \includegraphics[width=\textwidth]{powerlost_plus_diagram}
+         \caption{a) Fraction of power lost due to clipping on the compensation electrodes as a function of the beam waist when focused on ion. Red point represents the waist $1.02\,\mu$m, obtained from the simulation. b) Top view of the trap and addressing beam. Grey circles are the compensation electrodes, blue is the radius $1/e^2$ of the beam focused on the ions with waist of 1.02 $\mu$m, while the black arches represent the mirrors of the cavity. All units are in meters.}
+         \label{lossesplot}
+ \end{figure}
 
-     \includegraphics[width=.8\textwidth]{img/clipping}
-     \caption{Top view of the trap and addressing beam. Grey circles are the compensation electrodes, blue is the radius $1/e^2$ of the beam, while the black arches represent the mirrors of the cavity.}
-     \label{clippingtop}
-     \end{figure}
-\begin{figure}
-      \centering
-        \includegraphics[width=.8\textwidth]{img/clipping2}
-        \caption{Losses on the compensation electrodes as a function of the beam waist IMPROVE CAPTION!!}
-        \label{lossesplot}
-
-\end{figure}
+% \begin{figure}
+%      \centering
+%
+%      \includegraphics[width=.7\textwidth]{img/clipping}
+%      \caption{Top view of the trap and addressing beam. Grey circles are the compensation electrodes, blue is the radius $1/e^2$ of the beam focused on the ions with waist of 1 $\mu$m, while the black arches represent the mirrors of the cavity.}
+%      \label{clippingtop}
+%      \end{figure}
+% \begin{figure}
+%       \centering
+%         \includegraphics[width=.8\textwidth]{img/powerlost}
+%         \caption{Fraction of power lost due to clipping on the compensation electrodes as a function of the beam waist when focused on ion. Red point represents the waist $1.02\,\mu$m, obtained from the simulation.}
+%         \label{lossesplot}
+%
+% \end{figure}
 
 
 
