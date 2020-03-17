@@ -6,52 +6,52 @@ This chapter collects all the experimental results obtained during the thesis:
 \begin{itemize}
 \item Section \ref{sec:resultaod} contains the characterization of the AOD.
 \item In section \ref{sec:fullsetup} we characterized different parts of the setup in a test assembly. Polarization, stability, and focus spot have been checked. In particular, two methods have been used to measure a $\mu$m focus spot: razor blade scans, and small pixel size camera.
-\item In section \ref{sec:finalsetup}, we performed two experiments with trapped ions: single-qubit manipulation has been demonstrated by performing Ramsey interferometry measurements, which also allowed for a check of addressing performance. Second, a cQED experiment has been carried out, single photons were generated from a single ion in a string, via a cavity-mediated Raman process (sec. \ref{sec:ramanprocess}.
+\item In section \ref{sec:finalsetup}, we performed two experiments with trapped ions: single-qubit manipulation has been demonstrated by performing Ramsey interferometry measurements, which also allowed for a check of addressing performance. Second, a cQED experiment has been carried out, single photons were generated from a single ion in a string, via a cavity-mediated Raman process (Sec. \ref{sec:ramanprocess}).
 \end{itemize}
 \section{AOD}
 \label{sec:resultaod}
-The AOD is the core element of the setup, it is therefore essential to characterize it. The two main parameters we are interested in are the diffraction efficiency and the response time. For the diffraction efficiency we measure the total output power of the light $P_{tot}$ and then the power of the first diffracted order $P_{1}$. Diffraction efficiency is defined as the ratio between the two.
+The AOD is the core element of the setup, it is therefore essential to characterize it. The two main parameters we are interested in the diffraction efficiency and the response time. For the diffraction efficiency we measure the total output power of the light $P_{tot}$ and then the power of the first diffracted order $P_{1}$. Diffraction efficiency is defined as the ratio between the two.
 \begin{equation}
 \text{DE} = \frac{P_1}{P_{tot}}.
 \end{equation}
-Before measuring the diffraction, the optimal RF power to drive the AOD has been found. This was done by measuring the power at the central frequency of the AOD and maximizing the light in the first diffracted order. Power measurements of the light were done with a Thorlabs PM100D, and the AOD was driven with a signal generator. The optimal RF power was found to be 0.11 W, and for the rest of the measurements it was kept as that value. Furthermore, the input polarization was optimized with a half wave plate, always trying to maximize the power of the diffracted light. In figure \ref{DE} the plot of the diffraction efficiency as a function of the RF frequency is displayed. Within a bandwidth of 50 MHz from 105 MHz to 155 MHz, we can see that more than 70 \% of the light is in the first diffracted order as expected from the datasheet, even though the bandwidth looks shifted with respected to the nominal central frequency of 120 MHz.\\
-The response time is the responding time of the light to a RF frequency change. In order to perform this measurement, a voltage controlled oscillator (VCO) was used to generate the RF signal. The VCO was supplied a square wave that alternated between two voltages corresponding to two different frequencies. The blue light was measured with a photodiode. The photodiode was aligned with the light at one particular frequency, such that when the light moves, the beam would not hit the chip and the signal generated changes. In figure \ref{response}, the signal of the photodiode, together with the supplied VCO signal are plotted. Response time is $\sim 8\,\mu$s, with $3\,\mu$s delay and $5\,\mu$s response. From the beam diameter we expect 3.3 $\mu$s response time, which is slightly faster then what we measured.
+Before measuring the diffraction, the optimal RF power to drive the AOD has been found. This was done by maximizing the power of the first diffracted order with the AOD set at its central frequency. Power measurements of the light were done with a Thorlabs PM100D, and the AOD was driven with an amplifier and a RF signal generator. The optimal RF power was found to be 0.11 W, and for the rest of the measurements it was kept at that value. Furthermore, to optimize the linear input polarization, a PBS followed by a half-waveplate were placed before the AOD, the waveplate was rotate trying to maximize the power of the diffracted light. In figure \ref{DE} the plot of the diffraction efficiency as a function of the RF frequency is displayed. Within a bandwidth of 50 MHz from 105 MHz to 155 MHz, we can see that more than 70 \% of the light is in the first diffracted order as expected from the datasheet (Appendix \ref{sec:aoddata}), even though the bandwidth looks shifted with respected to the nominal central frequency of 120 MHz.\\
+The response time is the responding time of the light to a RF frequency change. In order to perform this measurement, a voltage controlled oscillator (VCO) was used to generate the RF signal. The VCO was supplied a square wave that alternated between two voltages corresponding to two different frequencies $\sim 96 \to 127$ MHz. The blue light was measured with a photodiode. The photodiode was aligned with the light at one particular frequency, such that when the light moves, the beam would not hit the diode and the signal generated changes. In figure \ref{response}, the signal of the photodiode, together with the supplied VCO signal are plotted. Response time is $\sim 8\,\mu$s, with $3\,\mu$s delay and $5\,\mu$s response. From the beam diameter (13.5 \%) we expect 3.3 $\mu$s response time, while the delay indicates that the distance between the piezo and the edge of the beam is 1.95 mm.
 
 \begin{figure}
 \centering
-\includegraphics[width = .95\textwidth]{DE}
-\caption{Diffraction efficiency of the AOD as a function of the RF driving frequency.}
+\includegraphics[width = .95\textwidth]{DE2}
+\caption{Diffraction efficiency of the AOD as a function of the RF driving frequency. Red points indicate the frequency associated with 4 ions loaded in the trap with a axial COM frequency of 780 kHz as the experiment in section \ref{sec:expqubit}, the theoretical separations are 5.15 $\mu$m for the two outer ones, and 4.77 $\mu$m for the inner ions.}
 \label{DE}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width = .95\textwidth]{response}
-\caption{Response time of the AOD, plotted are the photodiode signal in blue on the left $y$ axis, and the VCO voltage is in red on the right axis.}
+\caption{Response time of the AOD, plotted are the photodiode signal in blue on the left $y$ axis, and the VCO voltage is in red on the right axis. The voltage of the VCO determines the frequency of the RF sent to the AOD. The change here corresponds to a frequency shift of $\sim$31 MHz.}
 \label{response}
 \end{figure}
 
 \section{Full test setup characterization}
 \label{sec:fullsetup}
-The test setup was built on a spare optical table with a spare objective. The layout of the setup was as close as possible to the final version, so the system in figure \ref{addressingsetup} was replicated. On this setup we first assessed the size of the focus spot. This is measured in two different ways: first we used a technique called Knife-edge, where the beam is scanned with a razor blade; then we measured the beam profile directly with a camera equipped with 1.67 $\mu$m pixel size. Other than the waist size, we also measured stability of the system and the polarization capabilities.
+The test setup was built on an optical table with a spare objective since the one installed in the vacuum chamber was already in use for ion imaging. The layout of the system in figure \ref{addressingsetup} was replicated.
 
 \subsection{Waist: Knife-Edge method}
 \label{sec:knifeedge}
 \begin{figure}[H]
 \centering
 \includegraphics[scale = 1.1]{razorsetup}
-\caption{Scheme of the razor scan. A translation stage allows for moving the blade in two directions: $x$ perpendicular to the beam, and $z$ along the beam optical axis. AOD scans in the $y$ direction.}
+\caption{Scheme of the razor scan. A translation stage allows for moving the blade in the direction x, perpendicular to the beam, and z, along the beam.}
 \label{razorscan}
 \end{figure}
-Measuring a micrometer scale waist is not easy task, the first method applied consisted of mounting a razor blade on a translational stage. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. The stage is moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. A filter was inserted in order to not saturate the photodiode.
+Measuring a micrometer scale waist is not an easy task, the first method applied consisted of mounting a razor blade on a translational stage. The setup used is showed in figure \ref{razorscan}, after the objective the blade is present, and since the beam is quickly diverging after the focus, a lens is used to refocus the light into a photodiode. The stage is moved in the $x$ direction cutting the beam perpendicularly such that the blade is scanning the beam profile. A filter was inserted in order to not saturate the photodiode.
 In the $z$ direction the stage was controlled with a manual screw with resolution of $1\,\mu$m. While in the $x$ direction, the stage had to be moved with sub-micrometer precision, so instead there was a piezo actuator controlled by custom software. The same software also controlled a multimeter that measured the voltage of the photodiode. To get the profile $W(z)$ (equation \eqref{waistprofile}) of the beam, the measurement procedure was as follow
 \begin{itemize}
-\item Positioning blade at appropriate $z$ coordinate
-\item Scanning beam in $x$ direction with blade
-\item Calculating beam width from scan
-\item Shifting $z$ direction
+\item Position blade at desired $z$ coordinate
+\item Scan beam in $x$ direction with blade
+\item Beam width extrapolation
+\item Shift $z$ direction
 \end{itemize}
-And the procedure is repeated for sufficient values of $z$ to scan at least few Raylegh ranges. The beam width can be calculated from the scans by fitting the data with \cite{knifeedge}
+The procedure is repeated for sufficient values of $z$ to scan at least few Raylegh ranges. The beam width can be calculated from the scans by fitting the data with \cite{knifeedge}
 \begin{equation}
 P(x,z) = \frac{P_0}{2}\text{erfc}\left[\frac{\sqrt{2}(x-x_0)}{W(z)} \right].
 \end{equation}

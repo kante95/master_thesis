@@ -203,7 +203,7 @@ We still apply the dipole and the rotating wave approximation to the interaction
 H = \hbar \Delta_1 \ket{g_1}\bra{g_1} + \hbar\Delta_2 \ket{g_2}\bra{g_2}+ \frac{\hbar \Omega_1}{2}\left(\sigma_1 e^{i\varphi_1} +\sigma_1^\dagger e^{i\varphi_1}\right)+ \frac{\hbar \Omega_2}{2}\left(\sigma_2 e^{i\varphi_2} +\sigma_2^\dagger e^{i\varphi_2}\right),
 \end{equation}
 where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot d|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$. This Hamiltonian describes a Raman process, state population can be transferred coherently from $g_{1}$ to $g_{2}$, without exciting to the $\ket{e}$ level. This happens at the Raman resonance $\Delta_1 = \Delta_2 \equiv \Delta$ if the detuning is large enough to eliminate adiabatically population in the $\ket{e}$ level, i.e. $\Delta \gg \Omega_1,\Omega_2$. Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\\
-As the excited level is eliminated, it can be showed \cite{russo} that the dynamics can be described as an effective 2 level system equivalent of that described in section \ref{laserioninteractions}. The effective Rabi frequency of the coherent population transfer $\ket{g_1} \to \ket{g_2}$ is \cite{steck}
+As the excited level is eliminated, it can be shown \cite{russo} that the dynamics can be described as an effective 2 level system equivalent of that described in section \ref{laserioninteractions}. The effective Rabi frequency of the coherent population transfer $\ket{g_1} \to \ket{g_2}$ is \cite{steck}
 \begin{equation}
 \label{eq:effectiverabi}
 \Omega_{eff} = \frac{\Omega_1\Omega_2}{2\Delta}.
@@ -264,7 +264,7 @@ The total system Hamiltonian includes also the atomic part, and a single mode op
 \begin{equation}
 H = \hbar \omega_0 \ket{1}\bra{1} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
 \end{equation}
-The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description the master equation \eqref{masterequation} is used. In our case, we are most interested in two processes: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma = 2\gamma$, while the latter is characterized by the decay rate $\kappa$ (half width). The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
+The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description the master equation \eqref{masterequation} is used. In our case, we are most interested in two processes: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma = 2\gamma$, while the latter is characterized by the decay rate $\kappa$ (half width half maximum). The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
 \begin{equation}
 \kappa =\frac{c\pi}{FL},
 \end{equation}
@@ -548,37 +548,47 @@ The aim of this thesis is to perform two experiments with ions: qubit manipulati
 
 \subsection{Addressed qubit manipulation}
 \label{sec:expqubit}
-A we have seen, ions can be used to encode and process quantum information. As highlighted in figure (), the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
+\begin{figure}
+\centering
+\includegraphics[width=.7\textwidth]{exp1}
+\caption{a) Relevant levels for the experiment, the qubit is encoded in the 729 nm transition, the 393 nm laser is used to shift the $\ket{S}$ level via AC Stark shift b) Experiment pulse sequence, Doppler cooling and state readout are described in section \ref{sec:expparameters}. The time $\tau$ had a variable length, while the distance between the two $\pi/2$ was fixed at (number).}
+\label{sequence}
+\end{figure}
+A we have seen, ions can be used to encode and process quantum information. As highlighted in figure \ref{sequence}, the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100 (CHECK numbers)
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \sim 100 \implies \Delta \sim 3\,\text{GHz}.
 \end{equation}
 Furthermore, ions can be used as sensitive tools for beam profiling, the addressed manipulation changes only the qubit state of a single ion. Hence, by measuring the state of all ions, and scanning the beam across the ions string, a beam profile can be obtained. In a single experiment we can therefore characterize the beam and demonstrate qubit manipulation.
-The experiments consist of Ramsey interferometry, already performed in the past to measure Ac Stark shift \cite{starkshift}.
-The idea is to send a resonant $\pi/2$ pulse at 729nm, which bring the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729nm pulse will depend on the shift induced by the 393nm laser. By calculating the final probability $P_D$ it is possible to infer the power of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+The experiments consist of Ramsey interferometry, already performed in the past to measure AC Stark shift \cite{starkshift}.
+In summary, the idea is to send a resonant $\pi/2$ pulse at 729 nm, which brings the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729 nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393 nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729 nm pulse will depend on the shift induced by the 393nm laser. The phase of the second 739 nm pulse can also be varied. By calculating the final probability $P_D$ it is possible to infer the Rabi frequency of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
 \begin{equation}
 \begin{split}
 \ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
-&= \frac{1}{2}\left(e^{-i\frac{\delta}{2}t}-e^{-i\phi}\right)\ket{S}-\frac{i}{2}\left(1 + e^{-i\frac{\delta}{2}t} e^{-i\phi}\right)\ket{D}
+&= \frac{1}{2}\left(e^{-i\frac{\delta}{2}\tau}-e^{-i\phi}\right)\ket{S}-\frac{i}{2}\left(1 + e^{-i\frac{\delta}{2}\tau} e^{-i\phi}\right)\ket{D}
 \end{split}
 \end{equation}
 where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi frequency of the 393nm light that we want to measure. The final probability is then
 \begin{equation}
-P_D = \cos^2\left(2\phi + 2\frac{\delta t}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 t}{4\Delta}\right).
+P_D = \cos^2\left(2\phi + 2\frac{\delta \tau}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 \tau}{4\Delta}\right).
 \end{equation}
 As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done
 \begin{equation}
 \label{eq:ptointensity}
 \Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right].
 \end{equation}
- The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized.\\
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{sequence}
-\caption{Experiment sequence}
-\label{sequence}
-\end{figure}
-The experiment sequence is in figure \ref{sequence}, for every sequence, a stage of Doppler Cooling at the beginning is included, and at the end of the pulses state readout with single-ion resolving camera is performed. The sequence is then repeated $N$ times to estimate the excitation probability for every data point. Between the Raman pulse and the second $\pi/2$ pulse, there is also a dead time which can be adjusted to improve signal to noise ratio.\\
+The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized. The experiment sequence is in figure \ref{sequence}. For every sequence, a stage of Doppler Cooling at the beginning is included and at the end of the pulses state readout with single-ion resolving camera is performed. For each 393nm pulse length $\tau$ the sequence is repeated $N=50$ times to obtain and estimate of the electronic excitation probability.
 
 \subsection{Addressed photon generation}
 \label{sec:expphoton}
-The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In this case the 393nm laser pulse has to be send at the correct frequency to excite the Raman resonance. Detuning of the cavity and laser pulse must be equal as discussed in section \ref{sec:threelevel}. In order to adiabatically eliminate the $P$ state, we set $\Delta \sim 400$ MHz. The Raman resonance is precisely measure with a double pass AOM, and the frequency is set accordingly. Note that the effective Rabi frequency is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, Ac stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this give the possibility the check if other ions have been unwantedly addressed.
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{exp2}
+\caption{Scheme of the Raman process used to generate photons, via a cavity enhanced Raman process (Section \ref{sec:ramanprocess}). The electron in the $\ket{S}$ state is excited to the $\ket{D}$ level by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity.}
+\label{img:sec2}
+\end{figure}
+The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. In this case the ion is position to the maximum of the cavity electric field such that the coupling atom-cavity $g$ is maximized. A 393nm laser pulse triggers the generation of a photon on the cavity through a Raman process as described in section \ref{sec:ramanprocess}. The detunings of the cavity and laser pulse must be equal, moreover the detuning should be large enough to adiabatically eliminate the $P$ state and avoid spontaneous scattering. As seen in section \ref{sec:ramanprocess}, this is ensured by a detuning of $\Delta \sim 400$ MHz.
+In this process the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity. The photon then exit from the cavity, the whole dynamics can therefore be described as
+\begin{equation}
+\ket{S}\ket{0} \to \ket{D}\ket{1} \to \ket{D}\ket{0}.
+\end{equation}
+Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this give the possibility the check if other ions have been unwantedly addressed.
