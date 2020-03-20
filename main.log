@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  20 MAR 2020 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  20 MAR 2020 21:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,7 +1350,7 @@ Package pdftex.def Info: ./img/exp1.png  used on input line 553.
 <./img/exp2.png, id=703, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
-Package pdftex.def Info: ./img/exp2.png  used on input line 585.
+Package pdftex.def Info: ./img/exp2.png  used on input line 586.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
 ) (./expsetup.tex
 [28 <./img/exp2.png>]
@@ -1381,18 +1381,18 @@ Package pdftex.def Info: ./img/imgsetup.png  used on input line 53.
 <./img/scheme_393.pdf, id=783, 963.6095pt x 542.025pt>
 File: ./img/scheme_393.pdf Graphic file (type pdf)
 <use ./img/scheme_393.pdf>
-Package pdftex.def Info: ./img/scheme_393.pdf  used on input line 63.
+Package pdftex.def Info: ./img/scheme_393.pdf  used on input line 64.
 (pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
  [32 <./img/imgsetup.png>] [33 <./img/scheme_393.pdf>]
 <./img/expcontrol.png, id=830, 232.7094pt x 233.4321pt>
 File: ./img/expcontrol.png Graphic file (type png)
 <use ./img/expcontrol.png>
-Package pdftex.def Info: ./img/expcontrol.png  used on input line 85.
+Package pdftex.def Info: ./img/expcontrol.png  used on input line 86.
 (pdftex.def)             Requested size: 226.48413pt x 227.19109pt.
 <./img/tricsmodified.png, id=831, 1445.4pt x 813.0375pt>
 File: ./img/tricsmodified.png Graphic file (type png)
 <use ./img/tricsmodified.png>
-Package pdftex.def Info: ./img/tricsmodified.png  used on input line 92.
+Package pdftex.def Info: ./img/tricsmodified.png  used on input line 93.
 (pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
 ) (./design.tex [34] [35 <./img/expcontrol.png> <./img/tricsmodified.png>] [36
 
@@ -1507,11 +1507,11 @@ File: ./img/ramseyfringes.png Graphic file (type png)
 <use ./img/ramseyfringes.png>
 Package pdftex.def Info: ./img/ramseyfringes.png  used on input line 176.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<img/ACscan.png, id=1060, 987.2082pt x 452.4102pt>
-File: img/ACscan.png Graphic file (type png)
-<use img/ACscan.png>
-Package pdftex.def Info: img/ACscan.png  used on input line 183.
-(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
+<./img/ac_stark_fit.png, id=1060, 987.2082pt x 489.9906pt>
+File: ./img/ac_stark_fit.png Graphic file (type png)
+<use ./img/ac_stark_fit.png>
+Package pdftex.def Info: ./img/ac_stark_fit.png  used on input line 183.
+(pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
 
 [55 <./img/rabiflops2.png> <./img/ramseyfringes.png>]
 <img/AODScan.png, id=1073, 987.2082pt x 452.4102pt>
@@ -1519,31 +1519,38 @@ File: img/AODScan.png Graphic file (type png)
 <use img/AODScan.png>
 Package pdftex.def Info: img/AODScan.png  used on input line 190.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [56 <./img/ACscan.png> <./img/AODScan.png>]
-<img/photonefficency_witherror.png, id=1087, 987.2082pt x 459.6372pt>
+<./img/stability.png, id=1081, 987.2082pt x 489.9906pt>
+File: ./img/stability.png Graphic file (type png)
+<use ./img/stability.png>
+Package pdftex.def Info: ./img/stability.png  used on input line 201.
+(pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
+ [56 <./img/ac_stark_fit.png>]
+<img/photonefficency_witherror.png, id=1100, 987.2082pt x 459.6372pt>
 File: img/photonefficency_witherror.png Graphic file (type png)
 <use img/photonefficency_witherror.png>
 Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
-204.
+212.
 (pdftex.def)             Requested size: 452.96826pt x 210.90265pt.
-<img/ramanlength_witherrors.png, id=1088, 987.2082pt x 452.4102pt>
+ [57 <./img/AODScan.png>]
+<img/ramanlength_witherrors.png, id=1110, 987.2082pt x 452.4102pt>
 File: img/ramanlength_witherrors.png Graphic file (type png)
 <use img/ramanlength_witherrors.png>
-Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 210
+Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 218
 .
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [57]
-<./img/recap.png, id=1096, 385.87602pt x 201.44037pt>
+ [58 <./img/stability.png>]
+<./img/recap.png, id=1125, 385.87602pt x 201.44037pt>
 File: ./img/recap.png Graphic file (type png)
 <use ./img/recap.png>
-Package pdftex.def Info: ./img/recap.png  used on input line 225.
+Package pdftex.def Info: ./img/recap.png  used on input line 233.
 (pdftex.def)             Requested size: 452.96826pt x 236.46191pt.
- [58 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>])
- (./conclusion.tex [59 <./img/recap.png>] [60
-
-]
+ [59 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>])
+ (./conclusion.tex
+[60 <./img/recap.png>]
 Chapter 6.
-) [61] [62]
+) [61
+
+] [62]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 184.
@@ -1560,7 +1567,7 @@ ownload/fibercollimators60fc.pdf.
 
 ]
 Appendix A.
-<SKM_C36819012815280.pdf, id=1152, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1177, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 198.
@@ -1578,7 +1585,7 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 199.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
-<SKM_C36819012815280.pdf, id=1155, page=2, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1180, page=2, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 2>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 199
@@ -1610,7 +1617,7 @@ Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 199
 .
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
  [71 <./SKM_C36819012815280.pdf>]
-<SKM_C36819012815280.pdf, id=1374, page=3, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1399, page=3, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 3>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 199
@@ -1628,17 +1635,17 @@ Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 199
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
  [72 <./SKM_C36819012815280.pdf>]
 Appendix B.
-<./img/pol3.png, id=1428, 987.2082pt x 489.9906pt>
+<./img/pol3.png, id=1453, 987.2082pt x 489.9906pt>
 File: ./img/pol3.png Graphic file (type png)
 <use ./img/pol3.png>
 Package pdftex.def Info: ./img/pol3.png  used on input line 205.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<./img/pol1.png, id=1431, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1456, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 211.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=1432, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1457, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 217.
@@ -1654,7 +1661,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2997F49489E5396A77B8DB669A878369;3352.
+(rerunfilecheck)             Checksum: 12AD20FD35809C8AB2BEBB21DB674FCE;3352.
 
 
 LaTeX Warning: There were undefined references.
@@ -1664,11 +1671,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25842 strings out of 492167
- 435770 string characters out of 6131558
- 574621 words of memory out of 5000000
- 29278 multiletter control sequences out of 15000+600000
- 559949 words of font info for 178 fonts, out of 8000000 for 9000
+ 25858 strings out of 492167
+ 436058 string characters out of 6131558
+ 575658 words of memory out of 5000000
+ 29288 multiletter control sequences out of 15000+600000
+ 560047 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,100p,2344b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
@@ -1676,28 +1683,30 @@ texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc144
-0.pfb>
-Output written on main.pdf (80 pages, 17137931 bytes).
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfxc1440.pfb>
+Output written on main.pdf (80 pages, 17283534 bytes).
 PDF statistics:
- 1606 PDF objects out of 1728 (max. 8388607)
- 1240 compressed objects within 13 object streams
- 338 named destinations out of 1000 (max. 500000)
- 24709 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1640 PDF objects out of 1728 (max. 8388607)
+ 1265 compressed objects within 13 object streams
+ 341 named destinations out of 1000 (max. 500000)
+ 24714 words of extra memory for PDF output out of 24883 (max. 10000000)
 
