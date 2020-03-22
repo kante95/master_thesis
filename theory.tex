@@ -438,7 +438,7 @@ Therefore, one dimensional Gaussian can be found as cross section of the 2D prof
 \begin{equation}
 I(x,y=0,z) = \widetilde{A}(z) \exp\left\{\frac{2x^2}{W^2(z)}\right\} \qquad \widetilde{A}(z) = I_0 \left(\frac{W_0}{W(z)}\right)^2  .
 \end{equation}
-In figure \ref{gauss}, the $x$ cross section is depicted for this intensity profile normalized in amplitude, and with $\sigma = 1$, $z=0$. Parameters used to measure the width are also displayed and defined in the caption. All of those quantities are equivalent and differ only by a prefactor, so for the rest of the section, we stick to $W(z)$ and study its behaviour.
+In figure \ref{gauss}, the $x$ cross section is depicted for this intensity profile normalized in amplitude. Parameters used to measure the width are also displayed and defined in the caption. All of those quantities are equivalent and differ only by a prefactor, so for the rest of the section, we stick to $W(z)$ and study its behaviour.
 \begin{figure}
 \centering
 \includegraphics[width = .6\textwidth]{gauss2}
@@ -454,12 +454,12 @@ $\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of t
 There are important features to be noticed with reference to figure \eqref{gaussprofile}:
 The width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this spot is called focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically $z_0$ is the distance between the focus and the point where the width $W(z)$ is exactly $\sqrt{2}W_0$.
 For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\\
-This property will become important later in the work, because it provides one limit on the focus spot. In fact, the optical aperture of the trap is limited by the electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the whole trap.\\
+This property will become important later in the work, because it provides one limit on the focus spot. In fact, the optical aperture of the trap is limited by the electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\\
 A Gaussian beam can be shaped using optical elements.
 \begin{figure}
 \centering
 \includegraphics[width = \textwidth]{gaussprofile}
-\caption{Width profile of a Gaussian beam, equation \eqref{waistprofile}. The beam is focused at the position $z_0$, here it assumes the minimum width $W_0$, also referred to as waist.}
+\caption{Width profile of a Gaussian beam, equation \eqref{waistprofile}. The beam is focused at the position $z = 0$, here it assumes the minimum width $W_0$, also referred to as waist. $z_0$ is the Rayleigh range where the width is $\sqrt{2}W_0$}
 \label{gaussprofile}
 \end{figure}
 In order to study such reshaping, let us consider a thin spherical lens with focal length $f$, and radius of curvature $R_l$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor $k(x^2 + y^2)/2f$ to equation \eqref{gaussianbeams} \cite{beamparameters}. We can match the phase of the incoming and emerging waves, which have respectively radius of curvature $R$, and $R'$, this results in
@@ -491,7 +491,7 @@ Following the approach of \cite{saleh} to model the device, let us consider a re
 n(x,t) = n - \Delta n_0 \cos \left(\Omega_s t - qx \right),
 \end{equation}
 where $n$ is the refractive index of the unperturbed medium, $\Delta n_0$ is the amplitude of the perturbation. $\Delta n_0$ is proportional to the square root of the sound intensity.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = .5\textwidth]{aod2}
 \caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected due to the interaction with the effective optical grating created by the acoustic waves.}
@@ -510,7 +510,7 @@ The sine function can be written as exponential and now the integral contains on
 \label{mainAOD}
 r = r_+ + r_- \qquad r_\pm = \pm i r_0 \text{sinc} \left[(2k\sin\theta \mp q)\frac{L}{2\pi} \right]e^{\pm i\Omega_s t}
 \end{equation}
-These two terms are the plus and minus first order diffraction, an acousto-optical device can be operated symmetrically entering either with a positive angle or with a negative one. Since the maths and the physics is the same, we will focus only on the positive term, called upshifted Bragg diffraction. The sinc function peaks sharply when its argument is 0, i.e. at $2k\sin\theta = q$, and then quickly decreases as the angle is changed. Hence, the input beam must enter with a particular angle in order to diffract with maximum efficiency. The condition to be satisfied is usually called Bragg condition, and can be written as a function of the optical $\lambda$ and acoustic $\Lambda_s$ wavelengths as
+These two terms are the plus and minus first order diffraction, an acousto-optical device can be operated symmetrically entering either with a positive angle or with a negative one. Since the maths and the physics is the same, we will focus only on the positive term, called upshifted Bragg diffraction. The sinc function peaks sharply when its argument is 0, i.e. at $2k\sin\theta = q$, and then quickly decreases as the angle is changed. Hence, the input beam must enter with a particular angle in order to diffract with maximum efficiency. The condition to be satisfied is called Bragg condition, and can be written as a function of the optical $\lambda$ and acoustic $\Lambda_s$ wavelengths as
 \begin{equation}
 \label{braggcondition}
 \sin \theta  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
@@ -526,29 +526,29 @@ The acousto-optical effect described above is common to different devices optimi
 \begin{equation}
 \theta \simeq \frac{\lambda}{2 v_s}f,
 \end{equation}
-where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remain above a certain thresholds. The bandwidth $B$ specifies the range of frequencies over which deflectors work.\\
-AOMs and AODs differ by the relative divergence of the optical and acoustic beam \cite{handbookoptics}, moreover for AODs, speed and the number of resolvable spots are more important, while for AOM's the optimization focus is on modulation bandwidth. These different priorities in building the devices influence
+where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remains above a certain threshold. The bandwidth $B$ specifies the range of frequencies over which deflectors work.\\
+AOMs and AODs differ by the relative divergence of the optical and acoustic beam \cite{handbookoptics}, moreover for AODs, speed and the number of resolvable spots are more important, while for AOM's the optimization is on modulation bandwidth. These different priorities in building the devices influence
 the choice of the crystal and acoustic mode, for instance, a slow acoustic velocity and shear mode are preferred in AODs \cite{handbookoptics}. More advanced techniques to engineer an AOD are available, for example the piezo is replaced by a phase array of transducers that tilt the acoustic beam \cite{phasedarray}.\\
 As already stated, in the experiment setup of this work, an AOD is used to steer a single-ion focused laser and aim at different ions in the $\mu$s timescale. AOMs instead are extensively used to tune and scan the laser frequencies.
 
 \section{Experiments model}
-The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as is discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.
+The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.
 
 \subsection{Addressed qubit manipulation}
 \label{sec:expqubit}
 \begin{figure}
 \centering
 \includegraphics[width=.7\textwidth]{exp1}
-\caption{a) Relevant levels for the experiment, the qubit is encoded in the 729 nm transition, the 393 nm laser is used to shift the $\ket{S}$ level via AC Stark shift b) Experiment pulse sequence, Doppler cooling and state readout are described in section \ref{sec:expparameters}. The time $\tau$ had a variable length, while the distance between the two $\pi/2$ was fixed at (number).}
+\caption{a) Relevant levels for the experiment, the qubit is encoded in the 729 nm transition, the 393 nm laser is used to shift the $\ket{S}$ level via AC Stark shift b) Experiment pulse sequence, Doppler cooling and state readout are described in section \ref{sec:expparameters}. The time $\tau$ had a variable length.}
 \label{sequence}
 \end{figure}
-A we have seen, ions can be used to encode and process quantum information. As highlighted in figure \ref{sequence}, the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100 (CHECK numbers)
+As we have seen, ions can be used to encode and process quantum information. As highlighted in figure \ref{sequence}, the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \sim 100 \implies \Delta \sim 3\,\text{GHz}.
 \end{equation}
 Furthermore, ions can be used as sensitive tools for beam profiling, the addressed manipulation changes only the qubit state of a single ion. Hence, by measuring the state of all ions, and scanning the beam across the ions string, a beam profile can be obtained. In a single experiment we can therefore characterize the beam and demonstrate qubit manipulation.
-The experiments consist of Ramsey interferometry, already performed in the past to measure AC Stark shift \cite{starkshift}.
-In summary, the idea is to send a resonant $\pi/2$ pulse at 729 nm, which brings the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729 nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729nm pulses, AC stark shift is induced by a pulse of 393 nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729 nm pulse will depend on the shift induced by the 393nm laser. The phase of the second 739 nm pulse can also be varied. By calculating the final probability $P_D$ it is possible to infer the Rabi frequency of the 393nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+The experiment consists of Ramsey interferometry, already performed in the past to measure AC Stark shift \cite{starkshift}.
+In summary, the idea is to send a resonant $\pi/2$ pulse at 729 nm, which brings the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729 nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729 nm pulses, AC stark shift is induced by a pulse of 393 nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729 nm pulse will depend on the shift induced by the 393nm laser. The phase of the second 729 nm pulse can also be varied. By calculating the final probability $P_D$ it is possible to infer the Rabi frequency of the 393 nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
 \begin{equation}
 \begin{split}
 \ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
@@ -565,7 +565,7 @@ As we can see, the final signal depends on the phase of the second 729nm pulse $
 \label{eq:ptointensity}
 \Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right].
 \end{equation}
-The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized. The experiment sequence is in figure \ref{sequence}. For every sequence, a stage of Doppler Cooling at the beginning is included and at the end of the pulses state readout with single-ion resolving camera is performed. For each 393nm pulse length $\tau$ the sequence is repeated $N=50$ times to obtain and estimate of the electronic excitation probability.
+The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized. The experiment sequence is in figure \ref{sequence}. For every sequence, a stage of Doppler Cooling at the beginning is included and at the end of the pulses state readout with single-ion resolving camera is performed. For each 393 nm pulse length $\tau$ the sequence is repeated $N=50$ times to obtain and estimate the electronic excitation probability.
 
 \subsection{Addressed photon generation}
 \label{sec:expphoton}
@@ -575,9 +575,9 @@ The phase $\phi$ can be set experimentally and all constants have been dropped a
 \caption{Scheme of the Raman process used to generate photons, via a cavity enhanced Raman process (Section \ref{sec:ramanprocess}). The electron in the $\ket{S}$ state is excited to the $\ket{D}$ level by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity.}
 \label{img:sec2}
 \end{figure}
-The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. In this case the ion is position to the maximum of the cavity electric field such that the coupling atom-cavity $g$ is maximized. A 393nm laser pulse triggers the generation of a photon on the cavity through a Raman process as described in section \ref{sec:ramanprocess}. The detunings of the cavity and laser pulse must be equal, moreover the detuning should be large enough to adiabatically eliminate the $P$ state and avoid spontaneous scattering. As seen in section \ref{sec:ramanprocess}, this is ensured by a detuning of $\Delta \sim 400$ MHz.
-In this process the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity. The photon then exit from the cavity, the whole dynamics can therefore be described as
+The second experiment consists of generating photons from one single ion, using the Raman process described in section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. In this case the ion is positioned in a maximum of the cavity electric field such that the coupling atom-cavity $g$ is maximized. A 393 nm laser pulse triggers the generation of a photon In the cavity through a Raman process as described in section \ref{sec:ramanprocess}. The detunings of the cavity and laser pulse must be equal, moreover the detuning should be large enough to adiabatically eliminate the $P$ state and avoid spontaneous scattering. As seen in section \ref{sec:ramanprocess}, this is ensured by a detuning of $\Delta \sim 400$ MHz.
+In this process the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity, the photon then exits from the cavity. The states involved in the dynamics are
 \begin{equation}
-\ket{S}\ket{0} \to \ket{D}\ket{1} \to \ket{D}\ket{0}.
+\ket{\text{S}_{1/2},-1/2} \to \ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-5/2}.
 \end{equation}
-Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this give the possibility the check if other ions have been unwantedly addressed.
+Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this gives the possibility to check if other ions have been unwantedly addressed.
