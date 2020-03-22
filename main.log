@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  22 MAR 2020 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  22 MAR 2020 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1527,12 +1527,12 @@ File: ./img/stability.png Graphic file (type png)
 Package pdftex.def Info: ./img/stability.png  used on input line 201.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
  [56 <./img/ac_stark_fit.png>] [57 <./img/AODScan.png>]
-<img/photonefficency_witherror.png, id=1106, 987.2082pt x 459.6372pt>
-File: img/photonefficency_witherror.png Graphic file (type png)
-<use img/photonefficency_witherror.png>
-Package pdftex.def Info: img/photonefficency_witherror.png  used on input line 
-217.
-(pdftex.def)             Requested size: 452.96826pt x 210.90265pt.
+<img/photonefficency_witherror2.png, id=1106, 987.36446pt x 459.66324pt>
+File: img/photonefficency_witherror2.png Graphic file (type png)
+<use img/photonefficency_witherror2.png>
+Package pdftex.def Info: img/photonefficency_witherror2.png  used on input line
+ 217.
+(pdftex.def)             Requested size: 452.96826pt x 210.87952pt.
  [58 <./img/stability.png>]
 <img/ramanlength_witherrors.png, id=1122, 987.2082pt x 452.4102pt>
 File: img/ramanlength_witherrors.png Graphic file (type png)
@@ -1541,7 +1541,7 @@ Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 223
 .
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
 ) (./conclusion.tex
-[59 <./img/photonefficency_witherror.png> <./img/ramanlength_witherrors.png>]
+[59 <./img/photonefficency_witherror2.png> <./img/ramanlength_witherrors.png>]
 [60
 
 ]
@@ -1665,8 +1665,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  25860 strings out of 492167
- 436207 string characters out of 6131558
- 577131 words of memory out of 5000000
+ 436215 string characters out of 6131558
+ 577183 words of memory out of 5000000
  29290 multiletter control sequences out of 15000+600000
  560697 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1697,7 +1697,7 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (80 pages, 17233559 bytes).
+Output written on main.pdf (80 pages, 17739664 bytes).
 PDF statistics:
  1638 PDF objects out of 1728 (max. 8388607)
  1265 compressed objects within 13 object streams
