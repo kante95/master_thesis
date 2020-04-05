@@ -38,27 +38,27 @@ An alternative way of dealing with qubits is via vectors and matrices. We can as
  \beta
 \end{pmatrix}.
 \end{equation}
-In this representation, single qubit rotations are calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Quantum algorithms can be written as a sequence of quantum gates. For a single qubit, any gate can be written as combination of two operations \cite{hempel}
+In this representation, single qubit rotations are calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Quantum algorithms can be written as a sequence of quantum gates. For a single qubit, any gate can be written as multiple combination of two operations, e.g. \cite{hempel}
 \begin{equation}
 \label{quantumgates}
 U_z(\Theta) =  \begin{pmatrix}
- e^{-i\frac{\Theta_1}{2}} & 0 \\
+ e^{-i\frac{\Theta}{2}} & 0 \\
  0 & e^{i\frac{\Theta}{2}}
 \end{pmatrix} \qquad U_\varphi(\theta) = \begin{pmatrix}
 \cos\frac{\theta}{2} & -i e^{-i\varphi}\sin\frac{\theta}{2} \\
--ie^{i\theta}\sin\frac{\theta}{2} & \cos\frac{\theta}{2}
+-ie^{i\varphi}\sin\frac{\theta}{2} & \cos\frac{\theta}{2}
 \end{pmatrix}.
 \end{equation}
-These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the amount $\Theta$, while $U_\varphi$ is a rotation on the $x-y$ plane around an axis tilted by $\varphi$. Important examples are the Hadamard gate $H$, which creates a superposition of one qubit starting from the state $\ket{0}$, or $\ket{1}$, and the phase shift gate $R_\phi$ that shifts the phase:
+These two matrices can be seen as two different rotations in the Bloch sphere, $U_z$ is a rotation around the $z$ axis by the angle $\Theta$, while $U_\varphi$ is a rotation around an axis located in the x-y plane. Important examples of single qubit gates are the Hadamard gate $H$, which creates a superposition of one qubit starting from the state $\ket{0}$, or $\ket{1}$, and the phase shift gate $R_\phi$ that shifts the phase:
 \begin{equation}
 \label{Hadamard}
  H = \frac{1}{\sqrt{2}}\begin{pmatrix}
  1  & 1\\
 1 & -1
- \end{pmatrix} \qquad R_\phi = \begin{pmatrix}
+ \end{pmatrix} \equiv U_{\varphi=\pi}\left(\frac{\pi}{2}\right)U_z(\pi) \qquad R_\phi = \begin{pmatrix}
  1  & 0\\
 0 & e^{i\phi}
- \end{pmatrix}.
+ \end{pmatrix} \equiv e^{i\varphi/2}U_z(\varphi).
 \end{equation}
 % As we have seen, a single qubit has already the advantage of superposition compared to classical case. When considering multiple qubits, we gain even more quantum mechanical features like entanglement. This phenomenon does not have a classical analogy and it is an extremely useful tool in quantum information. Let us consider only 2 qubits, a particular case would be
 % \begin{equation}
@@ -84,8 +84,8 @@ It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase
 \caption{2-level atom scheme, the ground and excited states are denoted as $\ket{0}$, and $\ket{1}$. $\omega_l$ is the laser frequency, which is detuned by $\Delta \equiv \omega_l - \omega_0$ from the transition frequency $\omega_0$.}
 \label{2levelatom}
 \end{figure}
-Qubits can be encoded in any pair of orthogonal states. In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$. As these levels are separated by an optical frequency, this kind of qubit is often referred to as optical qubit. Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\\
-The interaction between ion and laser can be understood in terms of a simple model: a two-level atom with dipole interaction with the laser field. Consider the system in figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. The laser light in this case can be described classicaly in the dipole approximation.
+Qubits can be encoded in any pair of orthogonal quantum states of a physical system. REWRITE (In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$). As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit. Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\\
+The interaction between ion and laser is now presented using a simple model: a two-level atom with dipole interaction with the laser field. Dipole interaction is presented because the 393 nm laser, set up in this thesis, interacts a dipole transition with the atomic ion. The model can also be used to described the quadrupole interaction of the qubit's transition, but the dependence of the Rabi frequency with the electric field is different, see \cite{ross} for the derivation. Consider the system in figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. The laser light in this case can be described classicaly in the dipole approximation.
 This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
 The Hamiltonian of the atomic part can be written as:
 \begin{equation}
