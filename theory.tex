@@ -1,30 +1,30 @@
 % !TEX root = main.tex
 
 \chapter{Theoretical framework}
-Quantum computing is based on a general framework that does not depend on the physical platform. In this chapter, important concepts such as qubit, and quantum operations are described from a theoretical point of view, before showing how we can realize them with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Furthermore, in this chapter we will take a look into Gaussian beams and their properties. Since that is the shape emitted by laser, it is important to understand their characteristics and how to manipulate them. Lastly, Acousto-optical interactions are introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam.
+Quantum computing is based on a general framework that does not depend on the physical platform. In this chapter, important concepts such as qubits, and quantum operations are described from a theoretical point of view, before showing how we can realize them with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Furthermore, in this chapter we will take a look into Gaussian beams and their properties. Since that is the shape emitted by laser, it is important to understand their characteristics and how to manipulate them. Lastly, Acousto-optical interactions are introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam.
 \section{Quantum logic with trapped ions}
 \subsection{Quantum computer and quantum gates}
-The concepts of quantum computing are borrowed and extended from classical computational theory. In the classical case, information is mostly represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations.\\
-A qubit is formally a normalized wave function that can be written as superposition of two orthogonal states indicated usually with $\ket{0}$ and $\ket{1}$:
+The concepts of quantum computing are borrowed and extended from classical computational. In the classical case, information is mostly represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of a quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations.\\
+A qubit is formally a normalized wave function that can be written as a superposition of two orthogonal states indicated usually with $\ket{0}$ and $\ket{1}$:
 \begin{equation}
 \label{qubit}
 \ket{\psi} = \alpha \ket{0} + \beta\ket{1},
 \end{equation}
-where $\alpha,\beta$ are probability amplitudes, two complex numbers that satisfy the relationship $|\alpha|^2+|\beta|^2 = 1$.
-A qubit can be in any linear combination, i.e. $\alpha$ and $\beta$ can be chosen freely and any amount of information can be in principle be encoded. Although, due to rules of quantum mechanics, $\alpha$ and $\beta$ cannot be directly accessed, which means that we can get only a limited amount of information out of a qubit. The outcome of measuring a qubit will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.\\
-Qubits also have a geometrical representation that can be useful, equation \eqref{qubit} depends on 4 real numbers, however since $\psi$ is normalized, we can rewrite the expression as
+where $\alpha,\beta$ are probability amplitudes, i.e. two complex numbers that satisfy the relationship $|\alpha|^2+|\beta|^2 = 1$.
+A qubit can be in any linear combination, i.e. $\alpha$ and $\beta$. The outcome of measuring a qubit will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.\\
+Qubits also have a geometrical representation that can be useful. Equation \eqref{qubit} depends on 4 real numbers, however since $\psi$ is normalized, we can rewrite the expression as
 \begin{equation}
 \ket{\psi} = e^{i\gamma}\left(\cos\frac{\theta}{2}\ket{0} + e^{i\varphi}\sin\frac{\theta}{2}\ket{1}\right).
 \end{equation}
-the global phase factor $e^{i\gamma}$ can be left out, as it does not influence the measurement outcome. This leaves us with only two real numbers: $\theta$ and $\varphi$. A qubit is therefore representable with only these two numbers that we can choose to represent geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Here qubit manipulation can be visualized as trajectories on the surface. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
+The global phase factor $e^{i\gamma}$ can be left out as it does not influence the measurement outcome, leaving only two real numbers: $\theta$ and $\varphi$. A qubit can therefore be represented geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Here, qubit manipulation can be visualized as trajectories on the surface. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
 \begin{figure}[H]
 \centering
 \includegraphics[width = .4\textwidth]{bloch_sphere}
-\caption{The Bloch sphere. The states $\ket{0}$ and $\ket{1}$ are at the poles of the sphere, every other point of the surface represents a superpositions of these states. A quantum gate can be seen as trajectory on the surface mapping one state to another.}
+\caption{The Bloch sphere. The states $\ket{0}$ and $\ket{1}$ are at the poles of the sphere, every other point of the surface represents a superpositions of these states. A single qubit quantum gate can be seen as trajectory on the surface mapping one state to another.}
 \label{blochsphere}
 \end{figure}
 
-An alternative way of dealing with qubits is via matrices. We can assign to the states $\ket{0}$ and $\ket{1}$ the following:
+An alternative way of dealing with qubits is via vectors and matrices. We can assign to the states $\ket{0}$ and $\ket{1}$ the following:
 \begin{equation}
 \ket{0} = \begin{pmatrix}
  1 \\
@@ -38,7 +38,7 @@ An alternative way of dealing with qubits is via matrices. We can assign to the 
  \beta
 \end{pmatrix}.
 \end{equation}
-In this representation, rotations of qubits are calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Quantum algorithms can be written as a sequence of quantum gates and it is therefore important to understand them. For a single qubit, any gate can be written as combination of two operations \cite{hempel}
+In this representation, single qubit rotations are calculated using $2\times2$ unitary matrices. These kind of operations are named \emph{quantum gates} and they are the building blocks of quantum computing. Quantum algorithms can be written as a sequence of quantum gates. For a single qubit, any gate can be written as combination of two operations \cite{hempel}
 \begin{equation}
 \label{quantumgates}
 U_z(\Theta) =  \begin{pmatrix}
