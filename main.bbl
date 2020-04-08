@@ -99,6 +99,11 @@ Cornelius Hempel.
   and setting up a linear ion trap}.
 \newblock PhD thesis, University of Innsbruck, 2014.
 
+\bibitem{ross}
+Christian Roos.
+\newblock {\em Controlling the quantum state of trapped ions}.
+\newblock PhD thesis, University of Innsbruck, 2000.
+
 \bibitem{steck}
 Daniel~Adam Steck.
 \newblock Quantum and atom optics.
@@ -119,12 +124,6 @@ Carlos~Manuel da~Silva Baptista~Russo.
 P.~Zoller C.~Gardiner.
 \newblock {\em Quantum Noise}.
 \newblock Springer-Verlag Berlin Heidelberg, 2004.
-
-\bibitem{doi:10.1142/p941}
-Crispin Gardiner and Peter Zoller.
-\newblock {\em The Quantum World of Ultra-Cold Atoms and Light Book I:
-  Foundations of Quantum Optics}.
-\newblock IMPERIAL COLLEGE PRESS, 2014.
 
 \bibitem{ion_quantumnetwork}
 L.-M. Duan and C.~Monroe.
@@ -383,11 +382,6 @@ Bruce Cannon, Timothy~S. Gardner, and Donald~K. Cohen.
 William~H. McMaster.
 \newblock Polarization and the stokes parameters.
 \newblock {\em American Journal of Physics}, 22(6):351--362, 1954.
-
-\bibitem{ross}
-Christian Roos.
-\newblock {\em Controlling the quantum state of trapped ions}.
-\newblock PhD thesis, University of Innsbruck, 2000.
 
 \bibitem{mle}
 Richard~J. Rossi.

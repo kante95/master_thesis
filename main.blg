@@ -6,45 +6,45 @@ The style file: unsrt.bst
 Database file #1: References.bib
 Warning--empty year in ion_spacing
 Warning--empty publisher in handbookoptics
-You've used 70 entries,
+You've used 69 entries,
             1791 wiz_defined-function locations,
-            886 strings with 15089 characters,
-and the built_in function-call counts, 16435 in all, are:
-= -- 1411
-> -- 827
+            882 strings with 14931 characters,
+and the built_in function-call counts, 16271 in all, are:
+= -- 1398
+> -- 819
 < -- 4
-+ -- 307
-- -- 237
-* -- 1308
-:= -- 2683
-add.period$ -- 211
-call.type$ -- 70
++ -- 304
+- -- 235
+* -- 1303
+:= -- 2657
+add.period$ -- 208
+call.type$ -- 69
 change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 660
-empty$ -- 1551
-format.name$ -- 237
-if$ -- 3552
+cite$ -- 71
+duplicate$ -- 650
+empty$ -- 1532
+format.name$ -- 235
+if$ -- 3513
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 71
-newline$ -- 350
-num.names$ -- 69
-pop$ -- 145
+int.to.str$ -- 69
+missing$ -- 69
+newline$ -- 345
+num.names$ -- 68
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 264
+skip$ -- 261
 stack$ -- 0
 substring$ -- 1182
-swap$ -- 104
+swap$ -- 103
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 151
-width$ -- 72
-write$ -- 762
+while$ -- 150
+width$ -- 71
+write$ -- 752
 (There were 2 warnings)

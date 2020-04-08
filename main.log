@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.12)  5 APR 2020 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  8 APR 2020 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,7 +1177,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<img/logo.jpg, id=184, 2372.865pt x 936.49875pt>
+<img/logo.jpg, id=192, 2372.865pt x 936.49875pt>
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
 Package pdftex.def Info: img/logo.jpg  used on input line 33.
@@ -1216,7 +1216,7 @@ This may cause the page layout to be inconsistent, however.
 
  [4]
 Chapter 1.
-<./img/photongeneration2.png, id=287, 184.2885pt x 96.1191pt>
+<./img/photongeneration2.png, id=293, 184.2885pt x 96.1191pt>
 File: ./img/photongeneration2.png Graphic file (type png)
 <use ./img/photongeneration2.png>
 Package pdftex.def Info: ./img/photongeneration2.png  used on input line 140.
@@ -1238,7 +1238,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-<./img/qubitmanipulation.png, id=307, 140.56705pt x 101.59421pt>
+<./img/qubitmanipulation.png, id=313, 140.56705pt x 101.59421pt>
 File: ./img/qubitmanipulation.png Graphic file (type png)
 <use ./img/qubitmanipulation.png>
 Package pdftex.def Info: ./img/qubitmanipulation.png  used on input line 149.
@@ -1249,103 +1249,101 @@ Package pdftex.def Info: ./img/qubitmanipulation.png  used on input line 149.
 ]
 Chapter 2.
 [5]
-<./img/bloch_sphere.png, id=340, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=347, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [6 <./img/bloch_sphere.png>]
-<./img/2levelatom.png, id=357, 186.4566pt x 127.1952pt>
-File: ./img/2levelatom.png Graphic file (type png)
-<use ./img/2levelatom.png>
-Package pdftex.def Info: ./img/2levelatom.png  used on input line 83.
-(pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
- [7 <./img/2levelatom.png>]
-<./img/calciumscheme.png, id=371, 365.949pt x 309.447pt>
+<./img/calciumscheme.png, id=366, 365.949pt x 309.447pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
-Package pdftex.def Info: ./img/calciumscheme.png  used on input line 96.
+Package pdftex.def Info: ./img/calciumscheme.png  used on input line 93.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
- [8 <./img/calciumscheme.png>]
-<./img/rabiflops.png, id=393, 987.2082pt x 452.4102pt>
+ [7] [8 <./img/calciumscheme.png>]
+<./img/2levelatom.png, id=397, 186.4566pt x 127.1952pt>
+File: ./img/2levelatom.png Graphic file (type png)
+<use ./img/2levelatom.png>
+Package pdftex.def Info: ./img/2levelatom.png  used on input line 131.
+(pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
+<./img/rabiflops.png, id=402, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
-Package pdftex.def Info: ./img/rabiflops.png  used on input line 148.
+Package pdftex.def Info: ./img/rabiflops.png  used on input line 152.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [9]
-<./img/3levelmodel.png, id=411, 370.38374pt x 424.2249pt>
+ [9 <./img/2levelatom.png>]
+<./img/3levelmodel.png, id=417, 370.38374pt x 424.2249pt>
 File: ./img/3levelmodel.png Graphic file (type png)
 <use ./img/3levelmodel.png>
-Package pdftex.def Info: ./img/3levelmodel.png  used on input line 180.
+Package pdftex.def Info: ./img/3levelmodel.png  used on input line 186.
 (pdftex.def)             Requested size: 135.89185pt x 155.6467pt.
  [10 <./img/rabiflops.png>] [11 <./img/3levelmodel.png>] [12]
 [13] [14]
-<./img/photongenerationscheme.png, id=512, 368.39633pt x 285.82785pt>
+<./img/photongenerationscheme.png, id=514, 368.39633pt x 285.82785pt>
 File: ./img/photongenerationscheme.png Graphic file (type png)
 <use ./img/photongenerationscheme.png>
 Package pdftex.def Info: ./img/photongenerationscheme.png  used on input line 2
-84.
+88.
 (pdftex.def)             Requested size: 271.7837pt x 210.87689pt.
- [15 <./img/photongenerationscheme.png>]
-<./img/trap.png, id=526, 494.11751pt x 169.06602pt>
+<./img/trap.png, id=519, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
-Package pdftex.def Info: ./img/trap.png  used on input line 302.
+Package pdftex.def Info: ./img/trap.png  used on input line 306.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
- [16 <./img/trap.png>]
+ [15 <./img/photongenerationscheme.png>] [16 <./img/trap.png>]
 [17]
-<./img/positions_ions.png, id=558, 1028.4021pt x 483.4863pt>
+<./img/positions_ions.png, id=561, 1028.4021pt x 483.4863pt>
 File: ./img/positions_ions.png Graphic file (type png)
 <use ./img/positions_ions.png>
-Package pdftex.def Info: ./img/positions_ions.png  used on input line 364.
+Package pdftex.def Info: ./img/positions_ions.png  used on input line 368.
 (pdftex.def)             Requested size: 543.56053pt x 255.54565pt.
 
-Overfull \hbox (31.85661pt too wide) in paragraph at lines 364--365
+Overfull \hbox (31.85661pt too wide) in paragraph at lines 368--369
 [] [] 
  []
 
-[18 <./img/positions_ions.png>] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 411--414
+[18 <./img/positions_ions.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 415--418
 
  []
 
-<./img/threelevelatom.png, id=591, 335.69415pt x 193.6836pt>
+<./img/threelevelatom.png, id=579, 335.69415pt x 193.6836pt>
 File: ./img/threelevelatom.png Graphic file (type png)
 <use ./img/threelevelatom.png>
-Package pdftex.def Info: ./img/threelevelatom.png  used on input line 418.
+Package pdftex.def Info: ./img/threelevelatom.png  used on input line 422.
 (pdftex.def)             Requested size: 271.7837pt x 156.8119pt.
-[20 <./img/threelevelatom.png>]
-<./img/gauss2.png, id=604, 421.69545pt x 451.6875pt>
+[19]
+<./img/gauss2.png, id=596, 421.69545pt x 451.6875pt>
 File: ./img/gauss2.png Graphic file (type png)
 <use ./img/gauss2.png>
-Package pdftex.def Info: ./img/gauss2.png  used on input line 444.
+Package pdftex.def Info: ./img/gauss2.png  used on input line 448.
 (pdftex.def)             Requested size: 271.7837pt x 291.1122pt.
- [21 <./img/gauss2.png>]
-<./img/gaussprofile.png, id=616, 393.3897pt x 103.1052pt>
+ [20 <./img/threelevelatom.png>]
+<./img/gaussprofile.png, id=610, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
-Package pdftex.def Info: ./img/gaussprofile.png  used on input line 461.
+Package pdftex.def Info: ./img/gaussprofile.png  used on input line 465.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
- [22 <./img/gaussprofile.png>]
-<./img/aod2.png, id=634, 389.17395pt x 311.12234pt>
+ [21 <./img/gauss2.png>] [22 <./img/gaussprofile.png>]
+<./img/aod2.png, id=636, 389.17395pt x 311.12234pt>
 File: ./img/aod2.png Graphic file (type png)
 <use ./img/aod2.png>
-Package pdftex.def Info: ./img/aod2.png  used on input line 496.
+Package pdftex.def Info: ./img/aod2.png  used on input line 500.
 (pdftex.def)             Requested size: 226.48413pt x 181.05875pt.
- [23] [24 <./img/aod2.png>]
-<./img/exp1.png, id=659, 463.2507pt x 394.23285pt>
+ [23 <./img/aod2.png>] [24]
+<./img/exp1.png, id=662, 463.2507pt x 394.23285pt>
 File: ./img/exp1.png Graphic file (type png)
 <use ./img/exp1.png>
-Package pdftex.def Info: ./img/exp1.png  used on input line 541.
+Package pdftex.def Info: ./img/exp1.png  used on input line 545.
 (pdftex.def)             Requested size: 317.0764pt x 269.84935pt.
- [25] [26 <./img/exp1.png>]
-<./img/exp2.png, id=686, 315.8199pt x 255.8358pt>
+ [25 <./img/exp1.png>]
+<./img/exp2.png, id=679, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
-Package pdftex.def Info: ./img/exp2.png  used on input line 574.
+Package pdftex.def Info: ./img/exp2.png  used on input line 578.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
-) (./expsetup.tex
-[27 <./img/exp2.png>] [28
+ [26])
+(./expsetup.tex [27 <./img/exp2.png>] [28
 
 ]
 Chapter 3.
@@ -1539,7 +1537,7 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (./main.bbl [62
 
 ] [63] [64] [65] [66]
-Overfull \hbox (26.74219pt too wide) in paragraph at lines 363--365
+Overfull \hbox (26.74219pt too wide) in paragraph at lines 362--364
 []\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
 ownload/fibercollimators60fc.pdf. 
  []
@@ -1641,25 +1639,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
 (./frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DB722DE1FF2F2B22DC57E74C9A4C0E30;3281.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 20C78E4E1A119EEC9DA5C267D38D7915;3115
-(rerunfilecheck)             After:  DB722DE1FF2F2B22DC57E74C9A4C0E30;3281.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25893 strings out of 492167
- 436919 string characters out of 6131558
- 577257 words of memory out of 5000000
- 29324 multiletter control sequences out of 15000+600000
- 565218 words of font info for 197 fonts, out of 8000000 for 9000
+ 25891 strings out of 492167
+ 436906 string characters out of 6131559
+ 577289 words of memory out of 5000000
+ 29326 multiletter control sequences out of 15000+600000
+ 565169 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,100p,2539b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
@@ -1688,10 +1680,10 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (80 pages, 17654675 bytes).
+Output written on main.pdf (80 pages, 17652114 bytes).
 PDF statistics:
- 1635 PDF objects out of 1728 (max. 8388607)
- 1262 compressed objects within 13 object streams
- 338 named destinations out of 1000 (max. 500000)
- 26733 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1634 PDF objects out of 1728 (max. 8388607)
+ 1261 compressed objects within 13 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 26749 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -78,15 +78,12 @@ It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase
 
 \subsection{Ion qubits and laser-ion interactions}
 \label{laserioninteractions}
-\begin{figure}
-\centering
-\includegraphics[width = .4\textwidth]{2levelatom}
-\caption{2-level atom scheme, the ground and excited states are denoted as $\ket{0}$, and $\ket{1}$. $\omega_l$ is the laser frequency, which is detuned by $\Delta \equiv \omega_l - \omega_0$ from the transition frequency $\omega_0$.}
-\label{2levelatom}
-\end{figure}
-Qubits can be encoded in any pair of orthogonal quantum states of a physical system. REWRITE (In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$). As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit. Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\\
-The interaction between ion and laser is now presented using a simple model: a two-level atom with dipole interaction with the laser field. Dipole interaction is presented because the 393 nm laser, set up in this thesis, interacts a dipole transition with the atomic ion. The model can also be used to described the quadrupole interaction of the qubit's transition, but the dependence of the Rabi frequency with the electric field is different, see \cite{ross} for the derivation. Consider the system in figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. The laser light in this case can be described classicaly in the dipole approximation.
-This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
+Qubits can be encoded in any pair of orthogonal quantum states of a physical system. REWRITE (In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$). As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit. Lasers provide a way
+to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\\
+The laser set up in this thesis is the 393 nm, which interacts via a dipole transition with the atomic ion, we model therefore the atom-light interactions as dipole interaction. In the case of a quadrupole interaction, the equations below still hold with the exception of the Rabi frequency, which will no longer depend linearly with the electric field. For a proper treatment of the quadrupole interaction see \cite{ross}.\\
+%The interaction between ion and laser is now presented using a simple model: a two-level atom with dipole interaction with the laser field.
+Consider the system in figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. % The laser light in this case can be described classicaly in the dipole approximation.
+%This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
 The Hamiltonian of the atomic part can be written as:
 \begin{equation}
 H_a = \hbar\omega_0 \ket{1}\bra{1},
@@ -103,31 +100,38 @@ H_{int} = -\mathbf{d}\cdot \mathbf{E}
 \end{equation}
 where the electric field will be treated classically and the dipole approximation is assumed. This means
 \begin{equation}
-\mathbf{E}(t) = \hat{\mathbf{\varepsilon}} E_0 \cos(\omega t+\varphi) = \hat{\mathbf{\varepsilon}} \frac{E_0}{2} \left(e^{-i(\omega t+\varphi)} + e^{i(\omega t+\varphi)}\right),
+\mathbf{E}(t) = \hat{\mathbf{\varepsilon}} E_0 \cos(\omega_l t+\varphi) = \hat{\mathbf{\varepsilon}} \frac{E_0}{2} \left(e^{-i(\omega_l t+\varphi)} + e^{i(\omega_l t+\varphi)}\right),
 \end{equation}
-where $\hat{\varepsilon}$ is a the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{0}\bra{0} + \ket{1}\bra{1}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non vanishing, giving
+where $\hat{\varepsilon}$ is the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{0}\bra{0} + \ket{1}\bra{1}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non-vanishing, giving
 \begin{equation}
 d = \braket{0|d|1}\left(\ket{0}\bra{1} + \ket{1}\bra{0}\right) \equiv \braket{0|d|1}(\sigma + \sigma^\dagger).
 \end{equation}
 Combining the last three equations yields
 \begin{equation}
+\label{eq:hint}
 H_{int} = - \braket{0|\hat{\varepsilon} \mathbf{d}|1}\frac{E_0}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)} + \sigma e^{-i(\omega_l t+\varphi)} + \sigma^\dagger e^{i(\omega_l t+\varphi)})
 \end{equation}
-A rotating wave approximation is used now, essentially $\sigma$ ($\sigma^\dagger$) evolves under the Hamiltonian $H_a$ in time as $\propto e^{-i\omega_0 t}$ ($\propto e^{i\omega_0 t}$), therefore we can drop the fast oscillating terms in the last equation and keeping only those that depend on time as $\propto e^{\pm i(\omega_l-\omega_0 )t}$. The validity of this approximation is given by the fact that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference, aka detuning.
-With this approximation we arrive at the final form of the interaction Hamiltonian
+A rotating wave approximation is used now: in the interaction picture, the operator $\sigma$ ($\sigma^\dagger$) evolves under the Hamiltonian $H_a$ in time as $\widetilde{\sigma} = e^{i H_a t/\hbar}\sigma e^{-i H_a t/\hbar} = \sigma e^{-i\omega_0 t}$ ($\widetilde{\sigma}^\dagger=\sigma^\dagger e^{i\omega_0 t}$). Therefore, equation \ref{eq:hint} in the interaction picture contains terms that oscillate as $\propto e^{\pm i(\omega_l-\omega_0 )t}$, and $\propto e^{\pm i(\omega_l+\omega_0 )t}$. We can drop the fast oscillating terms and keeping only those that depend on time as $\propto e^{\pm i(\omega_l-\omega_0 )t}$. The validity of this approximation is given by the fact that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference: the detuning.
+Going back in the Schrödinger picture yields the final form of the interaction Hamiltonian
 \begin{equation}
 H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)}),
 \end{equation}
- where we defined the Rabi frequency $\Omega \equiv - \braket{0|\hat{\varepsilon} \mathbf{d}|1}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the laser $\Omega ^2 \propto I$. To summarize, the final system Hamiltonian is
+ where we defined the Rabi frequency $\Omega \equiv - \braket{0|\hat{\varepsilon} \mathbf{d}|1}E_0/\hbar$. The Rabi frequency depends linearly with the applied electrical field and hence its square is proportional to the intensity of the laser $\Omega ^2 \propto I$. To summarize, the total system Hamiltonian is
  \begin{equation}
  \label{2levelatomhamiltonian}
 H = H_a + H_{int} = \hbar\omega_0 \ket{1}\bra{1} + \frac{\hbar \Omega}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)}).
  \end{equation}
-This Hamiltonian depends explicitly on time, which could lead to unnecessary complications if we want to solve the dynamics. To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega_l t \ket{1}\bra{1}}$, the Hamiltonian in this frame is
+To eliminate the time dependence, we can go in the rotating frame with the unitary transformation $U = e^{i\omega_l t \ket{1}\bra{1}}$, the Hamiltonian in this frame is
 \begin{equation}
 \label{Hamiltonianrotatingframe}
 \widetilde{H} = -\hbar \Delta \ket{1}\bra{1} + \frac{\hbar \Omega}{2}(e^{i\varphi}\sigma + e^{-i\varphi}\sigma^\dagger)
 \end{equation}
+\begin{figure}
+\centering
+\includegraphics[width = .4\textwidth]{2levelatom}
+\caption{2-level atom scheme, the ground and excited states are denoted as $\ket{0}$, and $\ket{1}$. $\omega_l$ is the laser frequency, which is detuned by $\Delta \equiv \omega_l - \omega_0$ from the transition frequency $\omega_0$.}
+\label{2levelatom}
+\end{figure}
 The time dependence is now gone, and the unitary evolution matrix can be calculated as
 \begin{equation}
 \label{laserpulse}
@@ -137,24 +141,24 @@ U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
   -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
 \end{pmatrix}.
 \end{equation}
-Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. With this matrix we can calculate all the dynamic we need. In the case of zero detuning $\Delta = 0$, we also notice that the matrix is the same as equation \eqref{quantumgates}. Thus, a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$, the rotation around the z axis is performed with a laser pulse as well, but far detuned from the transition. We will explore this possibility later in the AC Stark shift.\\
+Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. In the case of zero detuning ($\Delta = 0$) the matrix is the same as equation \eqref{quantumgates}, thus a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$.\\
 As an example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
 \begin{equation}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
-This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement the Hadamard gate of equation \eqref{Hadamard}.
+This equation is plotted in figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega/2$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement e.g. the Hadamard gate of equation \eqref{Hadamard}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = 1\textwidth]{rabiflops}
 \caption{Rabi flops for different detunings $\Delta$, starting from the $\ket{0}$ state.}
 \label{rabiflops}
 \end{figure}
-As the light is detuned from the transition, Rabi oscillations are suppressed: the amplitude is reduced by a factor of 0.5 already with $\Delta = \Omega$, while a factor of 10 in reduction is achieved with a detuning of $\Delta/\Omega = 5$. However, another effect persists in the off-resonant regime, the energy levels are shifted.
+As the light is detuned from the transition, Rabi oscillations are suppressed: the amplitude is reduced by a factor of 0.5 already with $\Delta = \Omega$, while a factor of 10 in reduction is achieved with a detuning of $\Delta = 5\Omega$. However, another effect occurs in the off-resonant regime, the energy levels are shifted.
 The shift $\delta$ can be calculated by finding the eigenvalues of the Hamiltonian \eqref{Hamiltonianrotatingframe}, which can be written in matrix form and diagonalized. We find that there are two eigenstates $\ket{+}$ and $\ket{-}$ called dressed states with eigenvalues
 \begin{equation}
 E_{\pm} = -\frac{\hbar\Delta}{2} \pm \frac{\hbar}{2}\sqrt{\Delta^2 +\Omega^2}.
 \end{equation}
-In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{1},\ket{-}\to \ket{0}$, and the energies becomes
+In the limit $\Delta \gg \Omega$, dressed states tend to the bare states $\ket{+} \to \ket{1},\ket{-}\to \ket{0}$, and the energies become
 \begin{equation}
 \label{eq:starkshift}
 E_{\pm} \to -\frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega}{2} \pm \frac{\hbar \Omega^2}{4\Delta} \implies \delta = \pm\frac{\Omega^2}{4\Delta}.
@@ -172,7 +176,9 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
    0 & \exp\left\{i\frac{\delta}{2}t\right\}
 \end{pmatrix}.
 \end{equation}
-This matrix implements the quantum gate from equation \eqref{quantumgates}. Furthermore, AC Stark shift can also implement the phase gate $R_{\phi}$ of equation \eqref{Hadamard}, but it requires a third energy level.
+This matrix implements the quantum gate $U_z(\Theta)$ from equation \eqref{quantumgates}.
+
+
 \subsubsection{Three-level model}
 \label{sec:threelevel}
 \begin{figure}
@@ -181,22 +187,23 @@ This matrix implements the quantum gate from equation \eqref{quantumgates}. Furt
 \caption{3 level atom model. Two long lived ground states $\ket{g_1}$, $\ket{g_2}$ couple to an excited level $\ket{e}$ through two lasers of frequencies $\omega_1$, $\omega_2$ detuned respectively $\Delta_1,\Delta_2$ from the transitions.}
 \label{3levelmodel}
 \end{figure}
-We extend our model to a 3 level $\Lambda$ type atom driven by two lasers, which closer resemble the real experimental situation. The model contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$ with detunings $\Delta_1 = \omega_1 - \omega_{01}$ and $\Delta_2 = \omega_2 - \omega_{02}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived, such that any spontaneous emission between S and D can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states.\\
-In this model we assume that the two ground states are not separated by an optical frequency $\omega_{02} - \omega_{01} \ll \omega_1,\omega_2$, and that the detunings are nearly equal $\Delta_1 \simeq \Delta_2$. As a consequence, each laser light couples only to one transition.\\
-The mathematical description is similar to the one described in section \ref{laserioninteractions} for the 2 level atom with the addition of extra terms. Following the approach of \cite{steck}, the bare atom Hamiltonian is
+We extend our model to a 3 level $\Lambda$ type atom driven by two lasers, which closer resemble the real experimental situation in the experiments in this thesis. The model contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$, where the atomic frequencies are $\omega_{01}$, and $\omega_{02}$ respectively. Detunings are defined as $\Delta_1 = \omega_1 - \omega_{01}$ and $\Delta_2 = \omega_2 - \omega_{02}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived ($\sim 1$ s), such that any spontaneous emission from D to S can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states with branch ratio of 94\% from P$\to$S ($\sim$ 7.4 ns) and 5.3\% from P$\to$D $\sim 101$ ns), we neglet decay to the $\ket{\text{D}_{3/2}}$ state.\\
+%In this model we assume that each laser light couples only to one transition and that . %the two ground states are not separated by an optical frequency $\omega_{02} - \omega_{01} \ll \omega_1,\omega_2$, and that the detunings are nearly equal $\Delta_1 \simeq \Delta_2$. As a consequence, each laser light couples only to one transition.\\
+Following the approach of \cite{steck}, the bare atom Hamiltonian is
 \begin{equation}
 H_a = -\hbar \omega_{01}\ket{g_1}\bra{g_1} - \hbar \omega_{02}\ket{g_2}\bra{g_2},
 \end{equation}
-with the convention of setting the excited level energy to 0. The electric field is now the sum of the two lasers lights
+with the convention of setting the excited level energy to 0. The electric field is now the sum of the two laser fields
 \begin{equation}
-E(t) = \hat{\varepsilon_{01}} E_{01} \cos(\omega_{1} t \varphi_1) + \hat{\varepsilon_{02}} E_{02} \cos(\omega_2 t + \varphi_2).
+\mathbf{E}(t) = \hat{\varepsilon_{01}} E_{01} \cos(\omega_{1} t \varphi_1) + \hat{\varepsilon_{02}} E_{02} \cos(\omega_2 t + \varphi_2).
 \end{equation}
-We still apply the dipole and the rotating wave approximation to the interaction between electric field and atom. Finally transforming into the rotating frame gives the full final Hamiltonian as
+As in section \ref{laserioninteractions}, we then consider a dipole interaction, make the dipole approximation and a rotating wave approximation. Finally, the full final Hamiltonian in the rotating frame is
 \begin{equation}
 H = \hbar \Delta_1 \ket{g_1}\bra{g_1} + \hbar\Delta_2 \ket{g_2}\bra{g_2}+ \frac{\hbar \Omega_1}{2}\left(\sigma_1 e^{i\varphi_1} +\sigma_1^\dagger e^{i\varphi_1}\right)+ \frac{\hbar \Omega_2}{2}\left(\sigma_2 e^{i\varphi_2} +\sigma_2^\dagger e^{i\varphi_2}\right),
 \end{equation}
-where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot \mathbf{d}|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$. This Hamiltonian describes a Raman process, state population can be transferred coherently from $g_{1}$ to $g_{2}$, without exciting the $\ket{e}$ level. This happens at the Raman resonance $\Delta_1 = \Delta_2 \equiv \Delta$ if the detuning is large enough to eliminate adiabatically population in the $\ket{e}$ level, i.e. $\Delta \gg \Omega_1,\Omega_2$. Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\\
-As the excited level is eliminated, it can be shown \cite{russo} that the dynamics can be described as an effective 2 level system equivalent of that described in section \ref{laserioninteractions}. The effective Rabi frequency of the coherent population transfer $\ket{g_1} \to \ket{g_2}$ is \cite{steck}
+where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot \mathbf{d}|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$. Under certain conditions, this Hamiltonian describes a Raman process, where state population is transferred coherently between $\ket{g_1}$ and $\ket{g_2}$. Specifically, the Raman conditions are: equal detunings $\Delta_1 = \Delta_2 \equiv \Delta$ (Raman resonance), and $\Delta \gg \Omega_1,\Omega_2$.
+Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\\
+Following \cite{russo} it can be shown that, under the previous conditions, the Raman process leads to an effective coupling directly between the two ground states. The effective Rabi frequency of the coherent population transfer $\ket{g_1} \to \ket{g_2}$ is \cite{steck}
 \begin{equation}
 \label{eq:effectiverabi}
 \Omega_{eff} = \frac{\Omega_1\Omega_2}{2\Delta}.
@@ -204,7 +211,7 @@ As the excited level is eliminated, it can be shown \cite{russo} that the dynami
 
 \subsubsection{Dissipative processes}
 \label{sec:dissipation}
-In the previous treatments we neglected dissipative processes as spontaneous emission to simplify the mathematical description. However, dissipative processes can play a role and it is important to understand them. Dissipative processes do not follow a Hermitian evolution, hence their mathematical description is done heuristically by adding terms in the Heisenberg equation
+In our experiments spontaneous emission can play a role as the condition $\Delta \gg \Omega_1,\Omega_2$ is only partially fulfilled. In this section therefore, we present a quantitative overview of spontaneous scattering as a function of detuning and Rabi frequency of each laser. In general, dissipative processes do not follow a Hermitian evolution, hence their mathematical description is done heuristically by adding terms in the Heisenberg equation
 \begin{equation}
 \label{masterequation}
 \frac{d\rho}{dt} = \frac{1}{i\hbar}[H,\rho] + \mathcal{L}(\rho).
@@ -214,18 +221,15 @@ $\mathcal{L}(\rho)$ contains phenomena not included in the Hamiltonian. For spon
 \begin{equation}
 \mathcal{L}(\rho) = \frac{\Gamma}{2}(2\sigma \rho \sigma^\dagger -\sigma^\dagger\sigma \rho - \rho \sigma^\dagger \sigma),
 \end{equation}
-where $\Gamma$ is the decay rate. $\Gamma$ represents the coupling between atom and environment, and can be calculated from Fermi's golden rule \cite{doi:10.1142/p941}
-\begin{equation}
-\Gamma = \frac{\omega_0^3 |d|^2}{3\pi\varepsilon_0 \hbar c^3}.
-\end{equation}
-The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$,
-in the rotating frame they are called optical Bloch equations. The solution for the excited population in the case of the 2 level atoms shows that the effect of spontaneous emission is to damp Rabi oscillations. In this case, on long time scale population exchange is suppressed, as it reaches a steady state. This regime is presented is section \ref{sec:doppler_cooling}.\\
-In the case of the three level model, the excited level $\ket{e}$ can decay to both ground states with rates $\Gamma_{g_1}$, and $\Gamma_{g_2}$. We are most interested in the decay rate $\Gamma_{g_1} \equiv \Gamma$ from $\ket{e}\to\ket{g_1}$ as the other transition in calcium is often repumped. In this case, in the effective 2 level system picture, the spontaneous emission is modified as \cite{russo}
+where $\Gamma$ is the spontaneous emission rate.
+% The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$,
+%in the rotating frame they are called optical Bloch equations. The solution for the excited population in the case of the 2 level atom shows that the effect of spontaneous emission is to damp Rabi oscillations.
+For the three level atom, in the effective 2 level system picture, the spontaneous emission is modified as \cite{russo}
 \begin{equation}
 \label{eq:gammaeff}
 \Gamma_{eff} = \left(\frac{\Omega_1}{2 \Delta_1}\right)^2 \cdot \Gamma.
 \end{equation}
-The ratio between this result and the AC Stark shift \eqref{eq:starkshift} $\delta/\Gamma_{eff}\propto \Delta$ dictates which effect is dominant, i.e. by detuning properly, spontaneous scattering can be eliminated leaving only Stark shift as effect. This regime can be used to implement a phase gate where the qubit is encoded in the $\ket{g_1}\to\ket{g_2}$ transition and the phase of $\ket{g_1}$ is manipulated by Stark shifting the transition $\ket{g_1}\to \ket{e}$. In the experiment of section \ref{sec:singlequbitmanipulation}, we implement this gate on a single ion in a string.
+The ratio between $\Gamma_{eff}$ and the AC Stark shift \eqref{eq:starkshift} $\delta/\Gamma_{eff}\propto \Delta$ dictates which effect is dominant, i.e. by increasing the detuning, the effective rate of spontaneous scattering can be reduced in favor of the AC Stark shift. This regime can be used to implement a phase gate where the qubit is encoded in the $\ket{g_1}\to\ket{g_2}$ transition and the phase of $\ket{g_1}$ is manipulated by Stark shifting the transition $\ket{g_1}\to \ket{e}$. In the experiment of section \ref{sec:singlequbitmanipulation}, we implement this gate on a single ion in a string.
 
 
 \section{Quantum networking with trapped ions}
