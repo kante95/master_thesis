@@ -125,16 +125,16 @@ P.~Zoller C.~Gardiner.
 \newblock {\em Quantum Noise}.
 \newblock Springer-Verlag Berlin Heidelberg, 2004.
 
-\bibitem{ion_quantumnetwork}
-L.-M. Duan and C.~Monroe.
-\newblock Colloquium: Quantum networks with trapped ions.
-\newblock {\em Rev. Mod. Phys.}, 82:1209--1224, Apr 2010.
-
 \bibitem{Hughes2002}
 Richard~J Hughes, Jane~E Nordholt, Derek Derkacs, and Charles~G Peterson.
 \newblock Practical free-space quantum key distribution over 10 km in daylight
   and at night.
 \newblock {\em New Journal of Physics}, 4:43--43, July 2002.
+
+\bibitem{ion_quantumnetwork}
+L.-M. Duan and C.~Monroe.
+\newblock Colloquium: Quantum networks with trapped ions.
+\newblock {\em Rev. Mod. Phys.}, 82:1209--1224, Apr 2010.
 
 \bibitem{Ritter2012}
 Stephan Ritter, Christian N\"{o}lleke, Carolin Hahn, Andreas Reiserer, Andreas
@@ -159,12 +159,6 @@ Jian-Wei Pan, Christoph Simon, {\v{C}}aslav Brukner, and Anton Zeilinger.
 \newblock Entanglement purification for quantum communication.
 \newblock {\em Nature}, 410(6832):1067--1070, April 2001.
 
-\bibitem{Duan2001}
-L.-M. Duan, M.~D. Lukin, J.~I. Cirac, and P.~Zoller.
-\newblock Long-distance quantum communication with atomic ensembles and linear
-  optics.
-\newblock {\em Nature}, 414(6862):413--418, nov 2001.
-
 \bibitem{PhysRevLett.70.1895}
 Charles~H. Bennett, Gilles Brassard, Claude Cr\'epeau, Richard Jozsa, Asher
   Peres, and William~K. Wootters.
@@ -172,17 +166,24 @@ Charles~H. Bennett, Gilles Brassard, Claude Cr\'epeau, Richard Jozsa, Asher
   einstein-podolsky-rosen channels.
 \newblock {\em Phys. Rev. Lett.}, 70:1895--1899, Mar 1993.
 
-\bibitem{Kimble_1998}
-H.~J. Kimble.
-\newblock Strong interactions of single atoms and photons in cavity {QED}.
-\newblock {\em Physica Scripta}, T76(1):127, 1998.
+\bibitem{PhysRevLett.120.193603}
+G.~Araneda, D.~B. Higginbottom, L.~Slodi\ifmmode~\check{c}\else \v{c}\fi{}ka,
+  Y.~Colombe, and R.~Blatt.
+\newblock Interference of single photons emitted by entangled atoms in free
+  space.
+\newblock {\em Phys. Rev. Lett.}, 120:193603, May 2018.
 
-\bibitem{Keller2004}
+\bibitem{Keller2004bis}
 Matthias Keller, Birgit Lange, Kazuhiro Hayasaka, Wolfgang Lange, and Herbert
   Walther.
 \newblock Continuous generation of single photons with controlled waveform in
   an ion-trap cavity system.
 \newblock {\em Nature}, 431(7012):1075--1078, October 2004.
+
+\bibitem{Kimble_1998}
+H.~J. Kimble.
+\newblock Strong interactions of single atoms and photons in cavity {QED}.
+\newblock {\em Physica Scripta}, T76(1):127, 1998.
 
 \bibitem{qedreview}
 Helmut Ritsch, Peter Domokos, Ferdinand Brennecke, and Tilman Esslinger.
@@ -194,17 +195,17 @@ Helene Hainzer.
 \newblock Laser locking for trapped-ion quantum networks.
 \newblock Master's thesis, University of Innsbruck, 2018.
 
+\bibitem{Barros2009}
+H.~G. Barros, A.~Stute, T.~E. Northup, C.~Russo, P.~O. Schmidt, and R.~Blatt.
+\newblock Deterministic single-photon source from a single ion.
+\newblock {\em New Journal of Physics}, 11(10):103004, October 2009.
+
 \bibitem{Krutyanskiy2019}
 V.~Krutyanskiy, M.~Meraner, J.~Schupp, V.~Krcmarsky, H.~Hainzer, and B.~P.
   Lanyon.
 \newblock Light-matter entanglement over 50{\hspace{0.167em}}km of optical
   fibre.
 \newblock {\em npj Quantum Information}, 5(1), August 2019.
-
-\bibitem{Barros2009}
-H.~G. Barros, A.~Stute, T.~E. Northup, C.~Russo, P.~O. Schmidt, and R.~Blatt.
-\newblock Deterministic single-photon source from a single ion.
-\newblock {\em New Journal of Physics}, 11(10):103004, October 2009.
 
 \bibitem{RevModPhys.58.233}
 Lowell~S. Brown and Gerald Gabrielse.
@@ -252,6 +253,16 @@ D.J. Wineland, C.~Monroe, W.M. Itano, D.~Leibfried, B.E. King, and D.M.
 T.~W. {Hansch} and A.~L. {Schawlow}.
 \newblock {Cooling of gases by laser radiation}.
 \newblock {\em Optics Communications}, 13(1):68--69, Jan 1975.
+
+\bibitem{foot}
+C.J. Foot.
+\newblock {\em Atomic Physics}.
+\newblock Oxford Master Series in Physics, 2004.
+
+\bibitem{gabriel}
+Gabriel Andres~Areneda Machuca.
+\newblock {\em Experiments with single photons emitted by single atoms}.
+\newblock PhD thesis, University of Innsbruck, 2019.
 
 \bibitem{Eschner:03}
 J\"{u}rgen Eschner, Giovanna Morigi, Ferdinand Schmidt-Kaler, and Rainer Blatt.

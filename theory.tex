@@ -234,44 +234,48 @@ The ratio between $\Gamma_{eff}$ and the AC Stark shift \eqref{eq:starkshift} $\
 
 \section{Quantum networking with trapped ions}
 \subsection{General introduction}
-A quantum network is a collection of quantum processors, denominated nodes, interconnected with quantum channels. Quantum channels have the unique property to be able to transmit quantum state among the nodes and distribute entanglement over the network \cite{kimble}. There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
-In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects nodes. Links can be realized in free space \cite{Hughes2002} or with optical fibers, photons can carry quantum information over long distance with high speed. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how an interface can be realized by placing an ion based quantum memory in an optical cavity.\\
-For a fully deployed quantum network, many challenges have to be faced. Faithful transmission of a quantum states over long distances can be a daunting problem as quantum information cannot be cloned \cite{nocloning}, and noisy channels can destroy the delicate nature of qubits. Quantum repeaters have been designed \cite{quantumrepeters} to circumvent these problems through a series of protocols which include error correction, or entanglement purification \cite{Pan2001}. More protocols are also available to  entangle qubits located in spatially separated quantum nodes \cite{Duan2001}. Once entanglement has been established between nodes, other network functionalities become available, like for instance teleportation \cite{PhysRevLett.70.1895}. Entanglement generation, and quantum repeaters are just some examples of the fundamental steps necessary for building a quantum network, for a more in depth review look at \cite{Wehnereaam9288}.
+A quantum network is a collection of quantum processors, referred to as nodes, interconnected with quantum channels, referred to as links. Nodes are used for processing and storing quantum information, while links for quantum information distribution \cite{kimble}. %Quantum channels are able to transmit quantum states between the nodes and thereby distribute entanglement between the nodes of the network \cite{kimble}.
+% There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
+%In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects nodes.
+Applications of quantum networks are several: secure communication with Quantum Key Distribution, clock synchronization, efficient solutions to distributed system problems, and more \cite{Wehnereaam9288}.\\
+Links are typically realized with traveling photons, either in free-space \cite{Hughes2002} or in optical fibers. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how such an interface can be realized by placing an ion-qubit in an optical cavity.\\
+Faithful transmission of quantum states over long distances can be a daunting problem as quantum information cannot be cloned \cite{nocloning} and noisy channels can destroy the delicate nature of qubits. Quantum repeaters have been designed \cite{quantumrepeters} to circumvent these problems through a series of protocols which include entanglement purification, a form of error correction \cite{Pan2001}. Once entanglement has been established between nodes, other network functionalities become available, like for instance teleportation \cite{PhysRevLett.70.1895}. Entanglement generation, and quantum repeaters are just some examples of the fundamental steps necessary for building a quantum network, for a more in depth review look at \cite{Wehnereaam9288}.
 
 
 \subsection{Cavity QED}
 \label{sec:cavityqed}
-Trapped ion can generate photons and therefore be used as quantum nodes in a quantum network. The process of photon generation is based on cavity QED (cQED) and therefore we give here a small introduction. A cavity placed around ions has the purpose to improve the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is greatly enhanced with respect to emitting in free space \cite{Kimble_1998}. Additionally, it allows for a better control of the photon waveform \cite{Keller2004}.\\
-In this section we describe a simple model of a two-level system in a cavity following the approach of \cite{steck}. We described the cavity electric field as quantized, with $a,a^\dagger$ the creation and annihilation operators of a single photon in the cavity mode.
-The quantized electric field assume the form of
+A single trapped ion is a single photon source and those photons can be collected either with a lens \cite{ion_quantumnetwork}, refocused with mirrors \cite{PhysRevLett.120.193603} or with optical cavities \cite{Keller2004bis}. Photon collection from ions using an optical cavity is a powerful approach, that will now be introduced in detail. A cavity placed around ions improves the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is enhanced with respect to emitting in free space \cite{Kimble_1998}.\\
+In this section a simple model of a two-level system in a cavity is described following the approach of \cite{steck}. We described the cavity electric field as quantized, with $a,a^\dagger$ the creation and annihilation operators of a single photon in the cavity mode, respectively.
+The quantized electric field assumes the form of
 \begin{equation}
-E = A(f(r)a + f^*(r)a^\dagger)
+\mathbf{E} = A(\mathbf{f}(\mathbf{r})a + \mathbf{f}^*(\mathbf{r})a^\dagger)
 \end{equation}
-where $A$ is an amplitude, and $f(r)$ is the spatial mode profile. The interaction between the field and the cavity is
+where $A$ is an amplitude, and $\mathbf{f}(\mathbf{r})$ is the spatial mode profile. The interaction between the dipole moment of a two-level atom and the cavity field is in the dipole form
 \begin{equation}
-H_{int}  = -d\cdot E = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
+H_{int}  = -\mathbf{d}\cdot \mathbf{E} = \hbar g (\sigma a^\dagger + \sigma^\dagger a),
 \end{equation}
-where $g = A \braket{0|d|1} f(r)$ is called cavity coupling constant. It is analogous to the Rabi frequency, it gives an idea of the coupling between the cavity field and the 2-level atom. An important dependence of $g$ can be found by considering that $f(r)$ is inversely proportional to the volume of the cavity $V$, i.e.
+where $g = A \braket{0|\mathbf{d}|1}\cdot \mathbf{f}(\mathbf{r})$ is called the cavity coupling constant, it is analogous to the Rabi frequency. An important dependence of $g$ can be found by considering that $f(r)$ is inversely proportional to the volume of the cavity $V$, i.e.
 \begin{equation}
 g \propto \braket{0|d|1} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
 \end{equation}
-The coupling therefore, increases with decreasing cavity volume and viceversa.\\
-The total system Hamiltonian includes also the atomic part, and a single mode optical field, it takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
+The coupling therefore increases with decreasing cavity volume.\\
+The total system Hamiltonian includes also the atomic part, and the free evolution of the cavity single mode field, it takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
 \begin{equation}
+\label{eq:jchamiltonian}
 H = \hbar \omega_0 \ket{1}\bra{1} + \hbar \omega a^\dagger a + \hbar g (\sigma a^\dagger + \sigma^\dagger a).
 \end{equation}
-The presence of a cavity makes dynamics more interesting, especially when considering spontaneous emission and interaction with cavity modes. For a mathematical description the master equation \eqref{masterequation} is used. In our case, we are most interested in two processes: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma = 2\gamma$, while the latter is characterized by the decay rate $\kappa$ (half width half maximum). The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
+We are interested in comparing the coherent process in \eqref{eq:jchamiltonian} with: spontaneous emission in a free space field mode, and decay in one cavity mode and out of the cavity. The first is quantified with the decay rate $\Gamma = 2\gamma$, while the latter is characterized by the decay rate $\kappa$ (half width half maximum). The decay rate $\kappa$ depends exclusively on the cavity parameters as \cite{helene}
 \begin{equation}
 \kappa =\frac{c\pi}{FL},
 \end{equation}
-where $F$ is the cavity finesse, and $L$ the length. $g,\kappa,\gamma$ are the most relevant experiment parameters in cQED. In our experiment the designed cavity is near concentric with a length of $L = 19.9$ mm. The maximum $g$ factor achievable with this geometry is $g_{max} = 2\pi \times 1.53$ MHz, while the decay rate is $\kappa = 2\pi\times 70$ kHz. More information on our cavity can be found in \cite{Krutyanskiy2019} and in the upcoming thesis of J. Schupp.% The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
+where $F$ is the cavity finesse, and $L$ the length. % The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
 \subsection{Photon generation}
 \label{sec:ramanprocess}
 Photons are generated from the ion via cavity-mediated Raman transition (CMRT). The CMRT can be explained using the three-level atom scheme, in figure \ref{ramanprocess} the relevant calcium levels for the Raman process are displayed. The electronic states are shifted due to a magnetic field generated by a permanent magnet perpendicular to the cavity axis and at $45^{\circ}$ with respect to the trap axis. In the experiments we start from the state $\ket{\text{S}_{1/2},m_j = -1/2}$, from here three choices of polarization can be taken: $\sigma^-,\pi,\sigma^+$, for each choice three Raman transitions are possible. We can choose for instance
 \begin{equation}
 \ket{\text{S}_{1/2},-1/2}\to\ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-5/2}.
 \end{equation}
-In this case the transitions strengths, i.e. the projection of the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized \cite{stuteinterface}. The qubit is encoded in the $|\text{S}_{1/2},-\frac{1}{2}\rangle \to |\text{D}_{5/2},-\frac{5}{2}\rangle$ transition. CMRT is a coherent process similar to the Raman one described in section \ref{sec:threelevel}. A single laser pulse with strength $\Omega$ couples the $\text{S}_{1/2}$ level to the $\text{P}_{3/2}$ level, which is coupled to the $\text{D}_{5/2}$ via the cavity. Therefore, the electron state is  transferred from the state $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$  by absorbing a laser photon and emitting a cavity photon. The final state is therefore $\ket{\text{D}_{5/2}}\ket{1}$, where $\ket{1}$ indicates one photon in the cavity. Afterwards the photon leaves the cavity leaving the system in the $\ket{\text{D}_{5/2}}\ket{0}$ state.
+In this case the transitions strengths, i.e. the projection of the laser polarization onto the dipole moment, and the same projection onto the cavity axis are maximized \cite{stuteinterface}. The qubit is encoded in the $|\text{S}_{1/2},-\frac{1}{2}\rangle \to |\text{D}_{5/2},-\frac{5}{2}\rangle$ transition. CMRT is a coherent process similar to the Raman one described in section \ref{sec:threelevel}. A single laser pulse with strength $\Omega$ couples the $\text{S}_{1/2}$ level to the $\text{P}_{3/2}$ level, which is coupled to the $\text{D}_{5/2}$ via the cavity. Therefore, the electron state is  transferred from the state $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$  by absorbing a laser photon and emitting a cavity photon. The final state is therefore $\ket{\text{D}_{5/2}}\ket{1}$, where $\ket{1}$ indicates one photon in the cavity. Afterwards, the photon leaves the cavity leaving the system in the $\ket{\text{D}_{5/2}}\ket{0}$ state.
 The difference with the Raman process is that instead of two lasers, the CMRT is driven by one laser and by the cavity standing electric field. As such, the effective Rabi frequency \eqref{eq:effectiverabi} of the population transfer is modified as \cite{Barros2009}
 \begin{equation}
 \label{omegaeff}
@@ -290,7 +294,7 @@ The effective Rabi frequency $\Omega_{eff}$ and the effective spontaneous decay 
       \label{ramanprocess}
 \end{figure}
 
-Typical numbers are $\Omega =  2\pi\times 40$ MHz, detuning $\Delta = 2\pi\times 400$ MHz, $g = 2\pi\times 1$ MHz, and from table \ref{transitiontable}, $\Gamma = 2\pi \times 21.4$ MHz. With these conditions we have $\Omega_{eff} \sim 628$ kHz $>$ $\Gamma_{eff} \sim 336$ kHz. The regime we work in is thus $2\kappa>\Omega_{eff}>\Gamma_{eff}$. In our experiment, CMRT is used to produce photons from ions in the trap. The experiment in section \ref{exp:photons} makes use of it by generating photons from a single ion in a string.
+Typical numbers in our experiments are $\Omega =  2\pi\times 40$ MHz, detuning $\Delta = 2\pi\times 400$ MHz, $g = 2\pi\times 1$ MHz, and from table \ref{transitiontable}, $\Gamma = 2\pi \times 21.4$ MHz. In our experiment the designed cavity is near concentric with a length of $L = 19.9$ mm. The maximum $g$ factor achievable with this geometry is $g_{max} = 2\pi \times 1.53$ MHz, while the decay rate is $\kappa = 2\pi\times 70$ kHz. More information on our cavity can be found in \cite{Krutyanskiy2019} and in the upcoming thesis of J. Schupp. With these conditions we have $\Omega_{eff} \sim 628$ kHz $>$ $\Gamma_{eff} \sim 336$ kHz. The regime we work in is thus $2\kappa>\Omega_{eff}>\Gamma_{eff}$. In our experiment, CMRT is used to produce photons from ions in the trap. The experiment in section \ref{exp:photons} makes use of it by generating photons from a single ion in a string.
 % The generated photon can then be used for quantum networking purposes, this requires also the possibility to entangle the ion with the generated photon, which can be done by driving the CMRT with a bichromatic beam \cite{ionphotonentanglement}.
 
 %In the real experiment the designed cavity is near concentric with a length of $19.9$ mm, and radii of curvature of $9.98$ mm. The cavity length is actively stabilized with a PDH type feedback which locks the mirrors position to a 806nm laser. One mirror of the cavity is highly reflective $T_1 = 2.2$ ppm, while the other is more transmissive $T_2 = 97$. This asymmetry of the mirrors allows for the produced photons to exit one from one side in most cases and subsequently coupled to a fiber. The probability to get a photon out of the cavity from the designed mirror can be determined from the transmission and losses of the cavity, the maximum achievable is $P_{max} = 0.83$. The maximum $g$ factor achievable with this geometry is $g = 2\pi \times 1.53$ MHz.
@@ -299,7 +303,7 @@ Typical numbers are $\Omega =  2\pi\times 40$ MHz, detuning $\Delta = 2\pi\times
 
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}
-Ions are particles that carry an electric charge, therefore electric fields can be used to control ions and trap them. In order to achieve confinement in 3 dimensions, a 3D potential $\phi(x,y,z)$ with minima in all directions is needed. However, it follows directly from Maxwell equation $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap \cite{RevModPhys.58.233}. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two different dimensions. The particles will therefore experience an effective confinement in all directions if the switching is fast compared to the time it takes the particle to respond.\\
+Ions are charged, therefore electric fields can be used to control and trap them. In order to achieve confinement in 3 dimensions, a potential $\phi(x,y,z)$ with minima in all directions is needed. However, it follows directly from Maxwell's equations $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap \cite{RevModPhys.58.233}. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two different dimensions. The particles will therefore experience an effective confinement in all directions if the switching is fast compared to the time it takes the particle to respond.\\
 The shape of the trap can be adapted to load more ions in different geometries. In our work we utilize a linear Paul trap, which is elongated in one direction. The confinement in this direction is weaker and thus loaded ions will align in a single long string. This kind of trap is depicted in figure \ref{trap}.
 \begin{figure}[H]
 \centering
@@ -361,38 +365,45 @@ The last equation can be solved analytically for 2 or 3 ions \cite{ion_spacing}.
   u_2 - \frac{1}{(u_1-u_2)^2} = 0
   \end{cases} \quad \implies \quad u_1 = -u_2,\quad  u_1 = \left(\frac{1}{2}\right)^{2/3} \simeq 0.629
 \end{equation}
-For $^{40}\text{Ca}^+$ ions (atomic mass $39.96259098(22)$ u \cite{AUDI2003337}) in a Paul trap with axial confinement of $\omega_z = 2\pi \times 1$ MHz, we have $l \simeq 4.45\times 10^{-6}\,$m, which means that 2 ions are separated by $\simeq 5.6\, \mu$m. This size is accessible since it is above diffraction limit for optical atomic transitions.
+For $^{40}\text{Ca}^+$ ions (atomic mass $\simeq 40$ u \cite{AUDI2003337}) in a Paul trap with axial confinement of $\omega_z = 2\pi \times 1$ MHz, we have $l \simeq 4.4\times 10^{-6}\,$m, which means that 2 ions are separated by $\simeq 5.6\, \mu$m. This size is accessible since it is above diffraction limit (ref. section \ref{sec_diffraction}) for optical atomic transitions.
 In figure \ref{positions_ions} ions positions are presented for different number of ions $N$ trapped with an axial confinement of $\omega_z = 2\pi \times 1$ MHz.
 
 \begin{figure}[H]
-\hspace{-5em}\includegraphics[width = 1.2\textwidth]{positions_ions}
+\centering
+\includegraphics[width = \textwidth]{positions_ions2}
 \caption{Ions position for different number $N$ of ions in the trap. Confinement is $\omega_z = 2\pi\times 1$ MHz.}
 \label{positions_ions}
 \end{figure}
-
-
+%
+%
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width = .6\textwidth]{threelevelatom}
+% \caption{$\Lambda$ type scheme. Two ground states $\ket{g_1}$ and $\ket{g_2}$ are stable or metastable, while the excited level $\ket{e}$ is short lived. Qubit is encoded in the two ground states while laser fluorescence and laser cooling is done on the $\ket{g_1}\to \ket{e}$ transition. The transition $\ket{e}\to \ket{g_2}$ is repumped to avoid for the electron to be stuck in $g_2$.}
+% \label{threelevel}
+% \end{figure}
 \subsection{Doppler cooling}
 \label{sec:doppler_cooling}
-Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extend of the ion wave packet is much smaller than the optical wavelengths of the lasers. Several techniques are available for cooling, but the most popular and more frequently used is Doppler cooling. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
-The master equation \eqref{masterequation} can be explicitly written for every component of the density matrix $\rho$, in the rotating frame they are called optical Bloch equations and they are
-\begin{equation}
-\label{rhoee}
-\frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
-\end{equation}
-\begin{equation}
-\frac{d\rho_{gg}}{dt} = i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) + \Gamma \rho_{ee}
-\end{equation}
-\begin{equation}
-\frac{d\rho_{ge}}{dt} = -\left(\frac{\Gamma}{2}+i\Delta\right)\rho_{ge} -i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
-\end{equation}
-\begin{equation}
-\frac{d\rho_{eg}}{dt} = -\left(\frac{\Gamma}{2}-i\Delta\right)\rho_{eg}+i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
-\end{equation}
-We are interested in the steady state case, i.e. when the system reaches the equilibrium. Therefore, we look at $\rho_{ee}(t\to \infty) $, the solution of equation \eqref{rhoee} is
+
+Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extent of the ion wave packet is much smaller than the optical wavelengths of the lasers. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
+The mathematical model is a 2-level atom interacting with a laser (Rabi frequency $\Omega$, and detuning $\Delta$) as described in section \ref{laserioninteractions}. Spontaneous emission is included with the master equation \eqref{masterequation}, where $\Gamma$ is the spontaneous emission rate. The master equation can be explicitly written for every component of the density matrix $\rho_{ij}$, in the rotating frame they are called optical Bloch equations \cite{foot}. Following the approach of \cite{gabriel}, the system reaches equilibrium when $\rho_{ee}(t\to \infty)$:
+% \begin{equation}
+% \label{rhoee}
+% \frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
+% \end{equation}
+% \begin{equation}
+% \frac{d\rho_{gg}}{dt} = i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) + \Gamma \rho_{ee}
+% \end{equation}
+% \begin{equation}
+% \frac{d\rho_{ge}}{dt} = -\left(\frac{\Gamma}{2}+i\Delta\right)\rho_{ge} -i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
+% \end{equation}
+% \begin{equation}
+% \frac{d\rho_{eg}}{dt} = -\left(\frac{\Gamma}{2}-i\Delta\right)\rho_{eg}+i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
+% \end{equation}
 \begin{equation}
 \rho_{ee}(t\to \infty) = \frac{\Omega^2/\Gamma^2}{1 + \left(2\frac{\Delta -\mathbf{k}\cdot \mathbf{v}}{\Gamma}\right)^2 + 2\frac{\Omega^2}{\Gamma^2}}
 \end{equation}
-where $\Delta$ is the detuning, and $v$ the velocity of the ions. The force exerted on the ions, due to the radiative pressure, is proportional to this population as
+where $\mathbf{v}$ the velocity of the ions. The force exerted on the ions, due to the radiative pressure, is proportional $\rho_{ee}$ as
 \begin{equation}
 F = \hbar k \Gamma \rho_{ee} \simeq F_0 + \frac{dF}{dv}v = \hbar k \Gamma\frac{\Omega^2}{\Gamma^2 +4\Delta^2} + F_0 \frac{8k\Delta}{\Gamma^2 + 4\Delta^2}v
 \end{equation}
@@ -409,44 +420,36 @@ From here it is clear that by choosing the appropriated detuning, it is possible
 \begin{equation}
 T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}.
 \end{equation}
-At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}. As an example, calcium ions confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$. The wavefunction extend for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$, creation and annihilation operator algebra gives
+At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}.\\
+As an example, calcium ions confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the 2-level atom model in this case gives a good estimation, even though calcium has more levels. The Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$. The wavefunction extend for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$, creation and annihilation operator algebra gives
 \begin{equation}
-\sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52.5\,\text{nm}.
+\sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52\,\text{nm}.
 \end{equation}
 An ion cooled with Doppler cooling therefore has a spatial dimension still much smaller than the ion separations.\\
-To further decrease $\braket{\hat{n}}$, sideband cooling is used \cite{Eschner:03}, here particular sideband transitions are excited to reduce the phonon number of the ions inside the trap. However in the experiments of this thesis, only Doppler cooling has been performed.\\
-
-
-\begin{figure}
-\centering
-\includegraphics[width = .6\textwidth]{threelevelatom}
-\caption{$\Lambda$ type scheme. Two ground states $\ket{g_1}$ and $\ket{g_2}$ are stable or metastable, while the excited level $\ket{e}$ is short lived. Qubit is encoded in the two ground states while laser fluorescence and laser cooling is done on the $\ket{g_1}\to \ket{e}$ transition. The transition $\ket{e}\to \ket{g_2}$ is repumped to avoid for the electron to be stuck in $g_2$.}
-\label{threelevel}
-\end{figure}
+To further decrease $\braket{\hat{n}}$, sideband cooling can be used \cite{Eschner:03}, here particular sideband transitions are excited to reduce the phonon number of the ions inside the trap. However in the experiments of this thesis, only Doppler cooling has been performed.
 \section{Laser beam}
 \subsection{Gaussian beams}
 \label{sec_diffraction}
-Lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
+Typically, lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
 From a theoretical point of view, Gaussian beams are a particular solution of the Helmholtz equation $(\nabla^2 + k^2)U(\mathbf{r}) = 0$, with $k$ being the wavevector, and $U(\mathbf{r})$ the complex electric field. If we can consider a wave propagating in the $z$ direction, we can write it as \cite{saleh}:
 \begin{equation}
 \label{gaussianbeams}
 U(\mathbf{r}) = A_0 \frac{W_0}{W(z)}\exp\left\{-\frac{x^2+y^2}{W^2(z)}\right\}\exp\left\{-ikz-ik\frac{x^2+y^2}{2R(z)}+i\arctan(z/z_0)\right\}.
 \end{equation}
-This is the form of Gaussian beams, they are characterized by an amplitude $A_0$, a width $W(z)$, Rayleigh range $z_0$, and a curvature radius $R(z)$. Let us take a look at the features that arise from this shape. The intensity can be calculated by taking the square of the complex amplitude
+Where $A_0$ is an amplitude, $W(z)$ the width, $R(z)$ the curvature radius, and $z_0$ the Rayleigh range. The intensity can be calculated by taking the square of the complex amplitude
 \begin{equation}
 \label{beamintensity}
-I(\mathbf{r}) = |U(\mathbf{r})|^2 = I_0 \left(\frac{W_0}{W(z)}\right)^2 \exp\left\{\frac{2x^2 + 2y^2}{W^2(z)}\right\}  \qquad I_0 = |A_0|^2.
+I(\mathbf{r}) = |U(\mathbf{r})|^2 = I_0 \left(\frac{W_0}{W(z)}\right)^2 \exp\left\{-\frac{2x^2 + 2y^2}{W^2(z)}\right\}  \qquad I_0 = |A_0|^2.
 \end{equation}
-It is clear from here why the beam is called Gaussian. For a fixed $z$, i.e. the sections in the $x-y$ plane are shaped as a two dimensional Gaussian distribution.
-Therefore, one dimensional Gaussian can be found as cross section of the 2D profile. For simplicity, let us take the profile for a fixed $z$ and $y=0$, this takes the form
+For a fixed $z$, i.e. the sections in the $x-y$ plane are shaped as a two dimensional Gaussian distribution. For simplicity, let us take the profile for a fixed $z$ and $y=0$:
 \begin{equation}
 I(x,y=0,z) = \widetilde{A}(z) \exp\left\{\frac{2x^2}{W^2(z)}\right\} \qquad \widetilde{A}(z) = I_0 \left(\frac{W_0}{W(z)}\right)^2  .
 \end{equation}
-In figure \ref{gauss}, the $x$ cross section is depicted for this intensity profile normalized in amplitude. Parameters used to measure the width are also displayed and defined in the caption. All of those quantities are equivalent and differ only by a prefactor, so for the rest of the section, we stick to $W(z)$ and study its behaviour.
+In Figure \ref{gauss}, the $x$ cross section is depicted for this intensity profile normalized in amplitude. Parameters used to measure the width are also displayed and defined in the caption. All of those quantities are equivalent and differ only by a prefactor, so for the rest of the section, we stick to $W(z)$ and study its behaviour.
 \begin{figure}
 \centering
 \includegraphics[width = .6\textwidth]{gauss2}
-\caption{Intensity of a Gaussian beam, $x$ cross section. The beam is normalized and $\sigma=1$. Graphical representations of used widths are displayed: $W(z)$ is defined as the point at which the intensity $I$ has fallen to $1/e^2 = 13.5\%$ of its maximum value; $\sigma$ is the standard deviation of a Gaussian in the form $Ae^{-\frac{x^2}{2\sigma^2}}$; FWHM is the full width half maximum. Relationships among these quantities are: $W(z) = 2\sigma$, and $W = 0.84\cdot \text{FWHM}$.}
+\caption{Cross section of the intensity profile of a Gaussian beam $I(x) = e^{-x^2/2\sigma^2}$. The beam is normalized and $\sigma=1$. Graphical representations of used widths are displayed: $W(z)$ is defined as the point at which the intensity $I$ has fallen to $1/e^2 = 13.5\%$ of its maximum value; $\sigma$ is the standard deviation of a Gaussian in the form $Ae^{-\frac{x^2}{2\sigma^2}}$; FWHM is the full width half maximum. Relationships among these quantities are: $W(z) = 2\sigma$, and $W = 0.84\cdot \text{FWHM}$.}
 \label{gauss}
 \end{figure}
 From Helmholtz equation \cite{saleh}, the profile of $W(z)$ as a function of $z$ is found to be
@@ -454,16 +457,15 @@ From Helmholtz equation \cite{saleh}, the profile of $W(z)$ as a function of $z$
 \label{waistprofile}
 W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}} \qquad z_0 = \frac{\pi W_0^2}{\lambda}.
 \end{equation}
-$\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below.\\
-There are important features to be noticed with reference to figure \eqref{gaussprofile}:
-The width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this spot is called focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically $z_0$ is the distance between the focus and the point where the width $W(z)$ is exactly $\sqrt{2}W_0$.
+$\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below. A plot of \eqref{waistprofile} is presented in Figure \eqref{gaussprofile}:
+the width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this spot is called focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically $z_0$ is the distance between the focus and the point where the width $W(z)$ is exactly $\sqrt{2}W_0$.
 For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\\
-This property will become important later in the work, because it provides one limit on the focus spot. In fact, the optical aperture of the trap is limited by the electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\\
-A Gaussian beam can be shaped using optical elements.
+This property will become important later in the work, because it provides one limit on the waist of the beam in our experimental system. In fact, the optical aperture of the trap is limited by some electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\\
+A Gaussian beam can be reshaped using optical elements.
 \begin{figure}
 \centering
 \includegraphics[width = \textwidth]{gaussprofile}
-\caption{Width profile of a Gaussian beam, equation \eqref{waistprofile}. The beam is focused at the position $z = 0$, here it assumes the minimum width $W_0$, also referred to as waist. $z_0$ is the Rayleigh range where the width is $\sqrt{2}W_0$}
+\caption{Width profile of a Gaussian beam along the direction of travel of the beam, equation \eqref{waistprofile}. The beam is focused at the position $z = 0$, here it assumes the minimum width $W_0$, also referred to as the waist. $z_0$ is the Rayleigh range where the width is $\sqrt{2}W_0$}
 \label{gaussprofile}
 \end{figure}
 In order to study such reshaping, let us consider a thin spherical lens with focal length $f$, and radius of curvature $R_l$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor $k(x^2 + y^2)/2f$ to equation \eqref{gaussianbeams} \cite{beamparameters}. We can match the phase of the incoming and emerging waves, which have respectively radius of curvature $R$, and $R'$, this results in
