@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  13 APR 2020 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  14 APR 2020 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1294,63 +1294,63 @@ LaTeX Warning: Reference `transitiontable' on page 14 undefined on input line 2
 89.
 
 
-LaTeX Warning: Reference `exp:photons' on page 14 undefined on input line 289.
+LaTeX Warning: Reference `exp:photons' on page 14 undefined on input line 291.
 
 <./img/photongenerationscheme.png, id=391, 368.39633pt x 285.82785pt>
 File: ./img/photongenerationscheme.png Graphic file (type png)
 <use ./img/photongenerationscheme.png>
 Package pdftex.def Info: ./img/photongenerationscheme.png  used on input line 2
-92.
+94.
 (pdftex.def)             Requested size: 271.7837pt x 210.87689pt.
 <./img/trap.png, id=394, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
-Package pdftex.def Info: ./img/trap.png  used on input line 309.
+Package pdftex.def Info: ./img/trap.png  used on input line 311.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
 [14] [15 <./img/photongenerationscheme.png>] [16 <./img/trap.png>]
 <./img/positions_ions2.png, id=439, 858.3705pt x 481.9095pt>
 File: ./img/positions_ions2.png Graphic file (type png)
 <use ./img/positions_ions2.png>
-Package pdftex.def Info: ./img/positions_ions2.png  used on input line 372.
+Package pdftex.def Info: ./img/positions_ions2.png  used on input line 374.
 (pdftex.def)             Requested size: 452.96826pt x 254.30782pt.
  [17]
 [18 <./img/positions_ions2.png>] [19]
 <./img/gauss2.png, id=484, 421.69545pt x 451.6875pt>
 File: ./img/gauss2.png Graphic file (type png)
 <use ./img/gauss2.png>
-Package pdftex.def Info: ./img/gauss2.png  used on input line 450.
+Package pdftex.def Info: ./img/gauss2.png  used on input line 452.
 (pdftex.def)             Requested size: 271.7837pt x 291.1122pt.
 <./img/gaussprofile.png, id=488, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
-Package pdftex.def Info: ./img/gaussprofile.png  used on input line 466.
+Package pdftex.def Info: ./img/gaussprofile.png  used on input line 468.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
  [20 <./img/gauss2.png>] [21 <./img/gaussprofile.png>]
 <./img/aod2.png, id=516, 389.17395pt x 311.12234pt>
 File: ./img/aod2.png Graphic file (type png)
 <use ./img/aod2.png>
-Package pdftex.def Info: ./img/aod2.png  used on input line 501.
+Package pdftex.def Info: ./img/aod2.png  used on input line 503.
 (pdftex.def)             Requested size: 226.48413pt x 181.05875pt.
  [22 <./img/aod2.png>] [23]
 <./img/exp1.png, id=540, 463.2507pt x 394.23285pt>
 File: ./img/exp1.png Graphic file (type png)
 <use ./img/exp1.png>
-Package pdftex.def Info: ./img/exp1.png  used on input line 546.
+Package pdftex.def Info: ./img/exp1.png  used on input line 548.
 (pdftex.def)             Requested size: 317.0764pt x 269.84935pt.
 
 
 LaTeX Warning: Reference `sec:expparameters' on page 24 undefined on input line
- 547.
+ 549.
 
 
 LaTeX Warning: Reference `sec:expparameters' on page 24 undefined on input line
- 547.
+ 549.
 
 [24] [25 <./img/exp1.png>]
 <./img/exp2.png, id=564, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
-Package pdftex.def Info: ./img/exp2.png  used on input line 579.
+Package pdftex.def Info: ./img/exp2.png  used on input line 581.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
 ) (./conclusion.tex [26 <./img/exp2.png>]
 Chapter 3.
@@ -1522,7 +1522,7 @@ dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on main.pdf (45 pages, 2904904 bytes).
+Output written on main.pdf (45 pages, 2904887 bytes).
 PDF statistics:
  1052 PDF objects out of 1200 (max. 8388607)
  805 compressed objects within 9 object streams
