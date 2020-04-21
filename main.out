@@ -25,8 +25,23 @@
 \BOOKMARK [2][-]{subsection.3.1.2}{Trapping, cooling, and state readout}{section.3.1}% 25
 \BOOKMARK [1][-]{section.3.2}{393 nm laser}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.3}{Experiment control}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Conclusions and outlook}{}% 28
-\BOOKMARK [1][-]{section*.24}{References}{chapter.4}% 29
-\BOOKMARK [0][-]{section*.26}{Appendix}{}% 30
-\BOOKMARK [0][-]{Appendix.a.A}{AOD datasheet}{}% 31
-\BOOKMARK [0][-]{Appendix.a.B}{Polarization characterization}{}% 32
+\BOOKMARK [0][-]{chapter.4}{Design and simulation of the addressing setup}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Addressing system overview and requirements}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Objective and AOD}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Design simulation}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Physical implementation}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Experimental results}{}% 33
+\BOOKMARK [1][-]{section.5.1}{AOD}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Full test setup characterization}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.2.1}{Waist: Knife-Edge method}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.2}{Waist: Camera}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.3}{Polarization}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.4}{Stability}{section.5.2}% 39
+\BOOKMARK [1][-]{section.5.3}{Final installed system}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.3.1}{Single qubit manipulation}{section.5.3}% 41
+\BOOKMARK [2][-]{subsection.5.3.2}{Photon production}{section.5.3}% 42
+\BOOKMARK [0][-]{chapter.6}{Conclusions and outlook}{}% 43
+\BOOKMARK [1][-]{section*.47}{References}{chapter.6}% 44
+\BOOKMARK [0][-]{section*.49}{Appendix}{}% 45
+\BOOKMARK [0][-]{Appendix.a.A}{AOD datasheet}{}% 46
+\BOOKMARK [0][-]{Appendix.a.B}{Polarization characterization}{}% 47
