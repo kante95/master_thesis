@@ -361,14 +361,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="190.35877"
-     inkscape:cy="630.14873"
+     inkscape:zoom="5.6"
+     inkscape:cx="241.44048"
+     inkscape:cy="850.21464"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="697"
+     inkscape:window-height="739"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -744,13 +744,13 @@
          style="text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
          id="tspan3333">qubit laser</tspan></text>
     <rect
-       style="opacity:1;fill:#00ecf1;fill-opacity:1;fill-rule:nonzero;stroke:#00ecf1;stroke-width:0.259;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       style="opacity:1;fill:#00ecf1;fill-opacity:1;fill-rule:nonzero;stroke:#00ecf1;stroke-width:0.28676948;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect2877-2"
-       width="15.686011"
-       height="1.984375"
-       x="-9.8441334"
-       y="94.697639"
-       transform="rotate(-44.587031)" />
+       width="10.657779"
+       height="3.5804355"
+       x="-75.686562"
+       y="62.465252"
+       transform="matrix(0.0019766,-0.99999805,0.99998777,0.00494517,0,0)" />
     <path
        style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4598)"
        d="M 67.218285,70.221796 88.466212,70.104374 88.046508,123.14704"
@@ -930,13 +930,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.2455554px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="60.670181"
+       x="61.898605"
        y="64.208237"
        id="text6756"><tspan
          sodipodi:role="line"
          id="tspan6754"
-         x="60.670181"
+         x="61.898605"
          y="64.208237"
-         style="stroke-width:0.26458332">DR</tspan></text>
+         style="stroke-width:0.26458332">BP</tspan></text>
   </g>
 </svg>

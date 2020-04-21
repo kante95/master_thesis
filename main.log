@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  14 APR 2020 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  21 APR 2020 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,7 +1174,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<img/logo.jpg, id=108, 2372.865pt x 936.49875pt>
+<img/logo.jpg, id=132, 2372.865pt x 936.49875pt>
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
 Package pdftex.def Info: img/logo.jpg  used on input line 33.
@@ -1213,7 +1213,7 @@ This may cause the page layout to be inconsistent, however.
 
  [3]
 Chapter 1.
-<./img/photongeneration3.png, id=183, 179.13927pt x 125.38844pt>
+<./img/photongeneration3.png, id=214, 179.13927pt x 125.38844pt>
 File: ./img/photongeneration3.png Graphic file (type png)
 <use ./img/photongeneration3.png>
 Package pdftex.def Info: ./img/photongeneration3.png  used on input line 143.
@@ -1235,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<./img/qubitmanipulation.png, id=204, 140.56705pt x 101.59421pt>
+<./img/qubitmanipulation.png, id=234, 140.56705pt x 101.59421pt>
 File: ./img/qubitmanipulation.png Graphic file (type png)
 <use ./img/qubitmanipulation.png>
 Package pdftex.def Info: ./img/qubitmanipulation.png  used on input line 152.
@@ -1246,39 +1246,30 @@ Package pdftex.def Info: ./img/qubitmanipulation.png  used on input line 152.
 ]
 Chapter 2.
 [5]
-<./img/bloch_sphere.png, id=237, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=267, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 22.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
  [6 <./img/bloch_sphere.png>]
-<./img/calciumscheme.png, id=256, 365.949pt x 309.447pt>
+<./img/calciumscheme.png, id=286, 365.949pt x 309.447pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 94.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
-
-
-LaTeX Warning: Reference `sec:calciumion' on page 7 undefined on input line 95.
-
-
-
-LaTeX Warning: Reference `sec:calciumion' on page 7 undefined on input line 95.
-
-
-[7] [8 <./img/calciumscheme.png>]
-<./img/2levelatom.png, id=286, 186.4566pt x 127.1952pt>
+ [7] [8 <./img/calciumscheme.png>]
+<./img/2levelatom.png, id=318, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 132.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
-<./img/rabiflops.png, id=291, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=323, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 153.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [9 <./img/2levelatom.png>]
-<./img/3levelmodel.png, id=305, 370.38374pt x 424.2249pt>
+<./img/3levelmodel.png, id=338, 370.38374pt x 424.2249pt>
 File: ./img/3levelmodel.png Graphic file (type png)
 <use ./img/3levelmodel.png>
 Package pdftex.def Info: ./img/3levelmodel.png  used on input line 187.
@@ -1290,93 +1281,139 @@ input line 233.
 
 [12] [13]
 
-LaTeX Warning: Reference `transitiontable' on page 14 undefined on input line 2
-89.
-
-
 LaTeX Warning: Reference `exp:photons' on page 14 undefined on input line 291.
 
-<./img/photongenerationscheme.png, id=391, 368.39633pt x 285.82785pt>
+<./img/photongenerationscheme.png, id=424, 368.39633pt x 285.82785pt>
 File: ./img/photongenerationscheme.png Graphic file (type png)
 <use ./img/photongenerationscheme.png>
 Package pdftex.def Info: ./img/photongenerationscheme.png  used on input line 2
 94.
 (pdftex.def)             Requested size: 271.7837pt x 210.87689pt.
-<./img/trap.png, id=394, 494.11751pt x 169.06602pt>
+<./img/trap.png, id=427, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
 Package pdftex.def Info: ./img/trap.png  used on input line 311.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
 [14] [15 <./img/photongenerationscheme.png>] [16 <./img/trap.png>]
-<./img/positions_ions2.png, id=439, 858.3705pt x 481.9095pt>
+<./img/positions_ions2.png, id=474, 858.3705pt x 481.9095pt>
 File: ./img/positions_ions2.png Graphic file (type png)
 <use ./img/positions_ions2.png>
 Package pdftex.def Info: ./img/positions_ions2.png  used on input line 374.
 (pdftex.def)             Requested size: 452.96826pt x 254.30782pt.
  [17]
 [18 <./img/positions_ions2.png>] [19]
-<./img/gauss2.png, id=484, 421.69545pt x 451.6875pt>
+<./img/gauss2.png, id=518, 421.69545pt x 451.6875pt>
 File: ./img/gauss2.png Graphic file (type png)
 <use ./img/gauss2.png>
 Package pdftex.def Info: ./img/gauss2.png  used on input line 452.
 (pdftex.def)             Requested size: 271.7837pt x 291.1122pt.
-<./img/gaussprofile.png, id=488, 393.3897pt x 103.1052pt>
+<./img/gaussprofile.png, id=522, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
 Package pdftex.def Info: ./img/gaussprofile.png  used on input line 468.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
  [20 <./img/gauss2.png>] [21 <./img/gaussprofile.png>]
-<./img/aod2.png, id=516, 389.17395pt x 311.12234pt>
+<./img/aod2.png, id=550, 389.17395pt x 311.12234pt>
 File: ./img/aod2.png Graphic file (type png)
 <use ./img/aod2.png>
 Package pdftex.def Info: ./img/aod2.png  used on input line 503.
 (pdftex.def)             Requested size: 226.48413pt x 181.05875pt.
  [22 <./img/aod2.png>] [23]
-<./img/exp1.png, id=540, 463.2507pt x 394.23285pt>
+<./img/exp1.png, id=574, 463.2507pt x 394.23285pt>
 File: ./img/exp1.png Graphic file (type png)
 <use ./img/exp1.png>
 Package pdftex.def Info: ./img/exp1.png  used on input line 548.
 (pdftex.def)             Requested size: 317.0764pt x 269.84935pt.
-
-
-LaTeX Warning: Reference `sec:expparameters' on page 24 undefined on input line
- 549.
-
-
-LaTeX Warning: Reference `sec:expparameters' on page 24 undefined on input line
- 549.
-
-[24] [25 <./img/exp1.png>]
-<./img/exp2.png, id=564, 315.8199pt x 255.8358pt>
+ [24] [25 <./img/exp1.png>]
+<./img/exp2.png, id=601, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
 Package pdftex.def Info: ./img/exp2.png  used on input line 581.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
-) (./conclusion.tex [26 <./img/exp2.png>]
+)
+(./expsetup.tex [26 <./img/exp2.png>]
 Chapter 3.
-
-LaTeX Warning: Reference `exp:photons' on page 27 undefined on input line 5.
-
-) [27
+File: ./img/calciumscheme.png Graphic file (type png)
+<use ./img/calciumscheme.png>
+Package pdftex.def Info: ./img/calciumscheme.png  used on input line 11.
+(pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
+[27
 
 ]
+<./img/phototrap_withletters_andarrows.png, id=650, 1284.9606pt x 963.3591pt>
+File: ./img/phototrap_withletters_andarrows.png Graphic file (type png)
+<use ./img/phototrap_withletters_andarrows.png>
+Package pdftex.def Info: ./img/phototrap_withletters_andarrows.png  used on inp
+ut line 39.
+(pdftex.def)             Requested size: 317.0764pt x 237.70816pt.
+
+
+LaTeX Warning: Reference `lossesplot' on page 28 undefined on input line 45.
+
+
+LaTeX Warning: Reference `sec:obj' on page 28 undefined on input line 49.
+
+[28] [29 <./img/phototrap_withletters_andarrows.png>]
+<./img/imgsetup.png, id=671, 492.8814pt x 294.50024pt>
+File: ./img/imgsetup.png Graphic file (type png)
+<use ./img/imgsetup.png>
+Package pdftex.def Info: ./img/imgsetup.png  used on input line 55.
+(pdftex.def)             Requested size: 362.37598pt x 216.52022pt.
+
+
+LaTeX Warning: Reference `sec:addressing' on page 30 undefined on input line 58
+.
+
+
+LaTeX Warning: Reference `sec:addressing' on page 30 undefined on input line 58
+.
+
+<./img/scheme_393.pdf, id=672, 963.6095pt x 542.025pt>
+File: ./img/scheme_393.pdf Graphic file (type pdf)
+<use ./img/scheme_393.pdf>
+Package pdftex.def Info: ./img/scheme_393.pdf  used on input line 66.
+(pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
+[30 <./img/imgsetup.png>] [31 <./img/scheme_393.pdf>]
+
+LaTeX Warning: Reference `sec:singlequbitmanipulation' on page 32 undefined on 
+input line 84.
+
+<./img/expcontrol.png, id=725, 232.7094pt x 233.4321pt>
+File: ./img/expcontrol.png Graphic file (type png)
+<use ./img/expcontrol.png>
+Package pdftex.def Info: ./img/expcontrol.png  used on input line 89.
+(pdftex.def)             Requested size: 226.48413pt x 227.19109pt.
+<./img/tricsmodified.png, id=726, 1445.4pt x 813.0375pt>
+File: ./img/tricsmodified.png Graphic file (type png)
+<use ./img/tricsmodified.png>
+Package pdftex.def Info: ./img/tricsmodified.png  used on input line 96.
+(pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
+) (./conclusion.tex [32] [33 <./img/expcontrol.png> <./img/tricsmodified.png>]
+[34
+
+]
+Chapter 4.
+
+LaTeX Warning: Reference `exp:photons' on page 35 undefined on input line 5.
+
+) [35]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 179.
 
-(./main.bbl [28
+(./main.bbl [36
 
-] [29] [30] [31] [32]
+] [37] [38] [39] [40]
 Overfull \hbox (26.74219pt too wide) in paragraph at lines 373--375
 []\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
 ownload/fibercollimators60fc.pdf. 
  []
 
-) [33] [34
+) [41] [42
 
 ]
 Appendix A.
-<SKM_C36819012815280.pdf, id=635, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=793, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 193.
@@ -1394,7 +1431,7 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 194.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
-<SKM_C36819012815280.pdf, id=638, page=2, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=796, page=2, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 2>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
@@ -1405,11 +1442,11 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
 .
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
-[35]
+[43]
 Overfull \vbox (95.14636pt too high) has occurred while \output is active []
 
 
-[36 <./SKM_C36819012815280.pdf>]
+[44 <./SKM_C36819012815280.pdf>]
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 2>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
@@ -1425,8 +1462,8 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
 .
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
- [37 <./SKM_C36819012815280.pdf>]
-<SKM_C36819012815280.pdf, id=858, page=3, 597.23125pt x 844.15375pt>
+ [45 <./SKM_C36819012815280.pdf>]
+<SKM_C36819012815280.pdf, id=1016, page=3, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 3>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 194
@@ -1442,51 +1479,51 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 194
 .
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
- [38 <./SKM_C36819012815280.pdf>]
+ [46 <./SKM_C36819012815280.pdf>]
 Appendix B.
 
-LaTeX Warning: Reference `sec:polarization' on page 39 undefined on input line 
+LaTeX Warning: Reference `sec:polarization' on page 47 undefined on input line 
 197.
 
 
-LaTeX Warning: Reference `polarizationstable' on page 39 undefined on input lin
+LaTeX Warning: Reference `polarizationstable' on page 47 undefined on input lin
 e 197.
 
-<./img/pol3.png, id=910, 987.2082pt x 489.9906pt>
+<./img/pol3.png, id=1067, 987.2082pt x 489.9906pt>
 File: ./img/pol3.png Graphic file (type png)
 <use ./img/pol3.png>
 Package pdftex.def Info: ./img/pol3.png  used on input line 200.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
 
-LaTeX Warning: Reference `addressingsetup' on page 39 undefined on input line 2
+LaTeX Warning: Reference `addressingsetup' on page 47 undefined on input line 2
 01.
 
 
-LaTeX Warning: Reference `addressingsetup' on page 39 undefined on input line 2
+LaTeX Warning: Reference `addressingsetup' on page 47 undefined on input line 2
 01.
 
-<./img/pol1.png, id=911, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1068, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 206.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=912, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1069, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 212.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-[39
+[47
 
  <./img/pol3.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
- [40 <./img/pol1.png> <./img/pol2.png>]
+ [48 <./img/pol1.png> <./img/pol2.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
  (./main.aux
 (./frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 16938D266C1D9699C93DE939E12567AD;1816.
+(rerunfilecheck)             Checksum: 9B715FE1F74B67A8B5700A69AE7A79FC;2249.
 
 
 LaTeX Warning: There were undefined references.
@@ -1496,36 +1533,40 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25436 strings out of 492167
- 428740 string characters out of 6131559
- 562831 words of memory out of 5000000
- 29027 multiletter control sequences out of 15000+600000
- 559084 words of font info for 165 fonts, out of 8000000 for 9000
+ 25582 strings out of 492167
+ 431196 string characters out of 6131559
+ 568547 words of memory out of 5000000
+ 29123 multiletter control sequences out of 15000+600000
+ 564651 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,100p,1428b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmext
-ra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on main.pdf (45 pages, 2904887 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc120
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb>
+Output written on main.pdf (53 pages, 10706777 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 805 compressed objects within 9 object streams
- 233 named destinations out of 1000 (max. 500000)
- 18249 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1228 PDF objects out of 1440 (max. 8388607)
+ 944 compressed objects within 10 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 26514 words of extra memory for PDF output out of 29859 (max. 10000000)
 

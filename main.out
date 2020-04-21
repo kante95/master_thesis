@@ -19,8 +19,14 @@
 \BOOKMARK [1][-]{section.2.5}{Experiments model}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.5.1}{Addressed qubit manipulation}{section.2.5}% 20
 \BOOKMARK [2][-]{subsection.2.5.2}{Addressed photon generation}{section.2.5}% 21
-\BOOKMARK [0][-]{chapter.3}{Conclusions and outlook}{}% 22
-\BOOKMARK [1][-]{section*.17}{References}{chapter.3}% 23
-\BOOKMARK [0][-]{section*.19}{Appendix}{}% 24
-\BOOKMARK [0][-]{Appendix.a.A}{AOD datasheet}{}% 25
-\BOOKMARK [0][-]{Appendix.a.B}{Polarization characterization}{}% 26
+\BOOKMARK [0][-]{chapter.3}{Existing experimental system and techniques}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Ion trap and key techniques}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{Calcium Ions}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.2}{Trapping, cooling, and state readout}{section.3.1}% 25
+\BOOKMARK [1][-]{section.3.2}{393 nm laser}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.3}{Experiment control}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Conclusions and outlook}{}% 28
+\BOOKMARK [1][-]{section*.24}{References}{chapter.4}% 29
+\BOOKMARK [0][-]{section*.26}{Appendix}{}% 30
+\BOOKMARK [0][-]{Appendix.a.A}{AOD datasheet}{}% 31
+\BOOKMARK [0][-]{Appendix.a.B}{Polarization characterization}{}% 32
