@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.4}Laser beam}{19}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Gaussian beams}{19}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}Beam stearing via Acousto-optical Deflectors}{22}{subsection.2.4.2}% 
-\contentsline {section}{\numberline {2.5}Experiments model}{24}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Basic model of key experiments}{24}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Addressed qubit manipulation}{24}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}Addressed photon generation}{26}{subsection.2.5.2}% 
 \contentsline {chapter}{\numberline {3}Existing experimental system and techniques}{27}{chapter.3}% 
