@@ -93,7 +93,7 @@ H_a = \hbar\omega_0 \ket{1}\bra{1},
 where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. \begin{figure}
 \centering
 \includegraphics[width = .6 \textwidth]{calciumscheme}
-\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729nm.}
+\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729 nm.}
 \label{qubitschemereference}
 \end{figure}
 The Hamiltonian of the interaction between the dipole atomic moment $\mathbf{d}$ and the electric field of the laser can be written \cite{steck}
@@ -284,6 +284,7 @@ In this case the transitions strengths, i.e. the projection of the laser polariz
 \end{equation}
 where the Rabi frequency of the second laser is now replaced by the atom cavity coupling $g$. The Raman resonance appears when the detuning $\Delta$ of the laser and the cavity are the same. The effective spontaneous decay rate from this level is from equation \eqref{eq:gammaeff}
 \begin{equation}
+\label{gammaeff}
 \Gamma_{eff} = \left(\frac{\Omega}{2\Delta}\right)^2\Gamma
 \end{equation}
 The effective Rabi frequency $\Omega_{eff}$ and the effective spontaneous decay $\Gamma_{eff}$ are competitive effects and the ratio of the two depends on the detuning $\Omega_{eff}/\Gamma_{eff} \propto \Delta/\Omega$. It is therefore possible to reduce spontaneous emission effects if the detuning is large enough.\\
@@ -501,19 +502,15 @@ n(x,t) = n - \Delta n_0 \cos \left(\Omega_s t - qx \right),
 where $n$ is the refractive index of the unperturbed medium, $\Delta n_0$ is the amplitude of the perturbation. $\Delta n_0$ is proportional to the square root of the sound intensity.
 \begin{figure}
 \centering
-\includegraphics[width = .5\textwidth]{aod2}
-\caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected due to the interaction with the effective optical grating created by the acoustic waves.}
+\includegraphics[width = .5\textwidth]{aod3}
+\caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected due to the interaction with the effective optical grating created by the acoustic waves. $L$ is the interaction length.}
 \label{AOD}
 \end{figure}
-The complex amplitude of the refracted light $r$ can be calculated by dividing the crystal in thin layers with thickness small compared to the acoustic wavelength. Therefore, we assume that the refractive index $n(x)$ is approximately constant across the layer. The total refraction is given by all the contributions $\frac{dr}{dx}$ of every layer, we can therefore integrate in the $x$ direction over the length $L$ as follow:
+The complex amplitude of the refracted light\footnote{defined as $E_r/E_i = r$, where $E_r$ is the refracted electric field, and $E_i$ is the input field} $r$ can be calculated by dividing the crystal in thin layers with thickness small compared to the acoustic wavelength. Therefore, we assume that the refractive index $n(x)$ is approximately constant across the layer. The total refraction is given by all the contributions $dr/dx$ of every layer, we can therefore integrate in the $x$ direction over the length $L$ (see Figure \ref{AOD}) as follow:
 \begin{equation}
 r = \int_{L/2}^{L/2} e^{i2kx \sin\theta} \frac{dr}{dx} \,dx
 \end{equation}
-The included phase takes into consideration the different phase of the input laser beam when different layers are met. The integral can be solved with a change of variable
-\begin{equation}
-\frac{dr}{dx} = \frac{dr}{dn}\frac{dn}{dx} = \frac{dr}{dn} q \Delta n_0 \sin \left(\Omega_s t - qx \right),
-\end{equation}
-The sine function can be written as exponential and now the integral contains only exponential functions which are trivial to calculate. At the end we obtain two contributions for the refracted wave $r$:
+The included phase $e^{i2kx \sin\theta}$ takes into consideration the different phase of the input laser beam when different layers are met. The integral can be solved with a change of variable $dr/dx = q \Delta n_0 \sin \left(\Omega_s t - qx \right)dr/dn $. The sine function can be written as exponential and now the integral contains only exponential functions which are trivial to calculate. At the end we obtain two contributions for the refracted wave $r$:
 \begin{equation}
 \label{mainAOD}
 r = r_+ + r_- \qquad r_\pm = \pm i r_0 \text{sinc} \left[(2k\sin(\theta) \mp q)\frac{L}{2\pi} \right]e^{\pm i\Omega_s t}
@@ -530,7 +527,7 @@ From equation \eqref{mainAOD} we can notice that an extra phase factor proportio
 \label{eq:aodshift}
 \omega_r  =  \omega + \Omega_s.
 \end{equation}
-The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead exploit the fact that the deflection angle $\theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
+The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead shift the direction of the beam by exploiting the fact that the deflection angle $\theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
 \begin{equation}
 \theta \simeq \frac{\lambda}{2 v_s}f,
 \end{equation}
@@ -539,7 +536,7 @@ AOMs and AODs differ by the relative divergence of the optical and acoustic beam
 the choice of the crystal and acoustic mode, for instance, a slow acoustic velocity and shear mode are preferred in AODs \cite{handbookoptics}.
 
 \section{Basic model of key experiments}
-The aim of this thesis is to perform two experiments with ions: qubit manipulation, and photon generation. In addition to test these two functionalities, the experiments are also designed to asses the performance of the addressing system as discussed below. In both cases a string of 3-4 ions is loaded in the trap, the addressed Raman laser is focused on a single ion and experiments are carried out.
+To fulfill the goals of this thesis we perform two key experiments with ions: single-ion qubit manipulation and single-ion photon generation. This section presents a short overview of the two key experiments, using the theory introduced in the previous sections.
 
 \subsection{Addressed qubit manipulation}
 \label{sec:expqubit}
@@ -547,32 +544,31 @@ The aim of this thesis is to perform two experiments with ions: qubit manipulati
 \centering
 \includegraphics[width=.7\textwidth]{exp1}
 \caption{a) Relevant levels for the experiment, the qubit is encoded in the 729 nm transition, the 393 nm laser is used to shift the $\ket{S}$ level via AC Stark shift b) Experiment pulse sequence, Doppler cooling and state readout are described in Section \ref{sec:expparameters}. The time $\tau$ had a variable length.}
-\label{sequence}
+\label{img:qualcosa}
 \end{figure}
-As we have seen, ions can be used to encode and process quantum information. As highlighted in Figure \ref{sequence}, the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a Stark shift $\delta = \Omega^2/4\Delta$ without actually exciting the state. As discussed in Section \ref{sec:dissipation}, in order for this to happen, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
+As highlighted in Figure \ref{img:qualcosa}, the qubit is encoded in the $\ket{S} \to \ket{D}$ transition. The 393 nm transition from $\ket{S}\to \ket{P}$ can be used to induce a phase shift on the ground state of the qubit $\ket{S}$. In the off resonant regime, the laser induces a AC Stark shift $\delta = \Omega^2/4\Delta$ (see Section \ref{laserioninteractions}) on the $\ket{S}$ and $\ket{P}$ states without actually exciting the $\ket{P}$ state. The effect of such AC Stark shift on the qubit is to shift the relative phase between $\ket{S}$ and $\ket{D}$ as showed below. As discussed in Section \ref{sec:dissipation}, in order to reduce spontaneous scattering in comparison to AC Stark shift, we should have $\delta \gg \Gamma_{eff}$. Therefore in the experiment we decided to set the detuning such that the ratio between the Stark shift and the spontaneous scattering rate is 100
 \begin{equation}
 \frac{\delta}{\Gamma_{eff}} = \frac{2\Delta}{\Gamma} \sim 100 \implies \Delta \sim 3\,\text{GHz}.
 \end{equation}
-Furthermore, ions can be used as sensitive tools for beam profiling, the addressed manipulation changes only the qubit state of a single ion. Hence, by measuring the state of all ions, and scanning the beam across the ions string, a beam profile can be obtained. In a single experiment we can therefore characterize the beam and demonstrate qubit manipulation.
-The experiment consists of Ramsey interferometry, already performed in the past to measure AC Stark shift \cite{starkshift}.
-In summary, the idea is to send a resonant $\pi/2$ pulse at 729 nm, which brings the qubit state to a superposition $\ket{S}+\ket{D}$, here another in phase resonant $\pi/2$ pulse at 729 nm would bring the final state to the excited level $\ket{D}$. However, if between the two 729 nm pulses, AC stark shift is induced by a pulse of 393 nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$, and the final state after the second 729 nm pulse will depend on the shift induced by the 393nm laser. The phase of the second 729 nm pulse can also be varied. By calculating the final probability $P_D$ it is possible to infer the Rabi frequency of the 393 nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
+Furthermore, qubits can be used as sensitive tools for beam profiling. By measuring the state of all ion qubits individually, and scanning the beam across the ions string, a beam profile can be obtained. In a single experiment we can therefore characterize the beam and demonstrate qubit manipulation.
+That experiment consists of Ramsey interferometry \cite{Ramsey1950}. In summary, we prepare the qubit in the $\ket{S}$ state, then the idea is to send a resonant $\pi/2$ pulse at 729 nm, which brings the qubit state to a superposition $\ket{S}+\ket{D}$, a second identical pulse would bring the final state to the excited level $\ket{D}$. However, if between the two 729 nm pulses, an AC stark shift is induced by a pulse of 393 nm light, an additional phase is added to the superposition $\ket{S}+\ket{D}$. The phase of the second $\pi/2$ pulse is left as a variable to be scanned, as considered below. By calculating the final probability to find the qubit in the D state ($P_D$) it is possible to infer the Rabi frequency of the 393 nm light. Rigorous mathematic can be done with matrices \eqref{laserpulse} here called $U_{729}$ and \eqref{acstarkrotation}, referred to as $U_{393}$. After the three pulse sequence the final state is
 \begin{equation}
 \begin{split}
 \ket{\psi_f} &= U_{729}(\pi,\phi)U_{393}(\delta)U_{729}(\pi,0)\ket{S} \\
 &= \frac{1}{2}\left(e^{-i\frac{\delta}{2}\tau}-e^{-i\phi}\right)\ket{S}-\frac{i}{2}\left(1 + e^{-i\frac{\delta}{2}\tau} e^{-i\phi}\right)\ket{D}
 \end{split}
 \end{equation}
-where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi frequency of the 393nm light that we want to measure. The final probability is then
+where $\delta = \Omega^2/4\Delta$ is the Stark shift, and $\Omega$ is the Rabi frequency of the 393 nm light that we want to measure. The final probability is then
 \begin{equation}
 \label{stupidequation}
 P_D = \cos^2\left(2\phi + 2\frac{\delta \tau}{2}\right) = \cos^2\left(2\phi + \frac{\Omega^2 \tau}{4\Delta}\right).
 \end{equation}
-As we can see, the final signal depends on the phase of the second 729nm pulse $\phi$ and on the Stark shift induced by the 393nm laser. To get $\Omega^2$ a simple formula inversion can be done
+As we can see, $P_D$ depends on the phase of the second 729 nm pulse $\phi$ and on the Stark shift induced by the 393 nm laser. To get $\Omega^2$ a simple formula inversion can be done
 \begin{equation}
 \label{eq:ptointensity}
-\Omega^2 = \left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right].
+\Omega^2 = \frac{4\Delta}{\tau}\left[\text{arccos}\left(\sqrt{P_D}\right)-2\phi \right].
 \end{equation}
-The phase $\phi$ can be set experimentally and all constants have been dropped as the data will be normalized. The experiment sequence is in Figure \ref{sequence}. For every sequence, a stage of Doppler Cooling at the beginning is included and at the end of the pulses state readout with single-ion resolving camera is performed. For each 393 nm pulse length $\tau$ the sequence is repeated $N=50$ times to obtain and estimate the electronic excitation probability.
+The phase $\phi$ can be set experimentally.
 
 \subsection{Addressed photon generation}
 \label{sec:expphoton}
@@ -582,9 +578,10 @@ The phase $\phi$ can be set experimentally and all constants have been dropped a
 \caption{Scheme of the Raman process used to generate photons, via a cavity enhanced Raman process (Section \ref{sec:ramanprocess}). The electron in the $\ket{S}$ state is excited to the $\ket{D}$ level by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity.}
 \label{img:sec2}
 \end{figure}
-The second experiment consists of generating photons from one single ion out of a string, using the cavity-mediated Raman process described in Section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. First, the ion is positioned in a maximum of the cavity vacuum electric field such that the coupling atom-cavity $g$ is maximized. Second, a 393 nm laser pulse triggers the generation of a photon into the cavity through the Raman process. The detunings of the cavity and laser pulse must be equal, moreover the detuning should be large enough to adiabatically eliminate the $P$ state and avoid spontaneous scattering. As seen in Section \ref{sec:ramanprocess}, this is ensured by a detuning of $\Delta \sim 400$ MHz.
-In this process the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity, the photon then exits from the cavity. The states involved in the dynamics are
+The second key experiment consists of generating photons from one single ion out of a string, using the cavity-mediated Raman process described in Section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. First, the ion is positioned in a maximum of the cavity vacuum electric field such that the coupling atom-cavity $g$ is maximized. Second, a 393 nm laser pulse triggers the generation of a photon into the cavity through the Raman process. As seen in Section \ref{sec:ramanprocess}, for the process to be stronger than the spontaneous scattering rate, we choose a detuning of $\Delta \sim 400$ MHz. In this case the effective Rabi frequency $\Omega_{eff}$ (Equation \eqref{omegaeff}) is larger than the effective spontaneous scattering rate $\Gamma_{eff}$ (Equation \eqref{gammaeff}).\\
+In the ideal case, the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity, the photon then exits from the cavity out of a preferred mirror. We perform the experiment using the following states
 \begin{equation}
-\ket{\text{S}_{1/2},-1/2} \to \ket{\text{P}_{3/2},-1/2} \to \ket{\text{D}_{5/2},-3/2}.
+\ket{\text{S}_{1/2},-1/2} \to \ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-3/2}.
 \end{equation}
-Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the addressing error in the two experiments are different. After the excitation and photo emission, state detection on all ions is performed, this gives the possibility to check if other ions have been undesirably addressed.
+These transitions are polarization dependent, the absorbed photon is $\sigma_-$ polarized, while a $\pi$ polarized photon is emitted. Since the magnetic field is orthogonal to the cavity, the $\pi$ polarized photon is projected into a linearly polarized cavity photon.\\
+Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the interaction of the addressed beam with the ion string in the two experiments is different. After the excitation and emission, qubit state detection on all ions is performed, this gives the possibility to check if other ions have been undesirably addressed.
