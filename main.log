@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  1 MAY 2020 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  1 MAY 2020 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,11 +964,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
 ) (./main.aux
-(./frontpage.aux)
-
-LaTeX Warning: Label `pol1' multiply defined.
-
-)
+(./frontpage.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -1174,7 +1170,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<img/logo.jpg, id=192, 2372.865pt x 936.49875pt>
+<img/logo.jpg, id=172, 2372.865pt x 936.49875pt>
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
 Package pdftex.def Info: img/logo.jpg  used on input line 33.
@@ -1207,13 +1203,69 @@ This may cause the page layout to be inconsistent, however.
 
 ] [2
 
-] (./main.toc [3])
+] (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4]
+ [3]
 Chapter 1.
-<./img/photongeneration3.png, id=293, 179.13927pt x 125.38844pt>
+
+LaTeX Warning: Citation `quantumtech' on page 1 undefined on input line 131.
+
+
+LaTeX Warning: Citation `shor' on page 1 undefined on input line 131.
+
+
+LaTeX Warning: Citation `grover' on page 1 undefined on input line 131.
+
+
+LaTeX Warning: Citation `RevModPhys.86.153' on page 1 undefined on input line 1
+31.
+
+
+LaTeX Warning: Citation `kimble' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `Wehnereaam9288' on page 1 undefined on input line 132.
+
+
+
+LaTeX Warning: Citation `Wehnereaam9288' on page 1 undefined on input line 132.
+
+
+
+LaTeX Warning: Citation `qkd2' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `secureident' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `blindcomputation' on page 1 undefined on input line 13
+2.
+
+
+LaTeX Warning: Citation `Wehnereaam9288' on page 1 undefined on input line 132.
+
+
+
+LaTeX Warning: Citation `quantumclocks' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `telescope' on page 1 undefined on input line 133.
+
+
+LaTeX Warning: Citation `distributedcomputing' on page 1 undefined on input lin
+e 133.
+
+
+LaTeX Warning: Citation `ionquantumcomputer' on page 1 undefined on input line 
+134.
+
+
+LaTeX Warning: Citation `stuteinterface' on page 1 undefined on input line 135.
+
+
+<./img/photongeneration3.png, id=205, 179.13927pt x 125.38844pt>
 File: ./img/photongeneration3.png Graphic file (type png)
 <use ./img/photongeneration3.png>
 Package pdftex.def Info: ./img/photongeneration3.png  used on input line 143.
@@ -1231,136 +1283,372 @@ l.145 \end{wrapfigure}
                        [1
 
 ]
+
+LaTeX Warning: Citation `stuteinterface' on page 2 undefined on input line 146.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<./img/qubitmanipulation.png, id=314, 140.56705pt x 101.59421pt>
+<./img/qubitmanipulation.png, id=211, 140.56705pt x 101.59421pt>
 File: ./img/qubitmanipulation.png Graphic file (type png)
 <use ./img/qubitmanipulation.png>
 Package pdftex.def Info: ./img/qubitmanipulation.png  used on input line 152.
 (pdftex.def)             Requested size: 181.18454pt x 130.95319pt.
+
+LaTeX Warning: Citation `chuang' on page 2 undefined on input line 155.
+
+
+LaTeX Warning: Citation `starkshift' on page 2 undefined on input line 155.
+
 [2 <./img/photongeneration3.png> <./img/qubitmanipulation.png>] (./theory.tex
 [3] [4
 
 ]
 Chapter 2.
 [5]
-<./img/bloch_sphere.png, id=347, 236.68425pt x 265.2309pt>
+<./img/bloch_sphere.png, id=240, 236.68425pt x 265.2309pt>
 File: ./img/bloch_sphere.png Graphic file (type png)
 <use ./img/bloch_sphere.png>
 Package pdftex.def Info: ./img/bloch_sphere.png  used on input line 23.
 (pdftex.def)             Requested size: 181.18454pt x 203.04666pt.
- [6 <./img/bloch_sphere.png>]
-<./img/calciumscheme.png, id=366, 365.949pt x 309.447pt>
+
+
+LaTeX Warning: Citation `hempel' on page 6 undefined on input line 42.
+
+[6 <./img/bloch_sphere.png>]
+
+LaTeX Warning: Citation `chuang' on page 7 undefined on input line 78.
+
+
+LaTeX Warning: Citation `ross' on page 7 undefined on input line 85.
+
+<./img/calciumscheme.png, id=255, 365.949pt x 309.447pt>
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 95.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
- [7] [8 <./img/calciumscheme.png>]
-<./img/2levelatom.png, id=398, 186.4566pt x 127.1952pt>
+
+LaTeX Warning: Citation `steck' on page 7 undefined on input line 99.
+
+
+LaTeX Warning: Citation `steck' on page 7 undefined on input line 107.
+
+[7] [8 <./img/calciumscheme.png>]
+<./img/2levelatom.png, id=283, 186.4566pt x 127.1952pt>
 File: ./img/2levelatom.png Graphic file (type png)
 <use ./img/2levelatom.png>
 Package pdftex.def Info: ./img/2levelatom.png  used on input line 133.
 (pdftex.def)             Requested size: 181.18454pt x 123.60045pt.
-<./img/rabiflops.png, id=403, 987.2082pt x 452.4102pt>
+<./img/rabiflops.png, id=288, 987.2082pt x 452.4102pt>
 File: ./img/rabiflops.png Graphic file (type png)
 <use ./img/rabiflops.png>
 Package pdftex.def Info: ./img/rabiflops.png  used on input line 154.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [9 <./img/2levelatom.png>]
-<./img/3levelmodel.png, id=417, 370.38374pt x 424.2249pt>
+
+LaTeX Warning: Citation `acstarkhamiltonian' on page 10 undefined on input line
+ 168.
+
+<./img/3levelmodel.png, id=301, 370.38374pt x 424.2249pt>
 File: ./img/3levelmodel.png Graphic file (type png)
 <use ./img/3levelmodel.png>
 Package pdftex.def Info: ./img/3levelmodel.png  used on input line 188.
 (pdftex.def)             Requested size: 135.89185pt x 155.6467pt.
- [10 <./img/rabiflops.png>] [11 <./img/3levelmodel.png>] [12]
+
+LaTeX Warning: Citation `steck' on page 10 undefined on input line 194.
+
+[10 <./img/rabiflops.png>]
+
+LaTeX Warning: Citation `russo' on page 11 undefined on input line 208.
+
+
+LaTeX Warning: Citation `steck' on page 11 undefined on input line 208.
+
+[11 <./img/3levelmodel.png>]
+
+LaTeX Warning: Citation `quantumnoise' on page 12 undefined on input line 222.
+
+
+LaTeX Warning: Citation `russo' on page 12 undefined on input line 229.
+
+
+LaTeX Warning: Citation `kimble' on page 12 undefined on input line 239.
+
+
+LaTeX Warning: Citation `Wehnereaam9288' on page 12 undefined on input line 242
+.
+
+
+LaTeX Warning: Citation `Hughes2002' on page 12 undefined on input line 243.
+
+
+LaTeX Warning: Citation `ion_quantumnetwork' on page 12 undefined on input line
+ 243.
+
+
+LaTeX Warning: Citation `Ritter2012' on page 12 undefined on input line 243.
+
+
+LaTeX Warning: Citation `kimble' on page 12 undefined on input line 243.
+
+
+LaTeX Warning: Citation `nocloning' on page 12 undefined on input line 244.
+
+
+LaTeX Warning: Citation `quantumrepeters' on page 12 undefined on input line 24
+4.
+
+
+LaTeX Warning: Citation `Pan2001' on page 12 undefined on input line 244.
+
+
+LaTeX Warning: Citation `PhysRevLett.70.1895' on page 12 undefined on input lin
+e 244.
+
+
+LaTeX Warning: Citation `Wehnereaam9288' on page 12 undefined on input line 244
+.
+
+[12]
+
+LaTeX Warning: Citation `ion_quantumnetwork' on page 13 undefined on input line
+ 249.
+
+
+LaTeX Warning: Citation `PhysRevLett.120.193603' on page 13 undefined on input 
+line 249.
+
+
+LaTeX Warning: Citation `Keller2004bis' on page 13 undefined on input line 249.
+
+
+
+LaTeX Warning: Citation `Kimble_1998' on page 13 undefined on input line 249.
+
+
+LaTeX Warning: Citation `steck' on page 13 undefined on input line 250.
+
+
+LaTeX Warning: Citation `qedreview' on page 13 undefined on input line 264.
+
+
+LaTeX Warning: Citation `helene' on page 13 undefined on input line 269.
+
 [13]
-<./img/photongenerationscheme.png, id=507, 368.39633pt x 285.82785pt>
+
+LaTeX Warning: Citation `stuteinterface' on page 14 undefined on input line 276
+.
+
+
+LaTeX Warning: Citation `stuteinterface' on page 14 undefined on input line 280
+.
+
+
+LaTeX Warning: Citation `Barros2009' on page 14 undefined on input line 280.
+
+
+LaTeX Warning: Citation `Krutyanskiy2019' on page 14 undefined on input line 29
+1.
+
+<./img/photongenerationscheme.png, id=349, 368.39633pt x 285.82785pt>
 File: ./img/photongenerationscheme.png Graphic file (type png)
 <use ./img/photongenerationscheme.png>
 Package pdftex.def Info: ./img/photongenerationscheme.png  used on input line 2
 96.
 (pdftex.def)             Requested size: 271.7837pt x 210.87689pt.
-<./img/trap.png, id=510, 494.11751pt x 169.06602pt>
+
+LaTeX Warning: Citation `RevModPhys.58.233' on page 14 undefined on input line 
+309.
+
+<./img/trap.png, id=351, 494.11751pt x 169.06602pt>
 File: ./img/trap.png Graphic file (type png)
 <use ./img/trap.png>
 Package pdftex.def Info: ./img/trap.png  used on input line 313.
 (pdftex.def)             Requested size: 317.0764pt x 108.49338pt.
- [14] [15 <./img/photongenerationscheme.png>] [16 <./img/trap.png>]
-<./img/positions_ions2.png, id=555, 858.3705pt x 481.9095pt>
+
+LaTeX Warning: Citation `traptheory' on page 14 undefined on input line 318.
+
+[14] [15 <./img/photongenerationscheme.png>]
+
+LaTeX Warning: Citation `Richards1983' on page 16 undefined on input line 327.
+
+
+LaTeX Warning: Citation `iondynamic' on page 16 undefined on input line 336.
+
+
+LaTeX Warning: Citation `traptheory' on page 16 undefined on input line 345.
+
+[16 <./img/trap.png>]
+
+LaTeX Warning: Citation `ion_spacing' on page 17 undefined on input line 364.
+
+
+LaTeX Warning: Citation `AUDI2003337' on page 17 undefined on input line 371.
+
+<./img/positions_ions2.png, id=384, 858.3705pt x 481.9095pt>
 File: ./img/positions_ions2.png Graphic file (type png)
 <use ./img/positions_ions2.png>
 Package pdftex.def Info: ./img/positions_ions2.png  used on input line 376.
 (pdftex.def)             Requested size: 452.96826pt x 254.30782pt.
+[17]
 
-[17] [18 <./img/positions_ions2.png>] [19]
-<./img/gauss2.png, id=600, 421.69545pt x 451.6875pt>
+LaTeX Warning: Citation `Wineland1998' on page 18 undefined on input line 391.
+
+
+LaTeX Warning: Citation `1975OptCo..13...68H' on page 18 undefined on input lin
+e 391.
+
+
+LaTeX Warning: Citation `foot' on page 18 undefined on input line 392.
+
+
+LaTeX Warning: Citation `gabriel' on page 18 undefined on input line 392.
+
+[18 <./img/positions_ions2.png>]
+
+LaTeX Warning: Citation `Eschner:03' on page 19 undefined on input line 426.
+
+
+LaTeX Warning: Citation `Eschner:03' on page 19 undefined on input line 432.
+
+
+LaTeX Warning: Citation `saleh' on page 19 undefined on input line 437.
+
+[19]
+<./img/gauss2.png, id=413, 421.69545pt x 451.6875pt>
 File: ./img/gauss2.png Graphic file (type png)
 <use ./img/gauss2.png>
 Package pdftex.def Info: ./img/gauss2.png  used on input line 454.
 (pdftex.def)             Requested size: 271.7837pt x 291.1122pt.
- [20 <./img/gauss2.png>]
-<./img/gaussprofile.png, id=613, 393.3897pt x 103.1052pt>
+
+
+LaTeX Warning: Citation `saleh' on page 20 undefined on input line 458.
+
+[20 <./img/gauss2.png>]
+<./img/gaussprofile.png, id=425, 393.3897pt x 103.1052pt>
 File: ./img/gaussprofile.png Graphic file (type png)
 <use ./img/gaussprofile.png>
 Package pdftex.def Info: ./img/gaussprofile.png  used on input line 470.
 (pdftex.def)             Requested size: 452.96826pt x 118.72421pt.
- [21 <./img/gaussprofile.png>]
-<./img/aod3.png, id=633, 379.4175pt x 311.12234pt>
+
+
+LaTeX Warning: Citation `beamparameters' on page 21 undefined on input line 474
+.
+
+[21 <./img/gaussprofile.png>]
+
+LaTeX Warning: Citation `diocane' on page 22 undefined on input line 492.
+
+
+LaTeX Warning: Citation `saleh' on page 22 undefined on input line 498.
+
+<./img/aod3.png, id=441, 379.4175pt x 311.12234pt>
 File: ./img/aod3.png Graphic file (type png)
 <use ./img/aod3.png>
 Package pdftex.def Info: ./img/aod3.png  used on input line 505.
 (pdftex.def)             Requested size: 226.48413pt x 185.72063pt.
- [22] [23 <./img/aod3.png>]
-<./img/exp1.png, id=666, 463.2507pt x 394.23285pt>
+[22] [23 <./img/aod3.png>]
+
+LaTeX Warning: Citation `handbookoptics' on page 24 undefined on input line 535
+.
+
+
+LaTeX Warning: Citation `handbookoptics' on page 24 undefined on input line 536
+.
+
+<./img/exp1.png, id=472, 463.2507pt x 394.23285pt>
 File: ./img/exp1.png Graphic file (type png)
 <use ./img/exp1.png>
 Package pdftex.def Info: ./img/exp1.png  used on input line 545.
 (pdftex.def)             Requested size: 317.0764pt x 269.84935pt.
 
-
 LaTeX Warning: Citation `Ramsey1950' on page 24 undefined on input line 554.
 
 [24]
-<./img/exp2.png, id=682, 315.8199pt x 255.8358pt>
+<./img/exp2.png, id=487, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
 Package pdftex.def Info: ./img/exp2.png  used on input line 577.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
  [25 <./img/exp1.png>]) (./expsetup.tex [26 <./img/exp2.png>]
 Chapter 3.
+
+LaTeX Warning: Citation `helene' on page 27 undefined on input line 4.
+
 File: ./img/calciumscheme.png Graphic file (type png)
 <use ./img/calciumscheme.png>
 Package pdftex.def Info: ./img/calciumscheme.png  used on input line 11.
 (pdftex.def)             Requested size: 271.7837pt x 229.82294pt.
+
+LaTeX Warning: Citation `beryllium' on page 27 undefined on input line 15.
+
+
+LaTeX Warning: Citation `barium' on page 27 undefined on input line 15.
+
+
+LaTeX Warning: Citation `strontium' on page 27 undefined on input line 15.
+
+
+LaTeX Warning: Citation `calcium' on page 27 undefined on input line 15.
+
+
+LaTeX Warning: Citation `PhysRevA.44.R20' on page 27 undefined on input line 15
+.
+
+
+LaTeX Warning: Citation `magnesium' on page 27 undefined on input line 15.
+
+
+LaTeX Warning: Citation `calciumqubit' on page 27 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Ruster2016' on page 27 undefined on input line 16.
+
 [27
 
 ]
-<./img/phototrap_withletters_andarrows.png, id=737, 1284.9606pt x 963.3591pt>
+
+LaTeX Warning: Citation `ion_spacing' on page 28 undefined on input line 31.
+
+
+LaTeX Warning: Citation `stute' on page 28 undefined on input line 31.
+
+
+LaTeX Warning: Citation `ion_spacing' on page 28 undefined on input line 31.
+
+
+LaTeX Warning: Citation `stute' on page 28 undefined on input line 31.
+
+<./img/phototrap_withletters_andarrows.png, id=521, 1284.9606pt x 963.3591pt>
 File: ./img/phototrap_withletters_andarrows.png Graphic file (type png)
 <use ./img/phototrap_withletters_andarrows.png>
 Package pdftex.def Info: ./img/phototrap_withletters_andarrows.png  used on inp
 ut line 39.
 (pdftex.def)             Requested size: 317.0764pt x 237.70816pt.
- [28] [29 <./img/phototrap_withletters_andarrows.png>]
-<./img/imgsetup.png, id=762, 492.8814pt x 294.50024pt>
+
+LaTeX Warning: Citation `Gulde2001' on page 28 undefined on input line 46.
+
+[28] [29 <./img/phototrap_withletters_andarrows.png>]
+<./img/imgsetup.png, id=542, 492.8814pt x 294.50024pt>
 File: ./img/imgsetup.png Graphic file (type png)
 <use ./img/imgsetup.png>
 Package pdftex.def Info: ./img/imgsetup.png  used on input line 55.
 (pdftex.def)             Requested size: 362.37598pt x 216.52022pt.
-<./img/scheme_393.pdf, id=765, 963.6095pt x 542.025pt>
+<./img/scheme_393.pdf, id=545, 963.6095pt x 542.025pt>
 File: ./img/scheme_393.pdf Graphic file (type pdf)
 <use ./img/scheme_393.pdf>
 Package pdftex.def Info: ./img/scheme_393.pdf  used on input line 66.
 (pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
  [30 <./img/imgsetup.png>] [31 <./img/scheme_393.pdf>]
-<./img/expcontrol.png, id=820, 232.7094pt x 233.4321pt>
+<./img/expcontrol.png, id=600, 232.7094pt x 233.4321pt>
 File: ./img/expcontrol.png Graphic file (type png)
 <use ./img/expcontrol.png>
 Package pdftex.def Info: ./img/expcontrol.png  used on input line 89.
 (pdftex.def)             Requested size: 226.48413pt x 227.19109pt.
-<./img/tricsmodified.png, id=821, 1445.4pt x 813.0375pt>
+<./img/tricsmodified.png, id=601, 1445.4pt x 813.0375pt>
 File: ./img/tricsmodified.png Graphic file (type png)
 <use ./img/tricsmodified.png>
 Package pdftex.def Info: ./img/tricsmodified.png  used on input line 96.
@@ -1374,43 +1662,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 |[]\T1/cmr/bx/n/20.74 Addressing sys-tem overview and
  []
 
-<img/setup.png, id=845, 420.86647pt x 214.84792pt>
+
+LaTeX Warning: Citation `addressing' on page 35 undefined on input line 6.
+
+
+LaTeX Warning: Citation `addressing3' on page 35 undefined on input line 6.
+
+
+LaTeX Warning: Citation `addressing2' on page 35 undefined on input line 6.
+
+
+LaTeX Warning: Citation `addressing' on page 35 undefined on input line 7.
+
+<img/setup.png, id=622, 420.86647pt x 214.84792pt>
 File: img/setup.png Graphic file (type png)
 <use img/setup.png>
 Package pdftex.def Info: img/setup.png  used on input line 10.
 (pdftex.def)             Requested size: 452.96826pt x 231.24548pt.
 [35] [36 <./img/setup.png>]
-<./img/obj+zemaxpng.png, id=870, 1122.96461pt x 295.94728pt>
+<./img/obj+zemaxpng.png, id=644, 1122.96461pt x 295.94728pt>
 File: ./img/obj+zemaxpng.png Graphic file (type png)
 <use ./img/obj+zemaxpng.png>
 Package pdftex.def Info: ./img/obj+zemaxpng.png  used on input line 44.
 (pdftex.def)             Requested size: 452.96826pt x 119.3748pt.
  [37]
-<./img/2levelszemax.png, id=881, 952.26353pt x 286.13687pt>
+
+LaTeX Warning: Reference `sec:aoddata' on page 38 undefined on input line 50.
+
+<./img/2levelszemax.png, id=653, 952.26353pt x 286.13687pt>
 File: ./img/2levelszemax.png Graphic file (type png)
 <use ./img/2levelszemax.png>
 Package pdftex.def Info: ./img/2levelszemax.png  used on input line 56.
 (pdftex.def)             Requested size: 452.96826pt x 136.10852pt.
- [38 <./img/obj+zemaxpng.png>]
-<img/range_plus_3beams.png, id=892, 1574.89737pt x 541.20746pt>
+[38 <./img/obj+zemaxpng.png>]
+
+LaTeX Warning: Citation `fibercollimator' on page 39 undefined on input line 61
+.
+
+<img/range_plus_3beams.png, id=663, 1574.89737pt x 541.20746pt>
 File: img/range_plus_3beams.png Graphic file (type png)
 <use img/range_plus_3beams.png>
 Package pdftex.def Info: img/range_plus_3beams.png  used on input line 65.
 (pdftex.def)             Requested size: 452.96826pt x 155.65787pt.
-<./img/zemaxaddrerror3.png, id=898, 987.2082pt x 489.9906pt>
+<./img/zemaxaddrerror3.png, id=669, 987.2082pt x 489.9906pt>
 File: ./img/zemaxaddrerror3.png Graphic file (type png)
 <use ./img/zemaxaddrerror3.png>
 Package pdftex.def Info: ./img/zemaxaddrerror3.png  used on input line 74.
 (pdftex.def)             Requested size: 407.66867pt x 202.34044pt.
- [39 <./img/2levelszemax.png>] [40 <./img/range_plus_3beams.png>]
-<./img/powerlost_plus_diagram.png, id=916, 2231.21362pt x 717.46779pt>
+[39 <./img/2levelszemax.png>] [40 <./img/range_plus_3beams.png>]
+<./img/powerlost_plus_diagram.png, id=686, 2231.21362pt x 717.46779pt>
 File: ./img/powerlost_plus_diagram.png Graphic file (type png)
 <use ./img/powerlost_plus_diagram.png>
 Package pdftex.def Info: ./img/powerlost_plus_diagram.png  used on input line 9
 9.
 (pdftex.def)             Requested size: 452.96826pt x 145.6477pt.
- [41 <./img/zemaxaddrerror3.png>] [42 <./img/powerlost_plus_diagram.png>]
-<./img/photosetupnice_withlabels2.png, id=935, 187.37878pt x 369.52534pt>
+ [41 <./img/zemaxaddrerror3.png>]
+
+LaTeX Warning: Citation `dlimited' on page 42 undefined on input line 119.
+
+[42 <./img/powerlost_plus_diagram.png>]
+<./img/photosetupnice_withlabels2.png, id=703, 187.37878pt x 369.52534pt>
 File: ./img/photosetupnice_withlabels2.png Graphic file (type png)
 <use ./img/photosetupnice_withlabels2.png>
 Package pdftex.def Info: ./img/photosetupnice_withlabels2.png  used on input li
@@ -1418,50 +1729,78 @@ ne 129.
 (pdftex.def)             Requested size: 243.59239pt x 480.3829pt.
 ) [43] (./results.tex [44 <./img/photosetupnice_withlabels2.png>]
 Chapter 5.
+
+LaTeX Warning: Reference `sec:aoddata' on page 45 undefined on input line 18.
+
+
+LaTeX Warning: Reference `sec:aoddata' on page 45 undefined on input line 19.
+
 [45
 
 ]
-<./img/DE2.png, id=961, 925.056pt x 455.301pt>
+<./img/DE2.png, id=728, 925.056pt x 455.301pt>
 File: ./img/DE2.png Graphic file (type png)
 <use ./img/DE2.png>
 Package pdftex.def Info: ./img/DE2.png  used on input line 23.
 (pdftex.def)             Requested size: 430.31847pt x 211.79614pt.
-<./img/response.png, id=966, 987.2082pt x 452.4102pt>
+<./img/response.png, id=733, 987.2082pt x 452.4102pt>
 File: ./img/response.png Graphic file (type png)
 <use ./img/response.png>
 Package pdftex.def Info: ./img/response.png  used on input line 30.
 (pdftex.def)             Requested size: 430.31847pt x 197.20413pt.
-<./img/razorsetup.png, id=968, 152.30902pt x 226.74713pt>
+<./img/razorsetup.png, id=735, 152.30902pt x 226.74713pt>
 File: ./img/razorsetup.png Graphic file (type png)
 <use ./img/razorsetup.png>
 Package pdftex.def Info: ./img/razorsetup.png  used on input line 43.
 (pdftex.def)             Requested size: 167.54042pt x 249.42259pt.
  [46 <./img/DE2.png>] [47 <./img/response.png> <./img/razorsetup.png>]
-<img/razorscan.png, id=988, 987.2082pt x 452.4102pt>
+
+LaTeX Warning: Citation `knifeedge' on page 48 undefined on input line 54.
+
+
+LaTeX Warning: Citation `Cannon:86' on page 48 undefined on input line 54.
+
+<img/razorscan.png, id=753, 987.2082pt x 452.4102pt>
 File: img/razorscan.png Graphic file (type png)
 <use img/razorscan.png>
 Package pdftex.def Info: img/razorscan.png  used on input line 57.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-
 [48 <./img/razorscan.png>]
-<./img/cameraprofile_inset.png, id=1001, 987.2082pt x 452.4102pt>
+<./img/cameraprofile_inset.png, id=764, 987.2082pt x 452.4102pt>
 File: ./img/cameraprofile_inset.png Graphic file (type png)
 <use ./img/cameraprofile_inset.png>
 Package pdftex.def Info: ./img/cameraprofile_inset.png  used on input line 93.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [49 <./img/cameraprofile_inset.png>] [50]
-<./img/polstability.png, id=1033, 987.2082pt x 452.4102pt>
+
+
+LaTeX Warning: Citation `stokes' on page 49 undefined on input line 100.
+
+
+LaTeX Warning: Reference `app:polarization' on page 49 undefined on input line 
+103.
+
+
+LaTeX Warning: Reference `app:polarization' on page 49 undefined on input line 
+116.
+
+
+LaTeX Warning: Reference `app:polarization' on page 49 undefined on input line 
+116.
+
+[49 <./img/cameraprofile_inset.png>] [50]
+<./img/polstability.png, id=790, 987.2082pt x 452.4102pt>
 File: ./img/polstability.png Graphic file (type png)
 <use ./img/polstability.png>
 Package pdftex.def Info: ./img/polstability.png  used on input line 127.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/beampointing2.png, id=1034, 784.50557pt x 408.76697pt>
+<./img/beampointing2.png, id=791, 784.50557pt x 408.76697pt>
 File: ./img/beampointing2.png Graphic file (type png)
 <use ./img/beampointing2.png>
 Package pdftex.def Info: ./img/beampointing2.png  used on input line 134.
 (pdftex.def)             Requested size: 452.96826pt x 236.01843pt.
- [51 <./img/polstability.png>] [52 <./img/beampointing2.png>]
-<./img/sequence.png, id=1047, 447.68158pt x 46.43593pt>
+ [51 <./img/polstability.png>]
+[52 <./img/beampointing2.png>]
+<./img/sequence.png, id=804, 447.68158pt x 46.43593pt>
 File: ./img/sequence.png Graphic file (type png)
 <use ./img/sequence.png>
 Package pdftex.def Info: ./img/sequence.png  used on input line 150.
@@ -1471,42 +1810,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
+
+LaTeX Warning: Citation `ross' on page 53 undefined on input line 163.
+
+
+LaTeX Warning: Citation `mle' on page 53 undefined on input line 163.
+
 [53 <./img/sequence.png>]
-<./img/rabiflops2.png, id=1060, 987.2082pt x 459.6372pt>
+<./img/rabiflops2.png, id=815, 987.2082pt x 459.6372pt>
 File: ./img/rabiflops2.png Graphic file (type png)
 <use ./img/rabiflops2.png>
 Package pdftex.def Info: ./img/rabiflops2.png  used on input line 171.
 (pdftex.def)             Requested size: 452.96826pt x 210.90265pt.
-<./img/ramseyfringes.png, id=1062, 987.2082pt x 452.4102pt>
+<./img/ramseyfringes.png, id=817, 987.2082pt x 452.4102pt>
 File: ./img/ramseyfringes.png Graphic file (type png)
 <use ./img/ramseyfringes.png>
 Package pdftex.def Info: ./img/ramseyfringes.png  used on input line 178.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [54 <./img/rabiflops2.png>]
-<./img/ac_stark_fit.png, id=1073, 987.2082pt x 489.9906pt>
+<./img/ac_stark_fit.png, id=827, 987.2082pt x 489.9906pt>
 File: ./img/ac_stark_fit.png Graphic file (type png)
 <use ./img/ac_stark_fit.png>
 Package pdftex.def Info: ./img/ac_stark_fit.png  used on input line 185.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<img/AODScan.png, id=1076, 987.2082pt x 452.4102pt>
+<img/AODScan.png, id=830, 987.2082pt x 452.4102pt>
 File: img/AODScan.png Graphic file (type png)
 <use img/AODScan.png>
 Package pdftex.def Info: img/AODScan.png  used on input line 192.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/stability.png, id=1085, 987.2082pt x 489.9906pt>
+<./img/stability.png, id=839, 987.2082pt x 489.9906pt>
 File: ./img/stability.png Graphic file (type png)
 <use ./img/stability.png>
 Package pdftex.def Info: ./img/stability.png  used on input line 203.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
  [55 <./img/ramseyfringes.png> <./img/ac_stark_fit.png>] [56 <./img/AODScan.png
->] [57 <./img/stability.png>]
-<img/photonefficency_witherror3.png, id=1120, 987.2082pt x 489.9906pt>
+>]
+
+LaTeX Warning: Citation `helene' on page 57 undefined on input line 209.
+
+
+LaTeX Warning: Citation `quantumoptics' on page 57 undefined on input line 212.
+
+
+[57 <./img/stability.png>]
+<img/photonefficency_witherror3.png, id=873, 987.2082pt x 489.9906pt>
 File: img/photonefficency_witherror3.png Graphic file (type png)
 <use img/photonefficency_witherror3.png>
 Package pdftex.def Info: img/photonefficency_witherror3.png  used on input line
  223.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<img/ramanlength_witherrors2.png, id=1123, 987.2082pt x 489.9906pt>
+<img/ramanlength_witherrors2.png, id=876, 987.2082pt x 489.9906pt>
 File: img/ramanlength_witherrors2.png Graphic file (type png)
 <use img/ramanlength_witherrors2.png>
 Package pdftex.def Info: img/ramanlength_witherrors2.png  used on input line 22
@@ -1534,7 +1887,7 @@ ownload/fibercollimators60fc.pdf.
 
 ]
 Appendix A.
-<SKM_C36819012815280.pdf, id=1182, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1008, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 193.
@@ -1552,7 +1905,7 @@ File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf>
 Package pdftex.def Info: SKM_C36819012815280.pdf  used on input line 194.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
-<SKM_C36819012815280.pdf, id=1185, page=2, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1011, page=2, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 2>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
@@ -1584,7 +1937,7 @@ Package pdftex.def Info: SKM_C36819012815280.pdf , page2 used on input line 194
 .
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
  [71 <./SKM_C36819012815280.pdf>]
-<SKM_C36819012815280.pdf, id=1405, page=3, 597.23125pt x 844.15375pt>
+<SKM_C36819012815280.pdf, id=1231, page=3, 597.23125pt x 844.15375pt>
 File: SKM_C36819012815280.pdf Graphic file (type pdf)
 <use SKM_C36819012815280.pdf, page 3>
 Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 194
@@ -1602,17 +1955,17 @@ Package pdftex.def Info: SKM_C36819012815280.pdf , page3 used on input line 194
 (pdftex.def)             Requested size: 597.73099pt x 844.86012pt.
  [72 <./SKM_C36819012815280.pdf>]
 Appendix B.
-<./img/pol3.png, id=1458, 987.2082pt x 489.9906pt>
+<./img/pol3.png, id=1284, 987.2082pt x 489.9906pt>
 File: ./img/pol3.png Graphic file (type png)
 <use ./img/pol3.png>
 Package pdftex.def Info: ./img/pol3.png  used on input line 200.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<./img/pol1.png, id=1461, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1287, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 206.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=1462, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1288, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 212.
@@ -1627,22 +1980,28 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 (./frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF0A0F77814024BBC14E43C122579F0C;3309.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 43C051FA02F4CA677EAA8BA17150B225;3027
+(rerunfilecheck)             After:  4E7F79AC70A2635636E4B5395EEE12B8;3143.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 25887 strings out of 492167
- 436826 string characters out of 6131559
- 579071 words of memory out of 5000000
- 29327 multiletter control sequences out of 15000+600000
- 565072 words of font info for 195 fonts, out of 8000000 for 9000
+ 25883 strings out of 492167
+ 436768 string characters out of 6131559
+ 576057 words of memory out of 5000000
+ 29322 multiletter control sequences out of 15000+600000
+ 565121 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,100p,2307b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
@@ -1671,10 +2030,10 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (80 pages, 17568549 bytes).
+Output written on main.pdf (79 pages, 17555363 bytes).
 PDF statistics:
- 1647 PDF objects out of 1728 (max. 8388607)
- 1276 compressed objects within 13 object streams
- 333 named destinations out of 1000 (max. 500000)
- 26744 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1475 PDF objects out of 1728 (max. 8388607)
+ 1109 compressed objects within 12 object streams
+ 332 named destinations out of 1000 (max. 500000)
+ 26704 words of extra memory for PDF output out of 29859 (max. 10000000)
 
