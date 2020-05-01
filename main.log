@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  30 APR 2020 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  1 MAY 2020 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1500,20 +1500,20 @@ Package pdftex.def Info: ./img/stability.png  used on input line 203.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
  [55 <./img/ramseyfringes.png> <./img/ac_stark_fit.png>] [56 <./img/AODScan.png
 >] [57 <./img/stability.png>]
-<img/photonefficency_witherror2.png, id=1120, 987.36446pt x 459.66324pt>
-File: img/photonefficency_witherror2.png Graphic file (type png)
-<use img/photonefficency_witherror2.png>
-Package pdftex.def Info: img/photonefficency_witherror2.png  used on input line
+<img/photonefficency_witherror3.png, id=1120, 987.2082pt x 489.9906pt>
+File: img/photonefficency_witherror3.png Graphic file (type png)
+<use img/photonefficency_witherror3.png>
+Package pdftex.def Info: img/photonefficency_witherror3.png  used on input line
  223.
-(pdftex.def)             Requested size: 452.96826pt x 210.87952pt.
-<img/ramanlength_witherrors.png, id=1123, 987.2082pt x 452.4102pt>
-File: img/ramanlength_witherrors.png Graphic file (type png)
-<use img/ramanlength_witherrors.png>
-Package pdftex.def Info: img/ramanlength_witherrors.png  used on input line 229
-.
-(pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
- [58]) (./conclusion.tex [59 <./img/photonefficency_witherror2.png> <./img/rama
-nlength_witherrors.png>] [60
+(pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
+<img/ramanlength_witherrors2.png, id=1123, 987.2082pt x 489.9906pt>
+File: img/ramanlength_witherrors2.png Graphic file (type png)
+<use img/ramanlength_witherrors2.png>
+Package pdftex.def Info: img/ramanlength_witherrors2.png  used on input line 22
+9.
+(pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
+ [58]) (./conclusion.tex [59 <./img/photonefficency_witherror3.png> <./img/rama
+nlength_witherrors2.png>] [60
 
 ]
 Chapter 6.
@@ -1638,11 +1638,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25883 strings out of 492167
- 436780 string characters out of 6131559
- 579121 words of memory out of 5000000
+ 25887 strings out of 492167
+ 436826 string characters out of 6131559
+ 579071 words of memory out of 5000000
  29327 multiletter control sequences out of 15000+600000
- 564963 words of font info for 193 fonts, out of 8000000 for 9000
+ 565072 words of font info for 195 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,100p,2307b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
@@ -1671,7 +1671,7 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (80 pages, 17719256 bytes).
+Output written on main.pdf (80 pages, 17568549 bytes).
 PDF statistics:
  1647 PDF objects out of 1728 (max. 8388607)
  1276 compressed objects within 13 object streams
