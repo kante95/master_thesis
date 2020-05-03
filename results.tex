@@ -10,13 +10,14 @@ This chapter collects the key experimental results obtained during my master's w
 \end{itemize}
 \section{AOD}
 \label{sec:resultaod}
-The two main parameters we are interested in are the diffraction efficiency and the response time. The response time is the For the diffraction efficiency we measured the total output power of the light $P_{tot}$ and then the power of the first diffracted order $P_{1}$. Diffraction efficiency is defined as the ratio between the two
+The two main parameters we are interested in are the diffraction efficiency and the response time. For the diffraction efficiency we measured the total output power of the light $P_{tot}$ and then the power of the first diffracted order $P_{1}$. Diffraction efficiency is defined as the ratio between the two
 \begin{equation}
 \label{eq:de}
 \text{DE} = \frac{P_1}{P_{tot}}.
 \end{equation}
+The response time is the time it takes for the light to move to a new position corresponding to a RF frequency change. The measurement of the response time gives us an idea of how long it takes to switch from one ion to the other.\\
 Before measuring the diffraction, the optimal RF power to drive the AOD has been found by maximizing the power of the first diffracted order with the AOD set at its central frequency. Power measurements of the light were done with a Thorlabs PM100D, and the AOD was driven with an amplifier and an RF signal generator. The highest efficiency at the central frequency was found for an RF power of 0.11 W, and for the rest of the measurements it was kept at that value. Furthermore, to optimize the linear input polarization, a PBS followed by a half-waveplate were placed before the AOD, the waveplate was rotated to maximize the power of the diffracted light. In Figure \ref{DE} a plot of the measured diffraction efficiency as a function of the RF frequency is displayed. Within a bandwidth of 50 MHz from 105 MHz to 155 MHz, we can see that more than 70 \% of the light is in the first diffracted order as expected from the datasheet (Appendix \ref{sec:aoddata}), even though the bandwidth looks shifted with respected to the nominal central frequency of 120 MHz.\\
-The response time is the time it takes for the light to move to the new position corresponding to a RF frequency change. In order to perform this measurement, a voltage controlled oscillator (VCO) was used to generate the RF signal. The VCO was supplied a square wave that alternated between two voltages corresponding to two different frequencies $\sim 96$ and $\sim 127$ MHz. The laser light diffracted into the -1 order was measured with a photodiode. The photodiode was aligned with the light at one particular frequency, such that when the light moves, the beam would not hit the diode and the signal generated changes. In Figure \ref{response}, the signal of the photodiode, together with the supplied VCO signal are plotted. Response time is $\sim 8\,\mu$s, with $3\,\mu$s delay and $5\,\mu$s rise time. From the beam diameter (2.14 mm, $1/e^2$ of intensity) and the acoustic velocity in the crystal (0.65 mm/$\mu$s, Appendix \ref{sec:aoddata}) we expect $4.9$ $\mu$s rise time, while the delay indicates that the distance between the piezo and the edge of the beam is 1.95 mm.
+In order to measure the response time, a voltage controlled oscillator (VCO) was used to generate the RF signal. The VCO was supplied a square wave that alternated between two voltages corresponding to two different frequencies $\sim 96$ and $\sim 127$ MHz. The laser light diffracted into the -1 order was measured with a photodiode. The photodiode was aligned with the light at one particular frequency, such that when the light moves, the beam would not hit the diode and the signal generated changes. In Figure \ref{response}, the signal of the photodiode, together with the supplied VCO signal are plotted. Response time is $\sim 8\,\mu$s, with $3\,\mu$s delay and $5\,\mu$s rise time. From the beam diameter (2.14 mm, $1/e^2$ of intensity) and the acoustic velocity in the crystal (0.65 mm/$\mu$s, Appendix \ref{sec:aoddata}) we expect $4.9$ $\mu$s rise time, while the delay indicates that the distance between the piezo and the edge of the beam is 1.95 mm.
 
 \begin{figure}
 \centering
@@ -106,14 +107,14 @@ Afterwards, we measured the polarization after the objective at the focus spot w
 \begin{tabular}{c c c c c c}
  \toprule
     {Desired polarization} & {$\lambda/2$ WP B ($^\circ$)} & {$\lambda/4$ ($^\circ$)} & Stokes 1 & Stokes 2 & Stokes 3\\ \midrule\midrule
-   Horizontal & $267.2\pm 0.1$ & $49.7\pm0.1$  \\
-   Vertical   & $312.5\pm0.1$ & $48.1\pm0.1$\\ \midrule
-   Right circular & $267.2\pm 0.1$ & $4\pm 0.1$ \\
-   Right circular & $312.5\pm0.1$ & $93.1\pm0.1$\\\midrule
-  Left circular & $267.2\pm 0.1$ & $95.4\pm0.1$\\
-    Left circular & $312.5\pm0.1$  & $3.1\pm0.1$\\ \bottomrule
+   Horizontal & $267.2\pm 0.1$ & $49.7\pm0.1$ & 1.0 & -0.1 & 0.1\\
+   Vertical   & $312.5\pm0.1$ & $48.1\pm0.1$ &  0.9 &  0.1 & -0.2 \\ \midrule
+   Right circular & $267.2\pm 0.1$ & $4\pm 0.1$ &  0.1 & -0.1 & 1.0 \\
+   Right circular & $312.5\pm0.1$ & $93.1\pm0.1$ & 0.1 & 0.0 & 1.0  \\\midrule
+  Left circular & $267.2\pm 0.1$ & $95.4\pm0.1$ &  0.1 & 0.0 & 1.0  \\
+    Left circular & $312.5\pm0.1$  & $3.1\pm0.1$ &  -0.2 & 0.1 & 0.9  \\ \bottomrule
 \end{tabular}
-\caption{Desired polarization at the ion position and angles of the waveplates $\lambda/2$ WP B and $\lambda/4$ (Ref. Figure \ref{addressingsetup}) that set the polarization. Numbers are found as maxima or minima of a sine fit of the polarization data in appendix \ref{app:polarization}. Stokes parameter of the achieved polarization are given.}
+\caption{Desired polarization at the ion position and angles of the waveplates $\lambda/2$ WP B and $\lambda/4$ (Ref. Figure \ref{addressingsetup}) that set the polarization. Numbers are found as maxima or minima of a sine fit of the polarization data in appendix \ref{app:polarization}. Measured Stokes parameter of the achieved polarization are given.}
 \label{polarizationstable}
 \end{table}
 

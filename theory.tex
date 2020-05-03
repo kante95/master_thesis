@@ -503,7 +503,7 @@ where $n$ is the refractive index of the unperturbed medium, $\Delta n_0$ is the
 \begin{figure}
 \centering
 \includegraphics[width = .5\textwidth]{aod3}
-\caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected due to the interaction with the effective optical grating created by the acoustic waves. $L$ is the interaction length.}
+\caption{Simple model of an AOD. In black at the bottom a black piezo that generates acoustic waves through the light blue crystal. In red, a collimated beam of light enters in the crystal with an angle $\theta$ and gets partially deflected at an a angle $\theta_d$ due to the interaction with the effective optical grating created by the acoustic waves. $L$ is the interaction length.}
 \label{AOD}
 \end{figure}
 The complex amplitude of the refracted light\footnote{defined as $E_r/E_i = r$, where $E_r$ is the refracted electric field, and $E_i$ is the input field} $r$ can be calculated by dividing the crystal in thin layers with thickness small compared to the acoustic wavelength. Therefore, we assume that the refractive index $n(x)$ is approximately constant across the layer. The total refraction is given by all the contributions $dr/dx$ of every layer, we can therefore integrate in the $x$ direction over the length $L$ (see Figure \ref{AOD}) as follow:
@@ -520,20 +520,23 @@ These two terms are the plus and minus first order diffraction, an acousto-optic
 \label{braggcondition}
 \sin \theta_B  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
 \end{equation}
-If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device.
-The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
+At the Bragg angle, the diffraction angle $\theta_d$ is equal to the incident angle $\theta_B = \theta = \theta_d$ \cite{Korpel1981}. If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device. The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
 From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscillating at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted optical wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
 \begin{equation}
 \label{eq:aodshift}
 \omega_r  =  \omega + \Omega_s.
 \end{equation}
-The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead shift the direction of the beam by exploiting the fact that the deflection angle $\theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
+The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead aim to shift the direction of the beam by exploiting the fact that the diffraction angle $\theta_d = \theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
 \begin{equation}
+\label{eq:deflection}
 \theta \simeq \frac{\lambda}{2 v_s}f,
 \end{equation}
-where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. Although the Bragg condition \eqref{braggcondition} is not satisfied anymore, we can work with small enough angles that the diffraction efficiency remains above a certain threshold. The bandwidth $B$ specifies the range of frequencies over which deflectors work.\\
-AOMs and AODs differ by the relative divergence of the optical and acoustic beam \cite{handbookoptics}, moreover for AODs, speed and the number of resolvable spots are more important, while for AOM's the optimization is on modulation bandwidth. These different priorities in building the devices influence
-the choice of the crystal and acoustic mode, for instance, a slow acoustic velocity and shear mode are preferred in AODs \cite{handbookoptics}.
+where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. The bandwidth $B$ specifies the range of frequencies over which deflectors work. Assuming that the maximum diffraction angle is $\Delta\theta$, equation \eqref{eq:deflection} can we written as \cite{Rmer2014}
+\begin{equation}
+\label{eq:deflection}
+\Delta\theta \simeq \frac{\lambda}{2 v_s}B,
+\end{equation}
+It is clear from this equation that, in order to increase the bandwidth, i.e. increasing $\Delta \theta$, slower acoustic velocities are preferred. AODs are therefore optimized by choosing a crystal and an acoustic mode with low acoustic velocities compared to AOMs \cite{handbookoptics}.%\cite{handbookoptics}.
 
 \section{Basic model of key experiments}
 To fulfill the goals of this thesis we perform two key experiments with ions: single-ion qubit manipulation and single-ion photon generation. This section presents a short overview of the two key experiments, using the theory introduced in the previous sections.

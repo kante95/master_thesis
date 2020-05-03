@@ -284,6 +284,16 @@ Wolfgang Demtroeder.
 \newblock {\em Laser Spectroscopy 1: Basic Principles}.
 \newblock Springer, 2014.
 
+\bibitem{Korpel1981}
+A.~Korpel.
+\newblock Acousto-optics{\textemdash}a review of fundamentals.
+\newblock {\em Proceedings of the {IEEE}}, 69(1):48--53, 1981.
+
+\bibitem{Rmer2014}
+G.R.B.E. R\"{o}mer and P.~Bechtold.
+\newblock Electro-optic and acousto-optic laser beam scanners.
+\newblock {\em Physics Procedia}, 56:29--39, 2014.
+
 \bibitem{handbookoptics}
 Michael {Bass}, Eric W.~Van {Stryland}, David~R. {Williams}, and Williams~L.
   {Wolfe}.
@@ -291,12 +301,10 @@ Michael {Bass}, Eric W.~Van {Stryland}, David~R. {Williams}, and Williams~L.
   Properties 2nd edition}}.
 \newblock 1995.
 
-\bibitem{phasedarray}
-R.~{Pieper}, D.~{Koslover}, and H.~{Ndwata}.
-\newblock Combining phased array and hamming sound apodization techniques to
-  improve the acousto-optic diffraction bandwidth.
-\newblock In {\em 2009 41st Southeastern Symposium on System Theory}, pages
-  311--316, March 2009.
+\bibitem{Ramsey1950}
+Norman~F. Ramsey.
+\newblock A molecular beam resonance method with separated oscillating fields.
+\newblock {\em Physical Review}, 78(6):695--699, jun 1950.
 
 \bibitem{beryllium}
 H.~Ball, M.~W. Lee, S.~D. Gensemer, and M.~J. Biercuk.
@@ -410,5 +418,12 @@ Mark Fox.
 \newblock {\em Quantum optics: an introduction}.
 \newblock Oxford Master Series in Physics, 6. Oxford University Press, USA,
   2006.
+
+\bibitem{Arenskotter:19}
+Jan Arensk\"{o}tter, Stephan Kucera, Matthias Kreis, Floriane Brunei, Pascal
+  Eich, Philipp M\"{u}ller, and J\"{u}rgen Eschner.
+\newblock Atom-to-photon state mapping by quantum teleportation.
+\newblock In {\em Quantum Information and Measurement (QIM) V: Quantum
+  Technologies}, page T5A.71. Optical Society of America, 2019.
 
 \end{thebibliography}
