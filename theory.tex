@@ -1,23 +1,23 @@
 % !TEX root = main.tex
-
+\setlength{\parskip}{.5mm plus 0mm minus 0mm}
 \chapter{Theoretical framework}
-Quantum computing is based on a general framework that does not depend on the physical platform. In this chapter, important concepts such as qubits, and quantum operations are described from a theoretical point of view, before showing how we can realize them with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Furthermore, in this chapter we will take a look into Gaussian beams and their properties. Since that is the shape emitted by laser, it is important to understand their characteristics and how to manipulate them. Lastly, Acousto-optical interactions are introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam.
+Quantum computing is based on a general framework that does not depend on the particular physical quantum platform. In this chapter, important concepts such as qubits and quantum operations are described from a theoretical point of view, before showing how we can realize them with trapped ions. The same goes with quantum networking, the concept and the realization can be treated separately and they will be described in this chapter. Next, key properties of Gaussian beams are presented: the beam shapes emitted by our lasers. Acousto-optical interactions are then introduced and studied to give an idea of how AODs work and how they can be used to steer a laser beam. Lastly, a brief overview of two key experiments is given.
+
 \section{Quantum logic with trapped ions}
 \subsection{Quantum computer and quantum gates}
 \label{sec:quantumoperations}
-The concepts of quantum computing are borrowed and extended from classical computational. In the classical case, information is mostly represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of a quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations.\\
+The concepts of quantum computing are borrowed and extended from classical computation. In the classical case, information is mostly represented in terms of binary digits, the so called bit, essentially mapping information to a base-2 number. Information processing is done with gates acting of those numbers. The idea of a quantum computer is still to encode information in a binary form, but due to the nature of quantum mechanics, a quantum bit (in short qubit) gains new features that can be exploited to perform different kind of operations.\par
 A qubit is formally a normalized wave function that can be written as a superposition of two orthogonal states indicated usually with $\ket{0}$ and $\ket{1}$:
 \begin{equation}
 \label{qubit}
 \ket{\psi} = \alpha \ket{0} + \beta\ket{1},
 \end{equation}
-where $\alpha,\beta$ are probability amplitudes, i.e. two complex numbers that satisfy the relationship $|\alpha|^2+|\beta|^2 = 1$.
-A qubit can be in any linear combination, i.e. $\alpha$ and $\beta$. The outcome of measuring a qubit will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.\\
-Qubits also have a geometrical representation that can be useful. Equation \eqref{qubit} depends on 4 real numbers, however since $\psi$ is normalized, we can rewrite the expression as
+where $\alpha,\beta$ are probability amplitudes, i.e. two complex numbers that satisfy the relationship $|\alpha|^2+|\beta|^2 = 1$. The outcome of measuring a qubit in the logical basis (outcomes 0 or 1) will give the value 0 with a probability of $|\alpha|^2$ and 1 with a probability of $|\beta^2|$.\par
+Qubits also have a geometrical representation that can be useful. Equation \eqref{qubit} depends on 4 real numbers, however since $\psi$ is normalized, we can rewrite the expression as \cite{chuang}
 \begin{equation}
 \ket{\psi} = e^{i\gamma}\left(\cos\frac{\theta}{2}\ket{0} + e^{i\varphi}\sin\frac{\theta}{2}\ket{1}\right).
 \end{equation}
-The global phase factor $e^{i\gamma}$ can be left out as it does not influence the measurement outcome, leaving only two real numbers: $\theta$ and $\varphi$. A qubit can therefore be represented geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in Figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Here, qubit manipulation can be visualized as trajectories on the surface. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
+The global phase factor $e^{i\gamma}$ can be left out as it does not influence the measurement outcome, leaving only two real numbers: $\theta$ and $\varphi$. A qubit can therefore be represented geometrically with normalized spherical coordinates. The so called Bloch sphere is depicted in Figure \ref{blochsphere}, every point on its surface represents a different state of the qubit. Qubit manipulation can be visualized as trajectories on the surface. The drawback of this representation is that it is limited to only one qubit, so it loses usefulness when dealing with multiple qubits.
 \begin{figure}[H]
 \centering
 \includegraphics[width = .4\textwidth]{bloch_sphere}
@@ -75,16 +75,16 @@ Gates that involve $N$ qubits are written as $2^N\times 2^N$ unitary matrices, a
 0 & 0 & 1 &0
 \end{pmatrix}.
 \end{equation}
-It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximates every other quantum gate.
+Which can be used to generate entanglement between two qubits. It can be shown \cite{chuang} that the examples of this section: $H$ gate, phase gate, and CNOT gate form a universal set of quantum gates, i.e. a sequence of these gates approximates every other possible unitary quantum operation.
 
 \subsection{Ion qubits and laser-ion interactions}
 \label{laserioninteractions}
 Qubits can be encoded in any pair of orthogonal quantum states of a physical system. %REWRITE (In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$).
-In Figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The states $\ket{\text{S}_{1/2}}$ and $\ket{\text{D}_{5/2}}$ are a common choice to encode a qubit. The ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the long lived ($\sim$ 1 s) excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$. As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit.
-Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\\
-The laser set up in this thesis is the 393 nm, which interacts via a dipole transition with the atomic ion, we model therefore the atom-light interactions as dipole interaction. In the case of a quadrupole interaction, the equations below still hold with the exception of the Rabi frequency, which will no longer depend linearly with the electric field. For a proper treatment of the quadrupole interaction see \cite{ross}.\\
+In Figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The states $\ket{\text{S}_{1/2}}$\footnote{the notation used is $l_j$, where $l$ is the orbital angular momentum, and $j$ the total angular momentum} and $\ket{\text{D}_{5/2}}$ are a common choice to encode a qubit. The ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the long lived ($\sim$ 1 s) excited state $\ket{\text{D}_{5/2}}$ can be $\ket{1}$. As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit.
+Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\par
+The laser set up in this thesis is the 393 nm, which interacts via a dipole transition (different from the 729 nm transition) with the atomic ion, we model therefore the atom-light interactions as dipole interaction. In the case of a quadrupole interaction, the equations below still hold with the exception of the Rabi frequency, which will no longer depend linearly with the electric field. For a proper treatment of the quadrupole interaction see \cite{ross}.\par
 %The interaction between ion and laser is now presented using a simple model: a two-level atom with dipole interaction with the laser field.
-Consider the system in Figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near resonant regime $\Delta \ll \omega_0$. % The laser light in this case can be described classicaly in the dipole approximation.
+Consider the simple two-level system in Figure \ref{2levelatom}, where the states $\ket{0}$ and $\ket{1}$ are separated by a frequency $\omega_0$, while the laser is assumed to be monochromatic with frequency $\omega_l$. The difference $\Delta = \omega_l -\omega_0$ is called detuning and we assume to be in the near-resonant regime $\Delta \ll \omega_0$. % The laser light in this case can be described classicaly in the dipole approximation.
 %This assumption can be explained as follow, the wavelength of transitions in an atom, are typically in the optical regime: hundreds of nanometers, which is order of magnitude greater then the typical atom dimension. Thus, the electric field can be considered constant over the atom size. This allows to expand the electric field in Taylor series and remove every spatial dependent term in the so called dipole approximation.
 The Hamiltonian of the atomic part can be written as:
 \begin{equation}
@@ -93,27 +93,27 @@ H_a = \hbar\omega_0 \ket{1}\bra{1},
 where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. \begin{figure}
 \centering
 \includegraphics[width = .6 \textwidth]{calciumscheme}
-\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729 nm.}
+\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729 nm between a single pair of Zeeman states ($m_j$).}
 \label{qubitschemereference}
 \end{figure}
 The Hamiltonian of the interaction between the dipole atomic moment $\mathbf{d}$ and the electric field of the laser can be written \cite{steck}
 \begin{equation}
 H_{int} = -\mathbf{d}\cdot \mathbf{E}
 \end{equation}
-where the electric field will be treated classically and the dipole approximation is assumed. This means
+where the electric field of the laser  will be treated classically and the dipole approximation is assumed. This means
 \begin{equation}
 \mathbf{E}(t) = \hat{\mathbf{\varepsilon}} E_0 \cos(\omega_l t+\varphi) = \hat{\mathbf{\varepsilon}} \frac{E_0}{2} \left(e^{-i(\omega_l t+\varphi)} + e^{i(\omega_l t+\varphi)}\right),
 \end{equation}
-where $\hat{\varepsilon}$ is the unit polarization vector. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{0}\bra{0} + \ket{1}\bra{1}$ on both sides of $d$. Due to parity arguments \cite{steck}, only the non diagonal terms are non-vanishing, giving
+where $\hat{\varepsilon}$ is the unit polarization vector, and $\varphi$ is the laser phase at the point of the ion at time 0. The next step is to work out the dipole operator, this can be done by applying the identity $\ket{0}\bra{0} + \ket{1}\bra{1}$ on both sides of $\mathbf{d}$. Due to parity arguments \cite{steck}, only the non diagonal terms are non-vanishing, giving
 \begin{equation}
-d = \braket{0|d|1}\left(\ket{0}\bra{1} + \ket{1}\bra{0}\right) \equiv \braket{0|d|1}(\sigma + \sigma^\dagger).
+\mathbf{d} = \braket{0|\mathbf{d}|1}\left(\ket{0}\bra{1} + \ket{1}\bra{0}\right) \equiv \braket{0|\mathbf{d}|1}(\sigma + \sigma^\dagger).
 \end{equation}
 Combining the last three equations yields
 \begin{equation}
 \label{eq:hint}
 H_{int} = - \braket{0|\hat{\varepsilon} \mathbf{d}|1}\frac{E_0}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)} + \sigma e^{-i(\omega_l t+\varphi)} + \sigma^\dagger e^{i(\omega_l t+\varphi)})
 \end{equation}
-A rotating wave approximation is used now: in the interaction picture, the operator $\sigma$ ($\sigma^\dagger$) evolves under the Hamiltonian $H_a$ in time as $\widetilde{\sigma} = e^{i H_a t/\hbar}\sigma e^{-i H_a t/\hbar} = \sigma e^{-i\omega_0 t}$ ($\widetilde{\sigma}^\dagger=\sigma^\dagger e^{i\omega_0 t}$). Therefore, equation \ref{eq:hint} in the interaction picture contains terms that oscillate as $\propto e^{\pm i(\omega_l-\omega_0 )t}$, and $\propto e^{\pm i(\omega_l+\omega_0 )t}$. We can drop the fast oscillating terms and keeping only those that depend on time as $\propto e^{\pm i(\omega_l-\omega_0 )t}$. The validity of this approximation is given by the fact that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference: the detuning.
+A rotating wave approximation is used now: in the interaction picture, the operator $\sigma$ ($\sigma^\dagger$) evolves under the Hamiltonian $H_a$ in time as $\widetilde{\sigma} = e^{i H_a t/\hbar}\sigma e^{-i H_a t/\hbar} = \sigma e^{-i\omega_0 t}$ ($\widetilde{\sigma}^\dagger=\sigma^\dagger e^{i\omega_0 t}$). Therefore, Equation \ref{eq:hint} in the interaction picture contains terms that oscillate as $\propto e^{\pm i(\omega_l-\omega_0 )t}$, and $\propto e^{\pm i(\omega_l+\omega_0 )t}$. We can drop the fast oscillating terms and keeping only those that depend on time as $\propto e^{\pm i(\omega_l-\omega_0 )t}$. The validity of this approximation is given by the fact that $\omega$ and $\omega_0$ are in the optical regime, thus they oscillate extremely fast and average to zero, the interesting slow dynamic is given only by their difference: the detuning.
 Going back in the Schrödinger picture yields the final form of the interaction Hamiltonian
 \begin{equation}
 H_{int} = \frac{\hbar \Omega}{2}(\sigma e^{i(\omega_l t+\varphi)} + \sigma^\dagger e^{-i(\omega_l t+\varphi)}),
@@ -143,16 +143,17 @@ U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
   -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
 \end{pmatrix}.
 \end{equation}
-Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. In the case of zero detuning ($\Delta = 0$) the matrix is the same as equation \eqref{quantumgates}, thus a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$.\\
+Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. In the case of zero detuning ($\Delta = 0$) the matrix is the same as equation \eqref{quantumgates}, thus a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$.\par
 As an example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
 \begin{equation}
+\label{eq:rabifrequency}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
 This equation is plotted in Figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega/2$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement e.g. the Hadamard gate of equation \eqref{Hadamard}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = 1\textwidth]{rabiflops}
-\caption{Rabi flops for different detunings $\Delta$, starting from the $\ket{0}$ state.}
+\caption{Rabi flops for different detunings $\Delta$, starting from the $\ket{0}$ state. Equation \eqref{eq:rabifrequency}.}
 \label{rabiflops}
 \end{figure}
 As the light is detuned from the transition, Rabi oscillations are suppressed: the amplitude is reduced by a factor of 0.5 already with $\Delta = \Omega$, while a factor of 10 in reduction is achieved with a detuning of $\Delta = 5\Omega$. However, another effect occurs in the off-resonant regime, the energy levels are shifted.
@@ -189,7 +190,7 @@ This matrix implements the quantum gate $U_z(\Theta)$ from equation \eqref{quant
 \caption{3 level atom model. Two long lived ground states $\ket{g_1}$, $\ket{g_2}$ couple to an excited level $\ket{e}$ through two lasers of frequencies $\omega_1$, $\omega_2$ detuned respectively $\Delta_1,\Delta_2$ from the transitions.}
 \label{3levelmodel}
 \end{figure}
-We extend our model to a 3 level $\Lambda$ type atom driven by two lasers, which closer resemble the real experimental situation in the experiments in this thesis. The model contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in Figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$, where the atomic frequencies are $\omega_{01}$, and $\omega_{02}$ respectively. Detunings are defined as $\Delta_1 = \omega_1 - \omega_{01}$ and $\Delta_2 = \omega_2 - \omega_{02}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived ($\sim 1$ s), such that any spontaneous emission from D to S can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states with branch ratio of 94\% from P$\to$S ($\sim$ 7.4 ns) and 5.3\% from P$\to$D $\sim 101$ ns), we neglet decay to the $\ket{\text{D}_{3/2}}$ state.\\
+We extend our model to a 3 level $\Lambda$ type atom driven by two lasers, which more closely resembles the real experimental situation in the experiments in this thesis. The model contains new effects that explain photon generation and qubit gates. In particular, stimulated Raman transition will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2 level atom. The system is depicted in Figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$, where the atomic frequencies are $\omega_{01}$, and $\omega_{02}$ respectively. Detunings are defined as $\Delta_1 = \omega_1 - \omega_{01}$ and $\Delta_2 = \omega_2 - \omega_{02}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived ($\sim 1$ s), such that any spontaneous emission from D to S can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states with branch ratio of 94\% from P$\to$S ($\sim$ 7.4 ns) and 5.3\% from P$\to$D ($\sim 101$ ns), we neglet decay to the $\ket{\text{D}_{3/2}}$ state.\par
 %In this model we assume that each laser light couples only to one transition and that . %the two ground states are not separated by an optical frequency $\omega_{02} - \omega_{01} \ll \omega_1,\omega_2$, and that the detunings are nearly equal $\Delta_1 \simeq \Delta_2$. As a consequence, each laser light couples only to one transition.\\
 Following the approach of \cite{steck}, the bare atom Hamiltonian is
 \begin{equation}
@@ -204,7 +205,7 @@ As in Section \ref{laserioninteractions}, we then consider a dipole interaction,
 H = \hbar \Delta_1 \ket{g_1}\bra{g_1} + \hbar\Delta_2 \ket{g_2}\bra{g_2}+ \frac{\hbar \Omega_1}{2}\left(\sigma_1 e^{i\varphi_1} +\sigma_1^\dagger e^{i\varphi_1}\right)+ \frac{\hbar \Omega_2}{2}\left(\sigma_2 e^{i\varphi_2} +\sigma_2^\dagger e^{i\varphi_2}\right),
 \end{equation}
 where $\Omega_i = -\frac{\braket{g_1|\varepsilon_i \cdot \mathbf{d}|e}E_{i}}{\hbar}$, and $\sigma_i = \ket{g_i}\bra{e}$. Under certain conditions, this Hamiltonian describes a Raman process, where state population is transferred coherently between $\ket{g_1}$ and $\ket{g_2}$. Specifically, the Raman conditions are: equal detunings $\Delta_1 = \Delta_2 \equiv \Delta$ (Raman resonance), and $\Delta \gg \Omega_1,\Omega_2$.
-Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\\
+Intuitively, this corresponds to the situation where the difference of the two driving frequencies $(\omega_1-\omega_2)$ is equal to the frequency splitting between $\ket{g_1}$, and $\ket{g_2}$.\par
 Following \cite{russo} it can be shown that, under the previous conditions, the Raman process leads to an effective coupling directly between the two ground states. The effective Rabi frequency of the coherent population transfer $\ket{g_1} \to \ket{g_2}$ is \cite{steck}
 \begin{equation}
 \label{eq:effectiverabi}
@@ -239,14 +240,14 @@ The ratio between $\Gamma_{eff}$ and the AC Stark shift \eqref{eq:starkshift} $\
 A quantum network is a collection of quantum processors, referred to as nodes, interconnected with quantum channels, referred to as links. Nodes are used for processing and storing quantum information, while links for quantum information distribution \cite{kimble}. %Quantum channels are able to transmit quantum states between the nodes and thereby distribute entanglement between the nodes of the network \cite{kimble}.
 % There are two classes of quantum networks which are differentiated by the purpose, networks can be used for transmission of information, i.e. communication, or for distributed quantum computation, i.e. scaling of quantum processors \cite{ion_quantumnetwork}.
 %In these two cases the topology of the network is different, but the core elements are the same: a node, where quantum information is prepared, manipulated, and stored; and a link that connects nodes.
-Applications of quantum networks are several: secure communication with Quantum Key Distribution, clock synchronization, efficient solutions to distributed system problems, and more \cite{Wehnereaam9288}.\\
-Links are typically realized with traveling photons, either in free-space \cite{Hughes2002} or in optical fibers. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how such an interface can be realized by placing an ion-qubit in an optical cavity.\\
+Applications of quantum networks are several: secure communication with Quantum Key Distribution, clock synchronization, efficient solutions to distributed system problems, and more \cite{Wehnereaam9288}.\par
+Links are typically realized with traveling photons, either in free-space \cite{Hughes2002} or in optical fibers. Nodes can be realized using different physical systems: trapped ions \cite{ion_quantumnetwork}, neutral atoms \cite{Ritter2012}, atomic ensembles \cite{kimble}. Nodes and links are connected through an interface that converts a stationary qubit in a node to a flying qubit over the network.  In the next section we will explore how such an interface can be realized by placing an ion-qubit in an optical cavity.\par
 Faithful transmission of quantum states over long distances can be a daunting problem as quantum information cannot be cloned \cite{nocloning} and noisy channels can destroy the delicate nature of qubits. Quantum repeaters have been designed \cite{quantumrepeters} to circumvent these problems through a series of protocols which include entanglement purification, a form of error correction \cite{Pan2001}. Once entanglement has been established between nodes, other network functionalities become available, like for instance teleportation \cite{PhysRevLett.70.1895}. Entanglement generation, and quantum repeaters are just some examples of the fundamental steps necessary for building a quantum network, for a more in depth review look at \cite{Wehnereaam9288}.
 
 
 \subsection{Cavity QED}
 \label{sec:cavityqed}
-A single trapped ion is a single photon source and those photons can be collected either with a lens \cite{ion_quantumnetwork}, refocused with mirrors \cite{PhysRevLett.120.193603} or with optical cavities \cite{Keller2004bis}. Photon collection from ions using an optical cavity is a powerful approach, that will now be introduced in detail. A cavity placed around ions improves the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is enhanced with respect to emitting in free space \cite{Kimble_1998}.\\
+A single trapped ion is a single photon source and those photons can be collected either with a lens \cite{ion_quantumnetwork}, refocused with mirrors \cite{PhysRevLett.120.193603} or with optical cavities \cite{Keller2004bis}. Photon collection from ions using an optical cavity is a powerful approach, that will now be introduced in detail. A cavity placed around ions improves the efficiency of photon collection as the probability of a photon to be emitted in the cavity mode is enhanced with respect to emitting in free space \cite{Kimble_1998}.\par
 In this Section a simple model of a two-level system in a cavity is described following the approach of \cite{steck}. We described the cavity electric field as quantized, with $a,a^\dagger$ the creation and annihilation operators of a single photon in the cavity mode, respectively.
 The quantized electric field assumes the form of
 \begin{equation}
@@ -260,7 +261,7 @@ where $g = A \braket{0|\mathbf{d}|1}\cdot \mathbf{f}(\mathbf{r})$ is called the 
 \begin{equation}
 g \propto \braket{0|d|1} \sqrt{\frac{\omega}{2\varepsilon_0 \hbar V}}.
 \end{equation}
-The coupling therefore increases with decreasing cavity volume.\\
+The coupling therefore increases with decreasing cavity volume.\par
 The total system Hamiltonian includes also the atomic part, and the free evolution of the cavity single mode field, it takes the name of Jaynes-Cummings Hamiltonian and it is written as \cite{qedreview}
 \begin{equation}
 \label{eq:jchamiltonian}
@@ -287,7 +288,7 @@ where the Rabi frequency of the second laser is now replaced by the atom cavity 
 \label{gammaeff}
 \Gamma_{eff} = \left(\frac{\Omega}{2\Delta}\right)^2\Gamma
 \end{equation}
-The effective Rabi frequency $\Omega_{eff}$ and the effective spontaneous decay $\Gamma_{eff}$ are competitive effects and the ratio of the two depends on the detuning $\Omega_{eff}/\Gamma_{eff} \propto \Delta/\Omega$. It is therefore possible to reduce spontaneous emission effects if the detuning is large enough.\\
+The effective Rabi frequency $\Omega_{eff}$ and the effective spontaneous decay $\Gamma_{eff}$ are competitive effects and the ratio of the two depends on the detuning $\Omega_{eff}/\Gamma_{eff} \propto \Delta/\Omega$. It is therefore possible to reduce spontaneous emission effects if the detuning is large enough.\par
 In our experiment the designed cavity is near concentric with a length of $L = 19.9$ mm. The maximum $g$ factor achievable with this geometry is $g_{max} = 2\pi \times 1.53$ MHz, while the decay rate is $\kappa = 2\pi\times 70$ kHz. More information on our cavity can be found in \cite{Krutyanskiy2019} and in the upcoming thesis of J. Schupp. Typical numbers in our experiment for the CMRP are $\Omega =  2\pi\times 40$ MHz, detuning $\Delta = 2\pi\times 400$ MHz, $g = 2\pi\times 1$ MHz, and from table \ref{transitiontable}, $\Gamma = 2\pi \times 21.4$ MHz. With these conditions we have
 \[\Omega_{eff} \sim 2\pi\times 100\, \text{kHz} > \Gamma_{eff} \sim 2\pi\times 53\,\text{kHz}.\]
 The regime we work in is thus $2\kappa>\Omega_{eff}>\Gamma_{eff}$. In Section \ref{exp:photons}, we use the single-ion focused Raman laser, developed in this thesis, to implement the CMRP on a single ion in a string.
@@ -306,7 +307,7 @@ The regime we work in is thus $2\kappa>\Omega_{eff}>\Gamma_{eff}$. In Section \r
 
 \section{Basics of ion trapping}
 \subsection{Linear Paul trap}
-Ions are charged, therefore electric fields can be used to control and trap them. In order to achieve confinement in 3 dimensions, a potential $\phi(x,y,z)$ with minima in all directions is needed. However, it follows directly from Maxwell's equations $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap \cite{RevModPhys.58.233}. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two different dimensions. The particles will therefore experience an effective confinement in all directions if the switching is fast compared to the time it takes the particle to respond.\\
+Ions are charged, therefore electric fields can be used to control and trap them. In order to achieve confinement in 3 dimensions, a potential $\phi(x,y,z)$ with minima in all directions is needed. However, it follows directly from Maxwell's equations $\nabla^2 \phi = 0$ that the potential must be antitrapping at least in one direction. There are two workarounds for this problem: the first one introduces magnetic fields to trap particles in some directions, this takes the name of Penning trap \cite{RevModPhys.58.233}. The second solution is the so called Paul trap, and it is what we are going to describe in this section. The idea is to introduce a time varying potential, such that the antitrapping direction is constantly switching between two different dimensions. The particles will therefore experience an effective confinement in all directions if the switching is fast compared to the time it takes the particle to respond.\par
 The shape of the trap can be adapted to load more ions in different geometries. In our work we utilize a linear Paul trap, which is elongated in one direction. The confinement in this direction is weaker and thus loaded ions will align in a single long string. This kind of trap is depicted in Figure \ref{trap}.
 \begin{figure}
 \centering
@@ -314,7 +315,7 @@ The shape of the trap can be adapted to load more ions in different geometries. 
 \caption{A linear paul trap. U is the voltage applied to the electrodes trapping in the $z$ direction, while in the $x-y$ plane trapping is achieved with a radio frequency signal.}
 \label{trap}
 \end{figure}
-The confinement in the $x-y$ plane is provided by 4 electrodes, two of which are grounded and the other two are connected to a radio frequency source. This design is similar to a mass filter, with the difference of additional endcaps electrodes in the $z$ direction that plug the trap and confine also in the axial direction.\\
+The confinement in the $x-y$ plane is provided by 4 electrodes, two of which are grounded and the other two are connected to a radio frequency source. This design is similar to a mass filter, with the difference of additional endcaps electrodes in the $z$ direction that plug the trap and confine also in the axial direction.\par
 The potential inside the trap can be described for the $x-y$ plan independently from the $z$ direction. In the case of a linear Paul trap the radial potential is \cite{traptheory}:
 \begin{equation}
 \phi  = \frac{\Phi_0}{2r_0^2}\left(x^2 - y^2\right),
@@ -342,7 +343,7 @@ Here, we recognize a slowly varying oscillation $\omega_x$, referred to as \emph
 \label{eq:wx}
 \omega_x = \frac{\Omega_{RF}}{2}\sqrt{a_x + \frac{q_x^2}{2}}.
 \end{equation}
-By imposing real solutions to \eqref{eq:wx}, the stability diagram of the trap can be found \cite{traptheory}. The other spatial dimension can be treated in the same way and the results are the same.\\
+By imposing real solutions to \eqref{eq:wx}, the stability diagram of the trap can be found \cite{traptheory}. The other spatial dimension can be treated in the same way and the results are the same.\par
 Confinement in the axial direction $z$ is purposely weaker, and ions will align in this direction. Two electrodes with constant potential $U$ are present, they create a harmonic potential
 \begin{equation}
 V = \frac{1}{2}m\omega_z^2z^2,
@@ -351,7 +352,7 @@ where $\omega_z$ is the axial trap frequency. In the case of a string of ions, m
 
 \subsection{Ion strings}
 \label{ionstrings}
-For the goals of this thesis, we are interested in the separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\\
+For the goals of this thesis, we are interested in the separation between $N$ ions loaded in the trap. This will give us an idea of how narrowly the beam should be focused and will set an appropriate problem spatial scale.\par
 Let us consider the $z$ direction where the ions are more weakly confined such that they form a string. The potential can be approximated as harmonic and hence given by
 \begin{equation}
 V = \sum_{i=0}^N \frac{1}{2}m\omega_z^2z_i^2 + \sum_{i\neq j}^N\frac{Z^2e^2}{8\pi \epsilon_0}\frac{1}{|z_i-z_j|},
@@ -388,7 +389,7 @@ In Figure \ref{positions_ions} ions positions are presented for different number
 \subsection{Doppler cooling}
 \label{sec:doppler_cooling}
 
-Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extent of the ion wave packet is much smaller than the optical wavelengths of the lasers. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \\
+Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extent of the ion wave packet is much smaller than the optical wavelengths of the lasers. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, exchanging a photon and therefore giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in a particular direction to the ion. The absorbed photon is given back through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero, while the kick given by the laser will accumulate slowing down and cooling the ion in the direction of the laser. \par
 The mathematical model is a 2-level atom interacting with a laser (Rabi frequency $\Omega$, and detuning $\Delta$) as described in Section \ref{laserioninteractions}. Spontaneous emission is included with the master equation \eqref{masterequation}, where $\Gamma$ is the spontaneous emission rate. The master equation can be explicitly written for every component of the density matrix $\rho_{ij}$, in the rotating frame they are called optical Bloch equations \cite{foot}. Following the approach of \cite{gabriel}, the system reaches equilibrium when $\rho_{ee}(t\to \infty)$:
 % \begin{equation}
 % \label{rhoee}
@@ -406,7 +407,7 @@ The mathematical model is a 2-level atom interacting with a laser (Rabi frequenc
 \begin{equation}
 \rho_{ee}(t\to \infty) = \frac{\Omega^2/\Gamma^2}{1 + \left(2\frac{\Delta -\mathbf{k}\cdot \mathbf{v}}{\Gamma}\right)^2 + 2\frac{\Omega^2}{\Gamma^2}}
 \end{equation}
-where $\mathbf{v}$ the velocity of the ions. The force exerted on the ions, due to the radiative pressure, is proportional $\rho_{ee}$ as
+where $\mathbf{v}$ the velocity of the ions. The force exerted on the ions, due to the radiative pressure, is proportional to $\rho_{ee}$ as
 \begin{equation}
 F = \hbar k \Gamma \rho_{ee} \simeq F_0 + \frac{dF}{dv}v = \hbar k \Gamma\frac{\Omega^2}{\Gamma^2 +4\Delta^2} + F_0 \frac{8k\Delta}{\Gamma^2 + 4\Delta^2}v
 \end{equation}
@@ -423,17 +424,17 @@ From here it is clear that by choosing the appropriated detuning, it is possible
 \begin{equation}
 T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}.
 \end{equation}
-At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}.\\
+At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}.\par
 As an example, calcium ions confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the 2-level atom model in this case gives a good estimation, even though calcium has more levels. The Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$. The wavefunction extend for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$, creation and annihilation operator algebra gives
 \begin{equation}
 \sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52\,\text{nm}.
 \end{equation}
-An ion cooled with Doppler cooling therefore has a spatial dimension still much smaller than the ion separations.\\
+An ion cooled with Doppler cooling therefore has a spatial dimension still much smaller than the ion separations.\par
 To further decrease $\braket{\hat{n}}$, sideband cooling can be used \cite{Eschner:03}, here particular sideband transitions are excited to reduce the phonon number of the ions inside the trap. However in the experiments of this thesis, only Doppler cooling has been performed.
 \section{Laser beam}
 \subsection{Gaussian beams}
 \label{sec_diffraction}
-Typically, lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \\
+Typically, lasers emit light in the shape of Gaussian beams, so it is import to understand what Gaussian beams are and their characteristics. In this chapter we will take a closer look into such beams and introduce important quantities to characterize a Gaussian beam. \par
 From a theoretical point of view, Gaussian beams are a solution of the Helmholtz equation $(\nabla^2 + k^2)U(\mathbf{r}) = 0$, with $k$ being the wavevector, and $U(\mathbf{r})$ the complex electric field. If we can consider a wave propagating in the $z$ direction, we can write it as \cite{saleh}:
 \begin{equation}
 \label{gaussianbeams}
@@ -462,8 +463,8 @@ W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lamb
 \end{equation}
 $\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below. A plot of \eqref{waistprofile} is presented in Figure \eqref{gaussprofile}:
 the width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this spot is called focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically $z_0$ is the distance between the focus and the point where the width is $W(z) = \sqrt{2}W_0$.
-For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\\
-This property will become important later in the work, because it provides one limit on the waist of the beam in our experimental system. In fact, the optical aperture of the trap is limited by some electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\\
+For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\par
+This property will become important later in the work, because it provides one limit on the waist of the beam in our experimental system. In fact, the optical aperture of the trap is limited by some electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\par
 A Gaussian beam can be reshaped using optical elements.
 \begin{figure}
 \centering
@@ -494,7 +495,7 @@ If the size of the collimated beam is further increased, the lens becomes a fini
 
 \subsection{Beam stearing via Acousto-optical Deflectors}
 \label{theory_AOD}
-An acousto-optical deflector (AOD) is a common device that can change the propagation direction of a laser beam, typically on the few microsecond timescale. In this work we use an AOD to change which ion is illuminated by a single-ion focused laser. The working principle of an AOD is based on the Acousto-optical effect. A piezo is used to create acoustic waves that propagate through a crystal. The waves modify the crystal refractive index, creating a periodic optical grating that can deflect light travelling through it.  \\
+An acousto-optical deflector (AOD) is a common device that can change the propagation direction of a laser beam, typically on the few microsecond timescale. In this work we use an AOD to change which ion is illuminated by a single-ion focused laser. The working principle of an AOD is based on the Acousto-optical effect. A piezo is used to create acoustic waves that propagate through a crystal. The waves modify the crystal refractive index, creating a periodic optical grating that can deflect light travelling through it.  \par
 Following the approach of \cite{saleh} to model the device, let us consider a rectangular crystal like in Figure \ref{AOD}. The acoustic wave creates a sinusoidal pattern with frequency $\Omega_s$ and wavenumber $q$, for the refractive index $n(x,t)$
 \begin{equation}
 n(x,t) = n - \Delta n_0 \cos \left(\Omega_s t - qx \right),
@@ -520,7 +521,7 @@ These two terms are the plus and minus first order diffraction, an acousto-optic
 \label{braggcondition}
 \sin \theta_B  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
 \end{equation}
-At the Bragg angle, the diffraction angle $\theta_d$ is equal to the incident angle $\theta_B = \theta = \theta_d$ \cite{Korpel1981}. If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device. The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\\
+At the Bragg angle, the diffraction angle $\theta_d$ is equal to the incident angle $\theta_B = \theta = \theta_d$ \cite{Korpel1981}. If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device. The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\par
 From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscillating at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted optical wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
 \begin{equation}
 \label{eq:aodshift}
@@ -581,10 +582,10 @@ The phase $\phi$ can be set experimentally.
 \caption{Scheme of the Raman process used to generate photons, via a cavity enhanced Raman process (Section \ref{sec:ramanprocess}). The electron in the $\ket{S}$ state is excited to the $\ket{D}$ level by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity.}
 \label{img:sec2}
 \end{figure}
-The second key experiment consists of generating photons from one single ion out of a string, using the cavity-mediated Raman process described in Section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. First, the ion is positioned in a maximum of the cavity vacuum electric field such that the coupling atom-cavity $g$ is maximized. Second, a 393 nm laser pulse triggers the generation of a photon into the cavity through the Raman process. As seen in Section \ref{sec:ramanprocess}, for the process to be stronger than the spontaneous scattering rate, we choose a detuning of $\Delta \sim 400$ MHz. In this case the effective Rabi frequency $\Omega_{eff}$ (Equation \eqref{omegaeff}) is larger than the effective spontaneous scattering rate $\Gamma_{eff}$ (Equation \eqref{gammaeff}).\\
+The second key experiment consists of generating photons from one single ion out of a string, using the cavity-mediated Raman process described in Section \ref{sec:ramanprocess}. In figure \ref{img:sec2} the relevant levels are depicted. First, the ion is positioned in a maximum of the cavity vacuum electric field such that the coupling atom-cavity $g$ is maximized. Second, a 393 nm laser pulse triggers the generation of a photon into the cavity through the Raman process. As seen in Section \ref{sec:ramanprocess}, for the process to be stronger than the spontaneous scattering rate, we choose a detuning of $\Delta \sim 400$ MHz. In this case the effective Rabi frequency $\Omega_{eff}$ (Equation \eqref{omegaeff}) is larger than the effective spontaneous scattering rate $\Gamma_{eff}$ (Equation \eqref{gammaeff}).\par
 In the ideal case, the population of the state $\ket{S}$ is coherently transferred to the $\ket{D}$ state by absorbing a 393 nm photon and emitting a 854 nm photon in the cavity, the photon then exits from the cavity out of a preferred mirror. We perform the experiment using the following states
 \begin{equation}
 \ket{\text{S}_{1/2},-1/2} \to \ket{\text{P}_{3/2},-3/2} \to \ket{\text{D}_{5/2},-3/2}.
 \end{equation}
-These transitions are polarization dependent, the absorbed photon is $\sigma_-$ polarized, while a $\pi$ polarized photon is emitted. Since the magnetic field is orthogonal to the cavity, the $\pi$ polarized photon is projected into a linearly polarized cavity photon.\\
+These transitions are polarization dependent, the absorbed photon is $\sigma_-$ polarized, while a $\pi$ polarized photon is emitted. Since the magnetic field is orthogonal to the cavity, the $\pi$ polarized photon is projected into a linearly polarized cavity photon.\par
 Note that the effective Rabi frequency of the population transfer is proportional to the laser drive Rabi frequency $\propto \Omega$ as seen in equation \eqref{omegaeff}. On the contrary, AC Stark shift depends on the Intensity $\propto \Omega^2$. Therefore, the interaction of the addressed beam with the ion string in the two experiments is different. After the excitation and emission, qubit state detection on all ions is performed, this gives the possibility to check if other ions have been undesirably addressed.

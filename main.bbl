@@ -14,12 +14,6 @@ Peter~W. Shor.
   logarithms on a quantum computer.
 \newblock {\em SIAM J. Comput.}, 26(5):1484--1509, oct 1997.
 
-\bibitem{grover}
-Lov~K. Grover.
-\newblock A fast quantum mechanical algorithm for database search.
-\newblock In {\em Proceedings of the Twenty-eighth Annual ACM Symposium on
-  Theory of Computing}, STOC '96, pages 212--219, New York, NY, USA, 1996. ACM.
-
 \bibitem{RevModPhys.86.153}
 I.~M. Georgescu, S.~Ashhab, and Franco Nori.
 \newblock Quantum simulation.
@@ -68,6 +62,13 @@ Vasil~S. Denchev and Gopal Pandurangan.
 \newblock Distributed quantum computing: A new frontier in distributed systems
   or science fiction?
 \newblock {\em SIGACT News}, 39(3):77--95, September 2008.
+
+\bibitem{PhysRevA.89.022317}
+C.~Monroe, R.~Raussendorf, A.~Ruthven, K.~R. Brown, P.~Maunz, L.-M. Duan, and
+  J.~Kim.
+\newblock Large-scale modular quantum-computer architecture with atomic memory
+  and photonic interconnects.
+\newblock {\em Phys. Rev. A}, 89:022317, Feb 2014.
 
 \bibitem{ionquantumcomputer}
 J.~I. Cirac and P.~Zoller.
