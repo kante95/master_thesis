@@ -80,7 +80,7 @@ Which can be used to generate entanglement between two qubits. It can be shown \
 \subsection{Ion qubits and laser-ion interactions}
 \label{laserioninteractions}
 Qubits can be encoded in any pair of orthogonal quantum states of a physical system. %REWRITE (In the case of an ion it is possible to take two internal electronic states, the qubit is then implemented in their transition. In figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The lifetime of the excited level has to be long enough to carry out all the quantum operations without spontaneous scattering. A common choice is the transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$, where the ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the excited state $\ket{\text{D}_{5/2}}$ will be $\ket{1}$).
-In Figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The states $\ket{\text{S}_{1/2}}$\footnote{the notation used is $l_j$, where $l$ is the orbital angular momentum, and $j$ the total angular momentum} and $\ket{\text{D}_{5/2}}$ are a common choice to encode a qubit. The ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the long lived ($\sim$ 1 s) excited state $\ket{\text{D}_{5/2}}$ can be $\ket{1}$. As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit.
+In Figure \ref{qubitschemereference} the level scheme of $^{40}\text{Ca}^+$ is presented. The states $\ket{\text{S}_{1/2}}$ and $\ket{\text{D}_{5/2}}$ are a common choice to encode a qubit. The ground state $\ket{\text{S}_{1/2}}$ represents the state $\ket{0}$ and the long lived ($\sim$ 1 s) excited state $\ket{\text{D}_{5/2}}$ can be $\ket{1}$. As these levels are directly connected by an electric-quadrupole transition at an optical wavelength (729 nm), this kind of qubit is often referred to as an optical qubit.
 Lasers provide a way to directly manipulate the population of these two levels and therefore to manipulate the state of the qubit.\par
 The laser set up in this thesis is the 393 nm, which interacts via a dipole transition (different from the 729 nm transition) with the atomic ion, we model therefore the atom-light interactions as dipole interaction. In the case of a quadrupole interaction, the equations below still hold with the exception of the Rabi frequency, which will no longer depend linearly with the electric field. For a proper treatment of the quadrupole interaction see \cite{ross}.\par
 %The interaction between ion and laser is now presented using a simple model: a two-level atom with dipole interaction with the laser field.
@@ -90,10 +90,11 @@ The Hamiltonian of the atomic part can be written as:
 \begin{equation}
 H_a = \hbar\omega_0 \ket{1}\bra{1},
 \end{equation}
-where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0. \begin{figure}
+where $\omega_0$ is the frequency difference between the ground and excited state, the energy of the ground state has also been set to 0.
+\begin{figure}
 \centering
 \includegraphics[width = .6 \textwidth]{calciumscheme}
-\caption{Level scheme of $^{40}\text{Ca}^+$. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729 nm between a single pair of Zeeman states ($m_j$).}
+\caption{Level scheme of $^{40}\text{Ca}^+$, notation is $n^{2s+1}l_{j,m_j}$, where $n$ is the principal quantum number, $s$ the electron spin, $l$ the orbital angular moment, $j = |l\pm s|$ the total angular moment, and $m_j$ the magnetic quantum number. Detailed description is in Section \ref{sec:calciumion}. For quantum computing purposes, the chosen qubit transition is the long lived quadropole transition $\ket{\text{S}_{1/2}} \to \ket{\text{D}_{5/2}}$ at 729 nm between a single pair of Zeeman states ($m_j$). Blue and orange transitions are dipole transitions suitable for cooling, and imaging. Red transitions are dipole forbidden, but accessible via electric quadrupole, they are used to encode qubits. In addition, the 854 nm transition is tuned in resonance with the cavity for photon generation purposes.}
 \label{qubitschemereference}
 \end{figure}
 The Hamiltonian of the interaction between the dipole atomic moment $\mathbf{d}$ and the electric field of the laser can be written \cite{steck}
