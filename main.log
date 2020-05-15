@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  15 MAY 2020 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  15 MAY 2020 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -966,9 +966,6 @@ pages
 ) (./main.aux
 (./frontpage.aux)
 
-LaTeX Warning: Label `eq:deflection' multiply defined.
-
-
 LaTeX Warning: Label `pol1' multiply defined.
 
 )
@@ -1320,13 +1317,13 @@ Package pdftex.def Info: ./img/aod3.png  used on input line 503.
 <./img/exp1.png, id=673, 463.2507pt x 394.23285pt>
 File: ./img/exp1.png Graphic file (type png)
 <use ./img/exp1.png>
-Package pdftex.def Info: ./img/exp1.png  used on input line 546.
+Package pdftex.def Info: ./img/exp1.png  used on input line 545.
 (pdftex.def)             Requested size: 317.0764pt x 269.84935pt.
  [24]
 <./img/exp2.png, id=693, 315.8199pt x 255.8358pt>
 File: ./img/exp2.png Graphic file (type png)
 <use ./img/exp2.png>
-Package pdftex.def Info: ./img/exp2.png  used on input line 578.
+Package pdftex.def Info: ./img/exp2.png  used on input line 577.
 (pdftex.def)             Requested size: 226.48413pt x 183.46773pt.
  [25 <./img/exp1.png>])
 (./expsetup.tex [26 <./img/exp2.png>]
@@ -1617,7 +1614,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25866 strings out of 492167
  436229 string characters out of 6131558
- 574989 words of memory out of 5000000
+ 574990 words of memory out of 5000000
  29299 multiletter control sequences out of 15000+600000
  560464 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1648,7 +1645,7 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (78 pages, 18732913 bytes).
+Output written on main.pdf (78 pages, 18732960 bytes).
 PDF statistics:
  1471 PDF objects out of 1728 (max. 8388607)
  1202 compressed objects within 13 object streams
