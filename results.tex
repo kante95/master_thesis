@@ -172,14 +172,14 @@ where $N = 50$ is the number of repetitions.
 \label{rabiflops4}
 \end{figure}
 Ramsey fringes without the 393 nm pulse are presented in Figure \ref{ramseyfringes}, the $\pi/2$ time was set to 4.2 $\mu$s. The phase $\phi$ between the two pulses was scanned, and afterwards it was set to $\phi = \pi/2$ for the rest of the experiment.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{ramseyfringes}
 \caption{Ramsey fringes for 4 ions without 393 nm. A $\cos^2(\phi)$ behavior can be noticed showing coherent control of the ion states.}
 \label{ramseyfringes}
 \end{figure}
 The 393 nm pulse length $\tau$ was scanned inside the Ramsey experiment, the flops are showed in Figure \ref{ACscan}. For the next experiment, to get the beam profile across the ion string, we chose $\tau$ of 25 $\mu$s, so that the ion is not fully flipped. It was roughly checked that $\tau$ is the same for every ion.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{ac_stark_fit2}
 \caption{393 nm AC Stark flops. The pulse length $\tau$ of the 393 nm laser is scanned while shining over one singe ion. The red curve is a fit of $B\sin^2(A\tau)$, where $A$ is proportional to the Rabi frequency of the laser focused on the third ion.}
@@ -216,13 +216,13 @@ where $N_{click}$ is the number of times a photon has been detected with respect
 The experiment consisted of scanning the Raman pulse length, and for each length, the photon detection probability and the ion excitation probability $P_D$ have been measured. In Figure \ref{probphoton}, the photon detection probability is plotted. From polarization selection rules, we expect a $\pi$ polarized photon to be emitted. As the cavity is perpendicular to the magnetic field, the photon in the cavity is linearly polarized and is then rotated with waveplates such that it goes to one output port of the PBS. Consistent with the expectations, we can see that we measured mostly vertical polarized photons. The photons are not perfectly polarized which could be due to imperfections of the polarization analysis, e.g. errors in the settings of waveplates.\par
 The excitation probability $P_D$ is plotted in Figure \ref{probion}. In this figure, we can see that only the addressed ion is excited to the $\text{D}_{5/2}$ state, while the others show no excitation at all. $P_D$ does not reach 1, perfect population transfer is not achieved due to non-zero spontaneous emission from the $\text{P}_{3/2}$ state to the $\text{D}_{3/2}$ state, or to the $\ket{S_{1/2},+\frac{1}{2}}$ state. Unfortunately, we were not able to simulate theoretical curves for both of the plots, as the experiment was carried out in one day at the end of the time available for my master work. As such, no careful optimization was done on the polarization of the driving addressing beam, which means that the parameters (specifically, the Rabi frequency of the addressed laser) are not well known enough do a theoretical model. We remind that the two outer ions are still coupled to the cavity to a significant extent (82\% coupling expected) such that they are in a condition to generate photons if the addressed beam were to drive them. In fact, we also observed photon generations when addressing outer ions.\par
 In conclusion, we observed the addressed ion getting excited to the $\text{D}_{5/2}$ state and simultaneously detected vertical polarized photons. Therefore, these data are consistent with only the addressed ion emitting a cavity photons.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{img/photonefficency_witherror3}
 \caption{Measured cavity photon detection probability as a function of addressed Raman laser pulse length. The two detectors measure the Horizontal (orage data points) and Vertical (blue data points) photons emitted by the ion, in Figure \ref{probion} excitations of the ions during the process are plotted. Inset: diagram of the situation where only the middle ion is addressed.}
 \label{probphoton}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{img/ramanlength_witherrors2}
 \caption{Qubit excitation state of the ions $P_D$ as a function of addressed Raman laser pulse length. In Figure \ref{probphoton} photon detection probability during the same experiment is plotted.}

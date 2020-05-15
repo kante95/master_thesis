@@ -38,7 +38,7 @@ The choice of a 90:10 beam splitter (Figure \ref{addressingsetup}) to overlap th
 %         \caption{}
 %       %  \label{fig:three graphs}
 % \end{figure}
-\begin{figure}[H]
+\begin{figure}
       \centering
           \centering
           \includegraphics[width = \textwidth]{obj+zemaxpng}
@@ -50,7 +50,7 @@ The AOD is from Gooch \& Housego, model 4120-3, the datasheet is in Appendix \re
 
 \section{Design simulation}
 I simulated the setup in Figure \ref{addressingsetup} with the software Zemax\footnote{Zemax OpticStudio is a commercial software based on ray tracing used for designing optical systems.}. The simulation had the purpose of assessing the performance of the setup and to find suitable lenses and their optimal locations. The simulation included: the four lenses, the objective, and the viewport. As there is no option to simulate an AOD, it was not taken into consideration, instead the simulation started at the output of the AOD as described below. Mirrors and beam splitters were not included in the simulation as their imperfections are not known.
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width = \textwidth]{2levelszemax}
 \caption{Zemax simulation of the setup. Rays propagate from left to right starting from top left. Simulation layout has been separated in two for displaying purposes. In the top part, the four lenses are depicted, the rays continue in the bottom part where the objective and image plane are located. Different colors indicate different beams emerging from the AOD at different angles, rays with the same color belong to the same beam. The blue one is the central beam emerging from the AOD with a 0$^\circ$ angle, the red and the green beams emerge respectively with $\pm0.86^\circ$.}
@@ -93,7 +93,7 @@ Afterwards, the system was moved and implemented on the optical table containing
 such that when the 854 nm light is off the ions addressed by the 393 nm laser become dark after decaying from $\text{P}_{3/2}\to  \text{D}_{5/2}$. The ions become bright again when a new pulse of 854 nm light is sent, therefore if the pulse rate is slow enough it is possible to see the addressed ions as blinking on the CCD camera. This process was used for initial alignment of the addressing beam focus and direction on the ion string. Once done, the next stage is to directly measure and optimize the AC stark shifts, as presented later in section \ref{sec:singlequbitmanipulation}.\par
 A photo of the installed system is in Figure \ref{photosetup}. Here, the collimating lens is mounted on a 3D manual screw-gauge translation stage for fine tuning calibration position of the focus w.r.t. the ion string. Manual screws were later replaced with remote controlled ones from Newport, model PZA12 so that beam alignment is possible without opening the mu-metal enclosure. The AOD is placed on a rotation mount that allows to tilt it in two directions. One direction was used to find the Bragg angle of the AOD to achieve maximum diffraction efficiency, the other can be used to tilt the axis over which the AOD sweeps to compensate for an ion string which is not exactly parallel to the AOD sweeping direction.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[scale = 1.3]{photosetupnice_withlabels2.png}
 \caption{Photo of the single-ion addressed optical setup. The blue dashed line is the beam path starting from bottom left at the fiber collimator, all the way to the top where a mirror deflects the beam and send it to the 90:10 beam splitter (Figure \ref{addressingsetup}). The following elements are visible: (A) Fiber collimator 60FC-M12-33 (B) Polarizing beam splitter (C) $\lambda/2$ (D) AOD (E) Lens LA-1059 (F) Iris to block 0th order (G) Lens LA-1131 (H) Diverging lens LA-4252 (I) Iris (L) Lens LA-1725 on the 3D manual screw-gauge translation stage (M) Mirror. }
