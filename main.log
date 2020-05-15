@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  15 MAY 2020 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  15 MAY 2020 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,14 +1520,14 @@ _witherrors2.png>]
 Chapter 6.
 ) [61
 
-]
+] [62]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 178.
 
-(./main.bbl [62
+(./main.bbl [63
 
-] [63] [64] [65]
+] [64] [65]
 Overfull \hbox (26.74219pt too wide) in paragraph at lines 392--394
 []\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
 ownload/fibercollimators60fc.pdf. 
@@ -1537,12 +1537,12 @@ ownload/fibercollimators60fc.pdf.
 
 ]
 Appendix A.
-<AOD1.png, id=1254, 596.9502pt x 767.5074pt>
+<AOD1.png, id=1255, 596.9502pt x 767.5074pt>
 File: AOD1.png Graphic file (type png)
 <use AOD1.png>
 Package pdftex.def Info: AOD1.png  used on input line 193.
 (pdftex.def)             Requested size: 447.71155pt x 575.62914pt.
-<4120-397-02799-02RevB.pdf, id=1255, 794.97pt x 614.295pt>
+<4120-397-02799-02RevB.pdf, id=1256, 794.97pt x 614.295pt>
 File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf  used on input line 195.
@@ -1551,7 +1551,7 @@ File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf  used on input line 195.
 (pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-<4120-397-02799-02RevB.pdf, id=1258, page=1, 794.97pt x 614.295pt>
+<4120-397-02799-02RevB.pdf, id=1259, page=1, 794.97pt x 614.295pt>
 File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf, page 1>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf , page1 used on input line 1
@@ -1586,17 +1586,17 @@ Package pdftex.def Info: 4120-397-02799-02RevB.pdf , page1 used on input line 1
 
 ]
 Appendix B.
-<./img/pol3.png, id=1289, 987.2082pt x 489.9906pt>
+<./img/pol3.png, id=1290, 987.2082pt x 489.9906pt>
 File: ./img/pol3.png Graphic file (type png)
 <use ./img/pol3.png>
 Package pdftex.def Info: ./img/pol3.png  used on input line 201.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<./img/pol1.png, id=1292, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1293, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 207.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=1293, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1294, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 213.
@@ -1619,7 +1619,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25870 strings out of 492167
  436259 string characters out of 6131558
- 575935 words of memory out of 5000000
+ 575991 words of memory out of 5000000
  29299 multiletter control sequences out of 15000+600000
  560513 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1650,10 +1650,10 @@ cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (80 pages, 18732327 bytes).
+Output written on main.pdf (80 pages, 18732977 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
- 1209 compressed objects within 13 object streams
+ 1481 PDF objects out of 1728 (max. 8388607)
+ 1210 compressed objects within 13 object streams
  338 named destinations out of 1000 (max. 500000)
  25208 words of extra memory for PDF output out of 29859 (max. 10000000)
 
