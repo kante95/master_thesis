@@ -144,13 +144,13 @@ U(t) = \exp\left\{-\frac{i}{\hbar} \widetilde{H} t \right\} =
   -ie^{-i\varphi}\frac{\Omega}{\widetilde{\Omega}}  \sin\left(\frac{\widetilde{\Omega} t}{2}\right)  & \cos\left(\frac{\widetilde{\Omega} t}{2}\right) - i \frac{\Delta}{\widetilde{\Omega}} \sin\left(\frac{\widetilde{\Omega} t}{2}\right)
 \end{pmatrix}.
 \end{equation}
-Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. In the case of zero detuning ($\Delta = 0$) the matrix is the same as equation \eqref{quantumgates}, thus a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$.\par
+Where $\widetilde{\Omega} = \sqrt{\Delta^2 + \Omega^2}$ is the generalized Rabi frequency. In the case of zero detuning ($\Delta = 0$) the matrix is the same as Equation \eqref{quantumgates}, thus a resonant laser pulse implements the qubit rotation $U_{\varphi}(\theta)$.\par
 As an example, let us take the atom in the ground state $\ket{\psi} = \ket{0}$ and apply the unitary evolution \eqref{laserpulse}. The probability to be in the excited state becomes
 \begin{equation}
 \label{eq:rabifrequency}
 \mathbb{P}\{\ket{1}\}(t) = |\braket{1|U(t)|0}|^2 = \frac{\Omega^2}{\Omega^2+\Delta^2} \sin^2\left(\frac{\widetilde{\Omega}t}{2} \right)
 \end{equation}
-This equation is plotted in Figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega/2$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement e.g. the Hadamard gate of equation \eqref{Hadamard}.
+This equation is plotted in Figure \ref{rabiflops}. For $\Delta = 0$, we get a cosine behaviour, the so called Rabi oscillations. The probability amplitude for the electron, under continuous drive by a laser, will oscillate between the ground and excited state at a frequency $\Omega/2$. Detuning damps the amplitude of such oscillations and increases the oscillation frequency. Rabi oscillations are an important tool in quantum information, laser pulses can prepare the state of the qubit in any superposition, e.g. starting in the $\ket{0}$ state, a $\pi/2$ pulse ($\Omega t = \pi/2$ and phase $\varphi=0$) will result in the state $(\ket{0} - i\ket{1})/\sqrt{2}$, with a $\pi$ pulse ($\Omega t = \pi$, $\varphi=\pi$) the population is completely transferred to another level $\ket{0}\to \ket{1}$. These pulses can be used to implement e.g. the Hadamard gate of Equation \eqref{Hadamard}.
 \begin{figure}[H]
 \centering
 \includegraphics[width = 1\textwidth]{rabiflops}
@@ -180,7 +180,7 @@ U(t) = \exp\left\{-\frac{i}{\hbar} H_{AC} t \right\} =
    0 & \exp\left\{i\frac{\delta}{2}t\right\}
 \end{pmatrix}.
 \end{equation}
-This matrix implements the quantum gate $U_z(\Theta)$ from equation \eqref{quantumgates}.
+This matrix implements the quantum gate $U_z(\Theta)$ from Equation \eqref{quantumgates}.
 
 
 \subsubsection{Three-level model}
@@ -280,7 +280,7 @@ In this case, the transitions strengths, i.e. the projection of the laser polari
 \label{omegaeff}
 \Omega_{eff} = \frac{\Omega g}{\Delta},
 \end{equation}
-where the Rabi frequency of the second laser is now replaced by the atom cavity coupling $g$ in analogy to the 3-level Raman process of Equation \eqref{eq:effectiverabi}. The Raman resonance appears when the detuning $\Delta$ of the laser and the cavity are the same. The effective spontaneous decay rate from the $\text{P}_{3/2}$ level is from equation \eqref{eq:gammaeff}
+where the Rabi frequency of the second laser is now replaced by the atom cavity coupling $g$ in analogy to the 3-level Raman process of Equation \eqref{eq:effectiverabi}. The Raman resonance appears when the detuning $\Delta$ of the laser and the cavity are the same. The effective spontaneous decay rate from the $\text{P}_{3/2}$ level is from Equation \eqref{eq:gammaeff}
 \begin{equation}
 \label{gammaeff}
 \Gamma_{eff} = \left(\frac{\Omega}{2\Delta}\right)^2\Gamma
@@ -387,7 +387,7 @@ In Figure \ref{positions_ions}, ions positions are presented for different numbe
 \label{sec:doppler_cooling}
 
 Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extent of the ion wave packet is much smaller than the optical wavelengths of the lasers. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, causing photon absorption from the laser by the atom, giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in the direction of the laser beam to the ion. The absorbed photon is emitted through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero (although presents a heating process which sets the Doppler limit), while the kick given by the laser will slow down and cooling the ion in the direction of the laser. \par
-The mathematical model is a 2-level atom interacting with a laser (Rabi frequency $\Omega$, and detuning $\Delta$) as described in Section \ref{laserioninteractions}. Spontaneous emission is included with the master equation \eqref{masterequation}, where $\Gamma$ is the spontaneous emission rate. The master equation can be explicitly written for every component of the density matrix $\rho_{ij}$, in the rotating frame they are called optical Bloch equations \cite{foot}. Following the approach of \cite{gabriel}, the system reaches equilibrium when $\rho_{ee}(t\to \infty)$:
+The mathematical model is a 2-level atom interacting with a laser (Rabi frequency $\Omega$, and detuning $\Delta$) as described in Section \ref{laserioninteractions}. Spontaneous emission is included with the master Equation \eqref{masterequation}, where $\Gamma$ is the spontaneous emission rate. The master equation can be explicitly written for every component of the density matrix $\rho_{ij}$, in the rotating frame they are called optical Bloch equations \cite{foot}. Following the approach of \cite{gabriel}, the system reaches equilibrium when $\rho_{ee}(t\to \infty)$:
 % \begin{equation}
 % \label{rhoee}
 % \frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
@@ -458,7 +458,7 @@ From Helmholtz equation \cite{saleh}, the profile of $W(z)$ as a function of $z$
 \label{waistprofile}
 W(z) = W_0 \sqrt{1 + \left(\frac{z}{z_0}\right)^2}\qquad W_0 = \sqrt{\frac{\lambda z_0}{\pi}} \qquad z_0 = \frac{\pi W_0^2}{\lambda}.
 \end{equation}
-$\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below. A plot of equation \eqref{waistprofile} is presented in Figure \eqref{gaussprofile}:
+$\lambda$ is the wavelength, and $W_0$ and $z_0$ are respectively the waist of the beam and the Rayleigh range discussed below. A plot of Equation \eqref{waistprofile} is presented in Figure \eqref{gaussprofile}:
 the width $W(z)$ assumes its minimum value $W_0$ at $z=0$, this position is called the beam focus and its width $W_0$ is the waist of the beam. The Rayleigh range $z_0$ gives an idea of how quickly the beam is expanding. Mathematically, $z_0$ is the distance between the focus and the point where the width is $W(z) = \sqrt{2}W_0$.
 For $z \gg z_0$, the beam profile diverges almost linearly with an angle given by $\theta = W_0/z_0$, which means the smaller the focus, the greater it diverges.\par
 This property will become important later in the work, because it provides one limit on the waist of the beam in our experimental system. The optical aperture of the trap is limited by some electrodes, and a beam that diverges too rapidly can potentially clip on one electrode causing aberrations and scattered light in the trap.\par
@@ -466,10 +466,10 @@ A Gaussian beam can be reshaped using optical elements.
 \begin{figure}
 \centering
 \includegraphics[width = \textwidth]{gaussprofile}
-\caption{Width profile of a Gaussian beam along the direction of travel of the beam, equation \eqref{waistprofile}. The beam is focused at the position $z = 0$, here it assumes the minimum width $W_0$, also referred to as the waist. $z_0$ is the Rayleigh range where the width is $\sqrt{2}W_0$}
+\caption{Width profile of a Gaussian beam along the direction of travel of the beam, Equation \eqref{waistprofile}. The beam is focused at the position $z = 0$, here it assumes the minimum width $W_0$, also referred to as the waist. $z_0$ is the Rayleigh range where the width is $\sqrt{2}W_0$}
 \label{gaussprofile}
 \end{figure}
-In order to study such reshaping, let us consider a thin spherical lens with focal length $f$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor $k(x^2 + y^2)/2f$ to equation \eqref{gaussianbeams} \cite{beamparameters}. We can match the phase of the incoming and emerging waves, which have respectively radius of curvature $R$, and $R'$, this results in
+In order to study such reshaping, let us consider a thin spherical lens with focal length $f$ placed at position $z$. The effect of the lens on the beam is to give an extra phase factor $k(x^2 + y^2)/2f$ to Equation \eqref{gaussianbeams} \cite{beamparameters}. We can match the phase of the incoming and emerging waves, which have respectively radius of curvature $R$, and $R'$, this results in
 \begin{equation}
 \frac{1}{R'} = \frac{1}{R} - \frac{1}{f}.
 \end{equation}
@@ -519,17 +519,17 @@ These two terms are the plus and minus first order diffraction, an acousto-optic
 \sin \theta_B  = \frac{\lambda}{2 \Lambda_s} \qquad \Lambda_s = \frac{2\pi}{q}.
 \end{equation}
 At the Bragg angle, the diffraction angle $\theta_d$ is equal to the incident angle $\theta_B = \theta = \theta_d$ \cite{Korpel1981}. If the condition is not perfectly matched, some light will not be diffracted and will be transmitted unaltered through the device. The ratio of the transmitted and diffracted light is called diffraction efficiency and gives an idea of how well an acousto-optical device is performing.\par
-From equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscillating at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted optical wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
+From Equation \eqref{mainAOD} we can notice that an extra phase factor proportional to $\Omega_s t$ is added to the reflected wave. Thus, if the incoming wave is oscillating at $\propto e^{i\omega t}$, the diffracted wave will oscillate as $\propto r_{+}e^{i\omega t} \implies \propto e^{i(\omega + \Omega_s )t}$. The frequency of the diffracted optical wave $\omega_r$ is therefore shifted by the frequency of the acoustic vibration as
 \begin{equation}
 \label{eq:aodshift}
 \omega_r  =  \omega + \Omega_s.
 \end{equation}
-The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using equation \eqref{eq:aodshift}. Deflectors instead aim to shift the direction of the beam by exploiting the fact that the diffraction angle $\theta_d = \theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
+The acousto-optical effect described above is common to different devices optimized for specific tasks. Two of the most commons devices are Acousto-optical Deflectors (AOD) and Acousto-optical Modulators (AOM). The idea of the latter is to shift the frequency of a laser using Equation \eqref{eq:aodshift}. Deflectors instead aim to shift the direction of the beam by exploiting the fact that the diffraction angle $\theta_d = \theta$ changes linearly as a function of the acoustic frequency $\Omega_s$. Assuming that the angle $\theta$ is small enough to approximate $\sin\theta \sim \theta$, the Bragg condition can be written as
 \begin{equation}
 \label{eq:deflection}
 \theta \simeq \frac{\lambda}{2 v_s}f,
 \end{equation}
-where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. The bandwidth $B$ specifies the range of frequencies over which deflectors work. Assuming that the maximum diffraction angle is $\Delta\theta$, equation \eqref{eq:deflection} can we written as \cite{Rmer2014}
+where $v_s$ is the speed of sound and $f$ the frequency of the acoustic wave. We can already see that if we change the frequency $f$, the deflection angle $\theta$ changes proportionally. The bandwidth $B$ specifies the range of frequencies over which deflectors work. Assuming that the maximum diffraction angle is $\Delta\theta$, Equation \eqref{eq:deflection} can we written as \cite{Rmer2014}
 \begin{equation}
 \label{eq:deflection}
 \Delta\theta \simeq \frac{\lambda}{2 v_s}B,
