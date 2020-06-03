@@ -100,6 +100,13 @@ Cornelius Hempel.
   and setting up a linear ion trap}.
 \newblock PhD thesis, University of Innsbruck, 2014.
 
+\bibitem{calcium}
+H.~C. N\"agerl, Ch. Roos, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
+  F.~Schmidt-Kaler, and R.~Blatt.
+\newblock Investigating a qubit candidate: Spectroscopy on the ${S}_{1/2}$ to
+  ${D}_{5/2}$ transition of a trapped calcium ion in a linear paul trap.
+\newblock {\em Phys. Rev. A}, 61:023405, Jan 2000.
+
 \bibitem{ross}
 Christian Roos.
 \newblock {\em Controlling the quantum state of trapped ions}.
@@ -326,13 +333,6 @@ M.~R. Dietrich, N.~Kurz, T.~Noel, G.~Shu, and B.~B. Blinov.
 D.~J. Berkeland.
 \newblock Linear paul trap for strontium ions.
 \newblock {\em Review of Scientific Instruments}, 73(8):2856--2860, 2002.
-
-\bibitem{calcium}
-H.~C. N\"agerl, Ch. Roos, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,
-  F.~Schmidt-Kaler, and R.~Blatt.
-\newblock Investigating a qubit candidate: Spectroscopy on the ${S}_{1/2}$ to
-  ${D}_{5/2}$ transition of a trapped calcium ion in a linear paul trap.
-\newblock {\em Phys. Rev. A}, 61:023405, Jan 2000.
 
 \bibitem{PhysRevA.44.R20}
 A.~S. Bell, P.~Gill, H.~A. Klein, A.~P. Levick, Chr. Tamm, and D.~Schnier.
