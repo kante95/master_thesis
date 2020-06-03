@@ -133,6 +133,11 @@ P.~Zoller C.~Gardiner.
 \newblock {\em Quantum Noise}.
 \newblock Springer-Verlag Berlin Heidelberg, 2004.
 
+\bibitem{divincenzo}
+David~P. DiVincenzo.
+\newblock The physical implementation of quantum computation.
+\newblock {\em Fortschritte der Physik}, 48(9‐11):771--783, 2000.
+
 \bibitem{Hughes2002}
 Richard~J Hughes, Jane~E Nordholt, Derek Derkacs, and Charles~G Peterson.
 \newblock Practical free-space quantum key distribution over 10 km in daylight
