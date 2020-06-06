@@ -5,7 +5,7 @@ Antonio Ac{\'{\i}}n, Immanuel Bloch, Harry Buhrman, Tommaso Calarco,
   Christopher Eichler, Jens Eisert, Daniel Esteve, Nicolas Gisin, Steffen~J
   Glaser, Fedor Jelezko, Stefan Kuhr, Maciej Lewenstein, Max~F Riedel, Piet~O
   Schmidt, Rob Thew, Andreas Wallraff, Ian Walmsley, and Frank~K Wilhelm.
-\newblock The quantum technologies roadmap: a european community view.
+\newblock The quantum technologies roadmap: a {E}uropean community view.
 \newblock {\em New Journal of Physics}, 20(8):080201, aug 2018.
 
 \bibitem{shor}
@@ -44,7 +44,7 @@ Ivan~B. Damgard, Serge Fehr, Louis Salvail, and Christian Schaffner.
 Joseph~F. Fitzsimons.
 \newblock Private quantum computation: an introduction to blind quantum
   computing and related protocols.
-\newblock {\em npj Quantum Information}, 3(1), jun 2017.
+\newblock {\em npj Quantum Information}, 3(1):23, Jun 2017.
 
 \bibitem{quantumclocks}
 P.~K{\'{o}}m{\'{a}}r, E.~M. Kessler, M.~Bishof, L.~Jiang, A.~S. S{\o}rensen,
@@ -115,6 +115,7 @@ Christian Roos.
 \bibitem{steck}
 Daniel~Adam Steck.
 \newblock Quantum and atom optics.
+\newblock \url{http://steck.us/teaching}.
 
 \bibitem{acstarkhamiltonian}
 D.F.V. James.
@@ -278,7 +279,7 @@ C.J. Foot.
 \newblock Oxford Master Series in Physics, 2004.
 
 \bibitem{gabriel}
-Gabriel Andres~Areneda Machuca.
+Gabriel Andres~Araneda Machuca.
 \newblock {\em Experiments with single photons emitted by single atoms}.
 \newblock PhD thesis, University of Innsbruck, 2019.
 
@@ -290,7 +291,7 @@ J\"{u}rgen Eschner, Giovanna Morigi, Ferdinand Schmidt-Kaler, and Rainer Blatt.
 \bibitem{saleh}
 Bahaa E.~A. Saleh and Malvin~Carl Teich.
 \newblock {\em Fundamentals of photonics}.
-\newblock Wiley Series in Pure and Applied Optics, 2 edition, 2007.
+\newblock Wiley Series in Pure and Applied Optics, 2nd edition, 2007.
 
 \bibitem{beamparameters}
 C.~S. Williams.
@@ -298,7 +299,7 @@ C.~S. Williams.
 \newblock {\em Appl. Opt.}, 12(4):872--876, Apr 1973.
 
 \bibitem{diocane}
-Wolfgang Demtroeder.
+Wolfgang Demtr\"oder.
 \newblock {\em Laser Spectroscopy 1: Basic Principles}.
 \newblock Springer, 2014.
 
@@ -395,7 +396,7 @@ M.~Johanning, A.~Braun, N.~Timoney, V.~Elman, W.~Neuhauser, and Chr.
 
 \bibitem{fibercollimator}
 Fiber~Collimators 60FC.
-\newblock https://www.sukhamburg.com/download/fibercollimators60fc.pdf.
+\newblock https://www.sukhamburg.com/.
 
 \bibitem{dlimited}
 M.~Riedl.

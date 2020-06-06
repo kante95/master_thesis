@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  6 JUN 2020 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.11)  6 JUN 2020 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1444,17 +1444,17 @@ Package pdftex.def Info: ./img/cameraprofile_inset.png  used on input line 100.
 
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
  [47 <./img/cameraprofile_inset.png>] [48]
-<./img/polstability2.png, id=1100, 987.2082pt x 489.9906pt>
-File: ./img/polstability2.png Graphic file (type png)
-<use ./img/polstability2.png>
-Package pdftex.def Info: ./img/polstability2.png  used on input line 135.
+<./img/polstability3.png, id=1100, 987.2082pt x 489.9906pt>
+File: ./img/polstability3.png Graphic file (type png)
+<use ./img/polstability3.png>
+Package pdftex.def Info: ./img/polstability3.png  used on input line 135.
 (pdftex.def)             Requested size: 362.37598pt x 179.85815pt.
 <./img/beampointing2.png, id=1101, 784.50557pt x 408.76697pt>
 File: ./img/beampointing2.png Graphic file (type png)
 <use ./img/beampointing2.png>
 Package pdftex.def Info: ./img/beampointing2.png  used on input line 142.
 (pdftex.def)             Requested size: 362.37598pt x 188.81474pt.
- [49 <./img/polstability2.png> <./img/beampointing2.png>]
+ [49 <./img/polstability3.png> <./img/beampointing2.png>]
 <./img/sequence.png, id=1112, 447.68158pt x 46.43593pt>
 File: ./img/sequence.png Graphic file (type png)
 <use ./img/sequence.png>
@@ -1514,22 +1514,27 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 (./main.bbl [59
 
-] [60] [61]
-Overfull \hbox (26.74219pt too wide) in paragraph at lines 397--399
-[]\T1/cmr/m/n/12 (-20) Fiber Col-li-ma-tors 60FC.  https://www.sukhamburg.com/d
-ownload/fibercollimators60fc.pdf. 
- []
-
+]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
+18.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [60] [61]
 [62]) [63] [64
 
 ]
 Appendix A.
-<AOD1.png, id=1245, 596.9502pt x 767.5074pt>
+<AOD1.png, id=1247, 596.9502pt x 767.5074pt>
 File: AOD1.png Graphic file (type png)
 <use AOD1.png>
 Package pdftex.def Info: AOD1.png  used on input line 195.
 (pdftex.def)             Requested size: 447.71155pt x 575.62914pt.
-<4120-397-02799-02RevB.pdf, id=1246, 794.97pt x 614.295pt>
+<4120-397-02799-02RevB.pdf, id=1248, 794.97pt x 614.295pt>
 File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf  used on input line 197.
@@ -1538,7 +1543,7 @@ File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf  used on input line 197.
 (pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-<4120-397-02799-02RevB.pdf, id=1249, page=1, 794.97pt x 614.295pt>
+<4120-397-02799-02RevB.pdf, id=1251, page=1, 794.97pt x 614.295pt>
 File: 4120-397-02799-02RevB.pdf Graphic file (type pdf)
 <use 4120-397-02799-02RevB.pdf, page 1>
 Package pdftex.def Info: 4120-397-02799-02RevB.pdf , page1 used on input line 1
@@ -1573,17 +1578,17 @@ Package pdftex.def Info: 4120-397-02799-02RevB.pdf , page1 used on input line 1
 
 ]
 Appendix B.
-<./img/pol3.png, id=1281, 987.2082pt x 489.9906pt>
+<./img/pol3.png, id=1283, 987.2082pt x 489.9906pt>
 File: ./img/pol3.png Graphic file (type png)
 <use ./img/pol3.png>
 Package pdftex.def Info: ./img/pol3.png  used on input line 203.
 (pdftex.def)             Requested size: 452.96826pt x 224.83018pt.
-<./img/pol1.png, id=1284, 987.2082pt x 452.4102pt>
+<./img/pol1.png, id=1286, 987.2082pt x 452.4102pt>
 File: ./img/pol1.png Graphic file (type png)
 <use ./img/pol1.png>
 Package pdftex.def Info: ./img/pol1.png  used on input line 209.
 (pdftex.def)             Requested size: 452.96826pt x 207.58656pt.
-<./img/pol2.png, id=1285, 987.2082pt x 452.4102pt>
+<./img/pol2.png, id=1287, 987.2082pt x 452.4102pt>
 File: ./img/pol2.png Graphic file (type png)
 <use ./img/pol2.png>
 Package pdftex.def Info: ./img/pol2.png  used on input line 215.
@@ -1604,15 +1609,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25865 strings out of 492167
- 436029 string characters out of 6131558
- 574888 words of memory out of 5000000
- 29295 multiletter control sequences out of 15000+600000
- 560562 words of font info for 181 fonts, out of 8000000 for 9000
+ 25897 strings out of 492167
+ 436802 string characters out of 6131558
+ 574893 words of memory out of 5000000
+ 29316 multiletter control sequences out of 15000+600000
+ 561621 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,20n,100p,2354b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
-texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/font
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
+exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
@@ -1634,13 +1639,14 @@ texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
 00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfxc1440.pfb>
-Output written on main.pdf (76 pages, 16943721 bytes).
+are/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfxc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+xc1440.pfb>
+Output written on main.pdf (76 pages, 16952141 bytes).
 PDF statistics:
- 1470 PDF objects out of 1728 (max. 8388607)
- 1204 compressed objects within 13 object streams
+ 1475 PDF objects out of 1728 (max. 8388607)
+ 1208 compressed objects within 13 object streams
  336 named destinations out of 1000 (max. 500000)
- 25203 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 27251 words of extra memory for PDF output out of 29859 (max. 10000000)
 
