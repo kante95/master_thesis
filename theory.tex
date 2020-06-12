@@ -192,7 +192,7 @@ This matrix implements the quantum gate $U_z(\Theta)$ from Equation \eqref{quant
 \caption{3-level $\Lambda$-type atom model. Two long lived ground states $\ket{g_1}$, $\ket{g_2}$ couple to an excited level $\ket{e}$ (atomic frequencies $\omega_{1e}$, and $\omega_{2e}$ respectively) through two lasers of frequencies $\omega_1$, $\omega_2$ detuned respectively $\Delta_1,\Delta_2$ from the transitions.}
 \label{3levelmodel}
 \end{figure}
-We extend our model to a 3 level $\Lambda$-type atom driven by two lasers, which more closely resembles the real experimental situation (393 nm, 729 nm lasers and $\ket{\text{S}_{1/2}},\ket{\text{P}_{3/2}},\ket{\text{S}_{5/2}}$ states, see Figure \ref{qubitschemereference}) in the experiments in this thesis. The model contains new effects that describe photon generation and qubit gates. In particular, stimulated Raman transitions will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2-level atom. The system is depicted in Figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$, where the atomic frequencies are $\omega_{1e}$, and $\omega_{2e}$ respectively. Detunings are defined as $\Delta_1 = \omega_1 - \omega_{1e}$ and $\Delta_2 = \omega_2 - \omega_{2e}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived ($\sim 1$ s), such that any spontaneous emission from D to S can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states with branching ratio of 94\% from P$\to$S ($\sim$ 7.4 ns) and 5.3\% from P$\to$D ($\sim 101$ ns), we neglet decay to the $\ket{\text{D}_{3/2}}$ state.\par
+We extend our model to a 3 level $\Lambda$-type atom driven by two lasers, which more closely resembles the real experimental situation (393 nm, 729 nm lasers and $\ket{\text{S}_{1/2}},\ket{\text{P}_{3/2}},\ket{\text{D}_{5/2}}$ states, see Figure \ref{qubitschemereference}) in the experiments in this thesis. The model contains new effects that describe photon generation and qubit gates. In particular, stimulated Raman transitions will be discussed, and we will show how, under certain conditions, the system can be approximated as an effective 2-level atom. The system is depicted in Figure \ref{3levelmodel}, two ground states $\ket{g_1}$ and $\ket{g_2}$ are present together with a common excited state $\ket{e}$. Two different lasers $\omega_1,\omega_2$ drive the transition $\ket{g_1} \to \ket{e}$ and $\ket{g_2} \to \ket{e}$, where the atomic frequencies are $\omega_{1e}$, and $\omega_{2e}$ respectively. Detunings are defined as $\Delta_1 = \omega_1 - \omega_{1e}$ and $\Delta_2 = \omega_2 - \omega_{2e}$. In the case of calcium, the ground states are $\ket{\text{S}_{1/2}}$, and $\ket{\text{D}_{5/2}}$. This is the qubit transition, and it is long lived ($\sim 1$ s), such that any spontaneous emission from D to S can be neglected. The excited level is $\ket{\text{P}_{3/2}}$ which can decay into both ground states with branching ratio of 94\% from P$\to$S ($\sim$ 7.4 ns) and 5.3\% from P$\to$D ($\sim 101$ ns), we neglet decay to the $\ket{\text{D}_{3/2}}$ state.\par
 %In this model we assume that each laser light couples only to one transition and that . %the two ground states are not separated by an optical frequency $\omega_{2e} - \omega_{1e} \ll \omega_1,\omega_2$, and that the detunings are nearly equal $\Delta_1 \simeq \Delta_2$. As a consequence, each laser light couples only to one transition.\\
 Following the approach of \cite{steck}, the bare atom Hamiltonian is
 \begin{equation}
@@ -388,49 +388,25 @@ In Figure \ref{positions_ions}, ions positions are presented for different numbe
 % \end{figure}
 \subsection{Doppler cooling}
 \label{sec:doppler_cooling}
+In this section we describe a model of laser cooling for ions trapped in an harmonic potential. A general theoretical treatment can be found in \cite{RevModPhys.58.699}, we follow this approach in the case of a calcium ion cooled on the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz). The model assumes an ion with mass $m$ confined in an harmonic potential with frequency $\omega_z$. The internal state of the ion is modeled with a 2-level system interacting with a monochromatic laser field (wave vector $k_z$, Rabi frequency $\Omega$, and detuning $\Delta$), as described is Section \ref{laserioninteractions}.
+The laser interacts with the system causing photon absorption from the laser by the atom, and subsequent emission through spontaneous emission with decay rate $\Gamma$. The change in mechanical energy of the atom due to absorption and emission of a photon is given by $E_R = \hbar \omega_R$, where $\omega_R=\hbar k_z^2/2m$ is the photon recoil frequency. \par
+The frequency scale set by $\Gamma,\omega_R,$ and $\omega_z$ and their respective ratios determine the laser cooling regime. For calcium ions, the recoil frequency $\omega_R \simeq 2\pi\times 0.2$ MHz is small compared to a typical trap oscillation frequency ($\omega_z \simeq 2\pi \times 1$ MHz $\ll \Gamma$). In this regime, the photon absorption and emission events are fast compared to the change in velocity $v$ of the ion in the trap. We can therefore treat the velocity as a parameter, and the situation is similar to the one of a free particle. In the reference frame of the ion, the laser light is frequency shifted by the Doppler shift $kv$ due to the non-zero velocity of the ion. If the detuning is negative, there is a point, when the ion is moving towards the laser light, where the Doppler shift compensates the detuning $\Delta = kv$, here the ion absorbs a laser photon and loses the velocity $hk/m$ slowing down. The photon is then emitted in a random direction due to spontaneous emission, but its contribution to the momentum change will average to zero over many cycles.\par
+Towards the end of the cooling process, the ion approaches the ground state of the harmonic oscillator and the discreteness of the quantum oscillator starts to play a role. In this regime, the spatial extension of the ion wavepacket is a fraction of the laser light wavelength. We refer to this regime as Lamb Dicke regime, it is characterized by $\eta (2n +1 )\ll 1$, where $\eta^2 = \omega_R/\omega_z \simeq 0.03$ is the Lamb Dicke parameter, and $\ket{n}$ is the vibrational state of the harmonic oscillator. Cooling in the Lamb Dicke regime is described in terms of coupling to particular transitions that change the vibrational state $\ket{n} \to \ket{n\pm 1}$ (transitions that change the vibrational state more than 1 are strongly suppressed in the Lamb Dicke regime), called respectively red sideband $\ket{n} \to \ket{n-1}$, and blue sideband $\ket{n}\to \ket{n+1}$ transitions. For a more detailed description and theoretical derivation of the sidebands see e.g. \cite{ross}. \par
+The separation of the sideband transitions from the resonant transition is $\omega_z\ll \Gamma$, defining the \emph{unresolved sideband} regime. Here, the sideband transitions are not well resolved, and the laser light therefore couples to both sidebands with rates $A _+$ (blue sideband) and $A_-$ (red sideband) given by
+\begin{equation}
+\label{eq:cooling}
+A_\pm = \Gamma [\alpha P(\Delta) + P(\Delta \pm \omega_z)] \quad \text{with} \quad P(\omega) = \frac{\Omega^2}{4}\frac{1}{\left(\frac{\Gamma}{2}\right)^2 + \omega^2},
+\end{equation}
+where the factor $\alpha$ is the spread factor in spontaneous emission. The terms in equation \eqref{eq:cooling} have different physical meanings: for $A_-$ the first term corresponds to the excitation of the resonant transition followed by spontaneous emission in the lower vibrational state; for the second term, the excitation happens on the red sideband and spontaneous emission on the resonant transition, leading in both cases to cooling. Similarly for $A_+$, either the resonant or the blue sideband is excited and the photon is emitted in respectively the blue sideband or resonantly, leading in both cases to heating. To obtain cooling, an unbalance $A_- > A_+$ is needed, this is achieved optimally when $\Delta = -\frac{\Gamma}{2}$. At this detuning, the lowest average phonon number in the steady state case is $\braket{\hat{n}} = \Gamma /2\omega_z = 10.4$.\par
+The laser cooling method described in this section is obtained in the Lamb Dicke regime for the unresolved sideband case, this is referred to as Doppler cooling and the limit reached within this regime is named Doppler cooling limit. In the experiments of this thesis, Doppler cooling is routinely performed.
+%As an example, a single calcium ion confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the 2-level atom model in this case gives a good estimation, even though calcium has more levels. The Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$.
+% The wavefunction extent for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$
+% \begin{equation}
+% \sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52\,\text{nm}.
+% \end{equation}
+% Such a Doppler cooled ion has therefore a spatial dimension still much smaller than the ion separations and the wavelength of the relevant lasers.\par
 
-Coherent manipulation of ions requires cooling them to reach at least the Lamb Dicke regime \cite{Wineland1998}, where the extent of the ion wave packet is much smaller than the optical wavelengths of the lasers. The idea comes from neutral atoms \cite{1975OptCo..13...68H} and can be applied to ions as well: a laser interacts with a particular transition, causing photon absorption from the laser by the atom, giving a momentum kick $\Delta p = \hbar \mathbf{k}$ in the direction of the laser beam to the ion. The absorbed photon is emitted through spontaneous emission in a random direction, giving another kick to the ion. Over many cycles of absorption and emission, the random kick due to emission will average to zero (although presents a heating process which sets the Doppler limit), while the kick given by the laser will slow down and cooling the ion in the direction of the laser. \par
-The mathematical model is a 2-level atom interacting with a laser (Rabi frequency $\Omega$, and detuning $\Delta$) as described in Section \ref{laserioninteractions}. Spontaneous emission is included with the master Equation \eqref{masterequation}, where $\Gamma$ is the spontaneous emission rate. The master equation can be explicitly written for every component of the density matrix $\rho_{ij}$, in the rotating frame they are called optical Bloch equations \cite{foot}. Following the approach of \cite{gabriel}, the system reaches equilibrium when $\rho_{ee}(t\to \infty)$:
-% \begin{equation}
-% \label{rhoee}
-% \frac{d\rho_{ee}}{dt} = -i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) - \Gamma \rho_{ee}
-% \end{equation}
-% \begin{equation}
-% \frac{d\rho_{gg}}{dt} = i\frac{\Omega}{2}(\rho_{eg} - \rho_{ge}) + \Gamma \rho_{ee}
-% \end{equation}
-% \begin{equation}
-% \frac{d\rho_{ge}}{dt} = -\left(\frac{\Gamma}{2}+i\Delta\right)\rho_{ge} -i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
-% \end{equation}
-% \begin{equation}
-% \frac{d\rho_{eg}}{dt} = -\left(\frac{\Gamma}{2}-i\Delta\right)\rho_{eg}+i\frac{\Omega}{2}(\rho_{ee} - \rho_{gg})
-% \end{equation}
-\begin{equation}
-\rho_{ee}(t\to \infty) = \frac{\Omega^2/\Gamma^2}{1 + \left(2\frac{\Delta -\mathbf{k}\cdot \mathbf{v}}{\Gamma}\right)^2 + 2\frac{\Omega^2}{\Gamma^2}}
-\end{equation}
-where $\mathbf{v}$ the velocity of the ions. The force exerted on the ions, due to the radiative pressure, is proportional to $\rho_{ee}$ as
-\begin{equation}
-F = \hbar k \Gamma \rho_{ee} \simeq F_0 + \frac{dF}{dv}v = \hbar k \Gamma\frac{\Omega^2}{\Gamma^2 +4\Delta^2} + F_0 \frac{8k\Delta}{\Gamma^2 + 4\Delta^2}v
-\end{equation}
-where we assumed low velocities $v \simeq 0$ and thus linearized the equation. The effect of the constant term in the force is just to displace the ion from its central position. Instead, the linear term acts as a viscous friction that cools the ions with a rate of $\dot{E}_c = \braket{Fv}$.
-If on one side spontaneous emission allows for Doppler cooling, it also sets the lower limit. The small fluctuations in the Brownian motion leads to diffusion which heats the ion at a rate of
-\begin{equation}
-\dot{E}_h = \frac{1}{m}\frac{d}{dt}\braket{p^2} =  \frac{1}{m}(\hbar k)^2 \Gamma \braket{\rho_{ee}(v)}.
-\end{equation}
-At equilibrium, the heating rate equals the cooling rate giving the lowest temperature achievable
-\begin{equation}
-\dot{E}_h + \dot{E}_c = 0  \implies k_B T = -\frac{\hbar \Gamma}{4}\left(\frac{\Gamma}{2\Delta} +\frac{2\Delta}{\Gamma}\right).
-\end{equation}
-From here it is clear that by choosing the appropriated detuning, it is possible to reach the lowest temperature
-\begin{equation}
-T_{min} = \frac{\hbar \Gamma}{2k_{B}}, \qquad \text{for} \quad \Delta = -\frac{\Gamma}{2}.
-\end{equation}
-At this temperature, the average phonon number is $\braket{\hat{n}} = \Gamma /2\omega_z$ \cite{Eschner:03}.\par
-As an example, a single calcium ion confined in a trap with $\omega_z = 2\pi\times 1$ MHz, can be cooled using the transition $\ket{\text{S}_{1/2}}\to \ket{\text{P}_{1/2}}$ ($\Gamma = 2\pi\times 20.8$ MHz), the 2-level atom model in this case gives a good estimation, even though calcium has more levels. The Doppler temperature is $T_{min} \sim 500\,\mu$K, and the corresponding average phonon number is $\braket{\hat{n}} = 10.4$. The wavefunction extent for this phonon number can be found as the standard deviation of the operator $\hat{z}$ for the vibrational state $\ket{n}$
-\begin{equation}
-\sigma_z = \sqrt{\braket{\hat{z}^2}} = \sqrt{\frac{\hbar}{2m\omega_z}(1+2\braket{\hat{n}})} \simeq 52\,\text{nm}.
-\end{equation}
-Such a Doppler cooled ion has therefore a spatial dimension still much smaller than the ion separations and the wavelength of the relevant lasers.\par
-To further decrease $\braket{\hat{n}}$, sideband cooling can be used \cite{Eschner:03}, here particular sideband transitions are excited to reduce the phonon number of the ions inside the trap. However in the experiments of this thesis, only Doppler cooling has been performed.
+
 \section{Laser beam}
 \subsection{Gaussian beams}
 \label{sec_diffraction}
