@@ -115,7 +115,7 @@ Christian Roos.
 \bibitem{steck}
 Daniel~Adam Steck.
 \newblock Quantum and atom optics.
-\newblock \url{http://steck.us/teaching}.
+\newblock \url{http://steck.us/teaching}, Website view on \today.
 
 \bibitem{acstarkhamiltonian}
 D.F.V. James.
@@ -260,16 +260,6 @@ G.~Audi, A.H. Wapstra, and C.~Thibault.
 \newblock {\em Nuclear Physics A}, 729(1):337 -- 676, 2003.
 \newblock The 2003 NUBASE and Atomic Mass Evaluations.
 
-\bibitem{RevModPhys.58.699}
-Stig Stenholm.
-\newblock The semiclassical theory of laser cooling.
-\newblock {\em Rev. Mod. Phys.}, 58:699--739, Jul 1986.
-
-\bibitem{Eschner:03}
-Stig Stenholm.
-\newblock The semiclassical theory of laser cooling.
-\newblock {\em Rev. Mod. Phys.}, 58:699--739, Jul 1986.
-
 \bibitem{saleh}
 Bahaa E.~A. Saleh and Malvin~Carl Teich.
 \newblock {\em Fundamentals of photonics}.
@@ -356,6 +346,17 @@ S.~Gulde, D.~Rotter, P.~Barton, F.~Schmidt-Kaler, R.~Blatt, and W.~Hogervorst.
 \newblock Simple and efficient photo-ionization loading of ions for precision
   ion-trapping experiments.
 \newblock {\em Applied Physics B}, 73(8):861--863, December 2001.
+
+\bibitem{Dopplercooling}
+D.J. Wineland and H.~Dehmelt.
+\newblock Proposed $10^{14}\,\delta\nu < \nu$ {L}aser {F}luorescence
+  {S}pectroscopy on {T}l$^+$ {M}ono-{I}on {O}scillator.
+\newblock {\em Bull. Am. Phys. Soc. 20, 637}, 1975.
+
+\bibitem{RevModPhys.58.699}
+Stig Stenholm.
+\newblock The semiclassical theory of laser cooling.
+\newblock {\em Rev. Mod. Phys.}, 58:699--739, Jul 1986.
 
 \bibitem{addressing}
 H.~C. N\"agerl, D.~Leibfried, H.~Rohde, G.~Thalhammer, J.~Eschner,

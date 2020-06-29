@@ -8,43 +8,43 @@ Warning--empty year in ion_spacing
 Warning--empty publisher in handbookoptics
 You've used 74 entries,
             1791 wiz_defined-function locations,
-            913 strings with 15429 characters,
-and the built_in function-call counts, 17167 in all, are:
-= -- 1484
-> -- 847
+            916 strings with 15630 characters,
+and the built_in function-call counts, 17095 in all, are:
+= -- 1473
+> -- 851
 < -- 3
-+ -- 317
-- -- 243
-* -- 1357
-:= -- 2814
++ -- 318
+- -- 244
+* -- 1346
+:= -- 2807
 add.period$ -- 224
 call.type$ -- 74
 change.case$ -- 62
 chr.to.int$ -- 0
 cite$ -- 76
-duplicate$ -- 689
-empty$ -- 1625
-format.name$ -- 243
-if$ -- 3698
+duplicate$ -- 688
+empty$ -- 1616
+format.name$ -- 244
+if$ -- 3683
 int.to.chr$ -- 0
 int.to.str$ -- 74
 missing$ -- 75
 newline$ -- 371
 num.names$ -- 73
-pop$ -- 147
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 264
+skip$ -- 265
 stack$ -- 0
-substring$ -- 1255
+substring$ -- 1230
 swap$ -- 103
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 161
+while$ -- 159
 width$ -- 76
-write$ -- 806
+write$ -- 805
 (There were 2 warnings)
